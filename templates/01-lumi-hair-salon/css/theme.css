@@ -45,7 +45,7 @@ h1 { font-weight: 500; }
 
 .hero-line--italic { color: var(--accent-soft); font-weight: 500; }
 
-/* Floating WhatsApp / phone */
+/* Floating phone CTA */
 .floating-actions {
   position: fixed;
   bottom: 28px;

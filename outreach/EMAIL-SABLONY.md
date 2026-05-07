@@ -264,7 +264,6 @@ Doplatok: 245 € po dodaní
 ✓ Online rezervácia cez Reservio
 ✓ Mobilný + desktop dizajn
 ✓ Lokálne SEO + Google Maps
-✓ WhatsApp tlačidlo
 ✓ Texty na úvodnú stránku
 ✓ 2 kolá úprav v cene
 

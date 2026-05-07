@@ -43,9 +43,9 @@ Toto je sada premenných, ktoré definujú celý vzhľad.
 | `--muted` | Placeholder, tichý | `#9a9285` |
 | `--line` | Border default | `#d8cfc1` |
 | `--line-soft` | Subtílne čiary | rgba |
-| **`--accent`** | **Hlavná akcentová farba** | `#ff5b1f` orange |
-| `--accent-deep` | Hover, dôraz | `#d44614` |
-| `--accent-soft` | Tagy, badges | `#fbe1d2` |
+| **`--accent`** | **Hlavná akcentová farba** | `#6a7a55` sage green |
+| `--accent-deep` | Hover, dôraz | `#4f5c3f` |
+| `--accent-soft` | Tagy, badges | `#e8ede0` |
 | `--olive`, `--plum` | Sekundárne akcenty | green, plum |
 | `--serif` | Display font | Instrument Serif |
 | `--sans` | Body font | Inter |

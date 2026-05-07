@@ -2,155 +2,90 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pricing · Petal Studio</title>
-  <meta name="description" content="Transparentný cenník — fixné ceny od 290 €. Žiadne hodiny, žiadne mesačné poplatky. Vrátane porovnania balíčkov." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Pricing · Sage Studio</title>
+  <meta name="description" content="Pricing is discussed individually based on your project." />
+  <meta name="theme-color" content="#f7f3ec" />
+  <meta name="robots" content="noindex" />
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-  <style>
-    .compare-table { width:100%; border-collapse: collapse; margin: 40px 0; background: var(--bg-3); border-radius: var(--radius); overflow: hidden; border: 1px solid var(--line-soft); }
-    .compare-table th, .compare-table td { padding: 16px 20px; text-align: left; font-size: 0.94rem; border-bottom: 1px solid var(--line-soft); }
-    .compare-table th { background: var(--bg-2); font-family: var(--sans); font-size: 0.78rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--ink); font-weight: 600; }
-    .compare-table th:first-child { width: 40%; }
-    .compare-table tr:last-child td { border: 0; }
-    .compare-table .yes { color: var(--olive); font-weight: 600; }
-    .compare-table .no  { color: var(--muted); }
-    @media (max-width: 768px) { .compare-table { display: block; overflow-x: auto; } .compare-table th, .compare-table td { white-space: nowrap; } }
-  </style>
 </head>
 <body>
   <a href="#main-content" class="skip-to-content">Skip to content</a>
-  <div class="page-loader"><span class="page-loader__brand">Petal<i>.</i></span></div>
+  <div class="page-loader"><span class="page-loader__brand">Sage<i>.</i></span></div>
   <div class="reading-progress"></div>
 
   <nav class="navbar">
     <div class="container">
-      <a href="index.html" class="navbar-brand"><span class="navbar-brand__dot"></span><span>Petal<i>.</i></span></a>
+      <a href="index.html" class="navbar-brand"><span class="navbar-brand__dot"></span><span>Sage<i>.</i></span></a>
       <ul class="navbar-links">
-        <li><a href="index.html">Domov</a></li><li><a href="services.html">Služby</a></li><li><a href="process.html">Postup</a></li><li><a href="portfolio.html">Portfólio</a></li>
-        <li><a href="pricing.html" class="active">Cenník</a></li><li><a href="contact.html">Kontakt</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="portfolio.html">Work</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
       <div class="navbar-right">
-        <div class="lang-switch" data-lang-switch><button class="lang-switch__btn" data-lang="sk">SK</button><button class="lang-switch__btn" data-lang="cs">CS</button><button class="lang-switch__btn" data-lang="en">EN</button></div>
-        <a href="contact.html" class="navbar-cta">Nezáväzný dopyt</a>
+        <div class="lang-switch" data-lang-switch>
+          <button class="lang-switch__btn" data-lang="en">EN</button>
+          <button class="lang-switch__btn" data-lang="sk">SK</button>
+          <button class="lang-switch__btn" data-lang="cs">CS</button>
+        </div>
+        <a href="contact.html" class="navbar-cta">Get in touch</a>
         <button class="navbar-hamburger"><span></span><span></span><span></span></button>
       </div>
     </div>
   </nav>
 
-  <div class="mobile-menu">
-    <ul class="mobile-menu__links">
-      <li><a href="index.html">Domov</a></li><li><a href="services.html">Služby</a></li><li><a href="process.html">Postup</a></li><li><a href="portfolio.html">Portfólio</a></li><li><a href="pricing.html">Cenník</a></li><li><a href="contact.html">Kontakt</a></li>
-    </ul>
-  </div>
-
-  <header class="banner" id="main-content" style="min-height:50vh">
-    <div class="banner__bg"><img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=2000&q=82" alt="" /></div>
-    <div class="banner__veil"></div>
+  <header class="banner" id="main-content" style="min-height:60vh">
+    <div class="banner__bg" aria-hidden="true">
+      <img src="https://images.unsplash.com/photo-1499209974431-9dddcece7f88?auto=format&fit=crop&w=2000&q=82" alt="" />
+    </div>
+    <div class="banner__veil" aria-hidden="true"></div>
     <div class="container">
-      <p class="hero-label">Cenník</p>
-      <h1><span class="hero-line">Fixed prices.</span> <span class="hero-line hero-line--italic">No asterisks.</span></h1>
+      <p class="hero-label">Pricing</p>
+      <h1><span class="hero-line">A fair price for</span> <span class="hero-line hero-line--italic">a real piece of work.</span></h1>
       <div class="hero-rule"></div>
-      <h2>Vždy viete, koľko zaplatíte ešte pred tým, ako začneme. Ceny sú bez DPH (zatiaľ neplatca).</h2>
+      <h2>Discussed individually — because every project is a little different.</h2>
     </div>
   </header>
 
   <section class="section fade-in">
-    <div class="container">
-      <div class="tiers">
-        <article class="tier">
-          <h3>Štart</h3>
-          <p class="tier__price">290 €</p>
-          <p class="tier__sub">Jednostránkový web</p>
-          <ul>
-            <li>1 stránka (one-pager)</li><li>Mobil + desktop</li><li>Kontaktný formulár</li><li>Google Mapa + lokálne SEO</li><li>Pomoc s doménou</li><li>Dodanie do 7 dní</li>
-          </ul>
-          <a href="contact.html" class="btn btn-secondary">Mám záujem</a>
-        </article>
-        <article class="tier tier--feat">
-          <span class="tier__badge">Najobľúbenejšie</span>
-          <h3>Profi</h3>
-          <p class="tier__price">490 €</p>
-          <p class="tier__sub">Plnohodnotná webovka</p>
-          <ul>
-            <li>5–7 sekcií / stránok</li><li>Galéria + lightbox</li><li>Cenník + služby</li><li>Online rezervácia napojenie</li><li>Lokálne SEO + schema</li><li>Texty na úvodnú stránku</li><li>WhatsApp / volacie tlačidlo</li>
-          </ul>
-          <a href="contact.html" class="btn btn-accent">Mám záujem</a>
-        </article>
-        <article class="tier">
-          <h3>Plus</h3>
-          <p class="tier__price">od 790 €</p>
-          <p class="tier__sub">Multilang / blog / e-shop</p>
-          <ul>
-            <li>Všetko z balíčka Profi</li><li>SK + CS + EN switcher</li><li>Blog / aktuality</li><li>Jednoduchý e-shop (do 30 prod.)</li><li>Newsletter (Mailerlite)</li><li>Google Analytics 4</li>
-          </ul>
-          <a href="contact.html" class="btn btn-secondary">Mám záujem</a>
-        </article>
-      </div>
-    </div>
-  </section>
+    <div class="container" style="max-width:780px">
+      <p style="font-size:1.15rem;line-height:1.8;color:var(--ink-soft)">
+        I don't have fixed packages. Some businesses need a single home page; some need five pages with a multilingual toggle and a Google Map block; some want me to write all the copy and source the photos. Pricing depends on what we're actually making.
+      </p>
+      <p style="font-size:1.15rem;line-height:1.8;color:var(--ink-soft);margin-top:18px">
+        The way it works:
+      </p>
+      <ol style="font-size:1.05rem;line-height:2;color:var(--ink-soft);margin-top:8px;padding-left:22px">
+        <li>You write to me with a few words about your business and what you'd like.</li>
+        <li>We have a short conversation — phone, email, or in person if it makes sense.</li>
+        <li>I send you a clear, fixed quote in writing. No surprises, no hourly games.</li>
+        <li>If it's a yes, we start. If it's a no, no harm done.</li>
+      </ol>
 
-  <section class="section section--alt fade-in">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-label">Porovnanie</span>
-        <h2>Čo presne dostanete v každom balíčku</h2>
+      <div style="margin-top:48px;text-align:center">
+        <a href="contact.html" class="btn btn-accent btn-lg">Tell me about your project</a>
       </div>
-      <table class="compare-table">
-        <thead>
-          <tr><th>Funkcia</th><th>Štart</th><th>Profi</th><th>Plus</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>Mobil + desktop responzívny dizajn</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td></tr>
-          <tr><td>Počet stránok / sekcií</td><td>1</td><td>5–7</td><td>neobmedzene</td></tr>
-          <tr><td>Kontaktný formulár (mailto / Tally)</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td></tr>
-          <tr><td>Google Mapy + schema.org</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td></tr>
-          <tr><td>Galéria s lightboxom</td><td class="no">—</td><td class="yes">✓</td><td class="yes">✓</td></tr>
-          <tr><td>Online rezervácia (Reservio / Booksy)</td><td class="no">—</td><td class="yes">✓</td><td class="yes">✓</td></tr>
-          <tr><td>WhatsApp / volacie tlačidlo</td><td class="no">—</td><td class="yes">✓</td><td class="yes">✓</td></tr>
-          <tr><td>Texty na úvodnú stránku v cene</td><td class="no">—</td><td class="yes">✓</td><td class="yes">✓</td></tr>
-          <tr><td>Multilanguage SK + CS + EN</td><td class="no">—</td><td class="no">—</td><td class="yes">✓</td></tr>
-          <tr><td>Blog / aktuality</td><td class="no">—</td><td class="no">—</td><td class="yes">✓</td></tr>
-          <tr><td>Jednoduchý e-shop (do 30 produktov)</td><td class="no">—</td><td class="no">—</td><td class="yes">✓</td></tr>
-          <tr><td>Newsletter integrácia</td><td class="no">—</td><td class="no">—</td><td class="yes">✓</td></tr>
-          <tr><td>Google Analytics 4</td><td class="no">—</td><td class="yes">✓</td><td class="yes">✓</td></tr>
-          <tr><td>Kolá úprav v cene</td><td>1×</td><td>2×</td><td>2×</td></tr>
-          <tr><td>Dodanie</td><td>7 dní</td><td>14 dní</td><td>21 dní</td></tr>
-          <tr><td><b>Cena (bez DPH)</b></td><td><b>290 €</b></td><td><b>490 €</b></td><td><b>od 790 €</b></td></tr>
-        </tbody>
-      </table>
-      <p style="text-align:center;margin-top:30px;color:var(--ink-soft);font-size:0.95rem"><b>K tomu jednorazovo:</b> doména .sk/.cz ~15 €/rok · hosting 0–6 €/mes podľa typu webu.</p>
-    </div>
-  </section>
-
-  <section class="section fade-in">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-label">FAQ</span>
-        <h2>Otázky o cene</h2>
-      </div>
-      <div class="faq">
-        <details class="faq__item"><summary class="faq__question">Prečo nemáte hodinovú sadzbu?</summary><p class="faq__answer">Lebo si neviete dopredu predstaviť, koľko hodín to zaberie a vy budete celý čas na napätí. S fixnou cenou viete na euro, čo platíte. Riziko prekročenia kalkulu nesiem ja.</p></details>
-        <details class="faq__item"><summary class="faq__question">Čo nie je v cene?</summary><p class="faq__answer">Doména a hosting (extra náklad mimo mojej fakturácie). Profesionálny fotograf, ak ho potrebujete (môžem dohodnúť za 200–400 € základnú sériu). Texty pri Štart balíčku — pre Profi a Plus sú v cene.</p></details>
-        <details class="faq__item"><summary class="faq__question">Robíte aj zľavy?</summary><p class="faq__answer">Občas — pre projekty, ktoré ma zaujmú (napr. neziskovky, malé komunitné projekty). Píšte, povieme si.</p></details>
-        <details class="faq__item"><summary class="faq__question">Môžem platiť po častiach?</summary><p class="faq__answer">Áno, štandardne 50 % záloha + 50 % po dodaní. Pri väčších projektoch (Plus 1500 €+) viem rozdeliť na 3 splátky.</p></details>
-      </div>
-    </div>
-  </section>
-
-  <section class="section section--dark fade-in">
-    <div class="container text-center">
-      <h2>Stretnime sa.</h2>
-      <p style="max-width:540px;margin:18px auto 36px;font-size:1.1rem">Bezplatný 20-min hovor. Bez záväzku.</p>
-      <a href="contact.html" class="btn btn-accent btn-lg">Rezervovať termín</a>
     </div>
   </section>
 
   <footer class="footer">
-    <div class="container"><div class="footer-bottom" style="padding-top:0;border:0"><p class="footer-bottom__copy">© 2026 Petal Studio · sole trader</p><div class="footer-bottom__links"><a href="privacy.html">Ochrana osobných údajov</a><a href="terms.html">Obchodné podmienky</a><a href="index.html">Späť na úvod</a></div></div></div>
+    <div class="container">
+      <div class="footer-bottom" style="padding-top:30px;border:0">
+        <p class="footer-bottom__copy">© 2026 Sage Studio · Karolína Katriňáková</p>
+        <div class="footer-bottom__links">
+          <a href="privacy.html">Privacy</a>
+          <a href="terms.html">Terms</a>
+          <a href="index.html">Back to home</a>
+        </div>
+      </div>
+    </div>
   </footer>
-  <button class="back-to-top" aria-label="Hore"><i class="fa-solid fa-arrow-up"></i></button>
-  <script src="js/i18n.js"></script><script src="js/main.js"></script>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

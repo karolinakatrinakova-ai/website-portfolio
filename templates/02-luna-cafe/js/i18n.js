@@ -4,7 +4,7 @@
    - Aplikuje preklady na elementy s [data-i18n="kľúč"] (text)
                                 a [data-i18n-attr="atribút|kľúč"] (atribút)
    - Switcher: [data-lang-switch] tlačidlá s data-lang="sk|cs|en"
-   - Perzistencia v localStorage pod 'petal_lang'
+   - Perzistencia v localStorage pod 'sage_lang'
    - Default: <html lang="sk"> alebo browser prefer
    ========================================================================== */
 
@@ -12,7 +12,7 @@
   'use strict';
 
   var SUPPORTED = ['sk', 'cs', 'en'];
-  var STORAGE_KEY = 'petal_lang';
+  var STORAGE_KEY = 'sage_lang';
   var FALLBACK = 'sk';
 
   function detect() {
@@ -68,7 +68,7 @@
   var cache = {};
   function load(lang) {
     if (cache[lang]) return Promise.resolve(cache[lang]);
-    var url = (window.PETAL_I18N_PATH || './i18n/') + lang + '.json';
+    var url = (window.SAGE_I18N_PATH || './i18n/') + lang + '.json';
     return fetch(url).then(function (r) {
       if (!r.ok) throw new Error('i18n load failed: ' + url);
       return r.json();
@@ -89,7 +89,7 @@
     });
     return load(lang).then(function (dict) {
       applyDict(dict);
-      window.dispatchEvent(new CustomEvent('petal:lang-change', { detail: { lang: lang, dict: dict } }));
+      window.dispatchEvent(new CustomEvent('sage:lang-change', { detail: { lang: lang, dict: dict } }));
     }).catch(function (err) {
       console.warn('[i18n]', err);
       if (lang !== FALLBACK) setLang(FALLBACK, false);
@@ -109,8 +109,8 @@
   setLang(initial, false);
 
   // Expose
-  window.Petal = window.Petal || {};
-  window.Petal.setLang = setLang;
-  window.Petal.getLang = function () { return localStorage.getItem(STORAGE_KEY) || detect(); };
-  window.Petal.SUPPORTED_LANGS = SUPPORTED;
+  window.Sage = window.Sage || {};
+  window.Sage.setLang = setLang;
+  window.Sage.getLang = function () { return localStorage.getItem(STORAGE_KEY) || detect(); };
+  window.Sage.SUPPORTED_LANGS = SUPPORTED;
 })();

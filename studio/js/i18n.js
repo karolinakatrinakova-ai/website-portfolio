@@ -1,10 +1,10 @@
 /* ============================================================================
-   PETAL STUDIO · i18n
+   SAGE STUDIO · i18n
    - Loads i18n/<lang>.json (en / sk / cs)
    - Applies translations to elements with [data-i18n="key"] (text)
                                        and [data-i18n-attr="attribute|key"]
    - Switcher: [data-lang-switch] buttons with data-lang="en|sk|cs"
-   - Persists in localStorage as 'petal_lang'
+   - Persists in localStorage as 'sage_lang'
    - Default: EN (with browser-language detection on first visit)
    ========================================================================== */
 
@@ -12,7 +12,7 @@
   'use strict';
 
   var SUPPORTED = ['en', 'sk', 'cs'];
-  var STORAGE_KEY = 'petal_lang';
+  var STORAGE_KEY = 'sage_lang';
   var FALLBACK = 'en';
 
   function detect() {
@@ -67,7 +67,7 @@
   var cache = {};
   function load(lang) {
     if (cache[lang]) return Promise.resolve(cache[lang]);
-    var url = (window.PETAL_I18N_PATH || './i18n/') + lang + '.json';
+    var url = (window.SAGE_I18N_PATH || './i18n/') + lang + '.json';
     return fetch(url).then(function (r) {
       if (!r.ok) throw new Error('i18n load failed: ' + url);
       return r.json();
@@ -88,7 +88,7 @@
     });
     return load(lang).then(function (dict) {
       applyDict(dict);
-      window.dispatchEvent(new CustomEvent('petal:lang-change', { detail: { lang: lang, dict: dict } }));
+      window.dispatchEvent(new CustomEvent('sage:lang-change', { detail: { lang: lang, dict: dict } }));
     }).catch(function (err) {
       console.warn('[i18n]', err);
       if (lang !== FALLBACK) setLang(FALLBACK, false);
@@ -105,8 +105,8 @@
   var initial = detect();
   setLang(initial, false);
 
-  window.Petal = window.Petal || {};
-  window.Petal.setLang = setLang;
-  window.Petal.getLang = function () { return localStorage.getItem(STORAGE_KEY) || detect(); };
-  window.Petal.SUPPORTED_LANGS = SUPPORTED;
+  window.Sage = window.Sage || {};
+  window.Sage.setLang = setLang;
+  window.Sage.getLang = function () { return localStorage.getItem(STORAGE_KEY) || detect(); };
+  window.Sage.SUPPORTED_LANGS = SUPPORTED;
 })();

@@ -267,26 +267,26 @@
   /* ─── Cookie banner ─── */
   var cb = document.getElementById('cookieBanner');
   if (cb) {
-    if (localStorage.getItem('petal_cookies')) {
+    if (localStorage.getItem('sage_cookies')) {
       cb.style.display = 'none';
     }
     cb.querySelectorAll('[data-cookie="accept"]').forEach(function (b) {
       b.addEventListener('click', function () {
         cb.style.display = 'none';
-        localStorage.setItem('petal_cookies', 'accepted');
+        localStorage.setItem('sage_cookies', 'accepted');
       });
     });
     cb.querySelectorAll('[data-cookie="decline"]').forEach(function (b) {
       b.addEventListener('click', function () {
         cb.style.display = 'none';
-        localStorage.setItem('petal_cookies', 'declined');
+        localStorage.setItem('sage_cookies', 'declined');
       });
     });
   }
 
   /* ─── Intro offer modal ─── */
   var io2 = document.getElementById('introOffer');
-  if (io2 && !sessionStorage.getItem('petal_intro')) {
+  if (io2 && !sessionStorage.getItem('sage_intro')) {
     setTimeout(function () {
       io2.classList.add('active');
       document.body.style.overflow = 'hidden';
@@ -294,7 +294,7 @@
     function close2() {
       io2.classList.remove('active');
       document.body.style.overflow = '';
-      sessionStorage.setItem('petal_intro', 'seen');
+      sessionStorage.setItem('sage_intro', 'seen');
     }
     io2.querySelector('.intro-offer__overlay').addEventListener('click', close2);
     io2.querySelector('.intro-offer__close').addEventListener('click', close2);
@@ -308,14 +308,14 @@
 
   /* ─── Announcement bar close ─── */
   var ab = document.querySelector('.announcement-bar');
-  if (ab && localStorage.getItem('petal_announcement_closed') === '1') {
+  if (ab && localStorage.getItem('sage_announcement_closed') === '1') {
     ab.style.display = 'none';
   }
   var abClose = document.querySelector('.announcement-bar__close');
   if (abClose) {
     abClose.addEventListener('click', function () {
       ab.style.display = 'none';
-      localStorage.setItem('petal_announcement_closed', '1');
+      localStorage.setItem('sage_announcement_closed', '1');
     });
   }
 

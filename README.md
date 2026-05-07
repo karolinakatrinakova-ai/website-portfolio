@@ -1,28 +1,27 @@
-# Petal Studio · web design kit
+# Sage Studio · web design kit
 
 Hand-built websites for small businesses in Slovakia and the Czech Republic.
 
-Studio brand: **Petal** — short, modern, Bloom-adjacent but distinct. Tagline: *"Websites that grow your small business."*
+Studio brand: **Sage** — short, calm, herbal. Tagline: *"Hand-built websites, made with care."*
 
-Inspired by Bloom Studio's design level — same animations, micro-interactions, attention to detail — applied to a portfolio hub plus 6 industry-specific demo websites.
+A small portfolio website plus six demo sites that show what kind of work I can do.
 
 ## What's in the box
 
 ```
 Webovky/
-├── studio/                          ← Petal Studio brand (portfolio hub + multi-page)
+├── studio/                          ← Sage Studio brand (portfolio + about)
 │   ├── index.html                   ← landing page (English default)
-│   ├── about.html                   ← About Me · Kofio experience + LinkedIn + offer
-│   ├── services.html                ← services
-│   ├── process.html                 ← how we work
-│   ├── pricing.html                 ← packages
-│   ├── portfolio.html               ← all 6 demos
+│   ├── about.html                   ← About Me · Kofio experience + LinkedIn
+│   ├── services.html                ← services (only what I can deliver)
+│   ├── pricing.html                 ← "discussed individually" — no packages
+│   ├── portfolio.html               ← all six demo sites
 │   ├── contact.html                 ← contact form
 │   ├── social.html                  ← social media coming-soon
 │   ├── privacy.html                 ← GDPR
 │   ├── terms.html                   ← T&C
 │   ├── 404.html                     ← error page
-│   ├── css/                         ← design system (1100+ lines)
+│   ├── css/                         ← design system
 │   ├── js/                          ← interactions + i18n
 │   ├── i18n/                        ← EN (primary) · SK · CS translations
 │   └── favicon.svg
@@ -32,14 +31,12 @@ Webovky/
 │   ├── 02-luna-cafe/                ← Luna · café & brunch
 │   ├── 03-mend-physiotherapy/       ← Mend · physiotherapy clinic
 │   ├── 04-rove-photographer/        ← Rove · wedding/portrait photographer
-│   ├── 05-stem-florist/             ← Stem · botanical florist (NEW)
-│   └── 06-aria-yoga-studio/         ← Aria · yoga & pilates studio (NEW)
+│   ├── 05-stem-florist/             ← Stem · botanical florist
+│   └── 06-aria-yoga-studio/         ← Aria · yoga & pilates studio
 │
 ├── outreach/                        ← finding & contacting clients
 │   ├── STRATEGIA.md                 ← weekly outreach playbook
-│   ├── BIZNIS-TYPY.md               ← deep market analysis · 30 segments
-│   │                                  + REALISTIC-FIT shortlist (Tier A/B/C)
-│   │                                  + INNOVATIVE FEATURES per segment (2026)
+│   ├── BIZNIS-TYPY.md               ← market analysis · realistic-fit shortlist
 │   ├── EMAIL-SABLONY.md             ← cold email scripts (SK / CS)
 │   └── tracker.csv
 │
@@ -49,114 +46,101 @@ Webovky/
     └── KONFIGURACIA-CLIENT.md       ← client onboarding checklist
 ```
 
-## Brand decisions
+## Brand & site design
 
-- **Studio name**: `Petal Studio` (replaced the placeholder `webovky`)
-- **Default UI language**: **English** — switchable to SK / CS via the language toggle in the navbar
-- **Primary domain (suggested)**: `petal.studio` or `petal.sk`
-- **localStorage namespace**: `petal_*` (lang, cookies, intro, announcement)
+- **Studio name**: `Sage Studio`
+- **Default UI language**: **English** — switchable to SK / CS via the navbar toggle
+- **localStorage namespace**: `sage_*` (lang, cookies)
+- **Suggested domain**: `sage.design` or `sage.studio`
+- **Color palette**: warm cream `#f7f3ec` · sage green `#6a7a55` · warm ink `#2b2925` · dusty rose accent `#c58e85`
+- **Typography**: Instrument Serif (display, italic) + Inter (body)
 
-## Template archetype names
+## Template overview
 
-Each template is a starting point — clients customize copy, photos, palette.
+Each demo template is a standalone single-page site for that industry — used as a portfolio piece showing my work.
 
-| # | Slug | Brand | Industry | Distinct innovative features |
-|---|---|---|---|---|
-| 01 | `01-lumi-hair-salon` | **Lumi** | Hair salon | Online booking, floating WhatsApp, gallery, price list |
-| 02 | `02-luna-cafe` | **Luna** | Café · brunch · bistro | Menu, IG feed, hours, brunch card |
-| 03 | `03-mend-physiotherapy` | **Mend** | Physiotherapy clinic | Conditions index, therapist profiles, online booking |
-| 04 | `04-rove-photographer` | **Rove** | Wedding / portrait photographer | Editorial galleries, packages, brief form, photo grid |
-| 05 | `05-stem-florist` | **Stem** | Boutique florist | Same-day delivery banner, seasonal collections, weddings, workshops calendar |
-| 06 | `06-aria-yoga-studio` | **Aria** | Yoga & pilates studio | Intro-week pass, color-coded schedule grid, teacher profiles, 3 membership tiers |
+| # | Slug | Brand | Industry |
+|---|---|---|---|
+| 01 | `01-lumi-hair-salon` | **Lumi** | Hair salon |
+| 02 | `02-luna-cafe` | **Luna** | Café · brunch · bistro |
+| 03 | `03-mend-physiotherapy` | **Mend** | Physiotherapy clinic |
+| 04 | `04-rove-photographer` | **Rove** | Wedding / portrait photographer |
+| 05 | `05-stem-florist` | **Stem** | Boutique florist |
+| 06 | `06-aria-yoga-studio` | **Aria** | Yoga & pilates studio |
 
-## Bloom-grade UX/UI features in the design system
+## What's removed (deliberately simple)
 
-All 20+ baseline features are implemented in `studio/css/style.css` and used across templates:
+Sage Studio is intentionally lean. The site does **not** include:
+
+- ❌ Pricing packages — pricing is discussed per project, no fixed tiers
+- ❌ Stat counters (delivery time, PageSpeed score, etc.)
+- ❌ Process timeline (timelines depend on each project)
+- ❌ Testimonials section (no real client references yet)
+- ❌ Newsletter / email capture
+- ❌ "Book a free call" / pushy CTAs — just "Get in touch"
+- ❌ WhatsApp contact buttons
+- ❌ Promises of features I can't deliver yet (blog, shop, GA4 analytics, 7-day delivery)
+
+## Design system
+
+The base CSS at `studio/css/style.css` provides a calm, considered design system used across studio + all six templates:
 
 - Page loader with brand pulse
-- Announcement bar (dismissible, persists)
 - Reading-progress bar
-- Sticky navbar with hide-on-scroll + dropdown menu
+- Sticky navbar with hide-on-scroll
 - Mobile hamburger overlay
 - Hero with split typography (italic accent line)
-- Hero text-shadow + image veil for readability on any background
+- Hero text-shadow + image veil for readability
 - Scroll indicator
 - Marquee ticker
-- Animated stat counters (intersection observer)
-- Reveal-on-scroll (`fade-in`) + staggered children
-- Timeline sections (numbered process)
+- Reveal-on-scroll + staggered children
 - FAQ accordions (native `<details>`)
 - Image lightbox
 - Drag-to-scroll horizontal galleries
-- Testimonial slider with autoplay + dots + drag swipe
 - Cookie banner (persisted)
-- Intro offer modal
 - Mobile sticky CTA
 - Back-to-top button
-- Smooth page exit transitions
 - Custom focus rings, skip-to-content link, reduced-motion respected
 
 ## i18n system (EN · SK · CS)
 
-- **Default language**: English (also when no preference detected)
-- **Switcher**: top-right of navbar, `[data-lang-switch]`
-- **Persistence**: `localStorage.petal_lang`
-- **Per-element translations**: `<element data-i18n="key.path">fallback</element>`
-- **Per-attribute translations**: `data-i18n-attr="placeholder|key"`
-- **HTML allowed**: set `data-i18n-html="true"` on elements with embedded markup
-
-JSON files live in `studio/i18n/` and `templates/<slug>/i18n/` — three files each (`en.json`, `sk.json`, `cs.json`).
+- Default = `en`. Detection via browser, persisted in `localStorage` under `sage_lang`.
+- Switch is a simple 3-button toggle in the navbar (`EN / SK / CS`).
+- Strings come from `studio/i18n/{en,sk,cs}.json`.
+- HTML uses `data-i18n="key"` and `data-i18n-attr="content|key"` for attribute strings.
+- All template demos have their own i18n folders too (industry-specific copy).
 
 ## Local development
 
-`fetch()` for the i18n JSONs **does not work on `file://` URLs** — you'll see the fallback HTML defaults but no language switching. Always run a local server.
+Templates and the studio site use `fetch` for i18n, so opening files via `file://` won't load the translations. Always serve via a small HTTP server:
 
 ```bash
 cd ~/Desktop/Webovky
-python3 -m http.server 5500
-# open http://localhost:5500/studio/index.html
+python3 -m http.server 8080
 ```
 
-Sublime Text users: open `~/Desktop/Webovky` as a project folder. Save → refresh browser.
+Then open:
 
-## Cheatsheet
-
-| Want to… | Edit |
-|---|---|
-| Change studio brand copy | `studio/index.html` + `studio/i18n/*.json` |
-| Edit About Me / Kofio paragraph | `studio/about.html` |
-| Edit pricing | `studio/index.html` (pricing section) + `i18n/*.json` |
-| Add a new client testimonial | `studio/index.html` (testimonials) + `i18n/*.json` |
-| Customize a template's palette | `templates/<slug>/css/theme.css` (the CSS variables at the top) |
-| Update template copy in 3 langs | `templates/<slug>/i18n/{en,sk,cs}.json` |
-| Add a new template | duplicate one of the 6 folders, change brand name + colors + i18n |
-| Add a new business segment to outreach | `outreach/BIZNIS-TYPY.md` |
-| Tweak a cold email script | `outreach/EMAIL-SABLONY.md` |
+- `http://localhost:8080/studio/index.html` — main portfolio
+- `http://localhost:8080/templates/01-lumi-hair-salon/index.html` — Lumi demo
+- (etc.)
 
 ## Deployment
 
-See `docs/NASADENIE.md` for the full guide.
+Free options for each template + studio:
 
-Quick options:
+| Where | Free | Custom domain | Build step |
+|---|---|---|---|
+| **GitHub Pages** | ✓ | ✓ | none (static) |
+| **Netlify** | ✓ | ✓ | none |
+| **Vercel** | ✓ | ✓ | none |
 
-- **GitHub Pages** (free, easy): push to GitHub, enable Pages on `main` branch, root folder
-- **Netlify** (free, recommended): drag-and-drop the project folder, get instant SSL + custom domain
-- **Vercel** (free, fastest): connect GitHub repo, automatic deploys on push
+Recommended: GitHub Pages for the main studio site (deploy from a `webovky` repo), Netlify per-client for individual templates so each client owns their setup.
 
-```bash
-git add . && git commit -m "site update"
-git push origin main          # GitHub Pages auto-rebuilds
-```
+## Contact
 
-## Email templates available in Cursor
-
-For convenience, all key outreach docs are mirrored to `~/Desktop/aiTraining/` so you can read them inside Cursor:
-
-- `Webovky-Email-Sablony.md`
-- `Webovky-Biznis-Typy.md`
-- `Webovky-Strategia.md`
-- `Webovky-Tracker.csv`
-
----
-
-**Hand-built with love for SK & CZ small businesses · Petal Studio · 2026**
+- **Karolína Katriňáková**
+- Email: `karolina.katrinakova@gmail.com`
+- Phone: `+420 774 504 320`
+- LinkedIn: profile linked from the About page
+- Based in Prague & Bratislava — remote work, in-person if it makes sense

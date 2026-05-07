@@ -2,16 +2,15 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Social · coming soon · Petal Studio</title>
-  <meta name="description" content="Naše sociálne siete pripravujeme. Buďte prví, kto sa dozvie, keď spustíme." />
-  <meta name="theme-color" content="#0c0c0b" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Social · Sage Studio</title>
+  <meta name="description" content="Our social media is on the way. We're getting ready quietly." />
+  <meta name="theme-color" content="#f7f3ec" />
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
   <style>
-    /* ── Coming-soon hero ── */
     .soc-hero {
       min-height: 100vh;
       display: flex;
@@ -21,24 +20,20 @@
       text-align: center;
       padding: 140px 24px 80px;
       background:
-        radial-gradient(circle at 70% 20%, rgba(255, 91, 31, 0.08) 0%, transparent 50%),
-        radial-gradient(circle at 30% 80%, rgba(91, 58, 79, 0.06) 0%, transparent 50%),
+        radial-gradient(circle at 70% 20%, rgba(106, 122, 85, 0.10) 0%, transparent 50%),
+        radial-gradient(circle at 30% 80%, rgba(197, 142, 133, 0.08) 0%, transparent 50%),
         linear-gradient(180deg, var(--bg) 0%, var(--bg-2) 100%);
       position: relative;
       overflow: hidden;
     }
-
     .soc-hero::before {
       content: "";
-      position: absolute;
-      inset: 0;
-      background-image:
-        radial-gradient(circle, rgba(12, 12, 11, 0.04) 1px, transparent 1px);
+      position: absolute; inset: 0;
+      background-image: radial-gradient(circle, rgba(45, 41, 37, 0.04) 1px, transparent 1px);
       background-size: 24px 24px;
       pointer-events: none;
       mask-image: radial-gradient(ellipse at center, black 30%, transparent 70%);
     }
-
     .soc-hero__brand {
       font-family: var(--serif);
       font-size: 28px;
@@ -66,19 +61,11 @@
       margin-bottom: 24px;
       position: relative;
     }
-    .soc-hero__tag .pulse {
-      width: 8px; height: 8px;
-      border-radius: 50%;
-      background: var(--accent);
-      position: relative;
-    }
+    .soc-hero__tag .pulse { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); position: relative; }
     .soc-hero__tag .pulse::after {
-      content: "";
-      position: absolute; inset: -4px;
-      border-radius: 50%;
-      border: 2px solid var(--accent);
-      opacity: 0.5;
-      animation: ping 1.6s ease-out infinite;
+      content: ""; position: absolute; inset: -4px;
+      border-radius: 50%; border: 2px solid var(--accent);
+      opacity: 0.5; animation: ping 1.6s ease-out infinite;
     }
 
     .soc-hero h1 {
@@ -92,163 +79,37 @@
       position: relative;
     }
     .soc-hero h1 i { color: var(--accent); font-style: italic; }
+    .soc-hero__sub { font-size: 1.1rem; color: var(--ink-soft); max-width: 560px; line-height: 1.8; margin: 0 auto 56px; position: relative; }
 
-    .soc-hero__sub {
-      font-size: 1.1rem;
-      color: var(--ink-soft);
-      max-width: 560px;
-      line-height: 1.8;
-      margin: 0 auto 56px;
-      position: relative;
-    }
-
-    .soc-icons {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 28px;
-      margin-bottom: 64px;
-      position: relative;
-    }
-
-    .soc-icon-group {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 12px;
-    }
-
+    .soc-icons { display: flex; flex-wrap: wrap; justify-content: center; gap: 28px; margin-bottom: 64px; position: relative; }
+    .soc-icon-group { display: flex; flex-direction: column; align-items: center; gap: 12px; }
     .soc-icon {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 64px;
-      height: 64px;
-      border-radius: 50%;
-      background: white;
-      border: 1px solid var(--line);
-      color: var(--stone);
-      font-size: 22px;
+      display: flex; align-items: center; justify-content: center;
+      width: 64px; height: 64px;
+      border-radius: 50%; background: white; border: 1px solid var(--line);
+      color: var(--stone); font-size: 22px;
       transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
-      position: relative;
-      overflow: hidden;
-      cursor: pointer;
+      position: relative; overflow: hidden; cursor: pointer;
     }
-
     .soc-icon::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: var(--ink);
-      transform: scale(0);
-      border-radius: 50%;
-      transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
-      z-index: 0;
+      content: ""; position: absolute; inset: 0;
+      background: var(--ink); transform: scale(0); border-radius: 50%;
+      transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1); z-index: 0;
     }
-
     .soc-icon i { position: relative; z-index: 1; transition: color 0.3s; }
-
-    .soc-icon:hover { transform: translateY(-4px); border-color: var(--ink); box-shadow: 0 12px 30px rgba(12,12,11,0.16); }
+    .soc-icon:hover { transform: translateY(-4px); border-color: var(--ink); box-shadow: 0 12px 30px rgba(45,41,37,0.16); }
     .soc-icon:hover::before { transform: scale(1); }
     .soc-icon:hover i { color: var(--bg); }
 
     .soc-icon-group:nth-child(1) .soc-icon:hover::before { background: linear-gradient(135deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); }
     .soc-icon-group:nth-child(2) .soc-icon:hover::before { background: #000; }
     .soc-icon-group:nth-child(3) .soc-icon:hover::before { background: #0a66c2; }
-    .soc-icon-group:nth-child(4) .soc-icon:hover::before { background: #1877f2; }
 
-    .soc-icon__label {
-      font-family: var(--sans);
-      font-size: 11px;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.16em;
-      color: var(--stone);
-    }
+    .soc-icon__label { font-family: var(--sans); font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.16em; color: var(--stone); }
 
-    .soc-divider {
-      width: 60px;
-      height: 1px;
-      background: var(--line);
-      margin: 0 auto 44px;
-      position: relative;
-    }
-
-    .soc-signup {
-      max-width: 500px;
-      width: 100%;
-      position: relative;
-    }
-
-    .soc-signup h3 {
-      font-family: var(--serif);
-      font-size: 1.8rem;
-      font-weight: 400;
-      color: var(--ink);
-      margin: 0 0 12px;
-    }
-
-    .soc-signup p {
-      font-size: 0.95rem;
-      color: var(--ink-soft);
-      margin: 0 0 24px;
-      line-height: 1.7;
-    }
-
-    .soc-signup__form {
-      display: flex;
-      gap: 0;
-      border: 1px solid var(--line);
-      border-radius: 999px;
-      overflow: hidden;
-      background: white;
-      transition: border-color 0.3s ease;
-    }
-    .soc-signup__form:focus-within { border-color: var(--accent); box-shadow: 0 0 0 4px rgba(255, 91, 31, 0.12); }
-
-    .soc-signup__input {
-      flex: 1;
-      border: 0;
-      padding: 16px 22px;
-      font-family: var(--sans);
-      font-size: 14px;
-      background: transparent;
-      color: var(--ink);
-      outline: 0;
-    }
-    .soc-signup__input::placeholder { color: var(--muted); }
-
-    .soc-signup__btn {
-      background: var(--ink);
-      border: 0;
-      padding: 16px 26px;
-      color: var(--bg);
-      font-family: var(--sans);
-      font-size: 12px;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.14em;
-      cursor: pointer;
-      transition: background 0.2s ease;
-      white-space: nowrap;
-    }
-    .soc-signup__btn:hover { background: var(--accent); }
-    .soc-signup__btn.success { background: var(--olive); pointer-events: none; }
-
-    .soc-back {
-      margin-top: 60px;
-      position: relative;
-    }
-    .soc-back a {
-      font-family: var(--sans);
-      font-size: 13px;
-      color: var(--stone);
-      letter-spacing: 0.06em;
-      transition: color 0.2s ease;
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-    }
+    .soc-divider { width: 60px; height: 1px; background: var(--line); margin: 0 auto 44px; position: relative; }
+    .soc-back { margin-top: 60px; position: relative; }
+    .soc-back a { font-family: var(--sans); font-size: 13px; color: var(--stone); letter-spacing: 0.06em; transition: color 0.2s ease; display: inline-flex; align-items: center; gap: 8px; }
     .soc-back a:hover { color: var(--accent); }
 
     @media (max-width: 720px) {
@@ -260,34 +121,26 @@
   </style>
 </head>
 <body>
-
   <a href="#main-content" class="skip-to-content">Skip to content</a>
+  <div class="page-loader"><span class="page-loader__brand">Sage<i>.</i></span></div>
 
-  <div class="page-loader">
-    <span class="page-loader__brand">Petal<i>.</i></span>
-  </div>
-
-  <!-- Compact navbar (always scrolled style) -->
-  <nav class="navbar scrolled" aria-label="Hlavná navigácia">
+  <nav class="navbar scrolled" aria-label="Main navigation">
     <div class="container">
-      <a href="index.html" class="navbar-brand">
-        <span class="navbar-brand__dot"></span>
-        <span>Petal<i>.</i></span>
-      </a>
+      <a href="index.html" class="navbar-brand"><span class="navbar-brand__dot"></span><span>Sage<i>.</i></span></a>
       <ul class="navbar-links">
-        <li><a href="index.html" data-i18n="nav.home">Domov</a></li>
-        <li><a href="services.html" data-i18n="nav.services">Služby</a></li>
-        <li><a href="portfolio.html" data-i18n="nav.portfolio">Portfólio</a></li>
-        <li><a href="pricing.html" data-i18n="nav.pricing">Cenník</a></li>
-        <li><a href="contact.html" data-i18n="nav.contact">Kontakt</a></li>
+        <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+        <li><a href="about.html" data-i18n="nav.about">About</a></li>
+        <li><a href="services.html" data-i18n="nav.services">Services</a></li>
+        <li><a href="portfolio.html" data-i18n="nav.portfolio">Work</a></li>
+        <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
       </ul>
       <div class="navbar-right">
         <div class="lang-switch" data-lang-switch>
+          <button class="lang-switch__btn" data-lang="en">EN</button>
           <button class="lang-switch__btn" data-lang="sk">SK</button>
           <button class="lang-switch__btn" data-lang="cs">CS</button>
-          <button class="lang-switch__btn" data-lang="en">EN</button>
         </div>
-        <a href="contact.html" class="navbar-cta" data-i18n="nav.cta">Nezáväzný dopyt</a>
+        <a href="contact.html" class="navbar-cta" data-i18n="nav.cta">Get in touch</a>
         <button class="navbar-hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
       </div>
     </div>
@@ -295,24 +148,24 @@
 
   <div class="mobile-menu">
     <ul class="mobile-menu__links">
-      <li><a href="index.html" data-i18n="nav.home">Domov</a></li>
-      <li><a href="services.html" data-i18n="nav.services">Služby</a></li>
-      <li><a href="portfolio.html" data-i18n="nav.portfolio">Portfólio</a></li>
-      <li><a href="pricing.html" data-i18n="nav.pricing">Cenník</a></li>
-      <li><a href="contact.html" data-i18n="nav.contact">Kontakt</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="portfolio.html">Work</a></li>
+      <li><a href="contact.html">Contact</a></li>
     </ul>
   </div>
 
   <main class="soc-hero" id="main-content">
-    <span class="soc-hero__brand">Petal<i>.</i></span>
+    <span class="soc-hero__brand">Sage<i>.</i></span>
 
     <div class="soc-hero__tag">
       <span class="pulse"></span>
-      Pripravujeme niečo pekné
+      Quietly preparing something
     </div>
 
-    <h1>Social media<br>coming <i>very soon.</i></h1>
-    <p class="soc-hero__sub">Pripravujeme Instagram, LinkedIn, TikTok a Facebook. Buďte medzi prvými, kto uvidí ukážky prác, behind-the-scenes a tipy pre malé firmy.</p>
+    <h1>Social channels<br>coming <i>soon.</i></h1>
+    <p class="soc-hero__sub">Instagram and LinkedIn are on the way. Until then, the website is the best place to see the work and write to me.</p>
 
     <div class="soc-icons">
       <div class="soc-icon-group">
@@ -320,50 +173,23 @@
         <span class="soc-icon__label">Instagram</span>
       </div>
       <div class="soc-icon-group">
-        <span class="soc-icon" aria-label="TikTok coming soon"><i class="fa-brands fa-tiktok"></i></span>
-        <span class="soc-icon__label">TikTok</span>
-      </div>
-      <div class="soc-icon-group">
-        <span class="soc-icon" aria-label="LinkedIn coming soon"><i class="fa-brands fa-linkedin-in"></i></span>
+        <span class="soc-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></span>
         <span class="soc-icon__label">LinkedIn</span>
       </div>
       <div class="soc-icon-group">
-        <span class="soc-icon" aria-label="Facebook coming soon"><i class="fa-brands fa-facebook-f"></i></span>
-        <span class="soc-icon__label">Facebook</span>
+        <span class="soc-icon" aria-label="Email"><i class="fa-solid fa-envelope"></i></span>
+        <span class="soc-icon__label">Email</span>
       </div>
     </div>
 
     <div class="soc-divider"></div>
 
-    <div class="soc-signup">
-      <h3>Dajte vedieť, keď spustíme</h3>
-      <p>Napíšte e-mail a pošleme správu, keď bude prvý príspevok vonku. Žiadny spam, jeden e-mail, hotovo.</p>
-      <form class="soc-signup__form" id="socForm" novalidate>
-        <input type="email" class="soc-signup__input" placeholder="tvoj@email.sk" aria-label="E-mail" required />
-        <button type="submit" class="soc-signup__btn">Dať vedieť</button>
-      </form>
-    </div>
-
     <div class="soc-back">
-      <a href="index.html"><i class="fa-solid fa-arrow-left"></i> Späť na úvod</a>
+      <a href="index.html"><i class="fa-solid fa-arrow-left"></i> Back to home</a>
     </div>
   </main>
 
   <script src="js/i18n.js"></script>
   <script src="js/main.js"></script>
-  <script>
-    (function () {
-      var f = document.getElementById('socForm');
-      var btn = f.querySelector('button');
-      f.addEventListener('submit', function (e) {
-        e.preventDefault();
-        var email = f.querySelector('input').value.trim();
-        if (!email || !/^\S+@\S+\.\S+$/.test(email)) return;
-        f.querySelector('input').disabled = true;
-        btn.textContent = '✓ Si v zozname';
-        btn.classList.add('success');
-      });
-    })();
-  </script>
 </body>
 </html>

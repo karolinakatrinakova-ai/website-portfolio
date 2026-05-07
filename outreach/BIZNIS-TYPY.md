@@ -7,7 +7,7 @@ This is the result of researching small businesses in Slovakia and the Czech Rep
 - **Where to find them** (lead sources)
 - **Pain point** to address in your cold email
 - **Realistic price range** (what they can afford)
-- **Petal Studio template fit** (which of the 6 templates matches)
+- **Sage Studio template fit** (which of the 6 demo templates matches in style)
 - **Innovative features that win** (what 2026 leaders do differently)
 
 ---
@@ -92,7 +92,6 @@ Reseached from current top-performing small-business sites (Wild at Heart, H.Blo
 
 ### Hair salons / beauty
 - ⭐ **Online booking** via Reservio / Booksy embedded
-- ⭐ **Floating WhatsApp button** for quick "is it possible?" questions
 - **Before/after gallery** with privacy consent flow
 - **Loyalty / referral program** mentioned
 - **Team member booking** — clients pick their stylist
@@ -108,7 +107,7 @@ Reseached from current top-performing small-business sites (Wild at Heart, H.Blo
 - **Multilingual** essential (we have it)
 - **Long-stay discount** auto-applied
 - **House rules** as a friendly read, not legalese
-- **Concierge contact** via WhatsApp for arrivals
+- **Concierge contact** via email / phone for arrivals
 
 ### Wedding planners / photographers
 - ⭐ **Editorial gallery** in big formats (we have it for Rove)
@@ -143,7 +142,7 @@ Reseached from current top-performing small-business sites (Wild at Heart, H.Blo
 - **Texture & human touch** — real photos > stock, slight imperfection > sterile minimalism
 - **Subtle motion** — scroll-driven reveals, no autoplay video, no animation if user prefers reduced motion
 - **Local SEO + schema.org** — non-negotiable for any local business
-- **WhatsApp button** — Slovak/Czech small businesses live on WhatsApp
+- **Email + phone clearly visible** — Slovak/Czech small businesses respond best to direct contact
 
 ---
 

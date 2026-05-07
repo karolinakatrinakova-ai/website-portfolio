@@ -8,5 +8,5 @@
   "gallery": { "label": "Galéria", "title": "Naša práca" },
   "reviews": { "label": "Recenzie", "title": "Klientky o nás" },
   "contact": { "label": "Kontakt", "title": "Otvorené dnes do 19:00", "address": "Štúrova 12, 811 02 Bratislava", "hours_mon": "Po–Pi 9:00 – 19:00", "hours_sat": "So 9:00 – 14:00", "hours_sun": "Ne zatvorené" },
-  "footer": { "tagline": "Salón Lumi · od 2018 v centre Bratislavy", "rights": "© 2026 Salón Lumi · vytvoril petal.studio" }
+  "footer": { "tagline": "Salón Lumi · od 2018 v centre Bratislavy", "rights": "© 2026 Salón Lumi · vytvoril sage.design" }
 }

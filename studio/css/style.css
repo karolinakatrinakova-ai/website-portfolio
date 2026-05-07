@@ -14,23 +14,23 @@
 @import url("components/testimonials.css");
 
 :root {
-  /* Brand palette — neutral, bold, modern */
-  --bg:           #f6f3ee;
-  --bg-2:         #ece6dc;
-  --bg-3:         #faf7f1;
-  --ink:          #0c0c0b;
-  --ink-soft:     #34322f;
-  --stone:        #6e685d;
-  --muted:        #9a9285;
+  /* Brand palette — Sage Studio · warm cream + sage green + dusty rose */
+  --bg:           #f7f3ec;       /* warm cream */
+  --bg-2:         #ede5d2;       /* sand */
+  --bg-3:         #fbf8f1;       /* lightest cream */
+  --ink:          #2b2925;       /* warm dark, never pure black */
+  --ink-soft:     #4d473d;
+  --stone:        #8d8676;
+  --muted:        #b6ac95;
   --line:         #d8cfc1;
-  --line-soft:    rgba(108, 100, 86, 0.16);
+  --line-soft:    rgba(45, 41, 37, 0.10);
 
-  --accent:       #ff5b1f;       /* signature orange */
-  --accent-deep:  #d44614;
-  --accent-soft:  #fbe1d2;
+  --accent:       #6a7a55;       /* sage green */
+  --accent-deep:  #4f5c3f;
+  --accent-soft:  #e8ede0;
 
-  --olive:        #7e8a5b;
-  --plum:         #5b3a4f;
+  --olive:        #7a8c6e;
+  --plum:         #c58e85;       /* dusty rose pastel */
 
   --shadow-sm:    0 1px 2px rgba(12, 12, 11, 0.04);
   --shadow-md:    0 8px 30px rgba(12, 12, 11, 0.08);
