@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sociálne siete · Salón Lumi</title>
+  <meta name="description" content="Salón Lumi na Instagrame, Facebooku a TikToku. Spustenie čoskoro." />
+  <meta name="theme-color" content="#b97a64" />
+  <link rel="icon" type="image/svg+xml" href="../../studio/favicon.svg" />
+  <link rel="stylesheet" href="css/theme.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    body { background: var(--bg); }
+    .soc-wrap {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 120px 24px 80px;
+      background:
+        radial-gradient(circle at 25% 25%, rgba(185, 122, 100, 0.08) 0%, transparent 50%),
+        radial-gradient(circle at 75% 75%, rgba(140, 135, 112, 0.06) 0%, transparent 50%),
+        var(--bg);
+    }
+    .soc-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 8px 18px 8px 12px;
+      background: var(--accent-soft);
+      color: var(--accent-deep);
+      border-radius: 999px;
+      font-size: 0.86rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      margin-bottom: 26px;
+    }
+    .soc-tag .pulse { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); position: relative; }
+    .soc-tag .pulse::after { content: ""; position: absolute; inset: -4px; border-radius: 50%; border: 2px solid var(--accent); opacity: 0.5; animation: ping 1.6s ease-out infinite; }
+    .soc-wrap h1 { font-family: var(--serif); font-size: clamp(2.6rem, 6vw, 5rem); margin: 0 0 22px; color: var(--ink); }
+    .soc-wrap h1 i { color: var(--accent); }
+    .soc-wrap p { font-size: 1.05rem; color: var(--ink-soft); max-width: 560px; line-height: 1.8; margin: 0 auto 50px; }
+    .soc-grid { display: flex; flex-wrap: wrap; gap: 28px; justify-content: center; margin-bottom: 56px; }
+    .soc-pill { display: flex; flex-direction: column; align-items: center; gap: 12px; }
+    .soc-bubble {
+      width: 64px; height: 64px;
+      border-radius: 50%;
+      background: white;
+      border: 1px solid var(--line);
+      display: inline-flex; align-items: center; justify-content: center;
+      font-size: 22px;
+      color: var(--stone);
+      transition: all 0.4s ease;
+      cursor: pointer;
+    }
+    .soc-bubble:hover { transform: translateY(-4px); border-color: var(--accent); color: var(--accent); box-shadow: 0 12px 30px rgba(185, 122, 100, 0.18); }
+    .soc-pill span:last-child { font-size: 11px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: var(--stone); }
+    .soc-back { font-size: 13px; color: var(--stone); margin-top: 30px; display: inline-flex; align-items: center; gap: 8px; transition: color 0.2s; }
+    .soc-back:hover { color: var(--accent); }
+  </style>
+</head>
+<body>
+  <nav class="navbar scrolled">
+    <div class="container">
+      <a href="index.html" class="navbar-brand"><span class="navbar-brand__dot"></span><span>Lumi</span></a>
+      <ul class="navbar-links">
+        <li><a href="index.html#sluzby" data-i18n="nav.services">Služby</a></li>
+        <li><a href="index.html#tim" data-i18n="nav.team">Tím</a></li>
+        <li><a href="index.html#kontakt" data-i18n="nav.contact">Kontakt</a></li>
+      </ul>
+      <div class="navbar-right">
+        <a href="index.html#kontakt" class="navbar-cta" data-i18n="nav.book">Rezervovať</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="soc-wrap">
+    <div class="soc-tag"><span class="pulse"></span> Pripravujeme niečo pekné</div>
+    <h1>Salón Lumi je čoskoro<br>aj <i>online.</i></h1>
+    <p>Pripravujeme Instagram a Facebook salónu — fotky práce, recenzie, otváracie hodiny, akcie. Sledujte nás, aby ste boli prvé, kto sa dozvie.</p>
+
+    <div class="soc-grid">
+      <div class="soc-pill"><span class="soc-bubble"><i class="fa-brands fa-instagram"></i></span><span>Instagram</span></div>
+      <div class="soc-pill"><span class="soc-bubble"><i class="fa-brands fa-facebook-f"></i></span><span>Facebook</span></div>
+      <div class="soc-pill"><span class="soc-bubble"><i class="fa-brands fa-tiktok"></i></span><span>TikTok</span></div>
+    </div>
+
+    <a href="index.html" class="soc-back"><i class="fa-solid fa-arrow-left"></i> Späť na úvod</a>
+  </main>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

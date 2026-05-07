@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Aria · yoga & pilates studio · Bratislava</title>
+  <meta name="description" content="A small movement studio in Bratislava — vinyasa, yin, pilates and breath work. Try a full week for €25." />
+  <meta name="theme-color" content="#f5f1e8" />
+  <link rel="stylesheet" href="css/theme.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+
+  <a href="#main" class="skip-to-content">Skip to content</a>
+  <div class="page-loader"><span class="page-loader__brand">Aria<i>.</i></span></div>
+  <div class="reading-progress" aria-hidden="true"></div>
+
+  <nav class="navbar" aria-label="Main navigation">
+    <div class="container">
+      <a href="index.html" class="navbar-brand"><span class="navbar-brand__dot"></span><span>Aria<i>.</i></span></a>
+      <ul class="navbar-links">
+        <li><a href="#schedule" data-i18n="nav.schedule">Schedule</a></li>
+        <li><a href="#classes" data-i18n="nav.classes">Classes</a></li>
+        <li><a href="#teachers" data-i18n="nav.teachers">Teachers</a></li>
+        <li><a href="#pricing" data-i18n="nav.pricing">Pricing</a></li>
+        <li><a href="#contact" data-i18n="nav.contact">Visit</a></li>
+      </ul>
+      <div class="navbar-right">
+        <div class="lang-switch" data-lang-switch>
+          <button class="lang-switch__btn" data-lang="en">EN</button>
+          <button class="lang-switch__btn" data-lang="sk">SK</button>
+          <button class="lang-switch__btn" data-lang="cs">CS</button>
+        </div>
+        <a href="#intro-week" class="navbar-cta" data-i18n="nav.cta">Book a class</a>
+        <button class="navbar-hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mobile-menu">
+    <ul class="mobile-menu__links">
+      <li><a href="#schedule" data-i18n="nav.schedule">Schedule</a></li>
+      <li><a href="#classes" data-i18n="nav.classes">Classes</a></li>
+      <li><a href="#teachers" data-i18n="nav.teachers">Teachers</a></li>
+      <li><a href="#pricing" data-i18n="nav.pricing">Pricing</a></li>
+      <li><a href="#contact" data-i18n="nav.contact">Visit</a></li>
+    </ul>
+    <div class="mobile-menu__cta">
+      <a href="#intro-week" class="btn btn-accent" data-i18n="nav.cta">Book a class</a>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <header class="banner" id="main">
+    <div class="banner__bg" aria-hidden="true">
+      <img src="https://images.unsplash.com/photo-1545205597-3d9d02c29597?auto=format&fit=crop&w=2400&q=82" alt="" />
+    </div>
+    <div class="banner__veil"></div>
+    <div class="container">
+      <p class="hero-label" data-i18n="hero.label">Yoga · pilates · breath · Bratislava</p>
+      <h1>
+        <span class="hero-line" data-i18n="hero.line1">A studio that</span>
+        <span class="hero-line hero-line--italic" data-i18n="hero.line2">moves at the pace</span>
+        <span class="hero-line" data-i18n="hero.line3">of your breath.</span>
+      </h1>
+      <div class="hero-rule"></div>
+      <h2 data-i18n="hero.sub">Aria is a small movement studio in the courtyard at Hviezdoslavovo 14. Vinyasa, yin, pilates, breath work — small classes, real teachers, no influencer noise.</h2>
+      <div class="hero-buttons">
+        <a href="#intro-week" class="btn btn-accent btn-lg" data-i18n="hero.btn_primary">Try a week — €25</a>
+        <a href="#schedule" class="btn btn-ghost-light btn-lg" data-i18n="hero.btn_secondary">See the schedule</a>
+      </div>
+    </div>
+    <a href="#intro-week" class="scroll-indicator" aria-label="Scroll"><span class="scroll-indicator__line"></span></a>
+  </header>
+
+  <!-- INTRO WEEK BANNER -->
+  <section class="section fade-in" id="intro-week">
+    <div class="container">
+      <div class="intro-banner">
+        <p class="intro-banner__label" data-i18n="intro.label">First time at Aria?</p>
+        <h2 data-i18n="intro.title">A full week, all classes, €25.</h2>
+        <p data-i18n="intro.text">Take any class on the schedule for 7 consecutive days. No commitment, no auto-renewal. If you fall in love with us, you can keep going on a regular plan after.</p>
+        <p class="intro-banner__price">€25 <span data-i18n="intro.span">/ 7 days · unlimited</span></p>
+        <a href="mailto:hello@aria.studio?subject=Intro%20week" class="btn btn-secondary btn-lg" style="margin-top:24px;background:white;color:var(--accent-deep);border-color:white" data-i18n="intro.cta">Book my intro week</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CLASS TYPES -->
+  <section class="section fade-in" id="classes">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label" data-i18n="cls.label">Classes</span>
+        <h2 data-i18n="cls.title">Four ways into the practice</h2>
+        <p data-i18n="cls.text">Different bodies, different days, different reasons. Pick what feels right today — there's no hierarchy.</p>
+      </div>
+      <div class="class-types">
+        <span class="class-type-chip"><span data-i18n="cls.t1">Vinyasa</span></span>
+        <span class="class-type-chip class-type-chip--yin"><span data-i18n="cls.t2">Yin</span></span>
+        <span class="class-type-chip class-type-chip--pilates"><span data-i18n="cls.t3">Pilates</span></span>
+        <span class="class-type-chip class-type-chip--meditation"><span data-i18n="cls.t4">Meditation &amp; breath</span></span>
+      </div>
+
+      <div class="cards stagger-children">
+        <article class="icon-card">
+          <span class="icon-card__num">01</span>
+          <h3 data-i18n="cls.c1.title">Vinyasa Flow</h3>
+          <p class="card__tag" data-i18n="cls.c1.tag">All levels · 60 min</p>
+          <p data-i18n="cls.c1.text">Movement linked to breath. We move, we sweat a little, we wake up the body. The bread-and-butter class.</p>
+        </article>
+        <article class="icon-card">
+          <span class="icon-card__num">02</span>
+          <h3 data-i18n="cls.c2.title">Yin &amp; restorative</h3>
+          <p class="card__tag" data-i18n="cls.c2.tag">Beginner-friendly · 75 min</p>
+          <p data-i18n="cls.c2.text">Long-held passive poses, supported with bolsters and blocks. The class your nervous system has been asking for.</p>
+        </article>
+        <article class="icon-card">
+          <span class="icon-card__num">03</span>
+          <h3 data-i18n="cls.c3.title">Mat Pilates</h3>
+          <p class="card__tag" data-i18n="cls.c3.tag">Strength focus · 55 min</p>
+          <p data-i18n="cls.c3.text">Core, glutes, and the deep stabilizers most people forget exist. Strong, slow, precise.</p>
+        </article>
+        <article class="icon-card">
+          <span class="icon-card__num">04</span>
+          <h3 data-i18n="cls.c4.title">Breath &amp; meditation</h3>
+          <p class="card__tag" data-i18n="cls.c4.tag">All levels · 30 min</p>
+          <p data-i18n="cls.c4.text">No mat needed. Just sit. We guide breath patterns and a short meditation. Best on a Wednesday lunchtime.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCHEDULE PREVIEW (innovative: weekly grid with class-type colour codes) -->
+  <section class="section section--alt fade-in" id="schedule">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label" data-i18n="sch.label">Weekly schedule</span>
+        <h2 data-i18n="sch.title">A look at this week</h2>
+        <p data-i18n="sch.text">Booking opens 7 days in advance. Click any class to reserve. Waitlist activates automatically once a class fills up.</p>
+      </div>
+
+      <div class="schedule">
+        <div class="schedule__head"></div>
+        <div class="schedule__head">Mon</div>
+        <div class="schedule__head">Tue</div>
+        <div class="schedule__head">Wed</div>
+        <div class="schedule__head">Thu</div>
+        <div class="schedule__head">Fri</div>
+        <div class="schedule__head">Sat</div>
+        <div class="schedule__head">Sun</div>
+
+        <div class="schedule__time">7:00</div>
+        <div class="schedule__class schedule__class--vinyasa"><strong>Vinyasa</strong><span>Ema · 60'</span></div>
+        <div></div>
+        <div class="schedule__class schedule__class--vinyasa"><strong>Vinyasa</strong><span>Ema · 60'</span></div>
+        <div></div>
+        <div class="schedule__class schedule__class--vinyasa"><strong>Vinyasa</strong><span>Sara · 60'</span></div>
+        <div></div>
+        <div></div>
+
+        <div class="schedule__time">9:00</div>
+        <div></div>
+        <div class="schedule__class schedule__class--pilates"><strong>Pilates</strong><span>Lara · 55'</span></div>
+        <div></div>
+        <div class="schedule__class schedule__class--pilates"><strong>Pilates</strong><span>Lara · 55'</span></div>
+        <div></div>
+        <div class="schedule__class schedule__class--vinyasa"><strong>Slow flow</strong><span>Sara · 75'</span></div>
+        <div class="schedule__class schedule__class--yin"><strong>Yin</strong><span>Marek · 75'</span></div>
+
+        <div class="schedule__time">12:00</div>
+        <div></div>
+        <div></div>
+        <div class="schedule__class schedule__class--meditation"><strong>Breath</strong><span>Marek · 30'</span></div>
+        <div></div>
+        <div></div>
+        <div class="schedule__class schedule__class--pilates"><strong>Pilates</strong><span>Lara · 55'</span></div>
+        <div></div>
+
+        <div class="schedule__time">17:30</div>
+        <div class="schedule__class schedule__class--vinyasa"><strong>Vinyasa</strong><span>Ema · 60'</span></div>
+        <div class="schedule__class schedule__class--yin"><strong>Yin</strong><span>Marek · 75'</span></div>
+        <div class="schedule__class schedule__class--vinyasa"><strong>Vinyasa</strong><span>Sara · 60'</span></div>
+        <div class="schedule__class schedule__class--pilates"><strong>Pilates</strong><span>Lara · 55'</span></div>
+        <div class="schedule__class schedule__class--vinyasa"><strong>Power flow</strong><span>Ema · 60'</span></div>
+        <div></div>
+        <div class="schedule__class schedule__class--meditation"><strong>Restorative</strong><span>Marek · 75'</span></div>
+
+        <div class="schedule__time">19:30</div>
+        <div class="schedule__class schedule__class--yin"><strong>Yin</strong><span>Marek · 75'</span></div>
+        <div></div>
+        <div class="schedule__class schedule__class--pilates"><strong>Pilates</strong><span>Lara · 55'</span></div>
+        <div class="schedule__class schedule__class--vinyasa"><strong>Slow flow</strong><span>Sara · 75'</span></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
+      <p style="text-align:center;margin-top:30px;color:var(--stone);font-size:0.9rem" data-i18n="sch.legend">Tap any class to book in our app · Holidays off · Drop-ins accepted up to 5 minutes before</p>
+    </div>
+  </section>
+
+  <!-- TEACHERS -->
+  <section class="section fade-in" id="teachers">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label" data-i18n="tch.label">Teachers</span>
+        <h2 data-i18n="tch.title">Four humans, four ways into the practice.</h2>
+        <p data-i18n="tch.text">All certified, all teaching for 5+ years. We pick teachers based on how they make you feel after a class — not Instagram followers.</p>
+      </div>
+      <div class="teachers stagger-children">
+        <div class="teacher-card">
+          <div class="teacher-card__avatar"><img loading="lazy" src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=400&q=80" alt="Ema" /></div>
+          <h4>Ema</h4>
+          <p data-i18n="tch.t1.role">Vinyasa &amp; power flow · 8 years</p>
+        </div>
+        <div class="teacher-card">
+          <div class="teacher-card__avatar"><img loading="lazy" src="https://images.unsplash.com/photo-1593810450967-f9c42742e326?auto=format&fit=crop&w=400&q=80" alt="Sara" /></div>
+          <h4>Sara</h4>
+          <p data-i18n="tch.t2.role">Slow flow &amp; vinyasa · 6 years</p>
+        </div>
+        <div class="teacher-card">
+          <div class="teacher-card__avatar"><img loading="lazy" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=400&q=80" alt="Lara" /></div>
+          <h4>Lara</h4>
+          <p data-i18n="tch.t3.role">Mat pilates &amp; pre/postnatal · 5 years</p>
+        </div>
+        <div class="teacher-card">
+          <div class="teacher-card__avatar"><img loading="lazy" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80" alt="Marek" /></div>
+          <h4>Marek</h4>
+          <p data-i18n="tch.t4.role">Yin, restorative &amp; breath · 9 years</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section class="section section--alt fade-in" id="pricing">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label" data-i18n="pr.label">Pricing</span>
+        <h2 data-i18n="pr.title">Pay how it suits you</h2>
+        <p data-i18n="pr.text">No long-term contracts. Cancel any membership anytime — no questions, no fees.</p>
+      </div>
+
+      <div class="tiers">
+        <article class="tier fade-in">
+          <h3 data-i18n="pr.t1.title">Drop-in</h3>
+          <p class="tier__price" data-i18n="pr.t1.price">€14</p>
+          <p class="tier__sub" data-i18n="pr.t1.sub">Pay per class</p>
+          <ul>
+            <li data-i18n="pr.t1.f1">1 class</li>
+            <li data-i18n="pr.t1.f2">Any class type</li>
+            <li data-i18n="pr.t1.f3">Mat &amp; props included</li>
+            <li data-i18n="pr.t1.f4">Book up to 7 days ahead</li>
+          </ul>
+          <a href="mailto:hello@aria.studio" class="btn btn-secondary" data-i18n="pr.cta">Book a class</a>
+        </article>
+
+        <article class="tier tier--feat fade-in">
+          <span class="tier__badge" data-i18n="pr.t2.badge">Most popular</span>
+          <h3 data-i18n="pr.t2.title">Unlimited monthly</h3>
+          <p class="tier__price" data-i18n="pr.t2.price">€89/mo</p>
+          <p class="tier__sub" data-i18n="pr.t2.sub">All classes, every day</p>
+          <ul>
+            <li data-i18n="pr.t2.f1">Unlimited classes</li>
+            <li data-i18n="pr.t2.f2">All teachers, all class types</li>
+            <li data-i18n="pr.t2.f3">Priority booking (10 days ahead)</li>
+            <li data-i18n="pr.t2.f4">Workshops 20% off</li>
+            <li data-i18n="pr.t2.f5">Pause up to 2 weeks free</li>
+            <li data-i18n="pr.t2.f6">Cancel anytime</li>
+          </ul>
+          <a href="mailto:hello@aria.studio?subject=Unlimited%20membership" class="btn btn-accent" data-i18n="pr.cta">Start membership</a>
+        </article>
+
+        <article class="tier fade-in">
+          <h3 data-i18n="pr.t3.title">10-class pack</h3>
+          <p class="tier__price" data-i18n="pr.t3.price">€115</p>
+          <p class="tier__sub" data-i18n="pr.t3.sub">Use within 4 months</p>
+          <ul>
+            <li data-i18n="pr.t3.f1">10 classes</li>
+            <li data-i18n="pr.t3.f2">Save €25 vs drop-in</li>
+            <li data-i18n="pr.t3.f3">Shareable with one partner</li>
+            <li data-i18n="pr.t3.f4">Mat &amp; props included</li>
+          </ul>
+          <a href="mailto:hello@aria.studio?subject=10-class%20pack" class="btn btn-secondary" data-i18n="pr.cta">Buy a pack</a>
+        </article>
+      </div>
+
+      <p style="text-align:center;margin-top:30px;color:var(--stone);font-size:0.9rem" data-i18n="pr.note">Student / senior 20% off · Couples membership €159/mo · Corporate plans on request.</p>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section fade-in">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label" data-i18n="rev.label">Reviews</span>
+        <h2 data-i18n="rev.title">What our students say</h2>
+      </div>
+      <div class="testimonial-slider">
+        <div class="testimonial-slider__track">
+          <article class="testimonial-card">
+            <p class="testimonial-card__stars">★ ★ ★ ★ ★</p>
+            <p class="testimonial-card__quote" data-i18n="rev.t1">"I came for vinyasa, stayed for the yin. The studio is small — 12 mats max — and I've never felt rushed. The teachers know your name."</p>
+            <div class="testimonial-card__author"><div><p class="testimonial-card__name">Klára</p><p class="testimonial-card__role">2 years at Aria</p></div></div>
+          </article>
+          <article class="testimonial-card">
+            <p class="testimonial-card__stars">★ ★ ★ ★ ★</p>
+            <p class="testimonial-card__quote" data-i18n="rev.t2">"I was sceptical about the intro week. By day 4 I'd booked an unlimited monthly. The schedule fits a 9-to-5 perfectly."</p>
+            <div class="testimonial-card__author"><div><p class="testimonial-card__name">Andrej</p><p class="testimonial-card__role">Member since 2024</p></div></div>
+          </article>
+          <article class="testimonial-card">
+            <p class="testimonial-card__stars">★ ★ ★ ★ ★</p>
+            <p class="testimonial-card__quote" data-i18n="rev.t3">"I do Lara's Pilates twice a week. My back hasn't hurt in 3 months. That's the metric I care about."</p>
+            <div class="testimonial-card__author"><div><p class="testimonial-card__name">Petra</p><p class="testimonial-card__role">Member since 2023</p></div></div>
+          </article>
+          <article class="testimonial-card">
+            <p class="testimonial-card__stars">★ ★ ★ ★ ★</p>
+            <p class="testimonial-card__quote" data-i18n="rev.t4">"The breath class on Wednesday at noon is genuinely the best 30 minutes of my work week. I lock it in like a meeting."</p>
+            <div class="testimonial-card__author"><div><p class="testimonial-card__name">Tomáš</p><p class="testimonial-card__role">Member since 2024</p></div></div>
+          </article>
+          <article class="testimonial-card">
+            <p class="testimonial-card__stars">★ ★ ★ ★ ★</p>
+            <p class="testimonial-card__quote" data-i18n="rev.t5">"I'm not a yoga person. I do strength and run. The pilates here actually improved my running form. Quietly impressive."</p>
+            <div class="testimonial-card__author"><div><p class="testimonial-card__name">Janka</p><p class="testimonial-card__role">Member since 2024</p></div></div>
+          </article>
+        </div>
+        <div class="testimonial-slider__nav">
+          <button class="testimonial-slider__btn testimonial-slider__btn--prev" aria-label="Previous"><i class="fa-solid fa-chevron-left"></i></button>
+          <div class="testimonial-slider__dots"></div>
+          <button class="testimonial-slider__btn testimonial-slider__btn--next" aria-label="Next"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section--alt fade-in">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label" data-i18n="faq.label">FAQ</span>
+        <h2 data-i18n="faq.title">Common questions</h2>
+      </div>
+      <div class="faq">
+        <details class="faq__item"><summary class="faq__question" data-i18n="faq.q1">I've never done yoga. Where do I start?</summary><p class="faq__answer" data-i18n="faq.a1">Slow flow, yin or pilates. The intro week (€25) is designed for exactly this — try them all in 7 days, see what fits.</p></details>
+        <details class="faq__item"><summary class="faq__question" data-i18n="faq.q2">Do you provide mats?</summary><p class="faq__answer" data-i18n="faq.a2">Yes. Free mats and props (blocks, straps, bolsters) are available — please bring your own water bottle and a small towel.</p></details>
+        <details class="faq__item"><summary class="faq__question" data-i18n="faq.q3">Can I pause my membership?</summary><p class="faq__answer" data-i18n="faq.a3">Up to 2 weeks per month, free. For longer pauses (holidays, injury) email us — we always sort it out.</p></details>
+        <details class="faq__item"><summary class="faq__question" data-i18n="faq.q4">What if a class fills up?</summary><p class="faq__answer" data-i18n="faq.a4">Join the waitlist when booking — when somebody cancels, the system promotes the next person automatically and emails you.</p></details>
+        <details class="faq__item"><summary class="faq__question" data-i18n="faq.q5">Do you do private sessions?</summary><p class="faq__answer" data-i18n="faq.a5">Yes. €60/hour with any teacher. Useful if you're returning from injury or want to focus on a specific practice. Email us.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section--dark fade-in" id="contact">
+    <div class="container">
+      <div class="two-up">
+        <div>
+          <span class="section-label" style="color:var(--accent)" data-i18n="contact.label">Visit us</span>
+          <h2 style="color:var(--bg)" data-i18n="contact.title">Hviezdoslavovo námestie 14</h2>
+          <p style="color:rgba(245,241,232,0.85);max-width:520px" data-i18n="contact.text">Studio entrance is through the courtyard — look for the sage-green door. Tram 4 stops 60 metres away. Parking in Eurovea (5 min walk).</p>
+          <div style="margin-top:24px;display:flex;flex-direction:column;gap:8px;color:var(--bg)">
+            <p><i class="fa-solid fa-envelope" style="margin-right:8px;color:var(--accent)"></i>hello@aria.studio</p>
+            <p><i class="fa-solid fa-phone" style="margin-right:8px;color:var(--accent)"></i>+421 900 777 888</p>
+            <p><i class="fa-brands fa-instagram" style="margin-right:8px;color:var(--accent)"></i>@aria.studio.bratislava</p>
+          </div>
+        </div>
+        <div>
+          <span class="section-label" style="color:var(--accent)" data-i18n="contact.hours_title">Studio hours</span>
+          <ul style="list-style:none;padding:0;margin:14px 0 0;color:var(--bg);line-height:2">
+            <li data-i18n="contact.h1">Mon–Fri · 6:30 – 21:00</li>
+            <li data-i18n="contact.h2">Saturday · 8:00 – 18:00</li>
+            <li data-i18n="contact.h3">Sunday · 9:00 – 14:00</li>
+          </ul>
+          <a href="https://maps.google.com/?q=Hviezdoslavovo+namestie+14+Bratislava" class="btn btn-accent" target="_blank" rel="noopener" style="margin-top:24px" data-i18n="contact.map">Open in Maps →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p class="footer-bottom__copy">© 2026 Aria · made by Petal Studio</p>
+        <div class="footer-bottom__links">
+          <a href="../../studio/index.html">Petal Studio</a>
+          <a href="#schedule" data-i18n="nav.schedule">Schedule</a>
+          <a href="#pricing" data-i18n="nav.pricing">Pricing</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <div class="cookie-banner" id="cookieBanner">
+    <div class="cookie-banner__inner">
+      <p data-i18n="cookies.text">Cookies help us remember your booking preferences.</p>
+      <div class="cookie-banner__actions">
+        <button class="cookie-banner__btn cookie-banner__btn--accept" data-cookie="accept" data-i18n="cookies.accept">Accept</button>
+        <button class="cookie-banner__btn cookie-banner__btn--decline" data-cookie="decline" data-i18n="cookies.decline">Decline</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

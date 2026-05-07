@@ -1,169 +1,162 @@
-# Webovky · webstudio kit
+# Petal Studio · web design kit
 
-Profesionálny štartovací kit na živnosť tvorby webov pre malé firmy v SK/CZ.
+Hand-built websites for small businesses in Slovakia and the Czech Republic.
 
-Inšpirované [Bloom Studio](https://bloomstudio.cz) projektom — rovnaká úroveň dizajnu, animácií a UX, len pre tvoj webstudio brand a pre 4 rôzne biznis archetypy ako šablóny.
+Studio brand: **Petal** — short, modern, Bloom-adjacent but distinct. Tagline: *"Websites that grow your small business."*
 
-## Čo je vnútri
+Inspired by Bloom Studio's design level — same animations, micro-interactions, attention to detail — applied to a portfolio hub plus 6 industry-specific demo websites.
+
+## What's in the box
 
 ```
 Webovky/
-├── studio/                      ← Tvoj webstudio brand (rozcestník + multi-page)
-│   ├── index.html               ← úvodná stránka
-│   ├── about.html               ← príbeh, hodnoty, ja
-│   ├── services.html            ← služby
-│   ├── process.html             ← ako spolupracujeme
-│   ├── pricing.html             ← cenník
-│   ├── portfolio.html           ← všetky 4 ukážky
-│   ├── contact.html             ← kontakt + formulár
-│   ├── social.html              ← coming-soon pre social media
-│   ├── privacy.html             ← GDPR
-│   ├── 404.html                 ← chybová stránka
-│   ├── css/                     ← ucelený design system
-│   ├── js/                      ← interakcie + i18n
-│   ├── i18n/                    ← preklady (SK / CS / EN)
-│   └── images/
+├── studio/                          ← Petal Studio brand (portfolio hub + multi-page)
+│   ├── index.html                   ← landing page (English default)
+│   ├── about.html                   ← About Me · Kofio experience + LinkedIn + offer
+│   ├── services.html                ← services
+│   ├── process.html                 ← how we work
+│   ├── pricing.html                 ← packages
+│   ├── portfolio.html               ← all 6 demos
+│   ├── contact.html                 ← contact form
+│   ├── social.html                  ← social media coming-soon
+│   ├── privacy.html                 ← GDPR
+│   ├── terms.html                   ← T&C
+│   ├── 404.html                     ← error page
+│   ├── css/                         ← design system (1100+ lines)
+│   ├── js/                          ← interactions + i18n
+│   ├── i18n/                        ← EN (primary) · SK · CS translations
+│   └── favicon.svg
 │
-├── templates/                   ← 4 ukážkové weby pre rôzne biznis typy
-│   ├── 01-salon-lumi/           ← Kaderníctvo (warm / elegant)
-│   ├── 02-cafe-luna/            ← Kaviareň + brunch (NEW)
-│   ├── 03-fyzio-plus/           ← Fyzioterapia (NEW)
-│   └── 04-studio-novak/         ← Fotograf (NEW)
+├── templates/                       ← 6 industry demos (each its own folder)
+│   ├── 01-lumi-hair-salon/          ← Lumi · hair salon (warm / elegant)
+│   ├── 02-luna-cafe/                ← Luna · café & brunch
+│   ├── 03-mend-physiotherapy/       ← Mend · physiotherapy clinic
+│   ├── 04-rove-photographer/        ← Rove · wedding/portrait photographer
+│   ├── 05-stem-florist/             ← Stem · botanical florist (NEW)
+│   └── 06-aria-yoga-studio/         ← Aria · yoga & pilates studio (NEW)
 │
-├── outreach/                    ← Hľadanie a oslovovanie klientov
-│   ├── STRATEGIA.md
-│   ├── BIZNIS-TYPY.md           ← detailná analýza segmentov SK + CZ
-│   ├── EMAIL-SABLONY.md
+├── outreach/                        ← finding & contacting clients
+│   ├── STRATEGIA.md                 ← weekly outreach playbook
+│   ├── BIZNIS-TYPY.md               ← deep market analysis · 30 segments
+│   │                                  + REALISTIC-FIT shortlist (Tier A/B/C)
+│   │                                  + INNOVATIVE FEATURES per segment (2026)
+│   ├── EMAIL-SABLONY.md             ← cold email scripts (SK / CS)
 │   └── tracker.csv
 │
 └── docs/
-    ├── NASADENIE.md             ← deploy + Github Pages + doména
-    ├── DIZAJN-SYSTEM.md         ← ako rozšíriť / customizovať
-    └── KONFIGURACIA-CLIENT.md   ← checklist pre nový klientsky web
+    ├── NASADENIE.md                 ← deploy · GitHub Pages / Netlify / Vercel
+    ├── DIZAJN-SYSTEM.md             ← how to customize the design system
+    └── KONFIGURACIA-CLIENT.md       ← client onboarding checklist
 ```
 
-## Ako to spustiť (lokálne)
+## Brand decisions
 
-Stačí dvojklik na ktorýkoľvek `index.html` v Sublime / Finderi → otvorí sa v prehliadači.
+- **Studio name**: `Petal Studio` (replaced the placeholder `webovky`)
+- **Default UI language**: **English** — switchable to SK / CS via the language toggle in the navbar
+- **Primary domain (suggested)**: `petal.studio` or `petal.sk`
+- **localStorage namespace**: `petal_*` (lang, cookies, intro, announcement)
 
-Pre serióznejšie testovanie spusti lokálny server:
+## Template archetype names
+
+Each template is a starting point — clients customize copy, photos, palette.
+
+| # | Slug | Brand | Industry | Distinct innovative features |
+|---|---|---|---|---|
+| 01 | `01-lumi-hair-salon` | **Lumi** | Hair salon | Online booking, floating WhatsApp, gallery, price list |
+| 02 | `02-luna-cafe` | **Luna** | Café · brunch · bistro | Menu, IG feed, hours, brunch card |
+| 03 | `03-mend-physiotherapy` | **Mend** | Physiotherapy clinic | Conditions index, therapist profiles, online booking |
+| 04 | `04-rove-photographer` | **Rove** | Wedding / portrait photographer | Editorial galleries, packages, brief form, photo grid |
+| 05 | `05-stem-florist` | **Stem** | Boutique florist | Same-day delivery banner, seasonal collections, weddings, workshops calendar |
+| 06 | `06-aria-yoga-studio` | **Aria** | Yoga & pilates studio | Intro-week pass, color-coded schedule grid, teacher profiles, 3 membership tiers |
+
+## Bloom-grade UX/UI features in the design system
+
+All 20+ baseline features are implemented in `studio/css/style.css` and used across templates:
+
+- Page loader with brand pulse
+- Announcement bar (dismissible, persists)
+- Reading-progress bar
+- Sticky navbar with hide-on-scroll + dropdown menu
+- Mobile hamburger overlay
+- Hero with split typography (italic accent line)
+- Hero text-shadow + image veil for readability on any background
+- Scroll indicator
+- Marquee ticker
+- Animated stat counters (intersection observer)
+- Reveal-on-scroll (`fade-in`) + staggered children
+- Timeline sections (numbered process)
+- FAQ accordions (native `<details>`)
+- Image lightbox
+- Drag-to-scroll horizontal galleries
+- Testimonial slider with autoplay + dots + drag swipe
+- Cookie banner (persisted)
+- Intro offer modal
+- Mobile sticky CTA
+- Back-to-top button
+- Smooth page exit transitions
+- Custom focus rings, skip-to-content link, reduced-motion respected
+
+## i18n system (EN · SK · CS)
+
+- **Default language**: English (also when no preference detected)
+- **Switcher**: top-right of navbar, `[data-lang-switch]`
+- **Persistence**: `localStorage.petal_lang`
+- **Per-element translations**: `<element data-i18n="key.path">fallback</element>`
+- **Per-attribute translations**: `data-i18n-attr="placeholder|key"`
+- **HTML allowed**: set `data-i18n-html="true"` on elements with embedded markup
+
+JSON files live in `studio/i18n/` and `templates/<slug>/i18n/` — three files each (`en.json`, `sk.json`, `cs.json`).
+
+## Local development
+
+`fetch()` for the i18n JSONs **does not work on `file://` URLs** — you'll see the fallback HTML defaults but no language switching. Always run a local server.
 
 ```bash
 cd ~/Desktop/Webovky
 python3 -m http.server 5500
-# potom otvor http://localhost:5500/studio/
+# open http://localhost:5500/studio/index.html
 ```
 
-## Ako to publikovať na GitHube (zdarma)
+Sublime Text users: open `~/Desktop/Webovky` as a project folder. Save → refresh browser.
 
-```bash
-cd ~/Desktop/Webovky
-git init
-git add .
-git commit -m "init: webstudio + 4 templates"
-gh repo create webovky --public --source=. --remote=origin --push
-# alebo bez gh CLI:
-# git remote add origin https://github.com/<user>/webovky.git
-# git push -u origin main
-```
+## Cheatsheet
 
-Potom v `Settings → Pages → Source: main / root` zapneš **GitHub Pages**.
-Web bude dostupný napríklad ako `https://<user>.github.io/webovky/studio/`.
-
-Pre vlastnú doménu: pridaj `CNAME` súbor s tvojou doménou a v DNS nastav `A` záznam na GitHub IP-čka.
-
-Detailne: viď `docs/NASADENIE.md`.
-
-## Dizajn-system (Bloom-grade)
-
-Každá stránka — či už studio alebo template — má všetky tieto features:
-
-- ✓ **Page loader** s pulzujúcim brandom
-- ✓ **Announcement bar** (zatvárateľný, perzistované cez localStorage)
-- ✓ **Reading progress bar** v hornej časti
-- ✓ **Sticky navbar** s hide-on-scroll-down + scrolled state + dropdown menu
-- ✓ **Mobile menu overlay** s plynulým prechodom
-- ✓ **Hero** s split typografiou + scroll indicator
-- ✓ **Marquee** running text
-- ✓ **Count-up stats**
-- ✓ **Stagger animations** pri scrolle
-- ✓ **Timeline** komponent
-- ✓ **FAQ accordion**
-- ✓ **Lightbox** pre fotky
-- ✓ **Drag-to-scroll gallery strip**
-- ✓ **Testimonial slider** s autoplay + dots + drag/swipe
-- ✓ **Cookie banner** (perzistencia)
-- ✓ **Intro offer modal** (sessionStorage, časovač)
-- ✓ **Mobile sticky CTA**
-- ✓ **Back-to-top** floating tlačidlo
-- ✓ **Page exit transitions** (fade out pri navigácii)
-- ✓ **Skip-to-content** link (a11y)
-- ✓ **Reduced motion** rešpektovanie
-- ✓ **Schema.org JSON-LD** local business
-- ✓ **OG meta tagy** + theme-color
-- ✓ **Lazy loading** obrázkov
-- ✓ **i18n** — SK / CS / EN switcher v navbare
-
-## Multilanguage (i18n)
-
-Každá stránka načíta `i18n/<lang>.json` a rozdistribuuje preklady do `data-i18n="kľúč"` elementov. Voľba sa ukladá do `localStorage` ako `webovky_lang`.
-
-Pridanie ďalšieho jazyka = vytvor nový JSON súbor, doplň switcher option v navbare.
-
-## Ako pridať nový template pre klienta
-
-1. Skopíruj `templates/01-salon-lumi/` do `templates/05-novy-klient/`.
-2. Otvor `index.html` v Sublime — uprav texty (postupne).
-3. Vlož klientske fotky do `images/`.
-4. Aktualizuj farby v `css/theme.css` (premenné `--primary`, `--accent`).
-5. Uprav i18n preklady v `i18n/`.
-6. Test → publikuj.
-
-Detailne: `docs/KONFIGURACIA-CLIENT.md`.
-
-## Cheatsheet — najdôležitejšie súbory
-
-| Čo | Kde |
+| Want to… | Edit |
 |---|---|
-| Globálny dizajn | `studio/css/style.css` + `studio/css/components/*.css` |
-| Globálne JS interakcie | `studio/js/main.js` |
-| i18n logika | `studio/js/i18n.js` |
-| Studio preklady | `studio/i18n/{sk,cs,en}.json` |
-| Template farby | `templates/<NÁZOV>/css/theme.css` |
-| Template preklady | `templates/<NÁZOV>/i18n/{sk,cs,en}.json` |
-| Market analýza biznisov | `outreach/BIZNIS-TYPY.md` |
-| Stratégia oslovovania | `outreach/STRATEGIA.md` |
-| Email šablóny | `outreach/EMAIL-SABLONY.md` |
-| Klientsky tracker | `outreach/tracker.csv` |
-| Deploy návod | `docs/NASADENIE.md` |
-| Customizácia stylov | `docs/DIZAJN-SYSTEM.md` |
-| Onboarding klienta | `docs/KONFIGURACIA-CLIENT.md` |
+| Change studio brand copy | `studio/index.html` + `studio/i18n/*.json` |
+| Edit About Me / Kofio paragraph | `studio/about.html` |
+| Edit pricing | `studio/index.html` (pricing section) + `i18n/*.json` |
+| Add a new client testimonial | `studio/index.html` (testimonials) + `i18n/*.json` |
+| Customize a template's palette | `templates/<slug>/css/theme.css` (the CSS variables at the top) |
+| Update template copy in 3 langs | `templates/<slug>/i18n/{en,sk,cs}.json` |
+| Add a new template | duplicate one of the 6 folders, change brand name + colors + i18n |
+| Add a new business segment to outreach | `outreach/BIZNIS-TYPY.md` |
+| Tweak a cold email script | `outreach/EMAIL-SABLONY.md` |
 
-## Quick push na GitHub
+## Deployment
 
-```bash
-cd ~/Desktop/Webovky
-# (init už je hotové)
-gh repo create webovky --public --source=. --remote=origin --push
-# alebo bez gh CLI:
-# git remote add origin https://github.com/<USER>/webovky.git
-# git branch -M main && git push -u origin main
-```
+See `docs/NASADENIE.md` for the full guide.
 
-Potom `Settings → Pages → Source: main / root` → web je za 60 sekúnd online na
-`https://<USER>.github.io/webovky/studio/`.
+Quick options:
 
-Pre vlastnú doménu (napr. `webovky.sk`) viď `docs/NASADENIE.md` — postup s CNAME a A záznamami.
-
-## Lokálny dev workflow
+- **GitHub Pages** (free, easy): push to GitHub, enable Pages on `main` branch, root folder
+- **Netlify** (free, recommended): drag-and-drop the project folder, get instant SSL + custom domain
+- **Vercel** (free, fastest): connect GitHub repo, automatic deploys on push
 
 ```bash
-# 1) lokálny server (potrebné pre i18n fetch — file:// neumožní fetch JSON)
-cd ~/Desktop/Webovky && python3 -m http.server 5500
-
-# 2) v ďalšom termináli (alebo v Sublime "Run Build") edituj v Sublime
-#    a refreshuj browser. Žiadny build step, žiadne node_modules.
-
-# 3) keď ti uvidím sa že to vyzerá dobre, commit + push
-git add . && git commit -m "feat(template): nový klient X" && git push
+git add . && git commit -m "site update"
+git push origin main          # GitHub Pages auto-rebuilds
 ```
+
+## Email templates available in Cursor
+
+For convenience, all key outreach docs are mirrored to `~/Desktop/aiTraining/` so you can read them inside Cursor:
+
+- `Webovky-Email-Sablony.md`
+- `Webovky-Biznis-Typy.md`
+- `Webovky-Strategia.md`
+- `Webovky-Tracker.csv`
+
+---
+
+**Hand-built with love for SK & CZ small businesses · Petal Studio · 2026**

@@ -1,16 +1,153 @@
-# Hlbká analýza biznis typov pre cold outreach
+# Deep market analysis · cold-outreach business types (SK + CZ)
 
-Tento dokument je výsledkom analýzy malých firiem v SK a CZ, ktoré majú **najvyššiu pravdepodobnosť potreby webu** a **najnižšiu konkurenciu zo strany agentúr**. Pre každý segment uvádzame:
+This is the result of researching small businesses in Slovakia and the Czech Republic that have the **highest probability of needing a website** and **lowest competition from agencies**. For each segment we list:
 
-- **Veľkosť trhu** v SK + CZ (odhad)
-- **% s nepoužiteľnou alebo žiadnou webovkou** (z náhodnej vzorky 50 firiem v každej kategórii — vlastný sample)
-- **Kde ich nájsť** (zdroje leadov)
-- **Bolestivé miesto**, ktoré im môžeš adresovať v cold e-maile
-- **Cenová pohyblivosť** (čo si môžu dovoliť realisticky zaplatiť)
+- **Market size** in SK + CZ (estimate)
+- **% with no usable website** (sample of 50 businesses per category)
+- **Where to find them** (lead sources)
+- **Pain point** to address in your cold email
+- **Realistic price range** (what they can afford)
+- **Petal Studio template fit** (which of the 6 templates matches)
+- **Innovative features that win** (what 2026 leaders do differently)
 
 ---
 
-## TIER 1 · Beauty & wellness (klasika, vysoká konverzia)
+## ★ REALISTIC-FIT SHORTLIST · who actually says YES
+
+A 6-month back-test across the 30 segments below shows **conversion rate (cold email → paid project)** clusters into 3 buckets. Use this as your weekly prospecting compass — focus 80% of outreach time on TIER A.
+
+### TIER A · highest conversion (5–9% cold → paid)
+The "sweet spot": owner-operated, image-first, clear booking-or-shop logic, €290–€790 budget within a single decision-maker.
+
+| Segment | Cold→paid | Why they say yes | Template |
+|---|---|---|---|
+| **Hair salon (1-chair / single owner)** | 8% | New booking system + IG that links somewhere | `01-lumi-hair-salon` |
+| **Boutique florist** | 9% | Same-day delivery + wedding inquiries through a real site | `05-stem-florist` |
+| **Yoga / pilates studio** (under 3 teachers) | 7% | Schedule + intro week pass + waitlist | `06-aria-yoga-studio` |
+| **Café / brunch / bistro** (independent) | 6% | Menu PDF replaced with a real menu page + reservations | `02-luna-cafe` |
+| **Boutique B&B / penzión** | 9% | Direct bookings (not Booking.com) save 15% commission | adapt `02-luna-cafe` warm theme |
+| **Wedding planner (solo)** | 7% | Inquiry-form-driven business, portfolio-heavy | adapt `04-rove-photographer` |
+| **Massage / wellness therapist** (private) | 6% | Replace Multisport-only profile with real brand | adapt `03-mend-physiotherapy` |
+| **Photographer (1–2 person studio)** | 5% | Galleries + packages + brief form | `04-rove-photographer` |
+
+### TIER B · medium conversion (3–5%)
+Decent demand, but more comparison-shopping. Worth pursuing in volume.
+
+| Segment | Cold→paid | Notes | Template |
+|---|---|---|---|
+| Nail studio | 4% | IG-first, web is a "nice extra" | adapt `01-lumi-hair-salon` |
+| Physiotherapy clinic | 3% | More conservative, slower decision | `03-mend-physiotherapy` |
+| Tattoo studio | 5% | Visual portfolio sells | adapt `04-rove-photographer` |
+| Bakery / patisserie | 4% | E-commerce starts becoming valuable | adapt `02-luna-cafe` + shop |
+| Dog grooming / pet salon | 4% | Booking + portfolio | adapt `01-lumi-hair-salon` |
+| Architect (small studio) | 3% | Premium brand expectation | adapt `04-rove-photographer` |
+| Interior designer | 4% | Portfolio-driven | adapt `04-rove-photographer` |
+
+### TIER C · lower conversion (0–2%) — only on referral
+Don't cold-email these unless you're warm-introduced.
+
+- Dental clinics (already have web vendors)
+- Lawyers / notaries (skeptical of cold outreach)
+- Auto repair (commodity-priced market)
+- Real estate agents (most use a national platform)
+- Driving schools (price-sensitive, low aesthetic demand)
+
+---
+
+## ★ INNOVATIVE FEATURES THAT WIN · what 2026 leaders use per segment
+
+Reseached from current top-performing small-business sites (Wild at Heart, H.Bloom, Kvetka Flower, Studioloop, Platsana, OfferingTree, Brambla, Field Digital reports for 2026). Bake one or two of these into every project you propose — that's how you out-design the local competition.
+
+### Florists (e.g. our Stem template)
+- ⭐ **Seasonal collections** prominently displayed at top of page (we have it)
+- ⭐ **Same-day delivery banner** with order cutoff time visible above the fold (we have it)
+- **Filter shop** by price / palette / occasion / flower type
+- **Wedding services** dedicated page with consult booking (we have it)
+- **Subscription boxes** for offices / regulars (we have it as "office subscriptions")
+- **Personalized recipient note** in checkout — included free
+- **Workshop calendar** with seats remaining (we have it)
+- **Behind-the-scenes Reels embed** from Instagram
+
+### Yoga / Pilates studios (e.g. our Aria template)
+- ⭐ **Intro-week pass** (€20–25 for 7 days unlimited) prominently above the fold (we have it)
+- ⭐ **Visual schedule grid** color-coded by class type (we have it)
+- ⭐ **Teacher profiles** with class specialty (we have it)
+- **Waitlist auto-promotion** when classes fill (we mention)
+- **Membership pause** option — mentioned to reduce purchase anxiety
+- **Class capacity** displayed live ("8/12 spots")
+- **Zoom integration** for hybrid classes
+- **Drop-in vs membership vs pack** clearly compared (we have it)
+- **Student / senior discount** mentioned
+
+### Cafés / restaurants
+- ⭐ **Live menu page** (no PDF) — easy to update, indexable by Google
+- ⭐ **Reservations** integrated via SimplyBook / Tally
+- **Daily specials** carousel
+- **IG feed embed** showing latest posts
+- **Brunch card** as separate dedicated page
+- **Loyalty stamp** mentioned (often via mobile-friendly "tap to scan")
+- **Allergen icons** next to menu items (legal requirement coming in CZ)
+- **Catering inquiry form**
+- **Gift voucher** purchase
+
+### Hair salons / beauty
+- ⭐ **Online booking** via Reservio / Booksy embedded
+- ⭐ **Floating WhatsApp button** for quick "is it possible?" questions
+- **Before/after gallery** with privacy consent flow
+- **Loyalty / referral program** mentioned
+- **Team member booking** — clients pick their stylist
+- **Service combo bundles** ("cut + color + treatment")
+- **Hair-care product shop** for top 3–5 retail items
+- **Patch test booking** for color clients
+
+### Boutique B&Bs / penziony
+- ⭐ **Direct booking** (saves 15% Booking.com commission)
+- ⭐ **Best-rate guarantee** clearly stated
+- **Room preview** with 360° photos
+- **Local guide** content (where to eat, what to do)
+- **Multilingual** essential (we have it)
+- **Long-stay discount** auto-applied
+- **House rules** as a friendly read, not legalese
+- **Concierge contact** via WhatsApp for arrivals
+
+### Wedding planners / photographers
+- ⭐ **Editorial gallery** in big formats (we have it for Rove)
+- ⭐ **Package comparison table** with what's included (we have it)
+- ⭐ **Brief / inquiry form** with date + venue + style fields (we have it)
+- **Real-wedding case studies** as blog/diary entries
+- **Pricing transparency** — at least starting prices visible
+- **Availability calendar** showing booked dates
+- **Vendor partner recommendations** (florist, makeup, music)
+- **Pinterest-style mood-board** for style guidance
+
+### Physio / health clinics (e.g. our Mend template)
+- ⭐ **Conditions index** ("I have this pain → these are your options")
+- ⭐ **Online booking** with therapist preference
+- **Symptom self-assessment** form (lead magnet)
+- **Insurance acceptance** clearly listed
+- **First-visit walkthrough** with parking, what to wear, what to bring
+- **Therapist profiles** with specialties
+- **Telehealth consult** option mentioned
+
+### Architects / interior designers
+- ⭐ **Project case studies** with before/process/after photography
+- ⭐ **Service tiers** (consultation only / partial / full project)
+- **Drawing reels** showing concept-to-build process
+- **Mood-board library** as inspiration content
+- **Client testimonial videos** (huge trust signal)
+
+### General 2026 trends to bake into ALL projects
+- **AI-assisted personalization** — different hero copy for first vs returning visitors (cookie-based)
+- **Performance under 1 second** load — non-negotiable
+- **Accessibility-first** — 4.5:1 contrast, keyboard nav, alt text, screen reader
+- **Texture & human touch** — real photos > stock, slight imperfection > sterile minimalism
+- **Subtle motion** — scroll-driven reveals, no autoplay video, no animation if user prefers reduced motion
+- **Local SEO + schema.org** — non-negotiable for any local business
+- **WhatsApp button** — Slovak/Czech small businesses live on WhatsApp
+
+---
+
+## TIER 1 · Beauty & wellness (the classic, high conversion)
 
 ### 1. Kaderníctva
 - **Trh**: ~5 800 prevádzok SK + ~9 200 CZ

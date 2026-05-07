@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="sk">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kontakt · Webovky</title>
+  <title>Contact · Petal Studio</title>
   <meta name="description" content="Napíšte mi krátko — čo robíte a aký web máte teraz. Odpoviem do 24 hodín." />
   <meta name="theme-color" content="#0c0c0b" />
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
@@ -13,13 +13,13 @@
 <body>
   <a href="#main-content" class="skip-to-content">Skip to content</a>
 
-  <div class="page-loader"><span class="page-loader__brand">webovky<i>.</i></span></div>
+  <div class="page-loader"><span class="page-loader__brand">Petal<i>.</i></span></div>
 
   <div class="reading-progress" aria-hidden="true"></div>
 
   <nav class="navbar scrolled" aria-label="Hlavná navigácia">
     <div class="container">
-      <a href="index.html" class="navbar-brand"><span class="navbar-brand__dot"></span><span>webovky<i>.</i></span></a>
+      <a href="index.html" class="navbar-brand"><span class="navbar-brand__dot"></span><span>Petal<i>.</i></span></a>
       <ul class="navbar-links">
         <li><a href="index.html" data-i18n="nav.home">Domov</a></li>
         <li><a href="services.html" data-i18n="nav.services">Služby</a></li>
@@ -73,7 +73,7 @@
                 <div style="width:46px;height:46px;border-radius:50%;background:var(--accent-soft);color:var(--accent-deep);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:18px"><i class="fa-solid fa-envelope"></i></div>
                 <div>
                   <p style="font-size:0.78rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--muted);margin:0 0 4px;font-weight:600" data-i18n="contact.email_label">E-mail</p>
-                  <a href="mailto:hello@webovky.sk" style="font-family:var(--serif);font-size:1.5rem;color:var(--ink);border-bottom:1px solid var(--ink)">hello@webovky.sk</a>
+                  <a href="mailto:hello@petal.studio" style="font-family:var(--serif);font-size:1.5rem;color:var(--ink);border-bottom:1px solid var(--ink)">hello@petal.studio</a>
                   <p style="margin-top:6px;color:var(--muted);font-size:0.86rem">Odpoveď do 24 hodín, väčšinou rýchlejšie.</p>
                 </div>
               </div>
@@ -91,7 +91,7 @@
                 <div style="width:46px;height:46px;border-radius:50%;background:var(--accent-soft);color:var(--accent-deep);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:18px"><i class="fa-brands fa-instagram"></i></div>
                 <div>
                   <p style="font-size:0.78rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--muted);margin:0 0 4px;font-weight:600" data-i18n="contact.ig_label">Instagram</p>
-                  <a href="social.html" style="font-family:var(--serif);font-size:1.5rem;color:var(--ink);border-bottom:1px solid var(--ink)">@webovky.studio</a>
+                  <a href="social.html" style="font-family:var(--serif);font-size:1.5rem;color:var(--ink);border-bottom:1px solid var(--ink)">@petal.studio</a>
                   <p style="margin-top:6px;color:var(--muted);font-size:0.86rem">DM-ka funguje rovnako dobre ako e-mail.</p>
                 </div>
               </div>
@@ -141,7 +141,7 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-bottom" style="padding-top:0;border:0">
-        <p class="footer-bottom__copy" data-i18n="footer.rights">© 2026 webovky · živnostníčka</p>
+        <p class="footer-bottom__copy" data-i18n="footer.rights">© 2026 Petal Studio · sole trader</p>
         <div class="footer-bottom__links">
           <a href="privacy.html" data-i18n="footer.privacy">Ochrana osobných údajov</a>
           <a href="terms.html" data-i18n="footer.terms">Obchodné podmienky</a>
@@ -169,10 +169,10 @@
         }
         var subject = 'Dopyt z webu: ' + data.name + (data.biz ? ' / ' + data.biz : '');
         var body = ['Meno: ' + data.name, 'Firma: ' + (data.biz || '—'), 'Kontakt: ' + data.contact, '', data.message].join('\n');
-        window.location.href = 'mailto:hello@webovky.sk?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+        window.location.href = 'mailto:hello@petal.studio?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
         status.classList.remove('form__status--error');
-        var dict = (window.Webovky && window.Webovky.getLang) ? window.Webovky.getLang() : 'sk';
-        status.textContent = 'Otváram váš e-mailový klient. Ak nič nevidíte, napíšte priamo na hello@webovky.sk.';
+        var dict = (window.Petal && window.Petal.getLang) ? window.Petal.getLang() : 'sk';
+        status.textContent = 'Otváram váš e-mailový klient. Ak nič nevidíte, napíšte priamo na hello@petal.studio.';
       });
     })();
   </script>

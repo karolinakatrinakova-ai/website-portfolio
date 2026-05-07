@@ -790,6 +790,13 @@ body.page-exit { opacity: 0; }
   color: white;
   margin: 0 0 30px;
   line-height: 1.0;
+  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.28);
+}
+.banner h2 {
+  text-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
+}
+.hero-label {
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.35);
 }
 .hero-line { display: block; }
 .hero-line--italic { font-style: italic; color: var(--accent); }

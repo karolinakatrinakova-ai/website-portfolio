@@ -1,30 +1,29 @@
 /* ============================================================================
-   PETAL STUDIO · i18n
-   - Loads i18n/<lang>.json (en / sk / cs)
-   - Applies translations to elements with [data-i18n="key"] (text)
-                                       and [data-i18n-attr="attribute|key"]
-   - Switcher: [data-lang-switch] buttons with data-lang="en|sk|cs"
-   - Persists in localStorage as 'petal_lang'
-   - Default: EN (with browser-language detection on first visit)
+   STUDIO · i18n
+   - Načíta i18n/<lang>.json (sk / cs / en)
+   - Aplikuje preklady na elementy s [data-i18n="kľúč"] (text)
+                                a [data-i18n-attr="atribút|kľúč"] (atribút)
+   - Switcher: [data-lang-switch] tlačidlá s data-lang="sk|cs|en"
+   - Perzistencia v localStorage pod 'petal_lang'
+   - Default: <html lang="sk"> alebo browser prefer
    ========================================================================== */
 
 (function () {
   'use strict';
 
-  var SUPPORTED = ['en', 'sk', 'cs'];
+  var SUPPORTED = ['sk', 'cs', 'en'];
   var STORAGE_KEY = 'petal_lang';
-  var FALLBACK = 'en';
+  var FALLBACK = 'sk';
 
   function detect() {
     var saved = localStorage.getItem(STORAGE_KEY);
     if (saved && SUPPORTED.indexOf(saved) !== -1) return saved;
-    var nav = (navigator.language || 'en').slice(0, 2).toLowerCase();
+    var nav = (navigator.language || 'sk').slice(0, 2).toLowerCase();
     if (SUPPORTED.indexOf(nav) !== -1) return nav;
     return FALLBACK;
   }
 
   function getNested(obj, path) {
-    if (obj && Object.prototype.hasOwnProperty.call(obj, path)) return obj[path];
     var parts = path.split('.');
     var v = obj;
     for (var i = 0; i < parts.length; i++) {
@@ -39,6 +38,7 @@
       var key = el.getAttribute('data-i18n');
       var val = getNested(dict, key);
       if (val == null) return;
+      // Allow simple HTML (we control the JSON, no XSS risk)
       if (el.dataset.i18nHtml === 'true' || /<[a-z][\s\S]*>/i.test(val)) {
         el.innerHTML = val;
       } else {
@@ -55,6 +55,7 @@
         if (val != null) el.setAttribute(attr, val);
       });
     });
+    // <title> via key 'meta.title'
     var t = getNested(dict, 'meta.title');
     if (t) document.title = t;
     var d = getNested(dict, 'meta.description');
@@ -95,6 +96,7 @@
     });
   }
 
+  // Hook switcher buttons
   document.addEventListener('click', function (e) {
     var btn = e.target.closest('[data-lang-switch] [data-lang]');
     if (!btn) return;
@@ -102,9 +104,11 @@
     setLang(btn.dataset.lang, true);
   });
 
+  // Init
   var initial = detect();
   setLang(initial, false);
 
+  // Expose
   window.Petal = window.Petal || {};
   window.Petal.setLang = setLang;
   window.Petal.getLang = function () { return localStorage.getItem(STORAGE_KEY) || detect(); };

@@ -1,0 +1,12 @@
+{
+  "meta": { "title": "Salón Lumi · kadeřnictví Bratislava", "description": "Moderní dámské kadeřnictví v centru Bratislavy. Rezervujte si termín online — střih, barva, ošetření pro dlouhé vlasy." },
+  "nav": { "home": "Domů", "services": "Služby", "team": "Tým", "gallery": "Galerie", "reviews": "Recenze", "contact": "Kontakt", "book": "Rezervovat" },
+  "announcement": { "text": "Duben: <strong>−15 %</strong> na střih + barvu pro nové klientky. <a href='#kontakt'>Rezervovat</a>" },
+  "hero": { "label": "Kadeřnictví · Staré Mesto Bratislava", "line1": "Vlasy,", "line2": "jako když", "line3": "jste z dovolené.", "sub": "Salón Lumi — kadeřnictví, kam se vracíte. Specializujeme se na dlouhé vlasy, balayage a střih, u kterého nemusíte přemýšlet, jak se po třech dnech česat.", "btn1": "Rezervovat termín", "btn2": "Prohlédnout služby" },
+  "services": { "label": "Služby", "title": "Ceník", "lead": "Pro nové klientky přidáváme u první návštěvy konzultaci zdarma." },
+  "team": { "label": "Tým", "title": "Tři ruce, které vás čekají" },
+  "gallery": { "label": "Galerie", "title": "Naše práce" },
+  "reviews": { "label": "Reference", "title": "Klientky o nás" },
+  "contact": { "label": "Kontakt", "title": "Dnes otevřeno do 19:00", "address": "Štúrova 12, 811 02 Bratislava", "hours_mon": "Po–Pá 9:00 – 19:00", "hours_sat": "So 9:00 – 14:00", "hours_sun": "Ne zavřeno" },
+  "footer": { "tagline": "Salón Lumi · od 2018 v centru Bratislavy", "rights": "© 2026 Salón Lumi · vytvořil petal.studio" }
+}

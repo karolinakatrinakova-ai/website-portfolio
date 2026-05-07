@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="meta.title">Fyzio Plus · súkromná fyzioterapia v Žiline</title>
+  <meta name="description" data-i18n="meta.description" content="Súkromná fyzio ambulancia v Žiline. Bolesti chrbta, kĺbov, post-úrazová rehabilitácia." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Fyzio Plus · súkromná fyzioterapia" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1600&q=80" />
+  <meta name="theme-color" content="#2674b3" />
+  <link rel="icon" type="image/svg+xml" href="../../studio/favicon.svg" />
+  <link rel="stylesheet" href="css/theme.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Physiotherapy",
+    "name": "Fyzio Plus",
+    "description": "Súkromná fyzio ambulancia v Žiline.",
+    "url": "https://fyzioplus.sk",
+    "telephone": "+421900222333",
+    "email": "info@fyzioplus.sk",
+    "address": { "@type": "PostalAddress", "streetAddress": "Hviezdoslavova 24", "addressLocality": "Žilina", "postalCode": "010 01", "addressCountry": "SK" },
+    "priceRange": "€€"
+  }
+  </script>
+</head>
+<body>
+
+  <a href="#main-content" class="skip-to-content">Skip to content</a>
+  <div class="page-loader"><span class="page-loader__brand">Fyzio Plus</span></div>
+
+  <div class="announcement-bar" id="announcementBar">
+    <div class="container">
+      <p data-i18n="announcement.text" data-i18n-html="true">Voľné termíny v máji: <strong>posledné 4 v utorky</strong>. <a href="#kontakt">Online rezervácia</a></p>
+      <button class="announcement-bar__close" aria-label="Zavrieť">&times;</button>
+    </div>
+  </div>
+
+  <div class="reading-progress"></div>
+
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="navbar-brand"><span class="navbar-brand__dot"></span><span>Fyzio Plus</span></a>
+      <ul class="navbar-links">
+        <li><a href="#diagnozy" data-i18n="nav.diagnoses">Diagnózy</a></li>
+        <li><a href="#terapie" data-i18n="nav.therapies">Terapie</a></li>
+        <li><a href="#tim" data-i18n="nav.team">O nás</a></li>
+        <li><a href="#cennik" data-i18n="nav.pricing">Cenník</a></li>
+        <li><a href="#kontakt" data-i18n="nav.contact">Kontakt</a></li>
+      </ul>
+      <div class="navbar-right">
+        <div class="lang-switch" data-lang-switch>
+          <button class="lang-switch__btn" data-lang="sk">SK</button>
+          <button class="lang-switch__btn" data-lang="cs">CS</button>
+          <button class="lang-switch__btn" data-lang="en">EN</button>
+        </div>
+        <a href="#kontakt" class="navbar-cta" data-i18n="nav.book">Objednať termín</a>
+        <button class="navbar-hamburger"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mobile-menu">
+    <ul class="mobile-menu__links">
+      <li><a href="#diagnozy" data-i18n="nav.diagnoses">Diagnózy</a></li>
+      <li><a href="#terapie" data-i18n="nav.therapies">Terapie</a></li>
+      <li><a href="#tim" data-i18n="nav.team">O nás</a></li>
+      <li><a href="#cennik" data-i18n="nav.pricing">Cenník</a></li>
+      <li><a href="#kontakt" data-i18n="nav.contact">Kontakt</a></li>
+    </ul>
+    <div class="mobile-menu__cta"><a href="#kontakt" class="btn btn-accent" data-i18n="nav.book">Objednať</a></div>
+  </div>
+
+  <header class="banner" id="main-content">
+    <div class="banner__bg"><img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?auto=format&fit=crop&w=2400&q=82" alt="" /></div>
+    <div class="banner__veil"></div>
+    <div class="container">
+      <p class="hero-label" data-i18n="hero.label">Fyzioterapia · Žilina</p>
+      <h1>
+        <span class="hero-line" data-i18n="hero.line1">Bolesť</span>
+        <span class="hero-line hero-line--italic" data-i18n="hero.line2">nezmizne</span>
+        <span class="hero-line" data-i18n="hero.line3">sama.</span>
+      </h1>
+      <div class="hero-rule"></div>
+      <h2 data-i18n="hero.sub">Fyzio Plus — súkromná fyzio ambulancia, kde sa o vás staráme 60 minút. Diagnostika, terapia, plán domácich cvičení. Bez čakacích listín.</h2>
+      <div class="hero-buttons">
+        <a href="#kontakt" class="btn btn-accent btn-lg" data-i18n="hero.btn1">Objednať termín</a>
+        <a href="#diagnozy" class="btn btn-ghost-light btn-lg" data-i18n="hero.btn2">Pozri diagnózy</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- STATS -->
+  <section class="section section--tight fade-in">
+    <div class="container">
+      <div class="stats stagger-children">
+        <div class="stat"><div class="stat__number" data-target="60" data-suffix=" min">60 min</div><div class="stat__label">priemerná dĺžka sedenia</div></div>
+        <div class="stat"><div class="stat__number" data-target="12" data-suffix="+">12+</div><div class="stat__label">rokov praxe</div></div>
+        <div class="stat"><div class="stat__number" data-target="2400" data-suffix="+">2400+</div><div class="stat__label">spokojných pacientov</div></div>
+        <div class="stat"><div class="stat__number" data-target="0" data-suffix="">0</div><div class="stat__label">dní čakacia listina</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIAGNOSES -->
+  <section class="section section--alt fade-in" id="diagnozy">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Diagnózy</span>
+        <h2>S čím vám pomôžeme</h2>
+        <p>Najčastejšie diagnózy, ktoré u nás riešime. Ak vašu diagnózu nevidíte, napíšte nám — pravdepodobne s ňou pracujeme tiež.</p>
+      </div>
+      <div class="diag-list stagger-children">
+        <div class="diag-item"><span class="diag-item__icon"><i class="fa-solid fa-bone"></i></span><h4>Bolesti dolnej časti chrbta (lumbago)</h4></div>
+        <div class="diag-item"><span class="diag-item__icon"><i class="fa-solid fa-person"></i></span><h4>Bolesti krčnej chrbtice</h4></div>
+        <div class="diag-item"><span class="diag-item__icon"><i class="fa-solid fa-hand-back-fist"></i></span><h4>Bolesti ramenného kĺbu</h4></div>
+        <div class="diag-item"><span class="diag-item__icon"><i class="fa-solid fa-shoe-prints"></i></span><h4>Bolesti kolena, členka, päty</h4></div>
+        <div class="diag-item"><span class="diag-item__icon"><i class="fa-solid fa-syringe"></i></span><h4>Po operáciách (krížový kĺb, krčný)</h4></div>
+        <div class="diag-item"><span class="diag-item__icon"><i class="fa-solid fa-dumbbell"></i></span><h4>Športové úrazy a rehabilitácia</h4></div>
+        <div class="diag-item"><span class="diag-item__icon"><i class="fa-solid fa-baby"></i></span><h4>Tehotenská a popôrodná fyzio</h4></div>
+        <div class="diag-item"><span class="diag-item__icon"><i class="fa-solid fa-laptop-code"></i></span><h4>Sedavé povolanie / RSI</h4></div>
+        <div class="diag-item"><span class="diag-item__icon"><i class="fa-solid fa-head-side-virus"></i></span><h4>Bolesti hlavy z napätia</h4></div>
+        <div class="diag-item"><span class="diag-item__icon"><i class="fa-solid fa-person-walking"></i></span><h4>Skolióza, držanie tela</h4></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- THERAPIES -->
+  <section class="section fade-in" id="terapie">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Terapie</span>
+        <h2>Aké techniky používame</h2>
+      </div>
+      <ol class="numbered">
+        <li>
+          <span class="numbered__num">01</span>
+          <div><h3>Manuálna terapia</h3><p>Mäkké techniky, mobilizácia kĺbov, manuálna trakčná terapia. Vhodné pre väčšinu chrbticových a kĺbových problémov.</p></div>
+        </li>
+        <li>
+          <span class="numbered__num">02</span>
+          <div><h3>Suchá ihla (dry needling)</h3><p>Ošetrenie spúšťačov bolesti (trigger pointov) tenkou ihlou. Rýchla úľava pri svalových kŕčoch.</p></div>
+        </li>
+        <li>
+          <span class="numbered__num">03</span>
+          <div><h3>Kineziotape</h3><p>Lepenie funkčnou páskou pre podporu kĺbu, lymfatickú drenáž alebo aktiváciu svalu. Často kombinujeme s manuálnou terapiou.</p></div>
+        </li>
+        <li>
+          <span class="numbered__num">04</span>
+          <div><h3>Cvičebný plán domov</h3><p>Po každom sedení dostávate PDF s 4–6 cvikmi presne na vašu diagnózu. Ak treba, natočíme aj video s vami pre istotu, že robíte správne.</p></div>
+        </li>
+        <li>
+          <span class="numbered__num">05</span>
+          <div><h3>SM-systém (Smíšek)</h3><p>Špeciálne cvičenie s elastickými lanami pre stabilizáciu chrbtice a držanie tela. Pre chronické bolesti chrbta a deti so skoliózou.</p></div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- THERAPIST -->
+  <section class="section section--alt fade-in" id="tim">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">O nás</span>
+        <h2>Človek, ku ktorému prídete</h2>
+      </div>
+      <div class="therapist-card">
+        <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=600&q=80" alt="Mgr. Marek Hudák" />
+        <div>
+          <p class="role">Hlavný terapeut</p>
+          <h3>Mgr. Marek Hudák</h3>
+          <p>Vyštudoval fyzioterapiu na <b>UPJŠ Košice</b> (Mgr., 2012). Po štúdiu pôsobil 6 rokov v Národnom rehabilitačnom centre v Kováčovej, špecializuje sa na <b>chrbticové diagnózy a športové úrazy</b>. V Žiline si otvoril vlastnú ambulanciu v 2020.</p>
+          <p>V súkromnom živote bežec, lyžiar, otec dvoch detí. „Bolesť som zažil aj sám — viem, aké je to obťažujúce. Preto sa o pacientov staráme tak, ako by som chcel, aby sa starali o mňa.“</p>
+          <div class="creds">
+            <span>Mgr. fyzioterapie</span>
+            <span>SM-systém certif.</span>
+            <span>Dry needling</span>
+            <span>FAKO 2024</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section class="section fade-in" id="cennik">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Cenník</span>
+        <h2>Transparentné ceny</h2>
+        <p>Sme súkromné zariadenie, nemáme zmluvy s poisťovňami. To nám umožňuje venovať vám 60 minút a robiť kvalitnú prácu.</p>
+      </div>
+      <div class="tiers">
+        <article class="tier">
+          <h3>Vstupné vyšetrenie</h3>
+          <p class="tier__price">45 €</p>
+          <p class="tier__sub">Diagnostika · 60 min</p>
+          <ul>
+            <li>Anamnéza a vyšetrenie</li>
+            <li>Stanovenie diagnózy</li>
+            <li>Plán terapie</li>
+            <li>Prvá ošetrovacia jednotka</li>
+            <li>PDF s domácimi cvikmi</li>
+          </ul>
+          <a href="#kontakt" class="btn btn-secondary">Objednať</a>
+        </article>
+        <article class="tier tier--feat">
+          <span class="tier__badge">Najobľúbenejšie</span>
+          <h3>5× balíček</h3>
+          <p class="tier__price">175 €</p>
+          <p class="tier__sub">5 sedení · 60 min</p>
+          <ul>
+            <li>5 ošetrovacích jednotiek</li>
+            <li>Manuálna terapia</li>
+            <li>Dry needling (ak potrebné)</li>
+            <li>Kineziotape v cene</li>
+            <li>Domáce cvičenia + video</li>
+            <li>Platnosť 3 mesiace</li>
+          </ul>
+          <a href="#kontakt" class="btn btn-accent">Objednať</a>
+        </article>
+        <article class="tier">
+          <h3>Jednotlivé sedenie</h3>
+          <p class="tier__price">38 €</p>
+          <p class="tier__sub">60 min</p>
+          <ul>
+            <li>Pokračovacia terapia</li>
+            <li>Manuálna terapia</li>
+            <li>Dry needling (ak potrebné)</li>
+            <li>Drobné kontroly</li>
+          </ul>
+          <a href="#kontakt" class="btn btn-secondary">Objednať</a>
+        </article>
+      </div>
+      <p class="text-center" style="margin-top:30px;color:var(--ink-soft);font-size:0.95rem">Akceptujeme Multisport, Benefit Plus a Edenred.</p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section--alt fade-in">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">FAQ</span>
+        <h2>Pred prvým termínom</h2>
+      </div>
+      <div class="faq">
+        <details class="faq__item"><summary class="faq__question">Potrebujem žiadanku od lekára?</summary><p class="faq__answer">Nie. Ako súkromné zariadenie nepotrebujeme žiadanku ani odporučenie. Môžete prísť priamo k nám, urobíme vlastnú diagnostiku.</p></details>
+        <details class="faq__item"><summary class="faq__question">Čo si mám vziať so sebou?</summary><p class="faq__answer">Pohodlné športové oblečenie (legíny / kraťasy + tričko). Ak máte staršie zobrazovacie vyšetrenia (RTG, MRI), prineste si ich, ale nie sú podmienkou.</p></details>
+        <details class="faq__item"><summary class="faq__question">Ako dlho trvá, kým ucítim úľavu?</summary><p class="faq__answer">Pri akútnych problémoch (lumbago, bolesti krku) často po 2–3 sedeniach. Pri chronických problémoch je realistický rámec 5–8 sedení s pravidelným domácim cvičením.</p></details>
+        <details class="faq__item"><summary class="faq__question">Môžem si zarezervovať on-line?</summary><p class="faq__answer">Áno, cez Reservio (24/7) alebo telefonicky. Reservio vám pošle pripomienku 24 hodín pred termínom.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section--dark fade-in" id="kontakt">
+    <div class="container">
+      <div class="split">
+        <div>
+          <span class="section-label" style="color:var(--accent-soft)">Kontakt</span>
+          <h2 style="color:white">Objednajte si termín</h2>
+          <p style="color:rgba(255,255,255,0.78);font-size:1.05rem">Online rezervácia funguje 24/7. Telefonicky sme dostupní v rámci ordinačných hodín.</p>
+
+          <div style="margin:30px 0;display:flex;flex-direction:column;gap:14px;color:rgba(255,255,255,0.88)">
+            <p><i class="fa-solid fa-location-dot" style="color:var(--accent-soft);width:24px"></i> Hviezdoslavova 24, 010 01 Žilina</p>
+            <p><i class="fa-solid fa-phone" style="color:var(--accent-soft);width:24px"></i> <a href="tel:+421900222333" style="color:white;border-bottom:1px solid var(--accent-soft)">+421 900 222 333</a></p>
+            <p><i class="fa-solid fa-envelope" style="color:var(--accent-soft);width:24px"></i> <a href="mailto:info@fyzioplus.sk" style="color:white;border-bottom:1px solid var(--accent-soft)">info@fyzioplus.sk</a></p>
+          </div>
+
+          <p style="color:rgba(255,255,255,0.65);font-size:0.94rem">Po–Pi 8:00 – 18:00<br>So 9:00 – 12:00 (po dohode)<br>Ne zatvorené</p>
+
+          <div style="margin-top:30px;display:flex;gap:14px;flex-wrap:wrap">
+            <a href="#" class="btn btn-accent btn-lg" data-i18n="nav.book">Online rezervácia</a>
+            <a href="tel:+421900222333" class="btn btn-ghost-light btn-lg">Zavolať</a>
+          </div>
+        </div>
+
+        <div style="border-radius:var(--radius);overflow:hidden;border:1px solid rgba(255,255,255,0.1);min-height:380px;background:#0a1828">
+          <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=18.738%2C49.221%2C18.745%2C49.225&amp;layer=mapnik&amp;marker=49.223%2C18.741" style="width:100%;height:100%;min-height:380px;border:0;filter:invert(0.92) hue-rotate(180deg) saturate(0.5)" loading="lazy" title="Mapa"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p class="footer-bottom__copy">© 2026 Fyzio Plus · made by Petal Studio</p>
+        <div class="footer-bottom__links">
+          <a href="social.html">Sociálne siete</a>
+          <a href="../../studio/privacy.html">GDPR</a>
+          <a href="../../studio/index.html">Petal Studio</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="mobile-cta"><a href="#kontakt" class="btn btn-accent" data-i18n="nav.book">Objednať</a></div>
+  <div class="lightbox" id="lightbox"><button class="lightbox__close">&times;</button><img class="lightbox__img" src="" alt="" /></div>
+  <button class="back-to-top" aria-label="Hore"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <div class="cookie-banner" id="cookieBanner">
+    <div class="cookie-banner__inner">
+      <p>Cookies pre lepší zážitok.</p>
+      <div class="cookie-banner__actions">
+        <button class="cookie-banner__btn cookie-banner__btn--accept" data-cookie="accept">Prijať</button>
+        <button class="cookie-banner__btn cookie-banner__btn--decline" data-cookie="decline">Odmietnuť</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
