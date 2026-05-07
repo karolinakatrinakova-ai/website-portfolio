@@ -115,8 +115,55 @@ Pridanie ďalšieho jazyka = vytvor nový JSON súbor, doplň switcher option v 
 1. Skopíruj `templates/01-salon-lumi/` do `templates/05-novy-klient/`.
 2. Otvor `index.html` v Sublime — uprav texty (postupne).
 3. Vlož klientske fotky do `images/`.
-4. Aktualizuj farby v `css/style.css` (premenné `--primary`, `--accent`).
+4. Aktualizuj farby v `css/theme.css` (premenné `--primary`, `--accent`).
 5. Uprav i18n preklady v `i18n/`.
 6. Test → publikuj.
 
 Detailne: `docs/KONFIGURACIA-CLIENT.md`.
+
+## Cheatsheet — najdôležitejšie súbory
+
+| Čo | Kde |
+|---|---|
+| Globálny dizajn | `studio/css/style.css` + `studio/css/components/*.css` |
+| Globálne JS interakcie | `studio/js/main.js` |
+| i18n logika | `studio/js/i18n.js` |
+| Studio preklady | `studio/i18n/{sk,cs,en}.json` |
+| Template farby | `templates/<NÁZOV>/css/theme.css` |
+| Template preklady | `templates/<NÁZOV>/i18n/{sk,cs,en}.json` |
+| Market analýza biznisov | `outreach/BIZNIS-TYPY.md` |
+| Stratégia oslovovania | `outreach/STRATEGIA.md` |
+| Email šablóny | `outreach/EMAIL-SABLONY.md` |
+| Klientsky tracker | `outreach/tracker.csv` |
+| Deploy návod | `docs/NASADENIE.md` |
+| Customizácia stylov | `docs/DIZAJN-SYSTEM.md` |
+| Onboarding klienta | `docs/KONFIGURACIA-CLIENT.md` |
+
+## Quick push na GitHub
+
+```bash
+cd ~/Desktop/Webovky
+# (init už je hotové)
+gh repo create webovky --public --source=. --remote=origin --push
+# alebo bez gh CLI:
+# git remote add origin https://github.com/<USER>/webovky.git
+# git branch -M main && git push -u origin main
+```
+
+Potom `Settings → Pages → Source: main / root` → web je za 60 sekúnd online na
+`https://<USER>.github.io/webovky/studio/`.
+
+Pre vlastnú doménu (napr. `webovky.sk`) viď `docs/NASADENIE.md` — postup s CNAME a A záznamami.
+
+## Lokálny dev workflow
+
+```bash
+# 1) lokálny server (potrebné pre i18n fetch — file:// neumožní fetch JSON)
+cd ~/Desktop/Webovky && python3 -m http.server 5500
+
+# 2) v ďalšom termináli (alebo v Sublime "Run Build") edituj v Sublime
+#    a refreshuj browser. Žiadny build step, žiadne node_modules.
+
+# 3) keď ti uvidím sa že to vyzerá dobre, commit + push
+git add . && git commit -m "feat(template): nový klient X" && git push
+```
