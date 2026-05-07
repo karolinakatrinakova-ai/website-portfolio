@@ -1,0 +1,6 @@
+{
+  "meta": { "title": "Fyzio Plus · private physiotherapy in Žilina", "description": "Private physio clinic in Žilina. Back pain, joints, post-injury rehab. Book online." },
+  "nav": { "home": "Home", "diagnoses": "Conditions", "therapies": "Therapies", "team": "About", "pricing": "Pricing", "contact": "Contact", "book": "Book a slot" },
+  "announcement": { "text": "Open slots in May: <strong>last 4 on Tuesdays</strong>. <a href='#kontakt'>Book online</a>" },
+  "hero": { "label": "Physiotherapy · Žilina", "line1": "Pain", "line2": "won't go", "line3": "away on its own.", "sub": "Fyzio Plus — a private physio clinic where we spend 60 minutes with you (not 15 like state clinics). Diagnosis, therapy, home exercise plan. No waiting list.", "btn1": "Book a slot", "btn2": "See conditions" }
+}

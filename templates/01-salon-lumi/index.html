@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="meta.title">Salón Lumi · kaderníctvo Bratislava</title>
+  <meta name="description" data-i18n="meta.description" content="Moderné dámske kaderníctvo v centre Bratislavy. Online rezervácia." />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Salón Lumi · kaderníctvo Bratislava" />
+  <meta property="og:description" content="Strih, farba, balayage. Salón v centre Bratislavy." />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1600&q=80" />
+  <meta name="theme-color" content="#b97a64" />
+
+  <link rel="icon" type="image/svg+xml" href="../../studio/favicon.svg" />
+  <link rel="stylesheet" href="css/theme.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HairSalon",
+    "name": "Salón Lumi",
+    "description": "Dámske kaderníctvo v centre Bratislavy, špecializujúce sa na dlhé vlasy, balayage a strih.",
+    "url": "https://salonlumi.sk",
+    "telephone": "+421900111222",
+    "email": "ahoj@salonlumi.sk",
+    "address": { "@type": "PostalAddress", "streetAddress": "Štúrova 12", "addressLocality": "Bratislava", "postalCode": "811 02", "addressCountry": "SK" },
+    "geo": { "@type": "GeoCoordinates", "latitude": 48.144, "longitude": 17.108 },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "09:00", "closes": "19:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:00", "closes": "14:00" }
+    ],
+    "priceRange": "€€",
+    "image": "https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1600&q=80"
+  }
+  </script>
+</head>
+<body>
+
+  <a href="#main-content" class="skip-to-content">Skip to content</a>
+
+  <div class="page-loader"><span class="page-loader__brand">Lumi</span></div>
+
+  <div class="announcement-bar" id="announcementBar">
+    <div class="container">
+      <p data-i18n="announcement.text" data-i18n-html="true">Apríl: <strong>−15 %</strong> na strih + farbu pre nové klientky. <a href="#kontakt">Rezervovať</a></p>
+      <button class="announcement-bar__close" aria-label="Zavrieť">&times;</button>
+    </div>
+  </div>
+
+  <div class="reading-progress"></div>
+
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="navbar-brand"><span class="navbar-brand__dot"></span><span>Lumi</span></a>
+      <ul class="navbar-links">
+        <li><a href="#sluzby" data-i18n="nav.services">Služby</a></li>
+        <li><a href="#tim" data-i18n="nav.team">Tím</a></li>
+        <li><a href="#galeria" data-i18n="nav.gallery">Galéria</a></li>
+        <li><a href="#recenzie" data-i18n="nav.reviews">Recenzie</a></li>
+        <li><a href="#kontakt" data-i18n="nav.contact">Kontakt</a></li>
+      </ul>
+      <div class="navbar-right">
+        <div class="lang-switch" data-lang-switch>
+          <button class="lang-switch__btn" data-lang="sk">SK</button>
+          <button class="lang-switch__btn" data-lang="cs">CS</button>
+          <button class="lang-switch__btn" data-lang="en">EN</button>
+        </div>
+        <a href="#kontakt" class="navbar-cta" data-i18n="nav.book">Rezervovať</a>
+        <button class="navbar-hamburger"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mobile-menu">
+    <ul class="mobile-menu__links">
+      <li><a href="#sluzby" data-i18n="nav.services">Služby</a></li>
+      <li><a href="#tim" data-i18n="nav.team">Tím</a></li>
+      <li><a href="#galeria" data-i18n="nav.gallery">Galéria</a></li>
+      <li><a href="#recenzie" data-i18n="nav.reviews">Recenzie</a></li>
+      <li><a href="#kontakt" data-i18n="nav.contact">Kontakt</a></li>
+    </ul>
+    <div class="mobile-menu__cta">
+      <a href="#kontakt" class="btn btn-accent" data-i18n="nav.book">Rezervovať</a>
+    </div>
+    <div class="mobile-menu__bottom">
+      <a href="social.html" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="social.html" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+    </div>
+  </div>
+
+  <header class="banner" id="main-content">
+    <div class="banner__bg"><img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=2400&q=82" alt="" /></div>
+    <div class="banner__veil"></div>
+    <div class="container">
+      <p class="hero-label" data-i18n="hero.label">Kaderníctvo · Staré Mesto Bratislava</p>
+      <h1>
+        <span class="hero-line" data-i18n="hero.line1">Vlasy,</span>
+        <span class="hero-line hero-line--italic" data-i18n="hero.line2">ako keď</span>
+        <span class="hero-line" data-i18n="hero.line3">ste z dovolenky.</span>
+      </h1>
+      <div class="hero-rule"></div>
+      <h2 data-i18n="hero.sub">Salón Lumi — kaderníctvo, kde sa vraciate. Špecializujeme sa na dlhé vlasy, balayage a strih, pri ktorom nemusíte premýšľať, ako sa po troch dňoch budete česať.</h2>
+      <div class="hero-buttons">
+        <a href="#kontakt" class="btn btn-accent btn-lg" data-i18n="hero.btn1">Rezervovať termín</a>
+        <a href="#sluzby" class="btn btn-ghost-light btn-lg" data-i18n="hero.btn2">Pozri služby</a>
+      </div>
+    </div>
+    <a href="#sluzby" class="scroll-indicator" aria-label="Scroll"><span class="scroll-indicator__line"></span></a>
+  </header>
+
+  <div class="marquee">
+    <div class="marquee__inner">
+      <span class="marquee__item">Strih dámsky</span>
+      <span class="marquee__item">Balayage</span>
+      <span class="marquee__item">Olaplex</span>
+      <span class="marquee__item">Hair botox</span>
+      <span class="marquee__item">Foliaž</span>
+      <span class="marquee__item">Konzultácia zdarma</span>
+      <span class="marquee__item">Strih dámsky</span>
+      <span class="marquee__item">Balayage</span>
+      <span class="marquee__item">Olaplex</span>
+      <span class="marquee__item">Hair botox</span>
+      <span class="marquee__item">Foliaž</span>
+      <span class="marquee__item">Konzultácia zdarma</span>
+    </div>
+  </div>
+
+  <!-- INTRO -->
+  <section class="section fade-in">
+    <div class="container">
+      <div class="split">
+        <div class="split__media">
+          <img src="https://images.unsplash.com/photo-1559599101-f09722fb4948?auto=format&fit=crop&w=1200&q=80" alt="Interiér Lumi" />
+        </div>
+        <div>
+          <span class="section-label">O nás</span>
+          <h2>Šesť rokov v Starom Meste, jedna myšlienka.</h2>
+          <p>Otvorili sme Lumi v roku 2018 s presvedčením, že kaderníctvo má byť miesto, kam chcete chodiť aj vtedy, keď nepotrebujete strih. Príjemný čas, dobrá káva, vlasy v rukách niekoho, komu na nich záleží.</p>
+          <p>Špecializujeme sa na dlhé vlasy a farbenie technikami, ktoré rastú s vami — balayage, foliaž, melír. Žiadne agresívne odfarbovanie, žiadne „prídete o mesiac na korekciu".</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section section--alt fade-in" id="sluzby">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label" data-i18n="services.label">Služby</span>
+        <h2 data-i18n="services.title">Cenník</h2>
+        <p data-i18n="services.lead">Pre nové klientky pridávame pri prvej návšteve konzultáciu zdarma.</p>
+      </div>
+
+      <div class="two-up">
+        <div>
+          <h3 style="font-size:1.4rem;margin-bottom:18px;color:var(--accent)">Strih a styling</h3>
+          <div class="svc-row"><span class="svc-row__num">01</span><div><h4>Dámsky strih + foukaná</h4><p>Krátke + stredné vlasy</p></div><span class="svc-row__price">35 €</span></div>
+          <div class="svc-row"><span class="svc-row__num">02</span><div><h4>Dámsky strih + foukaná</h4><p>Dlhé vlasy</p></div><span class="svc-row__price">45 €</span></div>
+          <div class="svc-row"><span class="svc-row__num">03</span><div><h4>Detský strih</h4><p>Do 12 rokov</p></div><span class="svc-row__price">15 €</span></div>
+          <div class="svc-row"><span class="svc-row__num">04</span><div><h4>Spoločenský účes</h4><p>Svadba, oslava</p></div><span class="svc-row__price">55 €</span></div>
+        </div>
+        <div>
+          <h3 style="font-size:1.4rem;margin-bottom:18px;color:var(--accent)">Farbenie a ošetrenie</h3>
+          <div class="svc-row"><span class="svc-row__num">05</span><div><h4>Balayage / foliaž</h4><p>Vrátane strihu</p></div><span class="svc-row__price">od 95 €</span></div>
+          <div class="svc-row"><span class="svc-row__num">06</span><div><h4>Farbenie celej hlavy</h4><p>Vrátane foukanej</p></div><span class="svc-row__price">od 65 €</span></div>
+          <div class="svc-row"><span class="svc-row__num">07</span><div><h4>Olaplex regenerácia</h4><p>Pri farbení / samostatne</p></div><span class="svc-row__price">25 €</span></div>
+          <div class="svc-row"><span class="svc-row__num">08</span><div><h4>Hair botox</h4><p>Hĺbková regenerácia</p></div><span class="svc-row__price">45 €</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section class="section fade-in" id="tim">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label" data-i18n="team.label">Tím</span>
+        <h2 data-i18n="team.title">Tri ruky, ktoré vás čakajú</h2>
+      </div>
+      <div class="team stagger-children">
+        <div class="team__card">
+          <img class="team__photo" loading="lazy" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=600&q=80" alt="Ema" />
+          <p class="team__name">Ema</p>
+          <p class="team__role">Senior · 8 rokov</p>
+        </div>
+        <div class="team__card">
+          <img class="team__photo" loading="lazy" src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=600&q=80" alt="Lucia" />
+          <p class="team__name">Lucia</p>
+          <p class="team__role">Farbenie · 5 rokov</p>
+        </div>
+        <div class="team__card">
+          <img class="team__photo" loading="lazy" src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=600&q=80" alt="Hana" />
+          <p class="team__name">Hana</p>
+          <p class="team__role">Junior · 2 roky</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="section section--alt fade-in" id="galeria">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label" data-i18n="gallery.label">Galéria</span>
+        <h2 data-i18n="gallery.title">Naša práca</h2>
+      </div>
+    </div>
+    <div class="gallery-strip">
+      <div class="gallery-strip__track">
+        <img class="gallery-strip__img" loading="lazy" src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?auto=format&fit=crop&w=900&q=82" alt="" />
+        <img class="gallery-strip__img" loading="lazy" src="https://images.unsplash.com/photo-1633681926022-84c23e8cb2d6?auto=format&fit=crop&w=900&q=82" alt="" />
+        <img class="gallery-strip__img" loading="lazy" src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=900&q=82" alt="" />
+        <img class="gallery-strip__img" loading="lazy" src="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=900&q=82" alt="" />
+        <img class="gallery-strip__img" loading="lazy" src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?auto=format&fit=crop&w=900&q=82" alt="" />
+        <img class="gallery-strip__img" loading="lazy" src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&w=900&q=82" alt="" />
+        <img class="gallery-strip__img" loading="lazy" src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&fit=crop&w=900&q=82" alt="" />
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="section fade-in" id="recenzie">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label" data-i18n="reviews.label">Recenzie</span>
+        <h2 data-i18n="reviews.title">Klientky o nás</h2>
+      </div>
+      <div class="testimonial-slider">
+        <div class="testimonial-slider__track">
+          <article class="testimonial-card">
+            <p class="rev-stars">★ ★ ★ ★ ★</p>
+            <p class="testimonial-card__quote">Po prvej návšteve som chodila už tri roky pravidelne. Eme verím vlasy ako nikomu inému v meste.</p>
+            <div class="testimonial-card__author"><img class="testimonial-card__avatar" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=200&q=80" alt="" /><div><p class="testimonial-card__name">Dominika</p><p class="testimonial-card__role">Klientka od 2021</p></div></div>
+          </article>
+          <article class="testimonial-card">
+            <p class="rev-stars">★ ★ ★ ★ ★</p>
+            <p class="testimonial-card__quote">Najlepšie balayage v Bratislave. Vidno, že vedia, čo robia. A nikdy ma nepretláčajú do drahších služieb.</p>
+            <div class="testimonial-card__author"><img class="testimonial-card__avatar" src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=200&q=80" alt="" /><div><p class="testimonial-card__name">Karolína</p><p class="testimonial-card__role">Klientka od 2020</p></div></div>
+          </article>
+          <article class="testimonial-card">
+            <p class="rev-stars">★ ★ ★ ★ ★</p>
+            <p class="testimonial-card__quote">Príjemný interiér, dobrá káva, profi tím. Odporúčam každej kamarátke. A pre dlhé vlasy je to top.</p>
+            <div class="testimonial-card__author"><img class="testimonial-card__avatar" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=200&q=80" alt="" /><div><p class="testimonial-card__name">Veronika</p><p class="testimonial-card__role">Klientka od 2022</p></div></div>
+          </article>
+          <article class="testimonial-card">
+            <p class="rev-stars">★ ★ ★ ★ ★</p>
+            <p class="testimonial-card__quote">Lucia mi v zime spravila tmavšiu farbu, na leto sme prešli na svetlé balayage. Stále pôsobí prirodzene. Ďakujem!</p>
+            <div class="testimonial-card__author"><img class="testimonial-card__avatar" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=200&q=80" alt="" /><div><p class="testimonial-card__name">Petra</p><p class="testimonial-card__role">Klientka od 2023</p></div></div>
+          </article>
+          <article class="testimonial-card">
+            <p class="rev-stars">★ ★ ★ ★ ★</p>
+            <p class="testimonial-card__quote">Pôvodne som tam išla len na strih, dnes tam chodí celá moja rodina vrátane mojej dcéry.</p>
+            <div class="testimonial-card__author"><img class="testimonial-card__avatar" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80" alt="" /><div><p class="testimonial-card__name">Andrea</p><p class="testimonial-card__role">Klientka od 2019</p></div></div>
+          </article>
+        </div>
+        <div class="testimonial-slider__nav">
+          <button class="testimonial-slider__btn testimonial-slider__btn--prev" aria-label="Predošlé"><i class="fa-solid fa-chevron-left"></i></button>
+          <div class="testimonial-slider__dots"></div>
+          <button class="testimonial-slider__btn testimonial-slider__btn--next" aria-label="Ďalšie"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section--alt fade-in">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">FAQ</span>
+        <h2>Čo sa nás pýtate</h2>
+      </div>
+      <div class="faq">
+        <details class="faq__item"><summary class="faq__question">Ako dlho dopredu treba rezervovať?</summary><p class="faq__answer">Pre strih obyčajne 1 týždeň, pre farbenie 2 týždne. V predvianočnom čase a pred letom 3 týždne.</p></details>
+        <details class="faq__item"><summary class="faq__question">Robíte konzultácie pred prvou návštevou?</summary><p class="faq__answer">Áno, 15 minút zdarma cez Whatsapp alebo osobne. Pošlite fotky vlasov a napíšeme, či sa stret na to, čo chcete, dá zariadiť.</p></details>
+        <details class="faq__item"><summary class="faq__question">Akú máte parkovaciu zónu?</summary><p class="faq__answer">Modrá zóna pred salónom, prvá hodina 50 centov. Alebo platené parkovanie v Eurovea (5 minút pešo).</p></details>
+        <details class="faq__item"><summary class="faq__question">Berieme platby kartou?</summary><p class="faq__answer">Áno, kartou, hotovosťou, Apple Pay a Google Pay.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT / BOOK -->
+  <section class="section section--dark fade-in" id="kontakt">
+    <div class="container">
+      <div class="split">
+        <div>
+          <span class="section-label" style="color:var(--accent)" data-i18n="contact.label">Kontakt</span>
+          <h2 style="color:white" data-i18n="contact.title">Otvorené dnes do 19:00</h2>
+          <p style="color:rgba(255,255,255,0.78);font-size:1.05rem">Online rezervácia funguje 24/7. Telefonicky sme dostupné v rámci otváracích hodín.</p>
+
+          <div style="margin:30px 0;display:flex;flex-direction:column;gap:14px;color:rgba(255,255,255,0.85)">
+            <p><i class="fa-solid fa-location-dot" style="color:var(--accent);width:24px"></i> <span data-i18n="contact.address">Štúrova 12, 811 02 Bratislava</span></p>
+            <p><i class="fa-solid fa-phone" style="color:var(--accent);width:24px"></i> <a href="tel:+421900111222" style="color:white;border-bottom:1px solid var(--accent)">+421 900 111 222</a></p>
+            <p><i class="fa-brands fa-whatsapp" style="color:var(--accent);width:24px"></i> <a href="https://wa.me/421900111222" style="color:white;border-bottom:1px solid var(--accent)">+421 900 111 222</a></p>
+            <p><i class="fa-solid fa-envelope" style="color:var(--accent);width:24px"></i> <a href="mailto:ahoj@salonlumi.sk" style="color:white;border-bottom:1px solid var(--accent)">ahoj@salonlumi.sk</a></p>
+          </div>
+
+          <p style="color:rgba(255,255,255,0.65);font-size:0.94rem"><span data-i18n="contact.hours_mon">Po–Pi 9:00 – 19:00</span><br><span data-i18n="contact.hours_sat">So 9:00 – 14:00</span><br><span data-i18n="contact.hours_sun">Ne zatvorené</span></p>
+
+          <div style="margin-top:30px;display:flex;gap:14px">
+            <a href="#" class="btn btn-accent btn-lg" data-i18n="nav.book">Online rezervácia</a>
+            <a href="https://wa.me/421900111222" class="btn btn-ghost-light btn-lg" target="_blank" rel="noopener">WhatsApp</a>
+          </div>
+        </div>
+
+        <div style="border-radius:var(--radius);overflow:hidden;border:1px solid rgba(255,255,255,0.1);min-height:380px;background:#1a1814;display:flex;align-items:center;justify-content:center">
+          <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=17.108%2C48.142%2C17.116%2C48.146&amp;layer=mapnik&amp;marker=48.144%2C17.112" style="width:100%;height:100%;min-height:380px;border:0;filter:invert(0.92) hue-rotate(180deg)" loading="lazy" title="Mapa salónu"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p class="footer-bottom__copy" data-i18n="footer.rights">© 2026 Salón Lumi · vytvoril webovky.sk</p>
+        <div class="footer-bottom__links">
+          <a href="social.html" data-i18n="nav.social">Sociálne siete</a>
+          <a href="../../studio/privacy.html">Ochrana osobných údajov</a>
+          <a href="../../studio/index.html">Webovky.sk</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating actions -->
+  <div class="floating-actions">
+    <a href="https://wa.me/421900111222" class="wa" aria-label="WhatsApp" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i></a>
+    <a href="tel:+421900111222" class="ph" aria-label="Volať"><i class="fa-solid fa-phone"></i></a>
+  </div>
+
+  <div class="mobile-cta">
+    <a href="#kontakt" class="btn btn-accent" data-i18n="nav.book">Rezervovať</a>
+  </div>
+
+  <div class="lightbox" id="lightbox"><button class="lightbox__close" aria-label="Zavrieť">&times;</button><img class="lightbox__img" src="" alt="" /></div>
+  <button class="back-to-top" aria-label="Hore"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <div class="cookie-banner" id="cookieBanner">
+    <div class="cookie-banner__inner">
+      <p>Používame cookies pre lepší zážitok.</p>
+      <div class="cookie-banner__actions">
+        <button class="cookie-banner__btn cookie-banner__btn--accept" data-cookie="accept">Prijať</button>
+        <button class="cookie-banner__btn cookie-banner__btn--decline" data-cookie="decline">Odmietnuť</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

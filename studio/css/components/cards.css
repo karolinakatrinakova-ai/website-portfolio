@@ -1,0 +1,168 @@
+/* ─── Cards ─── */
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+@media (max-width: 1000px) { .cards { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 600px)  { .cards { grid-template-columns: 1fr; } }
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-3);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--line-soft);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  text-decoration: none;
+  color: inherit;
+}
+.card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); border-color: var(--line); }
+.card img {
+  width: 100%;
+  aspect-ratio: 16 / 11;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+.card:hover img { transform: scale(1.05); }
+.card__body { padding: 28px 30px 30px; flex: 1; display: flex; flex-direction: column; gap: 12px; }
+.card__tag {
+  font-family: var(--sans);
+  font-size: 0.74rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 0;
+  font-weight: 600;
+}
+.card h3 { margin: 0; font-size: 1.5rem; }
+.card__body > p { margin: 0; color: var(--ink-soft); font-size: 0.96rem; }
+.card__chips {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+.card__chips li {
+  font-size: 0.74rem;
+  padding: 4px 12px;
+  background: var(--bg-2);
+  border-radius: 999px;
+  color: var(--ink-soft);
+}
+.card__cta {
+  margin-top: auto;
+  font-weight: 600;
+  font-size: 0.92rem;
+  color: var(--ink);
+  border-bottom: 1px solid var(--ink);
+  padding-bottom: 2px;
+  align-self: flex-start;
+  transition: color 0.2s, border-color 0.2s;
+}
+.card:hover .card__cta { color: var(--accent); border-color: var(--accent); }
+
+/* Plain icon card */
+.icon-card {
+  background: var(--bg-3);
+  border-radius: var(--radius);
+  padding: 36px 32px;
+  border: 1px solid var(--line-soft);
+  transition: transform 0.25s, border-color 0.25s;
+}
+.icon-card:hover { transform: translateY(-3px); border-color: var(--accent); }
+.icon-card__num {
+  display: inline-block;
+  font-family: var(--serif);
+  font-size: 1.6rem;
+  color: var(--accent);
+  margin-bottom: 14px;
+}
+.icon-card h3 { margin: 0 0 8px; font-size: 1.25rem; }
+.icon-card p  { margin: 0; color: var(--ink-soft); font-size: 0.96rem; }
+
+/* Pricing tier */
+.tiers {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 26px;
+  align-items: stretch;
+}
+@media (max-width: 1000px) { .tiers { grid-template-columns: 1fr; } }
+
+.tier {
+  background: var(--bg-3);
+  border: 1px solid var(--line-soft);
+  border-radius: var(--radius);
+  padding: 44px 36px 40px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+.tier:hover { transform: translateY(-4px); }
+.tier--feat {
+  background: var(--ink);
+  color: var(--bg);
+  border-color: var(--ink);
+}
+.tier--feat h3 { color: white; }
+.tier--feat p  { color: rgba(255,255,255,0.7); }
+
+.tier__badge {
+  position: absolute;
+  top: -12px; left: 50%;
+  transform: translateX(-50%);
+  background: var(--accent);
+  color: white;
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 5px 14px;
+  border-radius: 999px;
+}
+.tier h3 { margin: 0 0 4px; }
+.tier__price {
+  font-family: var(--serif);
+  font-size: 3.2rem;
+  margin: 8px 0 0;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  line-height: 1;
+}
+.tier__sub {
+  color: var(--muted);
+  font-size: 0.84rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin: 10px 0 30px;
+}
+.tier--feat .tier__sub { color: rgba(255,255,255,0.55); }
+.tier ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 32px;
+  flex: 1;
+}
+.tier li {
+  padding: 13px 0 13px 28px;
+  border-bottom: 1px dashed var(--line-soft);
+  font-size: 0.96rem;
+  position: relative;
+  color: var(--ink-soft);
+}
+.tier--feat li { border-color: rgba(255,255,255,0.12); color: rgba(255,255,255,0.85); }
+.tier li::before {
+  content: "✓";
+  position: absolute;
+  left: 4px; top: 13px;
+  color: var(--accent);
+  font-weight: 700;
+}
+.tier li:last-child { border-bottom: 0; }

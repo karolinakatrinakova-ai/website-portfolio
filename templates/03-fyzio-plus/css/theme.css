@@ -1,0 +1,76 @@
+/* Fyzio Plus · clinical, trustworthy, calm */
+@import url("../../../studio/css/style.css");
+
+:root {
+  --bg:           #f4f7f9;
+  --bg-2:         #e7eef2;
+  --bg-3:         #ffffff;
+  --ink:          #0e2338;
+  --ink-soft:     #2d4055;
+  --stone:        #5d6f80;
+  --muted:        #98a4b1;
+  --line:         #d3dde5;
+  --line-soft:    rgba(45, 64, 85, 0.14);
+
+  --accent:       #2674b3;          /* trustworthy blue */
+  --accent-deep:  #1a5286;
+  --accent-soft:  #d6e6f4;
+
+  --olive:        #4a8060;
+  --plum:         #5b3a4f;
+
+  --serif:        "Lora", Georgia, serif;
+  --sans:         "Inter", system-ui, sans-serif;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap");
+
+h1, h2, h3 { font-family: var(--serif); font-weight: 500; letter-spacing: -0.005em; }
+
+.banner__veil { background: linear-gradient(120deg, rgba(14,35,56,0.78) 0%, rgba(14,35,56,0.4) 100%); }
+
+/* Diagnoses grid */
+.diag-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+@media (max-width: 700px) { .diag-list { grid-template-columns: 1fr; } }
+.diag-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px 22px;
+  background: var(--bg-3);
+  border: 1px solid var(--line-soft);
+  border-radius: 10px;
+  transition: border-color 0.2s, transform 0.2s;
+}
+.diag-item:hover { border-color: var(--accent); transform: translateY(-2px); }
+.diag-item__icon {
+  width: 36px; height: 36px;
+  border-radius: 50%;
+  background: var(--accent-soft);
+  color: var(--accent-deep);
+  display: inline-flex; align-items: center; justify-content: center;
+  font-size: 14px;
+  flex-shrink: 0;
+}
+.diag-item h4 { margin: 0; font-family: var(--sans); font-size: 0.96rem; font-weight: 500; text-transform: none; letter-spacing: 0; color: var(--ink); }
+
+/* Therapist card */
+.therapist-card {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 36px;
+  padding: 36px;
+  background: var(--bg-3);
+  border-radius: var(--radius);
+  border: 1px solid var(--line-soft);
+  align-items: center;
+}
+.therapist-card img { width: 100%; aspect-ratio: 1; border-radius: 12px; object-fit: cover; }
+.therapist-card h3 { margin: 0 0 6px; font-size: 1.6rem; }
+.therapist-card .role { font-size: 0.84rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--accent); margin: 0 0 14px; font-weight: 600; }
+.therapist-card .creds { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 16px; }
+.therapist-card .creds span { font-size: 0.78rem; padding: 4px 12px; border-radius: 999px; background: var(--accent-soft); color: var(--accent-deep); font-weight: 500; }
+
+@media (max-width: 700px) {
+  .therapist-card { grid-template-columns: 1fr; padding: 24px; gap: 22px; }
+}

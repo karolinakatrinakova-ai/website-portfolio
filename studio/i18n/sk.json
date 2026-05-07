@@ -1,0 +1,195 @@
+{
+  "meta": {
+    "title": "Webovky · webové stránky pre malé firmy v SK & CZ",
+    "description": "Robím moderné, rýchle a osobné webstránky pre malé firmy. Hotovo do 14 dní, fixná cena, žiadne mesačné poplatky."
+  },
+  "nav": {
+    "home": "Domov",
+    "services": "Služby",
+    "process": "Postup",
+    "portfolio": "Portfólio",
+    "pricing": "Cenník",
+    "about": "O mne",
+    "contact": "Kontakt",
+    "social": "Sociálne siete",
+    "cta": "Nezáväzný dopyt"
+  },
+  "announcement": {
+    "text": "V máji prijímam <strong>2 nové projekty</strong>. <a href='contact.html'>Rezervovať termín</a>"
+  },
+  "hero": {
+    "label": "Webstudio · Bratislava & Praha",
+    "line1": "Webstránka,",
+    "line2": "ktorá pracuje",
+    "line3": "aj počas noci.",
+    "sub": "Moderné, rýchle a osobné weby pre malé firmy — salóny, kaviarne, fyzio, fotografov a ďalších. Hotovo do 14 dní, fixná cena, žiadne mesačné poplatky.",
+    "btn_primary": "Nezáväzný dopyt",
+    "btn_secondary": "Pozri portfólio"
+  },
+  "marquee": {
+    "i1": "Kaderníctva",
+    "i2": "Kaviarne",
+    "i3": "Fyzioterapia",
+    "i4": "Fotografi",
+    "i5": "Nechtové štúdiá",
+    "i6": "Architekti",
+    "i7": "Joga štúdiá",
+    "i8": "Bistrá",
+    "i9": "Účtovníci"
+  },
+  "stats": {
+    "label1": "dní priemerný čas dodania",
+    "label2": "spokojných klientov za prvý rok",
+    "label3": "lokalít odkiaľ pracujem (SK + CZ + AT)",
+    "label4": "Google PageSpeed skóre"
+  },
+  "intro": {
+    "label": "Čo robím",
+    "title": "Webstránky pre ľudí, ktorí nechcú riešiť technické veci",
+    "text": "Vy mi poviete, čo robíte a kto sú vaši klienti. Ja postavím web, ktorý vám prináša rezervácie, e-maily a telefonáty bez toho, aby ste museli rozumieť tomu, čo je hosting alebo SSL certifikát."
+  },
+  "services": {
+    "label": "Služby",
+    "title": "Web na kľúč. Bez prekvapení.",
+    "lead": "Šesť oblastí, v ktorých vám viem reálne pomôcť. Vyberte si, čo potrebujete — alebo nechajte na mňa, čo má najväčší zmysel.",
+    "s1": {
+      "tag": "Kompletný web na kľúč",
+      "title": "Návrh + vývoj + nasadenie",
+      "text": "Od prvého stretnutia až po publikáciu domény. Ja sa starám o všetko — vy kontrolujete obsah."
+    },
+    "s2": {
+      "tag": "Redizajn",
+      "title": "Modernizácia starého webu",
+      "text": "Web z roku 2015 vás brzdí. Spravím nový, ponecháme rovnaké URL aby ste neprišli o Google ranking."
+    },
+    "s3": {
+      "tag": "Lokálne SEO",
+      "title": "Aby vás našli ľudia v okolí",
+      "text": "Google Maps, schema.org, lokálne kľúčové slová ako „kaderníčka Trnava centrum“."
+    },
+    "s4": {
+      "tag": "Online rezervácia",
+      "title": "Klient si rezervuje sám",
+      "text": "Reservio, Booksy, SimplyBook alebo vlastný formulár cez Tally. Bez vašej účasti."
+    },
+    "s5": {
+      "tag": "Údržba & zmeny",
+      "title": "Mesačná podpora",
+      "text": "25 €/mes alebo platba za hodinu (20 €/h). Žiadne dlhodobé záväzky."
+    },
+    "s6": {
+      "tag": "Multilanguage",
+      "title": "SK + CZ + EN switcher",
+      "text": "Rovnako ako tento web. Ideálne pre firmy, ktoré obsluhujú aj zahraničných klientov."
+    }
+  },
+  "portfolio": {
+    "label": "Portfólio",
+    "title": "Štyri šablóny pre štyri rôzne biznisy",
+    "lead": "Toto sú demo verzie pre 4 typy firiem. Vyberieme si jednu ako základ a personalizujeme ju pre vás. Ušetríme tým 60–70 % bežnej ceny.",
+    "p1": {
+      "tag": "Kaderníctvo · warm & elegant",
+      "title": "Salón Lumi",
+      "text": "Klasický salónový web s galériou, cenníkom, online rezerváciou cez Reservio a plávajúcim WhatsApp tlačidlom.",
+      "open": "Otvoriť ukážku"
+    },
+    "p2": {
+      "tag": "Kaviareň · brunch · bistro",
+      "title": "Café Luna",
+      "text": "Pre kaviarne, ktoré sa prezentujú aj cez Instagram. Menu, otváracie hodiny, brunch karta a fotky.",
+      "open": "Otvoriť ukážku"
+    },
+    "p3": {
+      "tag": "Fyzioterapia · zdravie",
+      "title": "Fyzio Plus",
+      "text": "Pre súkromné fyzio ambulancie. Diagnózy, terapie, online rezervácia a odborný profil terapeuta.",
+      "open": "Otvoriť ukážku"
+    },
+    "p4": {
+      "tag": "Fotograf · creative studio",
+      "title": "Studio Novák",
+      "text": "Editoriálny web pre svadobného / portrét fotografa. Veľké galérie, balíčky, kontaktný formulár.",
+      "open": "Otvoriť ukážku"
+    }
+  },
+  "process": {
+    "label": "Postup",
+    "title": "Jednoducho. Predvídateľne. Načas.",
+    "step1": { "time": "Deň 0", "title": "Bezplatný 20-minútový hovor", "text": "Zistím, čo robíte, kto sú vaši klienti a čo má webstránka splniť. Žiadne predajné reči." },
+    "step2": { "time": "Deň 1–3", "title": "Návrh a cenová ponuka", "text": "Pošlem konkrétnu ponuku s fixnou cenou a šablónu, ktorú navrhujem ako východisko." },
+    "step3": { "time": "Deň 3–5", "title": "Materiály", "text": "Texty a fotky. Texty viem napísať za vás, fotky doplním z Unsplash alebo dohodneme fotografa." },
+    "step4": { "time": "Deň 5–12", "title": "Stavba webu", "text": "Pošlem náhľad cez link, vy mi pošlete pripomienky. 1–2 kolá úprav je v cene." },
+    "step5": { "time": "Deň 12–14", "title": "Spustenie", "text": "Doménu napojím alebo kúpim za vás. Google Maps, schema, Search Console. Web ide naživo." }
+  },
+  "pricing": {
+    "label": "Cenník",
+    "title": "Transparentné balíčky bez asterisku",
+    "lead": "Fixné ceny, nie hodiny. Vždy viete, koľko zaplatíte. Ceny sú bez DPH (zatiaľ neplatca).",
+    "addons": "<b>K tomu jednorazovo:</b> doména .sk/.cz ~15 €/rok · hosting 0–6 €/mes podľa typu webu.",
+    "tiers": {
+      "start": { "title": "Štart", "price": "290 €", "sub": "Jednostránkový web", "f1": "1 stránka (one-pager)", "f2": "Mobil + desktop", "f3": "Kontaktný formulár", "f4": "Google Mapa + SEO", "f5": "Pomoc s doménou", "f6": "Dodanie do 7 dní" },
+      "profi": { "title": "Profi", "price": "490 €", "sub": "Plnohodnotná webovka", "badge": "Najobľúbenejšie", "f1": "5–7 sekcií / stránok", "f2": "Galéria + lightbox", "f3": "Cenník + služby", "f4": "Online rezervácia napojenie", "f5": "Lokálne SEO + schema", "f6": "Texty na úvodnú stránku", "f7": "WhatsApp / volacie tlačidlo" },
+      "plus":  { "title": "Plus", "price": "od 790 €", "sub": "Multilang / blog / e-shop", "f1": "Všetko z balíčka Profi", "f2": "SK + CS + EN switcher", "f3": "Blog / aktuality", "f4": "Jednoduchý e-shop (do 30 prod.)", "f5": "Newsletter (Mailerlite)", "f6": "Google Analytics 4" }
+    },
+    "cta": "Mám záujem"
+  },
+  "testimonials": {
+    "label": "Recenzie",
+    "title": "Čo o mne hovoria klienti"
+  },
+  "faq": {
+    "label": "FAQ",
+    "title": "Často sa ma pýtate",
+    "q1": "Mám už doménu a starý web. Viete s tým niečo spraviť?",
+    "a1": "Áno. Buď doménu prevediem na nový web, alebo robím redizajn priamo na vašom hostingu. Záleží od technológie — väčšinou viem migrovať bez výpadku.",
+    "q2": "Aké fotky použijete, keď ja žiadne nemám?",
+    "a2": "Pre prvú verziu používame štýlové fotky z Unsplash (legálne, zdarma). Postupne ich vymeníme za vaše vlastné. Pri vyšších balíčkoch viem dohodnúť aj fotografa za výhodnú cenu.",
+    "q3": "Budem schopná robiť úpravy sama?",
+    "a3": "Pri Profi a Plus balíčku áno — robím to tak, že úpravy textov, cien či galérie zvládnete sami v jednoduchom rozhraní. Alebo mi napíšete a ja to spravím v rámci údržby.",
+    "q4": "Čo ak mi web nebude vyhovovať?",
+    "a4": "Pred začatím prác vám pošlem jasnú ponuku s referenciou. Po prvom náhľade máme 1–2 kolá úprav v cene. Ak sa fakt nestrafíme, vrátim 50 % zálohy a rozídeme sa v dobrom.",
+    "q5": "Robíte aj pre firmy, ktoré nie sú v salónovej brandži?",
+    "a5": "Áno, hocijaká služba — autoservis, fyzioterapia, doučovanie, malé reštaurácie. Tieto šablóny sú demo, nie obmedzenie."
+  },
+  "cta_band": {
+    "title": "Máte nápad? Stretnime sa.",
+    "text": "Bezplatný 20-minútový hovor cez Google Meet alebo telefón. Bez záväzku, bez tlaku.",
+    "btn": "Rezervovať termín"
+  },
+  "contact": {
+    "label": "Kontakt",
+    "title": "Napíšte mi krátko",
+    "text": "Stačí jeden riadok — čo robíte a aký web máte teraz. Odpoviem do 24 hodín.",
+    "email_label": "E-mail",
+    "phone_label": "Telefón / WhatsApp",
+    "ig_label": "Instagram",
+    "form": {
+      "name": "Vaše meno",
+      "biz": "Firma / činnosť",
+      "contact": "E-mail alebo telefón",
+      "message": "Krátko o čo ide",
+      "submit": "Odoslať dopyt",
+      "ok": "Otváram váš e-mailový klient. Ak nič nevidíte, napíšte priamo."
+    }
+  },
+  "footer": {
+    "tagline": "Webové stránky pre malé firmy v SK a CZ. Hotovo do 14 dní.",
+    "col_studio": "Studio",
+    "col_work": "Práce",
+    "col_resources": "Zdroje",
+    "col_contact": "Kontakt",
+    "newsletter_title": "Tipy pre malé firmy",
+    "newsletter_text": "Raz za mesiac e-mail s 1 konkrétnym tipom, ktorý zlepší váš web alebo Google viditeľnosť. Bez spamu.",
+    "newsletter_placeholder": "tvoj@email.sk",
+    "newsletter_btn": "Odoberať",
+    "rights": "© 2026 webovky · živnostníčka",
+    "privacy": "Ochrana osobných údajov",
+    "terms": "Obchodné podmienky",
+    "cookies": "Cookies"
+  },
+  "cookies": {
+    "text": "Tento web používa cookies pre zlepšenie zážitku a anonymné štatistiky.",
+    "accept": "Prijať",
+    "decline": "Odmietnuť"
+  }
+}

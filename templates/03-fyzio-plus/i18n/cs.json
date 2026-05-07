@@ -1,0 +1,6 @@
+{
+  "meta": { "title": "Fyzio Plus · soukromá fyzioterapie v Žilině", "description": "Soukromá fyzio ambulance v Žilině. Bolesti zad, kloubů, post-úrazová rehabilitace." },
+  "nav": { "home": "Domů", "diagnoses": "Diagnózy", "therapies": "Terapie", "team": "O nás", "pricing": "Ceník", "contact": "Kontakt", "book": "Objednat termín" },
+  "announcement": { "text": "Volné termíny v květnu: <strong>poslední 4 v úterý</strong>. <a href='#kontakt'>Online rezervace</a>" },
+  "hero": { "label": "Fyzioterapie · Žilina", "line1": "Bolest", "line2": "nezmizí", "line3": "sama.", "sub": "Fyzio Plus — soukromá fyzio ambulance, kde se o vás staráme 60 minut (ne 15 jako ve státních). Diagnostika, terapie, plán domácích cviků. Bez čekacích listů.", "btn1": "Objednat termín", "btn2": "Prohlédnout diagnózy" }
+}

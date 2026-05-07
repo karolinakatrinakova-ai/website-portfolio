@@ -1,0 +1,11 @@
+{
+  "meta": { "title": "Café Luna · coffee & brunch in Brno", "description": "Coffee, brunch and a small bistro in Brno-Vinohrady. Special brunch menu every Sunday. Book online." },
+  "nav": { "home": "Home", "menu": "Menu", "brunch": "Brunch", "hours": "Opening hours", "gallery": "Gallery", "contact": "Contact", "book": "Book a table" },
+  "announcement": { "text": "This weekend: <strong>Pancake Sunday</strong> — banana pancakes with maple syrup. <a href='#kontakt'>Reserve</a>" },
+  "hero": { "label": "Coffee · brunch · Brno-Vinohrady", "line1": "Coffee,", "line2": "morning brunch,", "line3": "sometimes wine.", "sub": "Café Luna is where you come for an espresso, stay for shakshuka, and return because it just feels right.", "btn1": "Book a table", "btn2": "See the menu" },
+  "menu": { "label": "Menu", "title": "What we're cooking today", "lead": "Kitchen until 2 PM, coffee all day. Full menu in-house — these are the favorites." },
+  "brunch": { "label": "Sunday Brunch", "title": "Every Sunday from 9 AM", "text": "Pancakes, shakshuka, eggs benedict and house croissant. €22 per person — eat as much as you want. Reservation required." },
+  "gallery": { "label": "Gallery", "title": "Atmosphere" },
+  "hours": { "label": "Opening hours", "title": "When we're here" },
+  "contact": { "label": "Contact", "title": "Come visit" }
+}

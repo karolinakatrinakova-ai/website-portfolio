@@ -1,0 +1,11 @@
+{
+  "meta": { "title": "Café Luna · kaviareň a brunch v Brne", "description": "Kaviareň, brunch a malé bistro v Brne-Vinohradoch. Každú nedeľu špeciálny brunch menu. Rezervácia online." },
+  "nav": { "home": "Domov", "menu": "Menu", "brunch": "Brunch", "hours": "Otváracie hodiny", "gallery": "Galéria", "contact": "Kontakt", "book": "Rezervovať stôl" },
+  "announcement": { "text": "Tento víkend: <strong>Pancake Sunday</strong> — banánové lievance s javorovým sirupom. <a href='#kontakt'>Stôl</a>" },
+  "hero": { "label": "Kaviareň · brunch · Brno-Vinohrady", "line1": "Káva,", "line2": "ranný brunch,", "line3": "občas víno.", "sub": "Café Luna je miesto, kam chodíte na espresso, ostávate na šakšuku a vraciate sa, lebo vám je tu dobre.", "btn1": "Rezervovať stôl", "btn2": "Pozri menu" },
+  "menu": { "label": "Menu", "title": "Čo varíme dnes", "lead": "Kuchyňa do 14:00, káva celý deň. Plné menu k nahliadnutiu na mieste — toto sú najobľúbenejšie veci." },
+  "brunch": { "label": "Sunday Brunch", "title": "Každú nedeľu od 9:00", "text": "Pancakes, šakšuka, eggs benedict a domáci croissant. Fixne 22 € na osobu — môžete jesť koľko chcete (pozor, naozaj koľko chcete). Rezervácia povinná." },
+  "gallery": { "label": "Galéria", "title": "Atmosféra" },
+  "hours": { "label": "Otváracie hodiny", "title": "Kedy sme tu" },
+  "contact": { "label": "Kontakt", "title": "Príďte sa pozrieť" }
+}

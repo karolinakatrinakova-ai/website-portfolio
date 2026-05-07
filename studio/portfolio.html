@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio · Webovky</title>
+  <meta name="description" content="Štyri šablóny pre rôzne biznisy: kaderníctvo, kaviareň, fyzioterapia, fotograf. Otvorte si demo a pozrite si, ako web vyzerá v praxi." />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    .work {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px 60px;
+      align-items: center;
+      padding: 60px 0;
+    }
+    .work + .work { border-top: 1px solid var(--line-soft); }
+    .work:nth-child(even) .work__media { order: 2; }
+    .work__media {
+      position: relative;
+      border-radius: var(--radius);
+      overflow: hidden;
+      aspect-ratio: 4 / 3;
+      box-shadow: var(--shadow-md);
+    }
+    .work__media img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.7s ease; }
+    .work__media:hover img { transform: scale(1.05); }
+    .work__num { font-family: var(--serif); font-size: 1.4rem; color: var(--accent); margin: 0 0 14px; }
+    .work__chips { list-style: none; padding: 0; margin: 18px 0 28px; display: flex; gap: 8px; flex-wrap: wrap; }
+    .work__chips li { font-size: 0.78rem; padding: 5px 12px; background: var(--bg-2); border-radius: 999px; color: var(--ink-soft); }
+    @media (max-width: 900px) { .work { grid-template-columns: 1fr; gap: 36px; padding: 40px 0; } .work:nth-child(even) .work__media { order: 0; } }
+  </style>
+</head>
+<body>
+  <a href="#main-content" class="skip-to-content">Skip to content</a>
+  <div class="page-loader"><span class="page-loader__brand">webovky<i>.</i></span></div>
+  <div class="reading-progress"></div>
+
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="navbar-brand"><span class="navbar-brand__dot"></span><span>webovky<i>.</i></span></a>
+      <ul class="navbar-links">
+        <li><a href="index.html">Domov</a></li><li><a href="services.html">Služby</a></li><li><a href="process.html">Postup</a></li>
+        <li><a href="portfolio.html" class="active">Portfólio</a></li>
+        <li><a href="pricing.html">Cenník</a></li><li><a href="contact.html">Kontakt</a></li>
+      </ul>
+      <div class="navbar-right">
+        <div class="lang-switch" data-lang-switch><button class="lang-switch__btn" data-lang="sk">SK</button><button class="lang-switch__btn" data-lang="cs">CS</button><button class="lang-switch__btn" data-lang="en">EN</button></div>
+        <a href="contact.html" class="navbar-cta">Nezáväzný dopyt</a>
+        <button class="navbar-hamburger"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mobile-menu">
+    <ul class="mobile-menu__links">
+      <li><a href="index.html">Domov</a></li><li><a href="services.html">Služby</a></li><li><a href="process.html">Postup</a></li><li><a href="portfolio.html">Portfólio</a></li><li><a href="pricing.html">Cenník</a></li><li><a href="contact.html">Kontakt</a></li>
+    </ul>
+  </div>
+
+  <header class="banner" id="main-content" style="min-height:55vh">
+    <div class="banner__bg"><img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=2000&q=82" alt="" /></div>
+    <div class="banner__veil"></div>
+    <div class="container">
+      <p class="hero-label">Portfólio</p>
+      <h1><span class="hero-line">Štyri šablóny</span> <span class="hero-line hero-line--italic">pre štyri biznisy.</span></h1>
+      <div class="hero-rule"></div>
+      <h2>Tieto demo verzie ukazujú, čo viem postaviť. Vyberieme si jednu ako základ a personalizujeme ju pre vás. Šetrí to 60–70 % bežného času a ceny.</h2>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container">
+
+      <article class="work fade-in">
+        <a href="../templates/01-salon-lumi/index.html" class="work__media" aria-label="Otvoriť Salón Lumi">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1400&q=80" alt="Salón Lumi" />
+        </a>
+        <div>
+          <p class="work__num">01 / Kaderníctvo</p>
+          <h2>Salón Lumi</h2>
+          <p>Klasický salónový web s teplou paletou (rose gold, cream). Hero s veľkou typografiou, sekcia služieb s cenníkom, galéria s lightboxom, online rezervácia cez Reservio, plávajúce WhatsApp tlačidlo. Multilanguage prepínač.</p>
+          <ul class="work__chips"><li>Online rezervácia</li><li>Cenník</li><li>Galéria</li><li>WhatsApp</li><li>Google Maps</li><li>SK · CS · EN</li></ul>
+          <a href="../templates/01-salon-lumi/index.html" class="btn btn-accent">Otvoriť ukážku</a>
+        </div>
+      </article>
+
+      <article class="work fade-in">
+        <a href="../templates/02-cafe-luna/index.html" class="work__media" aria-label="Otvoriť Café Luna">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1400&q=80" alt="Café Luna" />
+        </a>
+        <div>
+          <p class="work__num">02 / Kaviareň · brunch</p>
+          <h2>Café Luna</h2>
+          <p>Pre kaviarne a bistrá, ktoré sa prezentujú aj cez Instagram. Editorial hero, brunch karta, otváracie hodiny, mapa, fotky atmosféry, prepojenie na IG. Vhodné aj pre malé reštaurácie a pekárne.</p>
+          <ul class="work__chips"><li>Menu / brunch karta</li><li>Otváracie hodiny</li><li>IG napojenie</li><li>Galéria</li><li>SK · CS · EN</li></ul>
+          <a href="../templates/02-cafe-luna/index.html" class="btn btn-accent">Otvoriť ukážku</a>
+        </div>
+      </article>
+
+      <article class="work fade-in">
+        <a href="../templates/03-fyzio-plus/index.html" class="work__media" aria-label="Otvoriť Fyzio Plus">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1400&q=80" alt="Fyzio Plus" />
+        </a>
+        <div>
+          <p class="work__num">03 / Fyzioterapia</p>
+          <h2>Fyzio Plus</h2>
+          <p>Pre súkromné fyzio ambulancie a wellness centrá. Profil terapeuta, popis diagnóz a terapií, cenník, online rezervácia, FAQ pre prvý termín. Dôraz na dôveryhodnosť a profesionalitu.</p>
+          <ul class="work__chips"><li>Diagnózy</li><li>Terapie</li><li>Profil terapeuta</li><li>Online rezervácia</li><li>FAQ</li><li>SK · CS · EN</li></ul>
+          <a href="../templates/03-fyzio-plus/index.html" class="btn btn-accent">Otvoriť ukážku</a>
+        </div>
+      </article>
+
+      <article class="work fade-in">
+        <a href="../templates/04-studio-novak/index.html" class="work__media" aria-label="Otvoriť Studio Novák">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1606800052052-a08af7148866?auto=format&fit=crop&w=1400&q=80" alt="Studio Novák" />
+        </a>
+        <div>
+          <p class="work__num">04 / Fotograf</p>
+          <h2>Studio Novák</h2>
+          <p>Editoriálny portfólio web pre svadobného / portrét fotografa. Veľké galérie s drag-scroll, balíčky, cenník, kontaktný formulár, schema.org pre lokálnu optimalizáciu. Tmavý, luxusný look.</p>
+          <ul class="work__chips"><li>Editorial hero</li><li>Veľké galérie</li><li>Balíčky</li><li>Lightbox</li><li>SK · CS · EN</li></ul>
+          <a href="../templates/04-studio-novak/index.html" class="btn btn-accent">Otvoriť ukážku</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="section section--dark fade-in">
+    <div class="container text-center">
+      <h2>Aký biznis robíte vy?</h2>
+      <p style="max-width:560px;margin:18px auto 36px;font-size:1.1rem">Tieto šablóny sú demo, nie obmedzenie. Robím weby pre kohokoľvek, kto má službu a klientov. Napíšte, dohodneme sa.</p>
+      <a href="contact.html" class="btn btn-accent btn-lg">Napísať</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container"><div class="footer-bottom" style="padding-top:0;border:0"><p class="footer-bottom__copy">© 2026 webovky · živnostníčka</p><div class="footer-bottom__links"><a href="privacy.html">Ochrana osobných údajov</a><a href="terms.html">Obchodné podmienky</a><a href="index.html">Späť na úvod</a></div></div></div>
+  </footer>
+  <button class="back-to-top" aria-label="Hore"><i class="fa-solid fa-arrow-up"></i></button>
+  <script src="js/i18n.js"></script><script src="js/main.js"></script>
+</body>
+</html>

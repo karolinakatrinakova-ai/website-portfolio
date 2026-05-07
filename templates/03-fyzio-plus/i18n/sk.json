@@ -1,0 +1,6 @@
+{
+  "meta": { "title": "Fyzio Plus · súkromná fyzioterapia v Žiline", "description": "Súkromná fyzio ambulancia v Žiline. Bolesti chrbta, kĺbov, post-úrazová rehabilitácia. Online rezervácia." },
+  "nav": { "home": "Domov", "diagnoses": "Diagnózy", "therapies": "Terapie", "team": "O nás", "pricing": "Cenník", "contact": "Kontakt", "book": "Objednať termín" },
+  "announcement": { "text": "Voľné termíny v máji: <strong>posledné 4 v utorky</strong>. <a href='#kontakt'>Online rezervácia</a>" },
+  "hero": { "label": "Fyzioterapia · Žilina", "line1": "Bolesť", "line2": "nezmizne", "line3": "sama.", "sub": "Fyzio Plus — súkromná fyzio ambulancia, kde sa o vás staráme 60 minút (nie 15 ako v štátnych ambulanciách). Diagnostika, terapia, plán domácich cvičení. Bez čakacích listín.", "btn1": "Objednať termín", "btn2": "Pozri diagnózy" }
+}

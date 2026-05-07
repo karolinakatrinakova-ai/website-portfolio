@@ -1,0 +1,151 @@
+{
+  "meta": {
+    "title": "Webovky · websites for small businesses in SK & CZ",
+    "description": "Modern, fast and personal websites for small businesses. Done in 14 days, fixed price, no monthly fees."
+  },
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "process": "Process",
+    "portfolio": "Portfolio",
+    "pricing": "Pricing",
+    "about": "About",
+    "contact": "Contact",
+    "social": "Social",
+    "cta": "Free quote"
+  },
+  "announcement": {
+    "text": "Taking <strong>2 new projects</strong> in May. <a href='contact.html'>Reserve a slot</a>"
+  },
+  "hero": {
+    "label": "Webstudio · Bratislava & Prague",
+    "line1": "A website",
+    "line2": "that works",
+    "line3": "while you sleep.",
+    "sub": "Modern, fast and personal websites for small businesses — salons, cafés, physio clinics, photographers and more. Done in 14 days, fixed price, no monthly fees.",
+    "btn_primary": "Free quote",
+    "btn_secondary": "See portfolio"
+  },
+  "marquee": {
+    "i1": "Hair salons",
+    "i2": "Coffee shops",
+    "i3": "Physiotherapy",
+    "i4": "Photographers",
+    "i5": "Nail studios",
+    "i6": "Architects",
+    "i7": "Yoga studios",
+    "i8": "Bistros",
+    "i9": "Accountants"
+  },
+  "stats": {
+    "label1": "days average delivery time",
+    "label2": "happy clients in year one",
+    "label3": "locations I work from (SK + CZ + AT)",
+    "label4": "Google PageSpeed score"
+  },
+  "intro": {
+    "label": "What I do",
+    "title": "Websites for people who don't want to deal with tech",
+    "text": "You tell me what you do and who your clients are. I build a website that brings you bookings, emails and phone calls — without you needing to understand what hosting or an SSL cert means."
+  },
+  "services": {
+    "label": "Services",
+    "title": "Turnkey websites. No surprises.",
+    "lead": "Six areas where I can really help. Pick what you need — or let me decide what makes the most sense.",
+    "s1": { "tag": "Turnkey website", "title": "Design + dev + launch", "text": "From the first call to live domain. I handle everything — you control the content." },
+    "s2": { "tag": "Redesign", "title": "Modernizing an old site", "text": "A 2015 website holds you back. I'll build a new one and keep your URLs so you don't lose Google ranking." },
+    "s3": { "tag": "Local SEO", "title": "So locals find you", "text": "Google Maps, schema.org, local keywords like „hairdresser Bratislava city center“." },
+    "s4": { "tag": "Online booking", "title": "Clients book themselves", "text": "Reservio, Booksy, SimplyBook or a custom Tally form. Zero work for you." },
+    "s5": { "tag": "Maintenance", "title": "Monthly support", "text": "€25/month or pay-per-hour (€20/h). No long-term contracts." },
+    "s6": { "tag": "Multilanguage", "title": "SK + CZ + EN switcher", "text": "Just like this website. Perfect for businesses serving international clients too." }
+  },
+  "portfolio": {
+    "label": "Portfolio",
+    "title": "Four templates for four different industries",
+    "lead": "These are demos for 4 business types. We pick one as a base and customize for you. That saves 60–70 % of the typical website cost.",
+    "p1": { "tag": "Hair salon · warm & elegant", "title": "Salón Lumi", "text": "Classic salon site with gallery, pricing, online booking via Reservio and a floating WhatsApp button.", "open": "Open demo" },
+    "p2": { "tag": "Coffee · brunch · bistro", "title": "Café Luna", "text": "For cafés that also live on Instagram. Menu, opening hours, brunch card and photos.", "open": "Open demo" },
+    "p3": { "tag": "Physiotherapy · health", "title": "Fyzio Plus", "text": "For private physio clinics. Conditions, therapies, online booking and the therapist's profile.", "open": "Open demo" },
+    "p4": { "tag": "Photographer · creative studio", "title": "Studio Novák", "text": "An editorial website for a wedding / portrait photographer. Big galleries, packages, contact form.", "open": "Open demo" }
+  },
+  "process": {
+    "label": "Process",
+    "title": "Simple. Predictable. On time.",
+    "step1": { "time": "Day 0", "title": "Free 20-minute call", "text": "I learn what you do, who your clients are and what the site needs to achieve. No sales pitch." },
+    "step2": { "time": "Day 1–3", "title": "Proposal & quote", "text": "I send a concrete offer with a fixed price and the template I propose as a starting point." },
+    "step3": { "time": "Day 3–5", "title": "Materials", "text": "Texts and photos. I can write the texts for you and source photos from Unsplash or arrange a photographer." },
+    "step4": { "time": "Day 5–12", "title": "Build", "text": "I send a preview link, you send feedback. 1–2 rounds of revisions are included." },
+    "step5": { "time": "Day 12–14", "title": "Launch", "text": "Domain hooked up (or bought for you). Google Maps, schema, Search Console. The site goes live." }
+  },
+  "pricing": {
+    "label": "Pricing",
+    "title": "Transparent packages, no asterisks",
+    "lead": "Fixed prices, not hours. You always know what you'll pay. Prices are pre-VAT (not yet registered).",
+    "addons": "<b>Plus one-off:</b> domain .sk/.cz ~€15/year · hosting €0–6/month depending on site type.",
+    "tiers": {
+      "start": { "title": "Start", "price": "€290", "sub": "One-page website", "f1": "1 page (one-pager)", "f2": "Mobile + desktop", "f3": "Contact form", "f4": "Google Map + SEO", "f5": "Domain help", "f6": "Delivered in 7 days" },
+      "profi": { "title": "Pro", "price": "€490", "sub": "Full website", "badge": "Most popular", "f1": "5–7 sections / pages", "f2": "Gallery + lightbox", "f3": "Pricing + services", "f4": "Online booking integration", "f5": "Local SEO + schema", "f6": "Copy for the home page", "f7": "WhatsApp / call button" },
+      "plus":  { "title": "Plus", "price": "from €790", "sub": "Multilang / blog / shop", "f1": "Everything in Pro", "f2": "SK + CZ + EN switcher", "f3": "Blog / news", "f4": "Simple shop (up to 30 products)", "f5": "Newsletter (Mailerlite)", "f6": "Google Analytics 4" }
+    },
+    "cta": "I'm interested"
+  },
+  "testimonials": {
+    "label": "Reviews",
+    "title": "What clients say"
+  },
+  "faq": {
+    "label": "FAQ",
+    "title": "You often ask",
+    "q1": "I have a domain and an old site. Can you do something with that?",
+    "a1": "Yes. Either I migrate the domain to a new website, or I redesign on your existing host. Depends on the tech — usually I can migrate without downtime.",
+    "q2": "What photos will you use if I don't have any?",
+    "a2": "For the first version we use styled photos from Unsplash (legal, free). We replace them with yours later. On higher tiers I can arrange a photographer at a fair price.",
+    "q3": "Will I be able to make edits myself?",
+    "a3": "On the Pro and Plus tiers — yes. I set it up so editing texts, prices or gallery is doable in a simple interface. Or write me and I'll handle it under maintenance.",
+    "q4": "What if I don't like the result?",
+    "a4": "Before we start I send a clear offer with a reference. After the first preview you have 1–2 included revision rounds. If we really miss the mark, I refund 50 % of the deposit and we part on good terms.",
+    "q5": "Do you also work for businesses outside beauty?",
+    "a5": "Yes, any service — auto repair, physio, tutoring, small restaurants. These templates are demos, not limitations."
+  },
+  "cta_band": {
+    "title": "Got an idea? Let's talk.",
+    "text": "Free 20-minute call via Google Meet or phone. No commitment, no pressure.",
+    "btn": "Reserve a slot"
+  },
+  "contact": {
+    "label": "Contact",
+    "title": "Drop me a short note",
+    "text": "One line is enough — what you do and what your current site looks like. I reply within 24 hours.",
+    "email_label": "Email",
+    "phone_label": "Phone / WhatsApp",
+    "ig_label": "Instagram",
+    "form": {
+      "name": "Your name",
+      "biz": "Business / industry",
+      "contact": "Email or phone",
+      "message": "Short brief",
+      "submit": "Send inquiry",
+      "ok": "Opening your email client. If nothing happens, write me directly."
+    }
+  },
+  "footer": {
+    "tagline": "Websites for small businesses in SK and CZ. Done in 14 days.",
+    "col_studio": "Studio",
+    "col_work": "Work",
+    "col_resources": "Resources",
+    "col_contact": "Contact",
+    "newsletter_title": "Tips for small businesses",
+    "newsletter_text": "One email a month with one concrete tip to improve your website or Google visibility. No spam.",
+    "newsletter_placeholder": "you@email.com",
+    "newsletter_btn": "Subscribe",
+    "rights": "© 2026 webovky · sole trader",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "cookies": "Cookies"
+  },
+  "cookies": {
+    "text": "This site uses cookies to improve your experience and gather anonymous stats.",
+    "accept": "Accept",
+    "decline": "Decline"
+  }
+}

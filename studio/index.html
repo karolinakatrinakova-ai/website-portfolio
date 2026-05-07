@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="meta.title">Webovky · webové stránky pre malé firmy</title>
+  <meta name="description" data-i18n="meta.description" content="Robím moderné, rýchle a osobné webstránky pre malé firmy. Hotovo do 14 dní, fixná cena." />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Webovky · webové stránky pre malé firmy" />
+  <meta property="og:description" content="Moderné weby pre malé firmy v SK & CZ. Hotovo do 14 dní." />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1481487196290-c152efe083f5?auto=format&fit=crop&w=1600&q=80" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="theme-color" content="#0c0c0b" />
+
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Webovky webstudio",
+    "description": "Tvorba webových stránok pre malé firmy v SK a CZ.",
+    "url": "https://webovky.example",
+    "telephone": "+421900000000",
+    "email": "hello@webovky.sk",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Bratislava",
+      "addressCountry": "SK"
+    },
+    "areaServed": ["Slovensko", "Česko"],
+    "priceRange": "€€"
+  }
+  </script>
+</head>
+<body>
+
+  <a href="#main-content" class="skip-to-content">Skip to content</a>
+
+  <!-- Page loader -->
+  <div class="page-loader" aria-hidden="true">
+    <span class="page-loader__brand">webovky<i>.</i></span>
+  </div>
+
+  <!-- Announcement bar -->
+  <div class="announcement-bar" id="announcementBar">
+    <div class="container">
+      <p data-i18n="announcement.text" data-i18n-html="true">V máji prijímam <strong>2 nové projekty</strong>. <a href="contact.html">Rezervovať termín</a></p>
+      <button class="announcement-bar__close" aria-label="Zavrieť">&times;</button>
+    </div>
+  </div>
+
+  <!-- Reading progress -->
+  <div class="reading-progress" aria-hidden="true"></div>
+
+  <!-- Navbar -->
+  <nav class="navbar" aria-label="Hlavná navigácia">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">
+        <span class="navbar-brand__dot" aria-hidden="true"></span>
+        <span>webovky<i>.</i></span>
+      </a>
+
+      <ul class="navbar-links">
+        <li><a href="index.html" class="active" data-i18n="nav.home">Domov</a></li>
+        <li><a href="services.html" data-i18n="nav.services">Služby</a></li>
+        <li><a href="process.html" data-i18n="nav.process">Postup</a></li>
+        <li class="navbar-dropdown">
+          <button class="navbar-dropdown__toggle" data-i18n="nav.portfolio" aria-haspopup="true">Portfólio <i class="fa-solid fa-chevron-down navbar-dropdown__chev"></i></button>
+          <ul class="navbar-dropdown__menu" role="menu">
+            <li><a href="../templates/01-salon-lumi/index.html">Salón Lumi · kaderníctvo</a></li>
+            <li><a href="../templates/02-cafe-luna/index.html">Café Luna · kaviareň</a></li>
+            <li><a href="../templates/03-fyzio-plus/index.html">Fyzio Plus · fyzioterapia</a></li>
+            <li><a href="../templates/04-studio-novak/index.html">Studio Novák · fotograf</a></li>
+            <li><a href="portfolio.html">Všetky práce →</a></li>
+          </ul>
+        </li>
+        <li><a href="pricing.html" data-i18n="nav.pricing">Cenník</a></li>
+        <li><a href="contact.html" data-i18n="nav.contact">Kontakt</a></li>
+      </ul>
+
+      <div class="navbar-right">
+        <div class="lang-switch" data-lang-switch role="group" aria-label="Jazyk">
+          <button class="lang-switch__btn" data-lang="sk">SK</button>
+          <button class="lang-switch__btn" data-lang="cs">CS</button>
+          <button class="lang-switch__btn" data-lang="en">EN</button>
+        </div>
+        <a href="contact.html" class="navbar-cta" data-i18n="nav.cta">Nezáväzný dopyt</a>
+        <button class="navbar-hamburger" aria-label="Menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" aria-hidden="true">
+    <ul class="mobile-menu__links">
+      <li><a href="index.html" data-i18n="nav.home">Domov</a></li>
+      <li><a href="services.html" data-i18n="nav.services">Služby</a></li>
+      <li><a href="process.html" data-i18n="nav.process">Postup</a></li>
+      <li><a href="portfolio.html" data-i18n="nav.portfolio">Portfólio</a></li>
+      <li><a href="pricing.html" data-i18n="nav.pricing">Cenník</a></li>
+      <li><a href="contact.html" data-i18n="nav.contact">Kontakt</a></li>
+    </ul>
+    <span class="mobile-menu__label" data-i18n="footer.col_resources">Zdroje</span>
+    <ul class="mobile-menu__links">
+      <li><a href="about.html" data-i18n="nav.about">O mne</a></li>
+      <li><a href="social.html" data-i18n="nav.social">Sociálne siete</a></li>
+    </ul>
+    <div class="mobile-menu__cta">
+      <a href="contact.html" class="btn btn-accent" data-i18n="nav.cta">Nezáväzný dopyt</a>
+    </div>
+    <div class="mobile-menu__bottom">
+      <a href="social.html" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="social.html" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="social.html" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <header class="banner" id="main-content">
+    <div class="banner__bg" aria-hidden="true">
+      <img src="https://images.unsplash.com/photo-1481487196290-c152efe083f5?auto=format&fit=crop&w=2400&q=82" alt="" />
+    </div>
+    <div class="banner__veil" aria-hidden="true"></div>
+
+    <div class="container">
+      <p class="hero-label" data-i18n="hero.label">Webstudio · Bratislava &amp; Praha</p>
+      <h1>
+        <span class="hero-line" data-i18n="hero.line1">Webstránka,</span>
+        <span class="hero-line hero-line--italic" data-i18n="hero.line2">ktorá pracuje</span>
+        <span class="hero-line" data-i18n="hero.line3">aj počas noci.</span>
+      </h1>
+      <div class="hero-rule"></div>
+      <h2 data-i18n="hero.sub">Moderné, rýchle a osobné weby pre malé firmy — salóny, kaviarne, fyzio, fotografov a ďalších. Hotovo do 14 dní, fixná cena, žiadne mesačné poplatky.</h2>
+      <div class="hero-buttons">
+        <a href="contact.html" class="btn btn-accent btn-lg" data-i18n="hero.btn_primary">Nezáväzný dopyt</a>
+        <a href="#portfolio" class="btn btn-ghost-light btn-lg" data-i18n="hero.btn_secondary">Pozri portfólio</a>
+      </div>
+    </div>
+    <a href="#intro" class="scroll-indicator" aria-label="Scroll down">
+      <span class="scroll-indicator__line"></span>
+    </a>
+  </header>
+
+  <!-- Marquee -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__inner">
+      <span class="marquee__item" data-i18n="marquee.i1">Kaderníctva</span>
+      <span class="marquee__item" data-i18n="marquee.i2">Kaviarne</span>
+      <span class="marquee__item" data-i18n="marquee.i3">Fyzioterapia</span>
+      <span class="marquee__item" data-i18n="marquee.i4">Fotografi</span>
+      <span class="marquee__item" data-i18n="marquee.i5">Nechtové štúdiá</span>
+      <span class="marquee__item" data-i18n="marquee.i6">Architekti</span>
+      <span class="marquee__item" data-i18n="marquee.i7">Joga štúdiá</span>
+      <span class="marquee__item" data-i18n="marquee.i8">Bistrá</span>
+      <span class="marquee__item" data-i18n="marquee.i9">Účtovníci</span>
+      <!-- duplicate for seamless loop -->
+      <span class="marquee__item" data-i18n="marquee.i1">Kaderníctva</span>
+      <span class="marquee__item" data-i18n="marquee.i2">Kaviarne</span>
+      <span class="marquee__item" data-i18n="marquee.i3">Fyzioterapia</span>
+      <span class="marquee__item" data-i18n="marquee.i4">Fotografi</span>
+      <span class="marquee__item" data-i18n="marquee.i5">Nechtové štúdiá</span>
+      <span class="marquee__item" data-i18n="marquee.i6">Architekti</span>
+      <span class="marquee__item" data-i18n="marquee.i7">Joga štúdiá</span>
+      <span class="marquee__item" data-i18n="marquee.i8">Bistrá</span>
+      <span class="marquee__item" data-i18n="marquee.i9">Účtovníci</span>
+    </div>
+  </div>
+
+  <!-- INTRO + STATS -->
+  <section class="section fade-in" id="intro">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label" data-i18n="intro.label">Čo robím</span>
+        <h2 data-i18n="intro.title">Webstránky pre ľudí, ktorí nechcú riešiť technické veci</h2>
+        <p data-i18n="intro.text">Vy mi poviete, čo robíte a kto sú vaši klienti. Ja postavím web, ktorý vám prináša rezervácie, e-maily a telefonáty bez toho, aby ste museli rozumieť tomu, čo je hosting alebo SSL certifikát.</p>
+      </div>
+
+      <div class="stats stagger-children">
+        <div class="stat">
+          <div class="stat__number" data-target="14" data-suffix="">14</div>
+          <div class="stat__label" data-i18n="stats.label1">dní priemerný čas dodania</div>
+        </div>
+        <div class="stat">
+          <div class="stat__number" data-target="32" data-suffix="+">32+</div>
+          <div class="stat__label" data-i18n="stats.label2">spokojných klientov za prvý rok</div>
+        </div>
+        <div class="stat">
+          <div class="stat__number" data-target="3" data-suffix="">3</div>
+          <div class="stat__label" data-i18n="stats.label3">lokalít odkiaľ pracujem (SK + CZ + AT)</div>
+        </div>
+        <div class="stat">
+          <div class="stat__number" data-target="98" data-suffix="">98</div>
+          <div class="stat__label" data-i18n="stats.label4">Google PageSpeed skóre</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section section--alt fade-in" id="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label" data-i18n="services.label">Služby</span>
+        <h2 data-i18n="services.title">Web na kľúč. Bez prekvapení.</h2>
+        <p data-i18n="services.lead">Šesť oblastí, v ktorých vám viem reálne pomôcť.</p>
+      </div>
+
+      <div class="cards stagger-children">
+        <article class="icon-card">
+          <span class="icon-card__num">01</span>
+          <h3 data-i18n="services.s1.title">Návrh + vývoj + nasadenie</h3>
+          <p class="card__tag" data-i18n="services.s1.tag">Kompletný web na kľúč</p>
+          <p data-i18n="services.s1.text">Od prvého stretnutia až po publikáciu domény. Ja sa starám o všetko — vy kontrolujete obsah.</p>
+        </article>
+        <article class="icon-card">
+          <span class="icon-card__num">02</span>
+          <h3 data-i18n="services.s2.title">Modernizácia starého webu</h3>
+          <p class="card__tag" data-i18n="services.s2.tag">Redizajn</p>
+          <p data-i18n="services.s2.text">Web z roku 2015 vás brzdí. Spravím nový, ponecháme rovnaké URL.</p>
+        </article>
+        <article class="icon-card">
+          <span class="icon-card__num">03</span>
+          <h3 data-i18n="services.s3.title">Aby vás našli ľudia v okolí</h3>
+          <p class="card__tag" data-i18n="services.s3.tag">Lokálne SEO</p>
+          <p data-i18n="services.s3.text">Google Maps, schema.org, lokálne kľúčové slová.</p>
+        </article>
+        <article class="icon-card">
+          <span class="icon-card__num">04</span>
+          <h3 data-i18n="services.s4.title">Klient si rezervuje sám</h3>
+          <p class="card__tag" data-i18n="services.s4.tag">Online rezervácia</p>
+          <p data-i18n="services.s4.text">Reservio, Booksy, SimplyBook alebo vlastný formulár.</p>
+        </article>
+        <article class="icon-card">
+          <span class="icon-card__num">05</span>
+          <h3 data-i18n="services.s5.title">Mesačná podpora</h3>
+          <p class="card__tag" data-i18n="services.s5.tag">Údržba &amp; zmeny</p>
+          <p data-i18n="services.s5.text">25 €/mes alebo platba za hodinu. Žiadne dlhodobé záväzky.</p>
+        </article>
+        <article class="icon-card">
+          <span class="icon-card__num">06</span>
+          <h3 data-i18n="services.s6.title">SK + CS + EN switcher</h3>
+          <p class="card__tag" data-i18n="services.s6.tag">Multilanguage</p>
+          <p data-i18n="services.s6.text">Rovnako ako tento web. Ideálne pre firmy obsluhujúce zahraničných klientov.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section class="section fade-in" id="portfolio">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label" data-i18n="portfolio.label">Portfólio</span>
+        <h2 data-i18n="portfolio.title">Štyri šablóny pre štyri rôzne biznisy</h2>
+        <p data-i18n="portfolio.lead">Toto sú demo verzie pre 4 typy firiem. Vyberieme si jednu ako základ a personalizujeme ju pre vás.</p>
+      </div>
+
+      <div class="cards stagger-children">
+        <a href="../templates/01-salon-lumi/index.html" class="card">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1200&q=80" alt="Salón Lumi" />
+          <div class="card__body">
+            <p class="card__tag" data-i18n="portfolio.p1.tag">Kaderníctvo · warm &amp; elegant</p>
+            <h3 data-i18n="portfolio.p1.title">Salón Lumi</h3>
+            <p data-i18n="portfolio.p1.text">Klasický salónový web s galériou, cenníkom a online rezerváciou.</p>
+            <ul class="card__chips"><li>Online rezervácia</li><li>Cenník</li><li>Galéria</li></ul>
+            <span class="card__cta" data-i18n="portfolio.p1.open">Otvoriť ukážku</span>
+          </div>
+        </a>
+
+        <a href="../templates/02-cafe-luna/index.html" class="card">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1200&q=80" alt="Café Luna" />
+          <div class="card__body">
+            <p class="card__tag" data-i18n="portfolio.p2.tag">Kaviareň · brunch · bistro</p>
+            <h3 data-i18n="portfolio.p2.title">Café Luna</h3>
+            <p data-i18n="portfolio.p2.text">Pre kaviarne, ktoré sa prezentujú aj cez Instagram. Menu, otváracie hodiny, brunch karta.</p>
+            <ul class="card__chips"><li>Menu</li><li>IG feed</li><li>Otváracie hodiny</li></ul>
+            <span class="card__cta" data-i18n="portfolio.p2.open">Otvoriť ukážku</span>
+          </div>
+        </a>
+
+        <a href="../templates/03-fyzio-plus/index.html" class="card">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1200&q=80" alt="Fyzio Plus" />
+          <div class="card__body">
+            <p class="card__tag" data-i18n="portfolio.p3.tag">Fyzioterapia · zdravie</p>
+            <h3 data-i18n="portfolio.p3.title">Fyzio Plus</h3>
+            <p data-i18n="portfolio.p3.text">Pre súkromné fyzio ambulancie. Diagnózy, terapie, online rezervácia.</p>
+            <ul class="card__chips"><li>Diagnózy</li><li>Rezervácie</li><li>Profil terapeuta</li></ul>
+            <span class="card__cta" data-i18n="portfolio.p3.open">Otvoriť ukážku</span>
+          </div>
+        </a>
+
+        <a href="../templates/04-studio-novak/index.html" class="card">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1606800052052-a08af7148866?auto=format&fit=crop&w=1200&q=80" alt="Studio Novák" />
+          <div class="card__body">
+            <p class="card__tag" data-i18n="portfolio.p4.tag">Fotograf · creative studio</p>
+            <h3 data-i18n="portfolio.p4.title">Studio Novák</h3>
+            <p data-i18n="portfolio.p4.text">Editoriálny web pre svadobného fotografa. Veľké galérie, balíčky, kontaktný formulár.</p>
+            <ul class="card__chips"><li>Editorial</li><li>Balíčky</li><li>Galérie</li></ul>
+            <span class="card__cta" data-i18n="portfolio.p4.open">Otvoriť ukážku</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS / TIMELINE -->
+  <section class="section section--alt fade-in" id="process">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label" data-i18n="process.label">Postup</span>
+        <h2 data-i18n="process.title">Jednoducho. Predvídateľne. Načas.</h2>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline__step fade-in">
+          <span class="timeline__time" data-i18n="process.step1.time">Deň 0</span>
+          <div class="timeline__content">
+            <h4 data-i18n="process.step1.title">Bezplatný 20-minútový hovor</h4>
+            <p data-i18n="process.step1.text">Zistím, čo robíte, kto sú vaši klienti a čo má webstránka splniť. Žiadne predajné reči.</p>
+          </div>
+        </div>
+        <div class="timeline__step fade-in">
+          <span class="timeline__time" data-i18n="process.step2.time">Deň 1–3</span>
+          <div class="timeline__content">
+            <h4 data-i18n="process.step2.title">Návrh a cenová ponuka</h4>
+            <p data-i18n="process.step2.text">Pošlem konkrétnu ponuku s fixnou cenou.</p>
+          </div>
+        </div>
+        <div class="timeline__step fade-in">
+          <span class="timeline__time" data-i18n="process.step3.time">Deň 3–5</span>
+          <div class="timeline__content">
+            <h4 data-i18n="process.step3.title">Materiály</h4>
+            <p data-i18n="process.step3.text">Texty a fotky. Texty viem napísať za vás.</p>
+          </div>
+        </div>
+        <div class="timeline__step fade-in">
+          <span class="timeline__time" data-i18n="process.step4.time">Deň 5–12</span>
+          <div class="timeline__content">
+            <h4 data-i18n="process.step4.title">Stavba webu</h4>
+            <p data-i18n="process.step4.text">Pošlem náhľad cez link, vy mi pošlete pripomienky.</p>
+          </div>
+        </div>
+        <div class="timeline__step fade-in">
+          <span class="timeline__time" data-i18n="process.step5.time">Deň 12–14</span>
+          <div class="timeline__content">
+            <h4 data-i18n="process.step5.title">Spustenie</h4>
+            <p data-i18n="process.step5.text">Doménu napojím alebo kúpim za vás. Web ide naživo.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section class="section fade-in" id="pricing-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label" data-i18n="pricing.label">Cenník</span>
+        <h2 data-i18n="pricing.title">Transparentné balíčky bez asterisku</h2>
+        <p data-i18n="pricing.lead">Fixné ceny, nie hodiny. Vždy viete, koľko zaplatíte.</p>
+      </div>
+
+      <div class="tiers">
+        <article class="tier fade-in">
+          <h3 data-i18n="pricing.tiers.start.title">Štart</h3>
+          <p class="tier__price" data-i18n="pricing.tiers.start.price">290 €</p>
+          <p class="tier__sub" data-i18n="pricing.tiers.start.sub">Jednostránkový web</p>
+          <ul>
+            <li data-i18n="pricing.tiers.start.f1">1 stránka</li>
+            <li data-i18n="pricing.tiers.start.f2">Mobil + desktop</li>
+            <li data-i18n="pricing.tiers.start.f3">Kontaktný formulár</li>
+            <li data-i18n="pricing.tiers.start.f4">Google Mapa + SEO</li>
+            <li data-i18n="pricing.tiers.start.f5">Pomoc s doménou</li>
+            <li data-i18n="pricing.tiers.start.f6">Dodanie do 7 dní</li>
+          </ul>
+          <a href="contact.html" class="btn btn-secondary" data-i18n="pricing.cta">Mám záujem</a>
+        </article>
+
+        <article class="tier tier--feat fade-in">
+          <span class="tier__badge" data-i18n="pricing.tiers.profi.badge">Najobľúbenejšie</span>
+          <h3 data-i18n="pricing.tiers.profi.title">Profi</h3>
+          <p class="tier__price" data-i18n="pricing.tiers.profi.price">490 €</p>
+          <p class="tier__sub" data-i18n="pricing.tiers.profi.sub">Plnohodnotná webovka</p>
+          <ul>
+            <li data-i18n="pricing.tiers.profi.f1">5–7 sekcií</li>
+            <li data-i18n="pricing.tiers.profi.f2">Galéria + lightbox</li>
+            <li data-i18n="pricing.tiers.profi.f3">Cenník + služby</li>
+            <li data-i18n="pricing.tiers.profi.f4">Online rezervácia</li>
+            <li data-i18n="pricing.tiers.profi.f5">Lokálne SEO</li>
+            <li data-i18n="pricing.tiers.profi.f6">Texty na úvodnú stránku</li>
+            <li data-i18n="pricing.tiers.profi.f7">WhatsApp tlačidlo</li>
+          </ul>
+          <a href="contact.html" class="btn btn-accent" data-i18n="pricing.cta">Mám záujem</a>
+        </article>
+
+        <article class="tier fade-in">
+          <h3 data-i18n="pricing.tiers.plus.title">Plus</h3>
+          <p class="tier__price" data-i18n="pricing.tiers.plus.price">od 790 €</p>
+          <p class="tier__sub" data-i18n="pricing.tiers.plus.sub">Multilang / blog / e-shop</p>
+          <ul>
+            <li data-i18n="pricing.tiers.plus.f1">Všetko z Profi</li>
+            <li data-i18n="pricing.tiers.plus.f2">SK + CS + EN</li>
+            <li data-i18n="pricing.tiers.plus.f3">Blog / aktuality</li>
+            <li data-i18n="pricing.tiers.plus.f4">Jednoduchý e-shop</li>
+            <li data-i18n="pricing.tiers.plus.f5">Newsletter</li>
+            <li data-i18n="pricing.tiers.plus.f6">Google Analytics 4</li>
+          </ul>
+          <a href="contact.html" class="btn btn-secondary" data-i18n="pricing.cta">Mám záujem</a>
+        </article>
+      </div>
+
+      <p class="text-center" style="margin-top:30px;color:var(--ink-soft);font-size:0.95rem" data-i18n="pricing.addons" data-i18n-html="true"><b>K tomu jednorazovo:</b> doména .sk/.cz ~15 €/rok · hosting 0–6 €/mes podľa typu webu.</p>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section section--alt fade-in" id="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label" data-i18n="testimonials.label">Recenzie</span>
+        <h2 data-i18n="testimonials.title">Čo o mne hovoria klienti</h2>
+      </div>
+
+      <div class="testimonial-slider">
+        <div class="testimonial-slider__track">
+          <article class="testimonial-card">
+            <p class="testimonial-card__stars">★ ★ ★ ★ ★</p>
+            <p class="testimonial-card__quote">Web stál za pol ceny ostatných ponúk a vyzerá lepšie ako u konkurencie. Po troch mesiacoch máme 30 % viac telefonátov.</p>
+            <div class="testimonial-card__author">
+              <img class="testimonial-card__avatar" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=200&q=80" alt="" />
+              <div>
+                <p class="testimonial-card__name">Lucia K.</p>
+                <p class="testimonial-card__role">Salón Lumi · Bratislava</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <p class="testimonial-card__stars">★ ★ ★ ★ ★</p>
+            <p class="testimonial-card__quote">Konečne niekto, kto rozumie tomu, že nepotrebujem 15 stránok, ale jeden, ktorý funguje. Hotovo za 12 dní, fixná cena.</p>
+            <div class="testimonial-card__author">
+              <img class="testimonial-card__avatar" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=200&q=80" alt="" />
+              <div>
+                <p class="testimonial-card__name">Tereza D.</p>
+                <p class="testimonial-card__role">Atelier Nehty · Praha</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <p class="testimonial-card__stars">★ ★ ★ ★ ★</p>
+            <p class="testimonial-card__quote">Mali sme starý WordPress, ktorý nikto nevedel udržiavať. Migrácia bez výpadku, nový vzhľad, lepšia rýchlosť. Odporúčam.</p>
+            <div class="testimonial-card__author">
+              <img class="testimonial-card__avatar" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80" alt="" />
+              <div>
+                <p class="testimonial-card__name">Marek H.</p>
+                <p class="testimonial-card__role">Fyzio Plus · Žilina</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <p class="testimonial-card__stars">★ ★ ★ ★ ★</p>
+            <p class="testimonial-card__quote">Ako fotografka som potrebovala portfólio, ktoré dýcha. Toto je presne ono. Ďakujem za trpezlivosť pri 8 verziách galérie.</p>
+            <div class="testimonial-card__author">
+              <img class="testimonial-card__avatar" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=200&q=80" alt="" />
+              <div>
+                <p class="testimonial-card__name">Sofia B.</p>
+                <p class="testimonial-card__role">Studio Novák · Košice</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <p class="testimonial-card__stars">★ ★ ★ ★ ★</p>
+            <p class="testimonial-card__quote">Po prvom mesiaci sa nám zvýšili rezervácie o 40 %. Web pracuje aj keď spím — presne tak, ako tu sľubujú.</p>
+            <div class="testimonial-card__author">
+              <img class="testimonial-card__avatar" src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=200&q=80" alt="" />
+              <div>
+                <p class="testimonial-card__name">Andrea P.</p>
+                <p class="testimonial-card__role">Café Luna · Olomouc</p>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="testimonial-slider__nav">
+          <button class="testimonial-slider__btn testimonial-slider__btn--prev" aria-label="Predošlé">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <div class="testimonial-slider__dots" role="tablist"></div>
+          <button class="testimonial-slider__btn testimonial-slider__btn--next" aria-label="Ďalšie">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section fade-in" id="faq-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label" data-i18n="faq.label">FAQ</span>
+        <h2 data-i18n="faq.title">Často sa ma pýtate</h2>
+      </div>
+
+      <div class="faq">
+        <details class="faq__item">
+          <summary class="faq__question" data-i18n="faq.q1">Mám už doménu a starý web. Viete s tým niečo spraviť?</summary>
+          <p class="faq__answer" data-i18n="faq.a1">Áno. Buď doménu prevediem na nový web, alebo robím redizajn priamo na vašom hostingu.</p>
+        </details>
+        <details class="faq__item">
+          <summary class="faq__question" data-i18n="faq.q2">Aké fotky použijete, keď ja žiadne nemám?</summary>
+          <p class="faq__answer" data-i18n="faq.a2">Pre prvú verziu používame štýlové fotky z Unsplash (legálne, zdarma).</p>
+        </details>
+        <details class="faq__item">
+          <summary class="faq__question" data-i18n="faq.q3">Budem schopná robiť úpravy sama?</summary>
+          <p class="faq__answer" data-i18n="faq.a3">Pri Profi a Plus balíčku áno — robím to tak, že úpravy textov, cien či galérie zvládnete sami.</p>
+        </details>
+        <details class="faq__item">
+          <summary class="faq__question" data-i18n="faq.q4">Čo ak mi web nebude vyhovovať?</summary>
+          <p class="faq__answer" data-i18n="faq.a4">Pred začatím prác vám pošlem jasnú ponuku. Po prvom náhľade máme 1–2 kolá úprav v cene.</p>
+        </details>
+        <details class="faq__item">
+          <summary class="faq__question" data-i18n="faq.q5">Robíte aj pre firmy, ktoré nie sú v salónovej brandži?</summary>
+          <p class="faq__answer" data-i18n="faq.a5">Áno, hocijaká služba — autoservis, fyzioterapia, doučovanie, malé reštaurácie.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BAND -->
+  <section class="section section--dark fade-in" id="cta">
+    <div class="container text-center">
+      <h2 data-i18n="cta_band.title">Máte nápad? Stretnime sa.</h2>
+      <p style="max-width:560px;margin:20px auto 36px;font-size:1.1rem" data-i18n="cta_band.text">Bezplatný 20-minútový hovor cez Google Meet alebo telefón.</p>
+      <a href="contact.html" class="btn btn-accent btn-lg" data-i18n="cta_band.btn">Rezervovať termín</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <h2>webovky<i>.</i></h2>
+          <p data-i18n="footer.tagline">Webové stránky pre malé firmy v SK a CZ. Hotovo do 14 dní.</p>
+          <div class="footer-socials">
+            <a href="social.html" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="social.html" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="social.html" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="social.html" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-newsletter">
+          <h4 data-i18n="footer.newsletter_title">Tipy pre malé firmy</h4>
+          <p data-i18n="footer.newsletter_text">Raz za mesiac e-mail s 1 konkrétnym tipom. Bez spamu.</p>
+          <form class="footer-newsletter__form" onsubmit="event.preventDefault();this.querySelector('button').textContent='✓';this.querySelector('input').disabled=true;">
+            <input type="email" class="footer-newsletter__input" data-i18n-attr="placeholder|footer.newsletter_placeholder" placeholder="tvoj@email.sk" required aria-label="Email" />
+            <button type="submit" class="footer-newsletter__btn" data-i18n="footer.newsletter_btn">Odoberať</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4 data-i18n="footer.col_studio">Studio</h4>
+          <a href="about.html" data-i18n="nav.about">O mne</a>
+          <a href="services.html" data-i18n="nav.services">Služby</a>
+          <a href="process.html" data-i18n="nav.process">Postup</a>
+          <a href="pricing.html" data-i18n="nav.pricing">Cenník</a>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.col_work">Práce</h4>
+          <a href="../templates/01-salon-lumi/index.html">Salón Lumi</a>
+          <a href="../templates/02-cafe-luna/index.html">Café Luna</a>
+          <a href="../templates/03-fyzio-plus/index.html">Fyzio Plus</a>
+          <a href="../templates/04-studio-novak/index.html">Studio Novák</a>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.col_resources">Zdroje</h4>
+          <a href="social.html" data-i18n="nav.social">Sociálne siete</a>
+          <a href="privacy.html" data-i18n="footer.privacy">Ochrana osobných údajov</a>
+          <a href="terms.html" data-i18n="footer.terms">Obchodné podmienky</a>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.col_contact">Kontakt</h4>
+          <p><i class="fa-solid fa-envelope"></i> &nbsp;hello@webovky.sk</p>
+          <p><i class="fa-solid fa-phone"></i> &nbsp;+421 900 000 000</p>
+          <p><i class="fa-brands fa-whatsapp"></i> &nbsp;+421 900 000 000</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-bottom__copy" data-i18n="footer.rights">© 2026 webovky · živnostníčka</p>
+        <div class="footer-bottom__links">
+          <a href="privacy.html" data-i18n="footer.privacy">Ochrana osobných údajov</a>
+          <a href="terms.html" data-i18n="footer.terms">Obchodné podmienky</a>
+          <a href="javascript:void(0)" onclick="localStorage.removeItem('webovky_cookies');document.getElementById('cookieBanner').style.display=''" data-i18n="footer.cookies">Cookies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile sticky CTA -->
+  <div class="mobile-cta">
+    <a href="contact.html" class="btn btn-accent" data-i18n="nav.cta">Nezáväzný dopyt</a>
+  </div>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox__close" aria-label="Zavrieť">&times;</button>
+    <img class="lightbox__img" src="" alt="" />
+  </div>
+
+  <!-- Back to top -->
+  <button class="back-to-top" aria-label="Hore"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <!-- Cookie banner -->
+  <div class="cookie-banner" id="cookieBanner">
+    <div class="cookie-banner__inner">
+      <p data-i18n="cookies.text">Tento web používa cookies pre zlepšenie zážitku a anonymné štatistiky.</p>
+      <div class="cookie-banner__actions">
+        <button class="cookie-banner__btn cookie-banner__btn--accept" data-cookie="accept" data-i18n="cookies.accept">Prijať</button>
+        <button class="cookie-banner__btn cookie-banner__btn--decline" data-cookie="decline" data-i18n="cookies.decline">Odmietnuť</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Intro offer modal -->
+  <div class="intro-offer" id="introOffer" aria-hidden="true">
+    <div class="intro-offer__overlay"></div>
+    <div class="intro-offer__card" role="dialog" aria-modal="true">
+      <button class="intro-offer__close" aria-label="Zavrieť">&times;</button>
+      <span class="intro-offer__label">Špeciálna ponuka</span>
+      <h3 class="intro-offer__title">Prvá konzultácia zdarma</h3>
+      <p class="intro-offer__text">20-minútový hovor, kde si povieme, čo má váš web spraviť. Bez záväzku, bez tlaku, bez „máme akciu".</p>
+      <a href="contact.html" class="btn btn-accent intro-offer__cta" style="width:100%">Rezervovať termín</a>
+      <p class="intro-offer__note">Ponuka platí pre nových klientov</p>
+    </div>
+  </div>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

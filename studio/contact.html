@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kontakt · Webovky</title>
+  <meta name="description" content="Napíšte mi krátko — čo robíte a aký web máte teraz. Odpoviem do 24 hodín." />
+  <meta name="theme-color" content="#0c0c0b" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  <a href="#main-content" class="skip-to-content">Skip to content</a>
+
+  <div class="page-loader"><span class="page-loader__brand">webovky<i>.</i></span></div>
+
+  <div class="reading-progress" aria-hidden="true"></div>
+
+  <nav class="navbar scrolled" aria-label="Hlavná navigácia">
+    <div class="container">
+      <a href="index.html" class="navbar-brand"><span class="navbar-brand__dot"></span><span>webovky<i>.</i></span></a>
+      <ul class="navbar-links">
+        <li><a href="index.html" data-i18n="nav.home">Domov</a></li>
+        <li><a href="services.html" data-i18n="nav.services">Služby</a></li>
+        <li><a href="process.html" data-i18n="nav.process">Postup</a></li>
+        <li><a href="portfolio.html" data-i18n="nav.portfolio">Portfólio</a></li>
+        <li><a href="pricing.html" data-i18n="nav.pricing">Cenník</a></li>
+        <li><a href="contact.html" class="active" data-i18n="nav.contact">Kontakt</a></li>
+      </ul>
+      <div class="navbar-right">
+        <div class="lang-switch" data-lang-switch>
+          <button class="lang-switch__btn" data-lang="sk">SK</button>
+          <button class="lang-switch__btn" data-lang="cs">CS</button>
+          <button class="lang-switch__btn" data-lang="en">EN</button>
+        </div>
+        <a href="#contact-form" class="navbar-cta">↓ Formulár</a>
+        <button class="navbar-hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mobile-menu">
+    <ul class="mobile-menu__links">
+      <li><a href="index.html" data-i18n="nav.home">Domov</a></li>
+      <li><a href="services.html" data-i18n="nav.services">Služby</a></li>
+      <li><a href="process.html" data-i18n="nav.process">Postup</a></li>
+      <li><a href="portfolio.html" data-i18n="nav.portfolio">Portfólio</a></li>
+      <li><a href="pricing.html" data-i18n="nav.pricing">Cenník</a></li>
+      <li><a href="contact.html" data-i18n="nav.contact">Kontakt</a></li>
+    </ul>
+  </div>
+
+  <main id="main-content" style="padding-top:120px">
+    <section class="section section--tight">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label" data-i18n="contact.label">Kontakt</span>
+          <h1 data-i18n="contact.title">Napíšte mi krátko</h1>
+          <p data-i18n="contact.text">Stačí jeden riadok — čo robíte a aký web máte teraz. Odpoviem do 24 hodín.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tight" id="contact-form">
+      <div class="container">
+        <div class="split">
+          <div>
+            <h2 style="margin-bottom:24px">Tri spôsoby ako ma osloviť</h2>
+
+            <div style="display:flex;flex-direction:column;gap:24px">
+              <div style="display:flex;gap:16px;align-items:start">
+                <div style="width:46px;height:46px;border-radius:50%;background:var(--accent-soft);color:var(--accent-deep);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:18px"><i class="fa-solid fa-envelope"></i></div>
+                <div>
+                  <p style="font-size:0.78rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--muted);margin:0 0 4px;font-weight:600" data-i18n="contact.email_label">E-mail</p>
+                  <a href="mailto:hello@webovky.sk" style="font-family:var(--serif);font-size:1.5rem;color:var(--ink);border-bottom:1px solid var(--ink)">hello@webovky.sk</a>
+                  <p style="margin-top:6px;color:var(--muted);font-size:0.86rem">Odpoveď do 24 hodín, väčšinou rýchlejšie.</p>
+                </div>
+              </div>
+
+              <div style="display:flex;gap:16px;align-items:start">
+                <div style="width:46px;height:46px;border-radius:50%;background:var(--accent-soft);color:var(--accent-deep);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:18px"><i class="fa-brands fa-whatsapp"></i></div>
+                <div>
+                  <p style="font-size:0.78rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--muted);margin:0 0 4px;font-weight:600" data-i18n="contact.phone_label">Telefón / WhatsApp</p>
+                  <a href="tel:+421900000000" style="font-family:var(--serif);font-size:1.5rem;color:var(--ink);border-bottom:1px solid var(--ink)">+421 900 000 000</a>
+                  <p style="margin-top:6px;color:var(--muted);font-size:0.86rem">Po–Pi 9:00–18:00, WhatsApp aj cez víkend.</p>
+                </div>
+              </div>
+
+              <div style="display:flex;gap:16px;align-items:start">
+                <div style="width:46px;height:46px;border-radius:50%;background:var(--accent-soft);color:var(--accent-deep);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:18px"><i class="fa-brands fa-instagram"></i></div>
+                <div>
+                  <p style="font-size:0.78rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--muted);margin:0 0 4px;font-weight:600" data-i18n="contact.ig_label">Instagram</p>
+                  <a href="social.html" style="font-family:var(--serif);font-size:1.5rem;color:var(--ink);border-bottom:1px solid var(--ink)">@webovky.studio</a>
+                  <p style="margin-top:6px;color:var(--muted);font-size:0.86rem">DM-ka funguje rovnako dobre ako e-mail.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <form class="form-card form" id="leadForm" novalidate>
+            <label class="form__full"><span data-i18n="contact.form.name">Vaše meno</span><input name="name" required /></label>
+            <label><span data-i18n="contact.form.biz">Firma / činnosť</span><input name="biz" /></label>
+            <label><span data-i18n="contact.form.contact">E-mail alebo telefón</span><input name="contact" required /></label>
+            <label class="form__full"><span data-i18n="contact.form.message">Krátko o čo ide</span><textarea name="message" rows="4" required></textarea></label>
+            <button type="submit" class="btn btn-accent form__submit" data-i18n="contact.form.submit">Odoslať dopyt</button>
+            <p class="form__status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt section--tight">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">FAQ pred prvým kontaktom</span>
+          <h2>Najčastejšie otázky</h2>
+        </div>
+        <div class="faq">
+          <details class="faq__item">
+            <summary class="faq__question">Aký je rozdiel medzi balíčkami?</summary>
+            <p class="faq__answer">Štart (290 €) — jednostránkový web, ideálne pre solo živnostníka. Profi (490 €) — viacstránkový web s galériou, cenníkom a online rezerváciou. Plus (od 790 €) — pre tých, ktorí potrebujú viac jazykov, blog alebo malý e-shop.</p>
+          </details>
+          <details class="faq__item">
+            <summary class="faq__question">Treba mi mať pripravené texty a fotky?</summary>
+            <p class="faq__answer">Nie, ale ak ich máte, urýchli to celý proces. Bez nich vám viem napísať texty a doplniť fotky cez Unsplash. Vlastné fotky sa potom dopĺňajú postupne.</p>
+          </details>
+          <details class="faq__item">
+            <summary class="faq__question">Zaplatím všetko vopred?</summary>
+            <p class="faq__answer">Nie. 50 % zálohy pred začatím prác, 50 % po dodaní a schválení.</p>
+          </details>
+          <details class="faq__item">
+            <summary class="faq__question">Pracujete aj cez víkendy?</summary>
+            <p class="faq__answer">Občas, ale primárne pondelok–piatok. Urgentné veci viete vyriešiť cez WhatsApp.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom" style="padding-top:0;border:0">
+        <p class="footer-bottom__copy" data-i18n="footer.rights">© 2026 webovky · živnostníčka</p>
+        <div class="footer-bottom__links">
+          <a href="privacy.html" data-i18n="footer.privacy">Ochrana osobných údajov</a>
+          <a href="terms.html" data-i18n="footer.terms">Obchodné podmienky</a>
+          <a href="index.html" data-i18n="nav.home">Späť na úvod</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Hore"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    (function () {
+      var f = document.getElementById('leadForm');
+      var status = f.querySelector('.form__status');
+      f.addEventListener('submit', function (e) {
+        e.preventDefault();
+        var data = Object.fromEntries(new FormData(f));
+        if (!data.name || !data.contact || !data.message) {
+          status.classList.add('form__status--error');
+          status.textContent = 'Vyplňte prosím meno, kontakt a popis.';
+          return;
+        }
+        var subject = 'Dopyt z webu: ' + data.name + (data.biz ? ' / ' + data.biz : '');
+        var body = ['Meno: ' + data.name, 'Firma: ' + (data.biz || '—'), 'Kontakt: ' + data.contact, '', data.message].join('\n');
+        window.location.href = 'mailto:hello@webovky.sk?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+        status.classList.remove('form__status--error');
+        var dict = (window.Webovky && window.Webovky.getLang) ? window.Webovky.getLang() : 'sk';
+        status.textContent = 'Otváram váš e-mailový klient. Ak nič nevidíte, napíšte priamo na hello@webovky.sk.';
+      });
+    })();
+  </script>
+</body>
+</html>
