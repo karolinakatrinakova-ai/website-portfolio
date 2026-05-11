@@ -1,0 +1,371 @@
+{
+  "a11y": {
+    "skip": "Skip to content"
+  },
+  "meta": {
+    "title": "Sála · Restaurant · Prague · Vinohrady",
+    "description": "Sála — a small neighbourhood restaurant on Vinohradská. Modern Czech cooking with locally sourced ingredients, natural wine, tasting menu six nights a week. Reservations open."
+  },
+  "resvStrip": {
+    "now": "Reservations open · Tonight & this week",
+    "cta": "Book a table →"
+  },
+  "nav": {
+    "home": "Home",
+    "menu": "Menu",
+    "wine": "Wine",
+    "chef": "The chef",
+    "visit": "Visit",
+    "cta": "Reserve"
+  },
+  "hero": {
+    "kicker": "Vinohradská 27 · Prague 2 · Open since 2021",
+    "book": "Reservations →",
+    "title": "Sál<em>a</em>",
+    "sub": "A small neighbourhood restaurant in Vinohrady. Modern Czech cooking with locally sourced ingredients, natural wine and an open kitchen. Forty seats, six evenings a week.",
+    "ctaBook": "Book a table",
+    "ctaMenu": "See tonight's menu",
+    "hours": "Open",
+    "hoursVal": "Tue–Sat · <em>17:30 → 23:00</em>",
+    "tasting": "Tasting menu",
+    "tastingVal": "7 courses · <em>1 880 Kč</em>",
+    "alacarte": "À la carte",
+    "alacarteVal": "3 + 4 + 4",
+    "address": "Find us",
+    "addressVal": "Vinohradská 27, Prague 2"
+  },
+  "tonight": {
+    "kicker": "Tonight at Sála · Thursday",
+    "title": "Roasted celeriac with brown butter, fermented gooseberry & <em>summer herbs</em>",
+    "desc": "A vegetable course we've been working on since the autumn. Whole celeriac roasted in salt for four hours, glazed with our brown butter (we make a fresh batch every Tuesday), and finished with a gooseberry ferment from the August harvest. Served with chervil and mountain savory dried in our kitchen.",
+    "pair1": "Pairs with · Riesling 2022",
+    "pair2": "or · Cider, Hardanger",
+    "pair3": "non-alc · Birch sap",
+    "price": "À la carte · <strong>320 Kč</strong>   ·   In the tasting · course 4 of 7"
+  },
+  "manifesto": {
+    "kicker": "A note from the kitchen",
+    "title": "We cook with what's local — <em>and what the season brings</em>",
+    "p1": "Sála is a small restaurant in a 1908 dining hall. The tin ceiling, tile floor and wide Vinohradská windows are original. We added a wood-burning grill, an open kitchen and a desire to cook modern Czech food from what grows nearby.",
+    "p2": "Almost everything on the plate comes from within forty kilometres. Vegetables from the Čermák family in Lhota, old-breed pork and lamb from Statek u Cibulky, cheese from Ovocný Trh, eggs from Kostelec.",
+    "p3": "One tasting menu and a short à la carte — both change every two weeks. Wine is natural, mostly Moravian and Austrian. Closed Sundays and Mondays so the whole team gets two days off in a row.",
+    "p4": "Come hungry and stay a while. We're happy to top up your wine.",
+    "sign": "— Anna & the Sála team",
+    "signSmall": "Chef · co-owner · since 2021"
+  },
+  "tasting": {
+    "kicker": "The Tasting · Spring 2026",
+    "title": "Seven courses,<br/><em>one&nbsp;menu, ninety minutes</em>",
+    "lede": "Hover a course to see the plate. The menu changes every other Tuesday. Vegetarian and gluten-free versions available — just let us know when you book.",
+    "c1": {
+      "name": "Cold-smoked trout with dill <em>oil and pickled rye</em>",
+      "detail": "Trout from Český Krumlov, smoked over apple wood. Cucumber from our kitchen garden, brined in last year's whey. Dill flowers.",
+      "pair": "+ Cider · Hardanger"
+    },
+    "c2": {
+      "name": "Twelve-hour broth with <em>summer tomatoes</em>",
+      "detail": "Aged beef bones, charred onion and our smoked tomato preserve from August. Finished tableside with marigold oil.",
+      "pair": "+ Riesling · Velké Bílovice"
+    },
+    "c3": {
+      "name": "Roasted celeriac, brown butter and <em>fermented gooseberry</em>",
+      "detail": "Celeriac roasted in salt for four hours and glazed with our brown butter. Gooseberry ferment from August. Served on a stone, finished with mountain savory.",
+      "pair": "+ Pet-Nat · Bratislava"
+    },
+    "c4": {
+      "name": "Sourdough bread course with <em>cultured butter and lardo</em>",
+      "detail": "We've kept this sourdough alive in our kitchen since November 2021. Pulled hot from the wood oven, served with cultured butter from Vysočina and six-month lardo.",
+      "pair": "+ Veltlín · Pavlov"
+    },
+    "c5": {
+      "name": "Wild duck with fermented blueberry and <em>charred cabbage</em>",
+      "detail": "Bohemian wild duck, dry-aged on the bone for ten days, glazed with last summer's blueberries. Charred pointed cabbage from the Čermáks. Pan jus poured at the table.",
+      "pair": "+ Frankovka · 2018"
+    },
+    "c6": {
+      "name": "Aged cheeses from <em>Ovocný Trh</em>",
+      "detail": "Three Czech cheeses, aged eight, twelve and eighteen months in a cellar two streets away. Served with walnut-leaf bread and plum mostarda from our September pickle.",
+      "pair": "+ Pálava · 2021"
+    },
+    "c7": {
+      "name": "Buckwheat sponge cake with <em>caramelised honey and sour cream</em>",
+      "detail": "A warm cake of toasted buckwheat. Sour cream from Kostelec, glazed with honey from the orchard at Modletice — caramelised and cooled twice.",
+      "pair": "+ Tokaj Furmint"
+    },
+    "foot": {
+      "price": "7 courses · <strong>1 880 Kč</strong>   ·   wine pairing · 1 280 Kč",
+      "cta": "Reserve the tasting →",
+      "note": "menu refreshes every 2 weeks"
+    }
+  },
+  "wine": {
+    "kicker": "The cellar · 180+ Czech, Moravian and Austrian growers",
+    "title": "Living wine,<br/><em>from the people who grow it</em>",
+    "lede": "A short list of mostly natural wines. Most are available by the glass. Bringing your own bottle? Corkage is 350 Kč and goes to the kitchen tip jar.",
+    "w1": {
+      "type": "Skin-contact white",
+      "name": "Pálava <em>2022</em>",
+      "where": "Krásná hora · Mělník",
+      "notes": "Apricot skin, dried marigold, gentle salt. A kitchen wine — works with anything off the grill.",
+      "glass": "125 ml",
+      "price": "160 Kč"
+    },
+    "w2": {
+      "type": "Macerated · orange",
+      "name": "Veltlín <em>nature 2021</em>",
+      "where": "Sonberk · Pavlov",
+      "notes": "Six days on skins, unfiltered. Quince, white tea and a clean bitter finish — the wine for the celeriac course.",
+      "glass": "125 ml",
+      "price": "190 Kč"
+    },
+    "w3": {
+      "type": "Pet-Nat",
+      "name": "Modrý Portugal <em>Pet-Nat 2023</em>",
+      "where": "Strekov · Šoltís",
+      "notes": "Bottled half-fermented, cold-aged on the lees. Wild raspberry, sourdough and a touch of salt. Drinks like a beer.",
+      "glass": "125 ml",
+      "price": "170 Kč"
+    },
+    "w4": {
+      "type": "Old-vine red",
+      "name": "Frankovka <em>1976 vines · 2018</em>",
+      "where": "Dobrá Vinice · Mikulov",
+      "notes": "Fifty-year-old vines, eight months in old oak. Smoke, blackberry leaf, iron — pours beautifully with the duck or the cheese.",
+      "glass": "125 ml",
+      "price": "220 Kč"
+    }
+  },
+  "press": {
+    "kicker": "Press · 2022 — 2026",
+    "title": "What people <em>have written</em>",
+    "r1": "Bib Gourmand <em>· 2024</em>",
+    "r1y": "retained 2025 · 2026",
+    "r2": "14<em>/20</em>",
+    "r2y": "\"discovery of the year 2024\"",
+    "r3": "88.5<em>/100</em>",
+    "r3y": "2026 selection",
+    "r4": "Listed <em>· 2025</em>",
+    "r4y": "central Europe · top 30",
+    "q1": "\"The most quietly confident new restaurant in the city. Anna Hofmann is cooking food that tastes specifically of her — and of Vinohrady, in this exact week.\"",
+    "q1c": "— Lidové Noviny · Spring 2025",
+    "q2": "\"Forty seats, one tasting menu, an open kitchen — Sála has the kind of conviction Prague has been waiting for.\"",
+    "q2c": "— Forbes Život · September 2024",
+    "q3": "\"Wine list of the year. The Moravian-Austrian focus is the smartest editing in the country.\"",
+    "q3c": "— Wine & Spirits · 2024"
+  },
+  "chef": {
+    "kicker": "The chef",
+    "title": "Anna Hofmann <em>cooks here every night</em>",
+    "p1": "Anna was born in Olomouc and trained in Vienna. After two years at Frantzén in Stockholm and a year at Maaemo in Oslo, she returned to Prague in 2021 to open Sála.",
+    "p2": "Six nights a week she works the pass and plates almost every dish herself. She writes the menu two weeks at a time, around what the season brings.",
+    "cv1": "First job · Steirereck · Vienna",
+    "cv2": "Sous chef · Frantzén · Stockholm",
+    "cv3": "Senior sous · Maaemo · Oslo",
+    "cv4": "Co-founder · Sála · Prague",
+    "cv5": "Chef of the Year · Gourmand",
+    "cv6": "Bib Gourmand · Michelin"
+  },
+  "private": {
+    "kicker": "Private dining · the Cellar Room",
+    "title": "A separate room, <em>one long table for twelve</em>",
+    "text": "Below the dining room sits a vaulted brick cellar with one oak table for twelve. You get your own wine list, printed menus with your guests' names and Anna at the door. Birthdays, business dinners and the occasional small wedding.",
+    "l1": "Evenings only · from 19:00 · 4-hour minimum",
+    "l2": "Tasting menu only · wine pairing optional · printed menus for every guest",
+    "l3": "Available Tuesday — Saturday · 6 to 12 guests",
+    "l4": "From 2 600 Kč per guest · drinks billed separately",
+    "cta1": "Ask about the Cellar Room →",
+    "cta2": "Or book a regular table"
+  },
+  "visit": {
+    "kicker": "Visit · Vinohradská 27",
+    "title": "Open six nights a week,<br/><em>in the same room since 2021</em>",
+    "lede": "Two minutes' walk from Náměstí Míru. We're on the corner of Vinohradská and Šafaříkova — look for the deep-green door and the tin ceiling visible through the window.",
+    "d1": "Monday",
+    "d1t": "Closed",
+    "d2": "Sunday",
+    "d2t": "Closed",
+    "d3": "Tuesday — Friday",
+    "d3t": "17:30 — 23:00",
+    "d4": "Saturday",
+    "d4t": "17:00 — 23:30",
+    "a1": "Sála",
+    "a2": "Vinohradská 27, 120 00 Prague 2 — Vinohrady",
+    "a3": "Open in Google Maps →",
+    "p": {
+      "title": "Reservations <em>open · this week</em>",
+      "text": "Book online in under a minute. We hold a few seats at the bar for walk-ins from 17:30 — first come, first served.",
+      "cta1": "Book a table →",
+      "cta2": "See the full menu",
+      "call": "Or call us"
+    }
+  },
+  "footer": {
+    "tag": "A neighbourhood restaurant on Vinohradská.",
+    "addr": "Vinohradská 27<br/>120 00 Prague 2 — Vinohrady<br/>+420 221 234 567 · ahoj@sala.cz",
+    "c1": "Visit",
+    "c2": "About",
+    "c3": "Follow",
+    "l1": "Reservations",
+    "l2": "Menu",
+    "l3": "Wine list",
+    "l4": "Private dining",
+    "l5": "The chef",
+    "l6": "Tonight's menu",
+    "l7": "Press",
+    "l8": "Careers",
+    "l9": "Newsletter",
+    "copy": "© 2026 Sála s.r.o. · Vinohrady · Prague",
+    "legal1": "Privacy",
+    "legal2": "Terms",
+    "legal3": "Site by Karolína K."
+  },
+  "menu": {
+    "meta": {
+      "title": "Menu · Sála restaurant · Prague",
+      "description": "The full Sála menu — tasting, à la carte, sides and desserts. Updated every two weeks."
+    },
+    "resvStrip": "Menu refreshed · 5 May 2026",
+    "h": {
+      "kicker": "Menu · Spring 2026 · refreshed every 2 weeks",
+      "title": "A small kitchen,<br/><em>cooking by the season</em>",
+      "lede": "Two ways to eat at Sála — the seven-course tasting written around what's in season, or four à-la-carte chapters with a couple of dishes in each. Whatever you choose, we cook it ourselves; the chef is in the kitchen every night."
+    },
+    "tasting": {
+      "title": "The Tasting <em>· seven courses</em>",
+      "note": "90 min · 1 880 Kč · pairing 1 280 Kč"
+    },
+    "begin": {
+      "title": "To begin <em>· small plates</em>",
+      "note": "3 dishes · perfect for sharing"
+    },
+    "field": {
+      "title": "From the field <em>· vegetables</em>",
+      "note": "4 dishes · vegetarian"
+    },
+    "fire": {
+      "title": "From the fire <em>· grill & oven</em>",
+      "note": "4 mains · old breeds, wood-burning grill"
+    },
+    "sweet": {
+      "title": "Sweet <em>· four desserts</em>",
+      "note": "made in-house · cheese plate available"
+    },
+    "b1": {
+      "name": "Sourdough & <em>cultured butter</em>",
+      "desc": "Our wood-oven sourdough, kept alive in this kitchen since 2021. Cultured butter from Vysočina, smoked Maldon salt. <span class=\"menu-row__diet\"><span class=\"veg\">veg</span></span>"
+    },
+    "b2": {
+      "name": "Cold-smoked trout, <em>pickled rye</em>",
+      "desc": "Trout from Český Krumlov, dill oil, sour cream from Kostelec. Toasted pickled rye."
+    },
+    "b3": {
+      "name": "Beef tartare, <em>charred onion, capers</em>",
+      "desc": "Aged ribcap from Statek u Cibulky, hand-cut. Charred onion broth, salted capers, raw yolk."
+    },
+    "f1": {
+      "name": "Roasted celeriac, brown butter, <em>fermented gooseberry</em>",
+      "desc": "Whole celeriac roasted in salt for four hours, glazed with brown butter (we make it fresh every Tuesday). <span class=\"menu-row__diet\"><span class=\"veg\">veg</span></span>"
+    },
+    "f2": {
+      "name": "Beetroot tartare, <em>black walnut</em>",
+      "desc": "Heritage beets from the Čermáks, smoked over hay. Pickled black walnut, horseradish cream. <span class=\"menu-row__diet\"><span class=\"veg\">veg</span><span class=\"gf\">gf</span></span>"
+    },
+    "f3": {
+      "name": "Wood-fired hispi cabbage, <em>caraway, brown butter</em>",
+      "desc": "Pointed cabbage charred over beech, brown butter sauce, toasted caraway. <span class=\"menu-row__diet\"><span class=\"veg\">veg</span></span>"
+    },
+    "f4": {
+      "name": "Pearl barley with <em>aged cheese and wild herbs</em>",
+      "desc": "Risotto-style pearl barley with two-year-old cheese from Ovocný Trh and herbs from the kitchen window. <span class=\"menu-row__diet\"><span class=\"veg\">veg</span></span>"
+    },
+    "r1": {
+      "name": "Wild duck, fermented blueberry, <em>charred cabbage</em>",
+      "desc": "Bohemian wild duck, dry-aged on the bone for ten days. Charred cabbage, pan jus poured at the table."
+    },
+    "r2": {
+      "name": "Old-breed pork shoulder, <em>caraway, juniper</em>",
+      "desc": "Přeštice pork from Statek u Cibulky, slow-cooked over beech for nine hours. Pickled juniper, caraway jus."
+    },
+    "r3": {
+      "name": "Aged ribeye, <em>charred onion, bone marrow</em>",
+      "desc": "42-day-aged Šumava beef, charred over fire. Charred onion sauce, marrow on toast. <span class=\"menu-row__diet\"><span class=\"spicy\">share for 2</span></span>"
+    },
+    "r4": {
+      "name": "Whole baked turbot, <em>brown butter, sea aster</em>",
+      "desc": "Day-boat turbot from Brittany, baked on the bone. Brown butter, sea aster, salted lemon. <span class=\"menu-row__diet\"><span class=\"spicy\">share for 2</span></span>"
+    },
+    "s1": {
+      "name": "Buckwheat sponge, <em>caramelised honey, sour cream</em>",
+      "desc": "A warm cake of toasted buckwheat. Sour cream from Kostelec, twice-burnt honey from Modletice. <span class=\"menu-row__diet\"><span class=\"veg\">veg</span></span>"
+    },
+    "s2": {
+      "name": "Plum & <em>oat crumble</em>",
+      "desc": "Plums from our September pickle, oat crumble, smoked vanilla cream. <span class=\"menu-row__diet\"><span class=\"veg\">veg</span></span>"
+    },
+    "s3": {
+      "name": "Sour-cream ice cream, <em>blackcurrant, malt</em>",
+      "desc": "Sour-cream ice cream churned daily. Pickled blackcurrant, toasted malt crumb. <span class=\"menu-row__diet\"><span class=\"veg\">veg</span><span class=\"gf\">gf</span></span>"
+    },
+    "s4": {
+      "name": "Cheese plate from <em>Ovocný Trh</em>",
+      "desc": "Three Czech cheeses, aged 8, 12 and 18 months. Walnut-leaf bread, plum mostarda. <span class=\"menu-row__diet\"><span class=\"veg\">veg</span></span>"
+    },
+    "key1": "Allergens · please tell us when you book",
+    "key2": "Service · 12% added to all tables",
+    "cta": "Reserve a table →"
+  },
+  "resv": {
+    "meta": {
+      "title": "Reservations · Sála restaurant",
+      "description": "Book a table at Sála — Vinohradská 27, Prague. Tasting menu and à la carte. Open Tue–Sat."
+    },
+    "strip": "Tables released 14 days ahead · Tuesday — Saturday",
+    "strip.cta": "or call +420 221 234 567",
+    "h": {
+      "kicker": "Reservations · Sála Prague",
+      "title": "Three steps,<br/><em>under a minute</em>",
+      "lede": "We hold a few seats at the bar for walk-ins, but most evenings the dining room books out two weeks ahead. Choose a date, time and how many of you, and we'll confirm by email."
+    },
+    "s1": "When",
+    "s2": "Who",
+    "s3": "You",
+    "s4": "Confirmed",
+    "st1": {
+      "title": "When would you <em>like to come?</em>",
+      "text": "Pick a date in the next 14 days. Sittings begin at 17:30, last seating at 21:30 (22:00 on Saturday).",
+      "dateLabel": "Date",
+      "timeLabel": "Time"
+    },
+    "st2": {
+      "title": "How many <em>of you?</em>",
+      "text": "Up to 6 guests online. For 7+ please <a href=\"mailto:private@sala.cz\" style=\"color:var(--accent);border-bottom:1px solid var(--accent);text-decoration:none\">email us about the Cellar Room</a> — we'll set the long table for you."
+    },
+    "st3": {
+      "title": "A few <em>last details</em>",
+      "text": "We use these only to confirm your booking and reach you if anything changes. Allergies and special requests are welcome — we cook around them.",
+      "name": "Full name",
+      "email": "Email",
+      "phone": "Phone",
+      "notes": "Allergies, occasion, special requests",
+      "notesPh": "e.g. one of us is vegetarian, one is allergic to celeriac, it's our anniversary"
+    },
+    "next": "Next →",
+    "back": "← Back",
+    "confirm": "Confirm reservation →",
+    "st4": {
+      "title": "See you soon <em>at Sála</em>",
+      "text": "A confirmation is on its way to your inbox. We hold tables for 15 minutes after the booking time — if you're running late, just give us a quick call and we'll keep your seat.",
+      "home": "← Back home",
+      "menu": "See the menu",
+      "signoff": "— Anna & the Sála team"
+    },
+    "sum": {
+      "title": "Your booking <em>· Sála</em>",
+      "text": "A small kitchen, forty seats, one tasting menu and a short à la carte. We'll write back within 24 hours.",
+      "date": "Date",
+      "time": "Time",
+      "size": "Guests",
+      "note": "\"We're happy to top up your wine.\"<br>— Anna"
+    }
+  }
+}

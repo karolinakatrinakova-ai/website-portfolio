@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="visit_pg.meta_title">Visit & reserve · Café Luna</title>
+  <meta name="description" data-i18n-attr="content|visit_pg.meta_desc" content="Reserve a table at Café Luna in Vinohrady, Praha 2. Brunch, weeknight bistro, Friday wine night, private hire. We confirm by SMS within an hour." />
+
+  <link rel="icon" type="image/svg+xml" href="../../studio/favicon.svg?v=3" />
+  <link rel="stylesheet" href="css/theme.css?v=3" />
+  <link rel="stylesheet" href="css/layout.css?v=3" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+
+  <a href="#main-content" class="skip-to-content" data-i18n="a11y.skip">Skip to content</a>
+  <div class="reading-progress"></div>
+
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="navbar-brand"><span class="navbar-brand__dot"></span><span>Luna</span></a>
+      <ul class="navbar-links">
+        <li><a href="menu.html" data-i18n="nav.menu">Menu</a></li>
+        <li><a href="events.html" data-i18n="nav.events">Events</a></li>
+        <li><a href="index.html#sourcing" data-i18n="nav.sourcing">Sourcing</a></li>
+        <li><a href="visit.html" class="is-current" data-i18n="nav.visit">Visit</a></li>
+      </ul>
+      <div class="navbar-right">
+        <div class="lang-switch" data-lang-switch>
+          <button class="lang-switch__btn" data-lang="sk">SK</button>
+          <button class="lang-switch__btn" data-lang="cs">CS</button>
+          <button class="lang-switch__btn" data-lang="en">EN</button>
+        </div>
+        <a href="visit.html" class="navbar-cta" data-i18n="nav.book">Reserve a table</a>
+        <button class="navbar-hamburger"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mobile-menu">
+    <ul class="mobile-menu__links">
+      <li><a href="menu.html" data-i18n="nav.menu">Menu</a></li>
+      <li><a href="events.html" data-i18n="nav.events">Events</a></li>
+      <li><a href="index.html#sourcing" data-i18n="nav.sourcing">Sourcing</a></li>
+      <li><a href="visit.html" data-i18n="nav.visit">Visit</a></li>
+    </ul>
+    <div class="lang-switch" data-lang-switch role="group" aria-label="Language">
+      <button class="lang-switch__btn" data-lang="en">EN</button>
+      <button class="lang-switch__btn" data-lang="sk">SK</button>
+      <button class="lang-switch__btn" data-lang="cs">CS</button>
+    </div>
+
+    <div class="mobile-menu__cta"><a href="visit.html" class="btn btn-accent" data-i18n="nav.book">Reserve</a></div>
+  </div>
+
+  <header class="sub-hero" id="main-content">
+    <div class="container">
+      <p class="sub-hero__crumb">
+        <a href="index.html" data-i18n="visit_pg.crumb_home">Café Luna</a><span class="sep">/</span><span data-i18n="visit_pg.crumb">Visit & reserve</span>
+      </p>
+      <span class="sub-hero__issue" data-i18n="visit_pg.issue">Vinohradská 14 · Praha 2</span>
+      <h1 data-i18n-html="true" data-i18n="visit_pg.title">Reserve <em>a table</em></h1>
+      <p data-i18n="visit_pg.lead">Walk-ins welcome on weekdays. Weekend brunch, Friday wine nights and groups of six or more — we'd recommend reserving. We confirm by SMS within an hour during opening hours, otherwise the next morning.</p>
+    </div>
+  </header>
+
+  <section class="section fade-in">
+    <div class="container">
+      <div class="res-shell">
+
+        <form class="res-form" onsubmit="event.preventDefault();alert('Thanks — we will text you a confirmation within an hour.');">
+          <label data-i18n="visit_pg.f.name_label">Your name<input type="text" required data-i18n-attr="placeholder|visit_pg.f.name_ph" placeholder="Marek Novák" /></label>
+          <label data-i18n="visit_pg.f.phone_label">Phone<input type="tel" required data-i18n-attr="placeholder|visit_pg.f.phone_ph" placeholder="+420 774 111 222" /></label>
+          <label class="is-full" data-i18n="visit_pg.f.email_label">E-mail<input type="email" required data-i18n-attr="placeholder|visit_pg.f.email_ph" placeholder="marek@example.cz" /></label>
+
+          <label data-i18n="visit_pg.f.guests_label">Guests<select>
+            <option data-i18n="visit_pg.f.g1">2 people</option>
+            <option data-i18n="visit_pg.f.g2">3 people</option>
+            <option data-i18n="visit_pg.f.g3">4 people</option>
+            <option data-i18n="visit_pg.f.g4">5 people</option>
+            <option data-i18n="visit_pg.f.g5">6 people</option>
+            <option data-i18n="visit_pg.f.g6">7+ (long table)</option>
+          </select></label>
+          <label data-i18n="visit_pg.f.occ_label">Occasion<select>
+            <option data-i18n="visit_pg.f.o1">Weekday breakfast</option>
+            <option data-i18n="visit_pg.f.o2">Lunch / coffee</option>
+            <option data-i18n="visit_pg.f.o3">Weekend brunch</option>
+            <option data-i18n="visit_pg.f.o4">Friday wine night</option>
+            <option data-i18n="visit_pg.f.o5">Birthday / celebration</option>
+            <option data-i18n="visit_pg.f.o6">Private hire (12+)</option>
+          </select></label>
+
+          <label data-i18n="visit_pg.f.date_label">Date<input type="date" required /></label>
+          <label data-i18n="visit_pg.f.time_label">Preferred time<select>
+            <option data-i18n="visit_pg.f.t1">8:30</option>
+            <option data-i18n="visit_pg.f.t2">10:00</option>
+            <option data-i18n="visit_pg.f.t3">12:00</option>
+            <option data-i18n="visit_pg.f.t4">14:00</option>
+            <option data-i18n="visit_pg.f.t5">17:00</option>
+            <option data-i18n="visit_pg.f.t6">19:00</option>
+            <option data-i18n="visit_pg.f.t7">20:30</option>
+          </select></label>
+
+          <label class="is-full" data-i18n="visit_pg.f.notes_label">Anything we should know?<textarea rows="4" data-i18n-attr="placeholder|visit_pg.f.notes_ph" placeholder="Birthday cake, allergies, prefer the long table, dog under it…"></textarea></label>
+
+          <button type="submit" data-i18n="visit_pg.f.submit">Send reservation</button>
+        </form>
+
+        <aside class="res-aside">
+          <h3 data-i18n-html="true" data-i18n="visit_pg.aside.title">A few <em>useful notes</em></h3>
+          <ul>
+            <li><i class="fa-solid fa-mug-saucer"></i><span data-i18n="visit_pg.aside.l1">Walk-ins always welcome on weekdays — we hold roughly half the room for the morning crowd.</span></li>
+            <li><i class="fa-solid fa-people-group"></i><span data-i18n="visit_pg.aside.l2">Tables of six or more, please reserve at least 24 hours ahead — we set the long table specially.</span></li>
+            <li><i class="fa-solid fa-clock"></i><span data-i18n="visit_pg.aside.l3">Brunch reservations run for 90 minutes. We never rush coffee — we just won't seat the same chair twice.</span></li>
+            <li><i class="fa-solid fa-dog"></i><span data-i18n="visit_pg.aside.l4">Dogs are welcome — there's a water bowl by the door and a treat behind the bar.</span></li>
+            <li><i class="fa-solid fa-stroller"></i><span data-i18n="visit_pg.aside.l5">Two prams fit comfortably; with three or more, please pick a quieter time slot.</span></li>
+            <li><i class="fa-solid fa-wifi"></i><span data-i18n="visit_pg.aside.l6">Working from Luna is fine until 11am on weekdays. Weekends and after 5pm are screen-free.</span></li>
+          </ul>
+
+          <div class="res-aside__hours">
+            <h4 data-i18n="visit_pg.aside.hours_title">Opening hours</h4>
+            <dl>
+              <dt data-i18n="visit_pg.aside.h1_label">Mon — Fri</dt><dd data-i18n="visit_pg.aside.h1_value">8:00 — 21:00</dd>
+              <dt data-i18n="visit_pg.aside.h2_label">Saturday</dt><dd data-i18n="visit_pg.aside.h2_value">9:00 — 22:00</dd>
+              <dt data-i18n="visit_pg.aside.h3_label">Sunday</dt><dd data-i18n="visit_pg.aside.h3_value">9:00 — 17:00</dd>
+              <dt data-i18n="visit_pg.aside.h4_label">Friday wine night</dt><dd data-i18n="visit_pg.aside.h4_value">17:00 — 23:00</dd>
+            </dl>
+          </div>
+        </aside>
+      </div>
+
+      <!-- Map + getting there -->
+      <div style="margin-top:80px">
+        <div class="section-header section-header--magazine">
+          <span class="section-label" data-i18n="visit_pg.gt.label">Getting here</span>
+          <h2 data-i18n-html="true" data-i18n="visit_pg.gt.title">Vinohradská 14, <em>Prague 2</em></h2>
+          <p data-i18n="visit_pg.gt.lead">A 2-minute walk from Náměstí Míru (line A), or 6 minutes from Muzeum (lines A & C). Tram 11 stops directly in front of the door.</p>
+        </div>
+        <div class="map-card">
+          <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=14.434%2C50.075%2C14.450%2C50.082&amp;layer=mapnik&amp;marker=50.078%2C14.442" loading="lazy" title="Map of Café Luna location"></iframe>
+        </div>
+
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:30px;margin-top:50px">
+          <div>
+            <h4 style="font-family:var(--serif);font-size:1.15rem;font-weight:500;margin:0 0 8px" data-i18n="visit_pg.gt.metro_t">Metro</h4>
+            <p style="font-size:0.95rem;color:var(--ink-soft);line-height:1.6;margin:0" data-i18n="visit_pg.gt.metro_d">Náměstí Míru (A) · 2 min walk · turn left out of the station.</p>
+          </div>
+          <div>
+            <h4 style="font-family:var(--serif);font-size:1.15rem;font-weight:500;margin:0 0 8px" data-i18n="visit_pg.gt.tram_t">Tram</h4>
+            <p style="font-size:0.95rem;color:var(--ink-soft);line-height:1.6;margin:0" data-i18n="visit_pg.gt.tram_d">11, 13 stop directly in front (Italská). Night tram 91 also runs.</p>
+          </div>
+          <div>
+            <h4 style="font-family:var(--serif);font-size:1.15rem;font-weight:500;margin:0 0 8px" data-i18n="visit_pg.gt.bike_t">Bike</h4>
+            <p style="font-size:0.95rem;color:var(--ink-soft);line-height:1.6;margin:0" data-i18n="visit_pg.gt.bike_d">Two racks under the awning. Rekola station 60m east on Vinohradská.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p class="footer-bottom__copy" data-i18n="footer.rights">© 2026 Café Luna</p>
+        <div class="footer-bottom__links">
+          <a href="social.html" data-i18n="nav.social">Instagram</a>
+          <a href="../../studio/privacy.html" data-i18n="footer.privacy">Privacy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Top"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <div class="cookie-banner" id="cookieBanner">
+    <div class="cookie-banner__inner">
+      <p data-i18n="cookies.text">We use cookies for a better experience.</p>
+      <div class="cookie-banner__actions">
+        <button class="cookie-banner__btn cookie-banner__btn--accept" data-cookie="accept" data-i18n="cookies.accept">Accept</button>
+        <button class="cookie-banner__btn cookie-banner__btn--decline" data-cookie="decline" data-i18n="cookies.decline">Decline</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="i18n/dict.js?v=25"></script>
+
+  <script src="js/i18n.js?v=8"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

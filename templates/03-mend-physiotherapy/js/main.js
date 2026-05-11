@@ -26,6 +26,7 @@
   var progressBar = document.querySelector('.reading-progress');
   var mobileCta = document.querySelector('.mobile-cta');
   var lastScrollY = 0;
+  var hasHeroBanner = !!document.querySelector('.banner');
 
   function onScroll() {
     var y = window.scrollY;
@@ -34,7 +35,7 @@
       progressBar.style.width = (docH > 0 ? (y / docH) * 100 : 0) + '%';
     }
     if (navbar) {
-      navbar.classList.toggle('scrolled', y > 60);
+      navbar.classList.toggle('scrolled', hasHeroBanner ? y > 60 : true);
       if (y > 300 && y > lastScrollY) {
         navbar.classList.add('hidden');
       } else {
@@ -114,7 +115,7 @@
     statNumbers.forEach(function (el) { statObs.observe(el); });
   }
 
-  /* ─── Page exit transitions ─── */
+  /* ─── Page exit transitions (skips same-page anchor links) ─── */
   document.addEventListener('click', function (e) {
     var link = e.target.closest('a[href]');
     if (!link) return;
@@ -122,6 +123,22 @@
     if (!href || href.startsWith('#') || href.startsWith('http') || href.startsWith('//')
         || href.startsWith('mailto:') || href.startsWith('tel:') || link.target === '_blank'
         || link.hasAttribute('download') || link.dataset.noTransition) return;
+    // Detect same-page navigation (e.g. "index.html#chef" while on index.html)
+    // — let the browser handle hash scrolling without fading the page out.
+    try {
+      var url = new URL(link.href, window.location.href);
+      if (url.pathname === window.location.pathname && url.hash) {
+        e.preventDefault();
+        var target = document.querySelector(url.hash);
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          history.pushState(null, '', url.hash);
+        } else {
+          window.location.hash = url.hash;
+        }
+        return;
+      }
+    } catch (err) { /* fall through to normal exit */ }
     e.preventDefault();
     document.body.classList.add('page-exit');
     setTimeout(function () { window.location.href = href; }, 300);

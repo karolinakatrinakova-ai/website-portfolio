@@ -1,0 +1,183 @@
+/* ============================================================================
+   Sála · neighborhood restaurant on Vinohradská
+   References: Eleven Madison Park, Frantzén, Maison François, Septime, St. John,
+               Atelier Crenn, Le Bernardin, Geranium, Disfrutar, Single Thread.
+   Distinct from every other Studio template:
+     · Deep emerald + cream + antique gold (no other template uses this palette)
+     · Bricolage Grotesque variable display (modern restaurant brand DNA)
+     · Crimson Pro italic for chef-quote / dish-name moments only
+     · Numerals: tabular, lining; menu prices set in mono via .price
+   ========================================================================== */
+
+@import url("../../../studio/css/style.css?v=3");
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200;12..96,300;12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=Crimson+Pro:ital,wght@0,300;0,400;1,300;1,400;1,500&family=DM+Mono:wght@400;500&display=swap");
+
+:root {
+  /* Restrained restaurant palette */
+  --bg:           #f7f3ea;        /* warm cream */
+  --bg-2:         #ebe4d2;        /* sand */
+  --bg-3:         #fdfaf2;        /* lightest cream */
+  --ink:          #14201c;        /* deep forest near-black */
+  --ink-soft:     #2c3a34;
+  --stone:        #5e6b62;
+  --muted:        #8d9388;
+  --line:         #d8d0bc;
+  --line-soft:    rgba(20, 32, 28, 0.10);
+
+  --accent:       #1f4334;        /* deep emerald — primary identity colour */
+  --accent-deep:  #0f2620;        /* near-black emerald */
+  --accent-soft:  #d8e0d4;
+  --accent-glow:  rgba(31, 67, 52, 0.16);
+
+  --gold:         #a48b48;        /* antique gold — accents only */
+  --gold-soft:    #ead8a8;
+  --burgundy:     #5a1a1a;        /* wine — used for sparingly */
+
+  --display:      "Bricolage Grotesque", "Söhne", "Inter Tight", system-ui, sans-serif;
+  --sans:         "Bricolage Grotesque", "Inter Tight", system-ui, sans-serif;
+  --serif-italic: "Crimson Pro", "Cormorant Garamond", Georgia, serif;
+  --mono:         "DM Mono", ui-monospace, "SF Mono", monospace;
+}
+
+/* ─── Base typography ─── */
+body {
+  background: var(--bg);
+  color: var(--ink-soft);
+  font-family: var(--sans);
+  font-weight: 380;            /* Bricolage variable: in-between regular and book */
+  font-feature-settings: "tnum" 1, "lnum" 1, "ss01" 1;
+  font-size: 16.5px;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: var(--display);
+  font-weight: 480;             /* mid-weight Bricolage at large sizes */
+  letter-spacing: -0.025em;
+  line-height: 1.04;
+  color: var(--ink);
+}
+h1 {
+  font-weight: 360;             /* lighter at very large sizes — Frantzén/EMP feel */
+  letter-spacing: -0.04em;
+  line-height: 1.02;
+}
+h2 { font-weight: 460; letter-spacing: -0.02em; }
+h3 { font-weight: 500; letter-spacing: -0.015em; }
+h4, h5, h6 { font-family: var(--display); font-weight: 600; letter-spacing: -0.005em; line-height: 1.2; }
+
+/* Italic accents inside headings — Crimson Pro italic, the only serif on Sála */
+h1 em, h2 em, h3 em,
+.serif-italic, .chef-quote {
+  font-family: var(--serif-italic);
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: 0;
+  color: var(--accent);
+}
+
+/* Eyebrow / kicker labels everywhere */
+.section-eyebrow, .section-label, .hero-eyebrow,
+.kicker, .nav-link, .navbar-links a, .navbar-cta, .btn,
+.footer-bottom__copy, .lang-switch__btn, .label {
+  font-family: var(--display);
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+}
+
+/* Numerals: tabular for prices, dates, schedule */
+.price, time, .num, dd.num, .resv-time__btn,
+.menu-row__price, .opening-hours li {
+  font-family: var(--mono);
+  letter-spacing: 0;
+  font-feature-settings: "tnum" 1, "lnum" 1;
+}
+
+/* ─── Background + section colours ─── */
+.section { background: var(--bg); }
+.section--alt { background: var(--bg-2); }
+.section--dark { background: var(--accent-deep); color: #d4dad4; }
+.section--dark h1, .section--dark h2, .section--dark h3 { color: #f5efde; }
+.section--dark p { color: rgba(245, 239, 222, 0.78); }
+.section--dark .section-eyebrow,
+.section--dark .section-label { color: var(--gold); }
+
+/* ─── Buttons ─── */
+.btn {
+  border-radius: 0;
+  padding: 14px 28px;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  font-size: 0.72rem;
+  border: 1px solid currentColor;
+  transition: background 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+}
+.btn-primary, .btn-accent {
+  background: var(--accent);
+  color: #f5efde;
+  border-color: var(--accent);
+}
+.btn-primary:hover, .btn-accent:hover {
+  background: var(--accent-deep);
+  border-color: var(--accent-deep);
+  color: var(--gold-soft);
+}
+.btn-secondary, .btn-outline {
+  background: transparent;
+  color: var(--ink);
+  border-color: var(--ink);
+}
+.btn-secondary:hover, .btn-outline:hover {
+  background: var(--ink);
+  color: var(--bg);
+}
+.btn-ghost {
+  background: transparent;
+  color: var(--accent);
+  border-color: var(--accent);
+}
+.btn-ghost:hover {
+  background: var(--accent);
+  color: #f5efde;
+}
+
+/* ─── Reservations strip (the topmost element on every page) ─── */
+.resv-strip {
+  background: var(--accent-deep);
+  color: var(--gold-soft);
+  text-align: center;
+  font-family: var(--display);
+  font-size: 0.72rem;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  padding: 11px 24px;
+  font-weight: 500;
+  position: relative;
+  z-index: 90;
+}
+.resv-strip a {
+  color: var(--gold);
+  text-decoration: none;
+  border-bottom: 1px solid var(--gold);
+  padding-bottom: 1px;
+  margin-left: 4px;
+}
+.resv-strip a:hover { color: #fff; border-color: #fff; }
+.resv-strip .resv-strip__sep { color: rgba(234, 216, 168, 0.45); margin: 0 14px; }
+
+/* ─── Page loader ─── */
+.page-loader { background: var(--bg) !important; }
+.page-loader__brand {
+  font-family: var(--display);
+  font-weight: 320;
+  letter-spacing: -0.04em;
+  font-size: 4rem;
+  color: var(--accent);
+}
+
+/* ─── Cookie banner override ─── */
+.cookie-banner { background: var(--accent-deep); color: var(--gold-soft); }
+.cookie-banner__btn--accept { background: var(--gold); color: var(--accent-deep); }
+.cookie-banner__btn--decline { background: transparent; color: var(--gold-soft); border-color: var(--gold-soft); }

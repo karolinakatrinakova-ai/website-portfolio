@@ -1,5 +1,6 @@
 /* Café Luna · earthy green + cream */
-@import url("../../../studio/css/style.css");
+@import url("../../../studio/css/style.css?v=3");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@300;400;500;600&family=Caveat:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap");
 
 :root {
   --bg:           #f8f5ef;
@@ -19,15 +20,36 @@
   --olive:        #8a9362;
   --plum:         #4a3328;
 
+  /* Luna typography: weekly-magazine + chalkboard.
+     Fraunces (Vol 04 newspaper-ish display), Inter body, Caveat hand-script for
+     chalkboard, JetBrains Mono for menu prices and "Issue · Vol. 04" datelines. */
   --serif:        "Fraunces", Georgia, serif;
   --sans:         "Inter", system-ui, sans-serif;
+  --script:       "Caveat", cursive;
+  --mono:         "JetBrains Mono", ui-monospace, "SF Mono", monospace;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap");
+h1, h2, h3 { font-family: var(--serif); font-weight: 400; letter-spacing: -0.012em; line-height: 1.06; }
+h1 { font-variation-settings: "opsz" 144; }              /* Fraunces big optical size */
+h2 { font-variation-settings: "opsz" 96; }
 
-h1, h2, h3 { font-family: var(--serif); font-weight: 400; letter-spacing: -0.005em; }
+/* Chalkboard moments — wrap in .chalk for Caveat */
+.chalk, .specials__title em, .hero-issue em, .stem-script,
+.specials__date, .today__date, .specials .specials__title em {
+  font-family: var(--script); font-style: normal; font-weight: 600;
+  font-size: 1.25em; line-height: 0.95;
+}
 
-.banner__veil { background: linear-gradient(120deg, rgba(31,42,28,0.7) 0%, rgba(31,42,28,0.3) 100%); }
+/* Prices, dates, codes use mono — gives the menu its newspaper-listing feel */
+.menu-list .price, .menu-row__price, .events-list .event__date,
+.hero-issue, .ev-date, code, .opsz, time.mono { font-family: var(--mono); letter-spacing: 0.02em; }
+
+.banner__veil { background: linear-gradient(120deg, rgba(31,42,28,0.74) 0%, rgba(31,42,28,0.58) 50%, rgba(31,42,28,0.50) 100%); }
+.hero-line--italic {
+  color: #dce5c8;
+  text-shadow: 0 2px 18px rgba(0, 0, 0, 0.55), 0 1px 4px rgba(0, 0, 0, 0.35);
+}
+.banner h1 { text-shadow: 0 2px 18px rgba(0, 0, 0, 0.45), 0 1px 4px rgba(0, 0, 0, 0.35); }
 
 /* Menu list */
 .menu-list { list-style: none; padding: 0; margin: 0; }

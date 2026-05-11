@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title data-i18n="acc.meta_title">My account · Aria · Praha</title>
+  <meta name="description" data-i18n-attr="content|acc.meta_desc" content="Your upcoming and past classes, your pass and credit balance." />
+  <meta name="theme-color" content="#f5f1e8" />
+  <link rel="icon" type="image/svg+xml" href="../../studio/favicon.svg?v=3" />
+  <link rel="stylesheet" href="css/theme.css?v=4" />
+  <link rel="stylesheet" href="css/layout.css?v=4" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+
+  <a href="#main" class="skip-to-content" data-i18n="a11y.skip">Skip to content</a>
+  <div class="page-loader"><span class="page-loader__brand">Aria<i>.</i></span></div>
+  <div class="reading-progress" aria-hidden="true"></div>
+
+  <nav class="navbar" aria-label="Main navigation">
+    <div class="container">
+      <a href="index.html" class="navbar-brand"><span class="navbar-brand__dot"></span><span>Aria<i>.</i></span></a>
+      <ul class="navbar-links">
+        <li><a href="index.html#manifesto" data-i18n="nav.studio">Studio</a></li>
+        <li><a href="schedule.html" data-i18n="nav.schedule">Schedule</a></li>
+        <li><a href="classes.html" data-i18n="nav.classes">Classes</a></li>
+        <li><a href="index.html#teachers" data-i18n="nav.teachers">Teachers</a></li>
+        <li><a href="checkout.html" data-i18n="nav.passes">Passes</a></li>
+        <li><a href="index.html#contact" data-i18n="nav.contact">Visit</a></li>
+      </ul>
+      <div class="navbar-right">
+        <div class="lang-switch" data-lang-switch>
+          <button class="lang-switch__btn" data-lang="en">EN</button>
+          <button class="lang-switch__btn" data-lang="sk">SK</button>
+          <button class="lang-switch__btn" data-lang="cs">CS</button>
+        </div>
+        <a href="account.html" class="navbar-cta navbar-cta--ghost active" data-i18n="nav.account">My account</a>
+        <a href="intro.html" class="navbar-cta" data-i18n="nav.cta">Try a week</a>
+        <button class="navbar-hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mobile-menu">
+    <ul class="mobile-menu__links">
+      <li><a href="index.html#manifesto" data-i18n="nav.studio">Studio</a></li>
+      <li><a href="schedule.html" data-i18n="nav.schedule">Schedule</a></li>
+      <li><a href="classes.html" data-i18n="nav.classes">Classes</a></li>
+      <li><a href="index.html#teachers" data-i18n="nav.teachers">Teachers</a></li>
+      <li><a href="checkout.html" data-i18n="nav.passes">Passes</a></li>
+      <li><a href="account.html" data-i18n="nav.account">My account</a></li>
+      <li><a href="index.html#contact" data-i18n="nav.contact">Visit</a></li>
+    </ul>
+    <div class="lang-switch" data-lang-switch role="group" aria-label="Language">
+      <button class="lang-switch__btn" data-lang="en">EN</button>
+      <button class="lang-switch__btn" data-lang="sk">SK</button>
+      <button class="lang-switch__btn" data-lang="cs">CS</button>
+    </div>
+    <div class="mobile-menu__cta"><a href="intro.html" class="btn btn-accent" data-i18n="nav.cta">Try a week</a></div>
+  </div>
+
+  <header class="sub-hero" id="main">
+    <div class="sub-hero__inner">
+      <p class="sub-hero__crumb"><a href="index.html" data-i18n="acc.crumb_home">Aria</a> &nbsp;/&nbsp; <span data-i18n="acc.crumb">My account</span></p>
+      <h1 data-i18n="acc.title">My bookings & passes</h1>
+      <p data-i18n="acc.lead">Everything in one place. Cancel free up to 4 hours before a class.</p>
+    </div>
+  </header>
+
+  <!-- Stat strip -->
+  <section class="acc-stats">
+    <div class="container">
+      <div class="acc-stat">
+        <span class="acc-stat__label" data-i18n="acc.s_credits">Credits left</span>
+        <strong id="statCredits">0</strong>
+      </div>
+      <div class="acc-stat">
+        <span class="acc-stat__label" data-i18n="acc.s_upcoming">Upcoming</span>
+        <strong id="statUpcoming">0</strong>
+      </div>
+      <div class="acc-stat">
+        <span class="acc-stat__label" data-i18n="acc.s_attended">Attended</span>
+        <strong id="statAttended">0</strong>
+      </div>
+      <div class="acc-stat acc-stat--cta">
+        <a href="checkout.html" class="btn-pill btn-pill--solid" data-i18n="acc.s_buy">Buy a pass →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tabs -->
+  <div class="acc-tabs">
+    <button class="acc-tab is-active" data-tab="upcoming" data-i18n="acc.tab_upcoming">Upcoming</button>
+    <button class="acc-tab" data-tab="past" data-i18n="acc.tab_past">Past classes</button>
+    <button class="acc-tab" data-tab="passes" data-i18n="acc.tab_passes">Passes & purchases</button>
+  </div>
+
+  <main class="acc-main">
+    <section class="acc-pane is-active" data-pane="upcoming">
+      <div class="acc-list" id="upcomingList"></div>
+    </section>
+
+    <section class="acc-pane" data-pane="past">
+      <div class="acc-list" id="pastList"></div>
+    </section>
+
+    <section class="acc-pane" data-pane="passes">
+      <div class="acc-passes" id="passesList"></div>
+      <div class="acc-history">
+        <h3 data-i18n="acc.history">Purchase history</h3>
+        <table class="acc-history__table" id="historyTable">
+          <thead><tr>
+            <th data-i18n="acc.h_date">Date</th>
+            <th data-i18n="acc.h_item">Item</th>
+            <th data-i18n="acc.h_credits">Credits</th>
+            <th data-i18n="acc.h_paid">Paid</th>
+          </tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <!-- Confirm dialog -->
+  <div class="confirm" id="confirmDialog" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="confirm__inner">
+      <h3 id="confirmTitle" data-i18n="acc.cancel_title">Cancel this booking?</h3>
+      <p id="confirmText" data-i18n="acc.cancel_text">Your credit will be refunded. You can re-book any time before class starts.</p>
+      <div class="confirm__actions">
+        <button class="btn-pill btn-pill--ghost" id="confirmNo" data-i18n="acc.cancel_no">Keep</button>
+        <button class="btn-pill btn-pill--danger" id="confirmYes" data-i18n="acc.cancel_yes">Cancel booking</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="aria-toast" id="ariaToast" role="status" aria-live="polite"></div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p class="footer-bottom__copy" data-i18n="footer.rights">© 2026 Aria · movement studio</p>
+        <div class="footer-bottom__links">
+          <a href="https://instagram.com/aria.studio" target="_blank" rel="noopener">Instagram</a>
+          <a href="../../studio/privacy.html" data-i18n="footer.privacy">Privacy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Top"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <script src="i18n/dict.js?v=25"></script>
+  <script src="js/i18n.js?v=8"></script>
+  <script src="js/booking.js?v=1"></script>
+  <script src="js/account.js?v=1"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

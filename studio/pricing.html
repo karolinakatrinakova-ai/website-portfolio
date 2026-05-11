@@ -3,28 +3,27 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <title>Pricing · Sage Studio</title>
-  <meta name="description" content="Pricing is discussed individually based on your project." />
+  <title data-i18n="pricing.meta_title">Pricing · My website portfolio</title>
+  <meta name="description" data-i18n-attr="content|pricing.meta_description" content="Pricing is discussed individually based on your project." />
   <meta name="theme-color" content="#f7f3ec" />
   <meta name="robots" content="noindex" />
-  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg?v=3" />
+  <link rel="stylesheet" href="css/style.css?v=6" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 <body>
-  <a href="#main-content" class="skip-to-content">Skip to content</a>
-  <div class="page-loader"><span class="page-loader__brand">Sage<i>.</i></span></div>
+  <a href="#main-content" class="skip-to-content" data-i18n="a11y.skip">Skip to content</a>
+  <div class="page-loader"><span class="page-loader__brand">Karolína K<i>.</i></span></div>
   <div class="reading-progress"></div>
 
   <nav class="navbar">
     <div class="container">
-      <a href="index.html" class="navbar-brand"><span class="navbar-brand__dot"></span><span>Sage<i>.</i></span></a>
+      <a href="index.html" class="navbar-brand"><span class="navbar-brand__dot"></span><span>Karolína K<i>.</i></span></a>
       <ul class="navbar-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="portfolio.html">Work</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+        <li><a href="services.html" data-i18n="nav.services">Services</a></li>
+        <li><a href="portfolio.html" data-i18n="nav.portfolio">Demos</a></li>
+        <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
       </ul>
       <div class="navbar-right">
         <div class="lang-switch" data-lang-switch>
@@ -32,7 +31,7 @@
           <button class="lang-switch__btn" data-lang="sk">SK</button>
           <button class="lang-switch__btn" data-lang="cs">CS</button>
         </div>
-        <a href="contact.html" class="navbar-cta">Get in touch</a>
+        <a href="contact.html" class="navbar-cta" data-i18n="nav.cta">Get in touch</a>
         <button class="navbar-hamburger"><span></span><span></span><span></span></button>
       </div>
     </div>
@@ -44,30 +43,30 @@
     </div>
     <div class="banner__veil" aria-hidden="true"></div>
     <div class="container">
-      <p class="hero-label">Pricing</p>
-      <h1><span class="hero-line">A fair price for</span> <span class="hero-line hero-line--italic">a real piece of work.</span></h1>
+      <p class="hero-label" data-i18n="pricing.hero_label">Pricing</p>
+      <h1><span class="hero-line" data-i18n="pricing.hero_line1">A fair price for</span> <span class="hero-line hero-line--italic" data-i18n="pricing.hero_line2">a real piece of work.</span></h1>
       <div class="hero-rule"></div>
-      <h2>Discussed individually — because every project is a little different.</h2>
+      <h2 data-i18n="pricing.hero_sub">After our first call you get a written, fixed price. You always know what you're getting and what it costs.</h2>
     </div>
   </header>
 
   <section class="section fade-in">
     <div class="container" style="max-width:780px">
-      <p style="font-size:1.15rem;line-height:1.8;color:var(--ink-soft)">
+      <p style="font-size:1.15rem;line-height:1.8;color:var(--ink-soft)" data-i18n="pricing.body1">
         I don't have fixed packages. Some businesses need a single home page; some need five pages with a multilingual toggle and a Google Map block; some want me to write all the copy and source the photos. Pricing depends on what we're actually making.
       </p>
-      <p style="font-size:1.15rem;line-height:1.8;color:var(--ink-soft);margin-top:18px">
+      <p style="font-size:1.15rem;line-height:1.8;color:var(--ink-soft);margin-top:18px" data-i18n="pricing.process_label">
         The way it works:
       </p>
       <ol style="font-size:1.05rem;line-height:2;color:var(--ink-soft);margin-top:8px;padding-left:22px">
-        <li>You write to me with a few words about your business and what you'd like.</li>
-        <li>We have a short conversation — phone, email, or in person if it makes sense.</li>
-        <li>I send you a clear, fixed quote in writing. No surprises, no hourly games.</li>
-        <li>If it's a yes, we start. If it's a no, no harm done.</li>
+        <li data-i18n="pricing.step1">You write to me with a few words about your business and what you'd like.</li>
+        <li data-i18n="pricing.step2">We have a short conversation — phone, email, or in person if it makes sense.</li>
+        <li data-i18n="pricing.step3">I send you a clear, fixed quote in writing. No surprises, no hourly games.</li>
+        <li data-i18n="pricing.step4">If it's a yes, we start. If it's a no, no harm done.</li>
       </ol>
 
       <div style="margin-top:48px;text-align:center">
-        <a href="contact.html" class="btn btn-accent btn-lg">Tell me about your project</a>
+        <a href="contact.html" class="btn btn-accent btn-lg" data-i18n="pricing.cta">Tell me about your project</a>
       </div>
     </div>
   </section>
@@ -75,15 +74,16 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-bottom" style="padding-top:30px;border:0">
-        <p class="footer-bottom__copy">© 2026 Sage Studio · Karolína Katriňáková</p>
+        <p class="footer-bottom__copy" data-i18n="footer.rights">© 2026 Karolína Katriňáková</p>
         <div class="footer-bottom__links">
-          <a href="privacy.html">Privacy</a>
-          <a href="terms.html">Terms</a>
-          <a href="index.html">Back to home</a>
+          <a href="privacy.html" data-i18n="footer.privacy">Privacy</a>
+          <a href="index.html" data-i18n="nav.home">Back to home</a>
         </div>
       </div>
     </div>
   </footer>
+
+  <script src="i18n/dict.js?v=25"></script>
 
   <script src="js/i18n.js"></script>
   <script src="js/main.js"></script>

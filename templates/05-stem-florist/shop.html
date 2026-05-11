@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="shop.meta_title">Shop bouquets · Stem · Praha</title>
+  <meta name="description" data-i18n-attr="content|shop.meta_desc" content="Hand-tied seasonal bouquets, delivered same-day in Prague. Pick by occasion or size — pause anytime." />
+  <meta name="theme-color" content="#6a7a55" />
+  <link rel="icon" type="image/svg+xml" href="../../studio/favicon.svg?v=3" />
+  <link rel="stylesheet" href="css/theme.css?v=6" />
+  <link rel="stylesheet" href="css/layout.css?v=6" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body class="page--shop">
+
+  <a href="#main-content" class="skip-to-content" data-i18n="a11y.skip">Skip to content</a>
+  <div class="page-loader"><span class="page-loader__brand" style="font-style:italic">Stem</span></div>
+
+  <div class="delivery-strip" data-i18n-html="true" data-i18n="delivery.strip">Same-day delivery in Prague · order before <strong>14:00</strong></div>
+
+  <div class="reading-progress"></div>
+
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="navbar-brand" style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.5rem;text-transform:lowercase;letter-spacing:0"><span class="navbar-brand__dot"></span><span>Stem</span></a>
+      <ul class="navbar-links">
+        <li><a href="shop.html" class="active" data-i18n="nav.shop">shop</a></li>
+        <li><a href="index.html#subscribe" data-i18n="nav.sub">subscribe</a></li>
+        <li><a href="weddings.html" data-i18n="nav.weddings">weddings</a></li>
+        <li><a href="workshops.html" data-i18n="nav.workshops">workshops</a></li>
+        <li><a href="index.html#studio" data-i18n="nav.studio">studio</a></li>
+      </ul>
+      <div class="navbar-right">
+        <div class="lang-switch" data-lang-switch>
+          <button class="lang-switch__btn" data-lang="sk">SK</button>
+          <button class="lang-switch__btn" data-lang="cs">CS</button>
+          <button class="lang-switch__btn" data-lang="en">EN</button>
+        </div>
+        <a href="#shop-grid" class="navbar-cta" data-i18n="nav.cta">order now</a>
+        <button class="navbar-hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mobile-menu">
+    <ul class="mobile-menu__links">
+      <li><a href="shop.html" data-i18n="nav.shop">shop</a></li>
+      <li><a href="index.html#subscribe" data-i18n="nav.sub">subscribe</a></li>
+      <li><a href="weddings.html" data-i18n="nav.weddings">weddings</a></li>
+      <li><a href="workshops.html" data-i18n="nav.workshops">workshops</a></li>
+      <li><a href="index.html#studio" data-i18n="nav.studio">studio</a></li>
+    </ul>
+    <div class="lang-switch" data-lang-switch role="group" aria-label="Language">
+      <button class="lang-switch__btn" data-lang="en">EN</button>
+      <button class="lang-switch__btn" data-lang="sk">SK</button>
+      <button class="lang-switch__btn" data-lang="cs">CS</button>
+    </div>
+
+    <div class="mobile-menu__cta"><a href="#shop-grid" class="btn btn-accent" data-i18n="nav.cta">order now</a></div>
+  </div>
+
+  <!-- ───── SUB-HERO ───── -->
+  <header class="sub-hero" id="main-content">
+    <div class="sub-hero__inner">
+      <p class="sub-hero__crumb"><a href="index.html" data-i18n="shop.crumb_home">studio</a> <span style="margin:0 8px">/</span> <span data-i18n="shop.crumb_self">shop</span></p>
+      <h1 data-i18n="shop.title">Hand-tied. Same day. In season.</h1>
+      <p data-i18n="shop.lead">Every bouquet is one-off — built around what came in fresh that morning. Pick a size, tell us the occasion, we'll wrap it in unbleached paper and bring it to your door before sunset.</p>
+    </div>
+  </header>
+
+  <!-- ───── DELIVERY ZONE CHECKER ───── -->
+  <section class="delivery-checker" aria-labelledby="del-h">
+    <div class="delivery-checker__inner">
+      <div class="delivery-checker__copy">
+        <h3 id="del-h" data-i18n="delivery.title">Do we deliver to you?</h3>
+        <p data-i18n="delivery.lead">Same-day in Prague (1–10), next-day across the rest of Czechia.</p>
+      </div>
+      <form class="delivery-checker__form" id="deliveryForm" autocomplete="off">
+        <input type="text" id="deliveryZip" data-i18n-attr="placeholder|delivery.placeholder" placeholder="Enter your postcode (e.g. 120 00)" required />
+        <button type="submit" data-i18n="delivery.btn">Check</button>
+      </form>
+    </div>
+    <p class="delivery-checker__result" id="deliveryResult" role="status"></p>
+  </section>
+
+  <!-- ───── FILTER BAR ───── -->
+  <section class="shop-filter" id="shop-grid">
+    <div class="shop-filter__row">
+      <span class="shop-filter__label" data-i18n="filter.occasion">For</span>
+      <button class="shop-filter__chip is-active" data-filter-occ="all" data-i18n="filter.all">all</button>
+      <button class="shop-filter__chip" data-filter-occ="birthday" data-i18n="filter.birthday">birthday</button>
+      <button class="shop-filter__chip" data-filter-occ="just" data-i18n="filter.just">just because</button>
+      <button class="shop-filter__chip" data-filter-occ="anniversary" data-i18n="filter.anniversary">anniversary</button>
+      <button class="shop-filter__chip" data-filter-occ="newbaby" data-i18n="filter.newbaby">new baby</button>
+      <button class="shop-filter__chip" data-filter-occ="sympathy" data-i18n="filter.sympathy">sympathy</button>
+      <span class="shop-filter__divider"></span>
+      <span class="shop-filter__label" data-i18n="filter.size">Size</span>
+      <button class="shop-filter__chip is-active" data-filter-size="all" data-i18n="filter.all">all</button>
+      <button class="shop-filter__chip" data-filter-size="posy" data-i18n="filter.posy">posy</button>
+      <button class="shop-filter__chip" data-filter-size="medium" data-i18n="filter.medium">medium</button>
+      <button class="shop-filter__chip" data-filter-size="signature" data-i18n="filter.signature">signature</button>
+      <button class="shop-filter__chip" data-filter-size="luxury" data-i18n="filter.luxury">luxury</button>
+    </div>
+  </section>
+
+  <!-- ───── SHOP GRID ───── -->
+  <section class="shop-grid stagger-children" aria-label="Bouquet collection">
+
+    <article class="shop-card" data-occ="just,anniversary" data-size="posy" data-product="letter">
+      <div class="shop-card__media">
+        <span class="shop-card__tag" data-i18n="shop.tag_house">House</span>
+        <img loading="lazy" src="https://images.unsplash.com/photo-1561181286-d3fee7d55364?auto=format&fit=crop&w=900&q=82" alt="The Letter posy" />
+        <button class="shop-card__quick" data-add-cart aria-label="Quick add"><i class="fa-solid fa-plus"></i></button>
+      </div>
+      <h3 class="shop-card__name" data-i18n="shop.p1_name">The Letter</h3>
+      <p class="shop-card__sub" data-i18n="shop.size_posy">Posy · 25 stems</p>
+      <p class="shop-card__notes" data-i18n="shop.p1_notes">A short, sweet posy — sweet pea, ranunculus, garden mint. For a reason or no reason at all.</p>
+      <div class="shop-card__foot">
+        <span class="shop-card__price">650 Kč</span>
+        <a href="#" class="shop-card__cta" data-add-cart data-i18n="shop.add">add to bag</a>
+      </div>
+    </article>
+
+    <article class="shop-card" data-occ="birthday,just" data-size="medium" data-product="sunday">
+      <div class="shop-card__media">
+        <span class="shop-card__tag shop-card__tag--new" data-i18n="shop.tag_new">New</span>
+        <img loading="lazy" src="https://images.unsplash.com/photo-1487530811176-3780de880c2d?auto=format&fit=crop&w=900&q=82" alt="The Sunday bouquet — peonies, lilac, dusty miller" />
+        <button class="shop-card__quick" data-add-cart aria-label="Quick add"><i class="fa-solid fa-plus"></i></button>
+      </div>
+      <h3 class="shop-card__name" data-i18n="shop.p2_name">The Sunday</h3>
+      <p class="shop-card__sub" data-i18n="shop.size_medium">Medium · 45 stems</p>
+      <p class="shop-card__notes" data-i18n="shop.p2_notes">A generous bouquet for the dinner table — peonies, lilac, dusty miller, eucalyptus.</p>
+      <div class="shop-card__foot">
+        <span class="shop-card__price">1 250 Kč</span>
+        <a href="#" class="shop-card__cta" data-add-cart data-i18n="shop.add">add to bag</a>
+      </div>
+    </article>
+
+    <article class="shop-card" data-occ="anniversary,just" data-size="signature" data-product="studio">
+      <div class="shop-card__media">
+        <span class="shop-card__tag" data-i18n="shop.tag_pick">Florist's pick</span>
+        <img loading="lazy" src="https://images.unsplash.com/photo-1487070183336-b863922373d4?auto=format&fit=crop&w=900&q=82" alt="The Studio signature — florist's pick of the week" />
+        <button class="shop-card__quick" data-add-cart aria-label="Quick add"><i class="fa-solid fa-plus"></i></button>
+      </div>
+      <h3 class="shop-card__name" data-i18n="shop.p3_name">The Studio</h3>
+      <p class="shop-card__sub" data-i18n="shop.size_signature">Signature · 60 stems</p>
+      <p class="shop-card__notes" data-i18n="shop.p3_notes">Florist's choice of the week — built around what's most beautiful right now. The one we'd take home.</p>
+      <div class="shop-card__foot">
+        <span class="shop-card__price">1 950 Kč</span>
+        <a href="#" class="shop-card__cta" data-add-cart data-i18n="shop.add">add to bag</a>
+      </div>
+    </article>
+
+    <article class="shop-card" data-occ="anniversary" data-size="luxury" data-product="garden">
+      <div class="shop-card__media">
+        <span class="shop-card__tag shop-card__tag--limited" data-i18n="shop.tag_limited">Limited</span>
+        <img loading="lazy" src="https://images.unsplash.com/photo-1494972308805-463bc619d34e?auto=format&fit=crop&w=900&q=82" alt="The Garden luxury — peonies, garden roses, sweet pea" />
+        <button class="shop-card__quick" data-add-cart aria-label="Quick add"><i class="fa-solid fa-plus"></i></button>
+      </div>
+      <h3 class="shop-card__name" data-i18n="shop.p4_name">The Garden</h3>
+      <p class="shop-card__sub" data-i18n="shop.size_luxury">Luxury · 90 stems</p>
+      <p class="shop-card__notes" data-i18n="shop.p4_notes">Our most extravagant bouquet — peonies, garden roses, sweet pea. Made-to-order, 48h notice.</p>
+      <div class="shop-card__foot">
+        <span class="shop-card__price">3 200 Kč</span>
+        <a href="#" class="shop-card__cta" data-add-cart data-i18n="shop.add">add to bag</a>
+      </div>
+    </article>
+
+    <article class="shop-card" data-occ="newbaby,just" data-size="posy" data-product="willow">
+      <div class="shop-card__media">
+        <img loading="lazy" src="https://images.unsplash.com/photo-1525310072745-f49212b5ac6d?auto=format&fit=crop&w=900&q=82" alt="Willow posy — chamomile, white ranunculus, eucalyptus" />
+        <button class="shop-card__quick" data-add-cart aria-label="Quick add"><i class="fa-solid fa-plus"></i></button>
+      </div>
+      <h3 class="shop-card__name" data-i18n="shop.p5_name">Willow</h3>
+      <p class="shop-card__sub" data-i18n="shop.size_posy">Posy · 25 stems</p>
+      <p class="shop-card__notes" data-i18n="shop.p5_notes">Soft pastels — chamomile, white ranunculus, eucalyptus. Tied with cream silk ribbon.</p>
+      <div class="shop-card__foot">
+        <span class="shop-card__price">750 Kč</span>
+        <a href="#" class="shop-card__cta" data-add-cart data-i18n="shop.add">add to bag</a>
+      </div>
+    </article>
+
+    <article class="shop-card" data-occ="birthday,anniversary" data-size="medium" data-product="dahlia">
+      <div class="shop-card__media">
+        <img loading="lazy" src="https://images.unsplash.com/photo-1546842931-886c185b4c8c?auto=format&fit=crop&w=900&q=82" alt="Wild Dahlia bouquet — burgundy, peach, coral dahlia mix" />
+        <button class="shop-card__quick" data-add-cart aria-label="Quick add"><i class="fa-solid fa-plus"></i></button>
+      </div>
+      <h3 class="shop-card__name" data-i18n="shop.p6_name">Wild Dahlia</h3>
+      <p class="shop-card__sub" data-i18n="shop.size_medium">Medium · 40 stems</p>
+      <p class="shop-card__notes" data-i18n="shop.p6_notes">Late-summer dahlia mix — burgundy, peach, coral. Wild edges, no fillers.</p>
+      <div class="shop-card__foot">
+        <span class="shop-card__price">1 350 Kč</span>
+        <a href="#" class="shop-card__cta" data-add-cart data-i18n="shop.add">add to bag</a>
+      </div>
+    </article>
+
+    <article class="shop-card" data-occ="sympathy" data-size="medium" data-product="quiet">
+      <div class="shop-card__media">
+        <img loading="lazy" src="https://images.unsplash.com/photo-1474112704314-8162b7749a90?auto=format&fit=crop&w=900&q=82" alt="Quiet White sympathy bouquet — white peonies, lisianthus, olive" />
+        <button class="shop-card__quick" data-add-cart aria-label="Quick add"><i class="fa-solid fa-plus"></i></button>
+      </div>
+      <h3 class="shop-card__name" data-i18n="shop.p7_name">Quiet White</h3>
+      <p class="shop-card__sub" data-i18n="shop.size_medium">Medium · 40 stems</p>
+      <p class="shop-card__notes" data-i18n="shop.p7_notes">For sympathy — white peonies, lisianthus, olive branches. Hand-written note included.</p>
+      <div class="shop-card__foot">
+        <span class="shop-card__price">1 450 Kč</span>
+        <a href="#" class="shop-card__cta" data-add-cart data-i18n="shop.add">add to bag</a>
+      </div>
+    </article>
+
+    <article class="shop-card" data-occ="just,anniversary" data-size="signature" data-product="lilac">
+      <div class="shop-card__media">
+        <img loading="lazy" src="https://images.unsplash.com/photo-1502977249166-824b3a8a4d6d?auto=format&fit=crop&w=900&q=82" alt="Lilac Hour bouquet — purple lilac, dusty pink ranunculus" />
+        <button class="shop-card__quick" data-add-cart aria-label="Quick add"><i class="fa-solid fa-plus"></i></button>
+      </div>
+      <h3 class="shop-card__name" data-i18n="shop.p8_name">Lilac Hour</h3>
+      <p class="shop-card__sub" data-i18n="shop.size_signature">Signature · 65 stems</p>
+      <p class="shop-card__notes" data-i18n="shop.p8_notes">Twilight palette — purple lilac, dusty pink ranunculus, smoke bush, scabiosa.</p>
+      <div class="shop-card__foot">
+        <span class="shop-card__price">1 850 Kč</span>
+        <a href="#" class="shop-card__cta" data-add-cart data-i18n="shop.add">add to bag</a>
+      </div>
+    </article>
+
+    <article class="shop-card" data-occ="birthday,just" data-size="luxury" data-product="midsummer">
+      <div class="shop-card__media">
+        <img loading="lazy" src="https://images.unsplash.com/photo-1496062031456-07b8f162a322?auto=format&fit=crop&w=900&q=82" alt="Midsummer luxury — David Austin roses, sweet pea, chocolate cosmos" />
+        <button class="shop-card__quick" data-add-cart aria-label="Quick add"><i class="fa-solid fa-plus"></i></button>
+      </div>
+      <h3 class="shop-card__name" data-i18n="shop.p9_name">Midsummer</h3>
+      <p class="shop-card__sub" data-i18n="shop.size_luxury">Luxury · 80 stems</p>
+      <p class="shop-card__notes" data-i18n="shop.p9_notes">Peak-season abundance — David Austin roses, sweet pea, chocolate cosmos, summer herbs.</p>
+      <div class="shop-card__foot">
+        <span class="shop-card__price">2 950 Kč</span>
+        <a href="#" class="shop-card__cta" data-add-cart data-i18n="shop.add">add to bag</a>
+      </div>
+    </article>
+
+  </section>
+
+  <!-- ───── SUBSCRIPTION CROSS-SELL ───── -->
+  <section class="sub-banner">
+    <div class="sub-banner__copy">
+      <h2 data-i18n="sub_banner.title">Fresh flowers every week. Pause any time.</h2>
+      <p data-i18n="sub_banner.lead">A weekly, fortnightly or monthly subscription is the slow-flower way. We pick what's freshest that morning and bring it to you. From 540 Kč/week.</p>
+      <a href="index.html#subscribe" class="sub-banner__cta" data-i18n="sub_banner.cta">See subscription plans →</a>
+    </div>
+    <div class="sub-banner__media">
+      <img src="https://images.unsplash.com/photo-1525310072745-f49212b5ac6d?auto=format&fit=crop&w=900&q=82" alt="Weekly subscription bouquet" />
+    </div>
+  </section>
+
+  <!-- ───── CART (mock UI) ───── -->
+  <button class="cart-toggle" id="cartToggle" aria-label="Cart" type="button">
+    <i class="fa-solid fa-bag-shopping"></i>
+    <span class="cart-toggle__count" id="cartCount">0</span>
+  </button>
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping bag">
+    <div class="cart-drawer__head">
+      <h3 data-i18n="cart.title">Your bag</h3>
+      <button class="cart-drawer__close" id="cartClose" aria-label="Close">&times;</button>
+    </div>
+    <div class="cart-drawer__items" id="cartItems">
+      <p class="cart-empty" data-i18n="cart.empty">Empty for now.<br>Pick a bouquet to start.</p>
+    </div>
+    <div class="cart-drawer__foot" id="cartFoot" hidden>
+      <div class="cart-drawer__total">
+        <span class="total" data-i18n="cart.total">Total</span>
+        <span class="num" id="cartTotal">0 Kč</span>
+      </div>
+      <a href="#" class="cart-drawer__cta" data-i18n="cart.cta">Continue to checkout →</a>
+    </div>
+  </aside>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p class="footer-bottom__copy" data-i18n="footer.rights">© 2026 Stem · botanical studio</p>
+        <div class="footer-bottom__links">
+          <a href="https://instagram.com/stem.studio" target="_blank" rel="noopener">Instagram</a>
+          <a href="../../studio/privacy.html" data-i18n="footer.privacy">Privacy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Top"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <div class="cookie-banner" id="cookieBanner">
+    <div class="cookie-banner__inner">
+      <p data-i18n="cookies.text">We use cookies for a better experience.</p>
+      <div class="cookie-banner__actions">
+        <button class="cookie-banner__btn cookie-banner__btn--accept" data-cookie="accept" data-i18n="cookies.accept">Accept</button>
+        <button class="cookie-banner__btn cookie-banner__btn--decline" data-cookie="decline" data-i18n="cookies.decline">Decline</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    /* ───── Delivery zone checker ───── */
+    (function () {
+      var form = document.getElementById('deliveryForm');
+      var input = document.getElementById('deliveryZip');
+      var result = document.getElementById('deliveryResult');
+      if (!form) return;
+      var praguePostcodes = ['100','110','120','130','140','150','160','170','180','190'];
+      var labels = {
+        same: { en: 'Yes — same-day delivery if you order before 14:00.', sk: 'Áno — rovnaký deň, ak objednáš do 14:00.', cs: 'Ano — týž den, pokud objednáš do 14:00.' },
+        next: { en: 'Yes — next-day delivery (1–2 working days).', sk: 'Áno — doručenie 1–2 pracovné dni.', cs: 'Ano — doručení 1–2 pracovní dny.' },
+        no:   { en: 'Sorry — we don\'t deliver there yet. Email us, we may make exceptions.', sk: 'Zatiaľ tam nedoručujeme. Napíš nám, výnimky robíme.', cs: 'Zatím tam nedoručujeme. Napiš nám, výjimky děláme.' },
+        bad:  { en: 'Please enter a valid Czech postcode.', sk: 'Zadaj platné PSČ (Česko).', cs: 'Zadej platné PSČ.' }
+      };
+      function lang () { return (window.Sage && window.Sage.getLang()) || 'en'; }
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        var z = (input.value || '').replace(/\s+/g, '').slice(0, 5);
+        result.classList.remove('ok', 'no');
+        if (!/^\d{5}$/.test(z)) { result.textContent = labels.bad[lang()]; result.classList.add('no'); return; }
+        var prefix = z.slice(0, 3);
+        if (praguePostcodes.indexOf(prefix) !== -1) { result.textContent = labels.same[lang()]; result.classList.add('ok'); }
+        else if (z[0] === '1' || z[0] === '2' || z[0] === '3' || z[0] === '4' || z[0] === '5' || z[0] === '6' || z[0] === '7') { result.textContent = labels.next[lang()]; result.classList.add('ok'); }
+        else { result.textContent = labels.no[lang()]; result.classList.add('no'); }
+      });
+    })();
+
+    /* ───── Filter logic ───── */
+    (function () {
+      var occChips = document.querySelectorAll('[data-filter-occ]');
+      var sizeChips = document.querySelectorAll('[data-filter-size]');
+      var cards = document.querySelectorAll('.shop-card');
+      var state = { occ: 'all', size: 'all' };
+      function apply () {
+        cards.forEach(function (c) {
+          var occList = (c.dataset.occ || '').split(',');
+          var size = c.dataset.size;
+          var okOcc = state.occ === 'all' || occList.indexOf(state.occ) !== -1;
+          var okSize = state.size === 'all' || size === state.size;
+          c.style.display = (okOcc && okSize) ? '' : 'none';
+        });
+      }
+      occChips.forEach(function (b) {
+        b.addEventListener('click', function () {
+          occChips.forEach(function (x) { x.classList.remove('is-active'); });
+          b.classList.add('is-active');
+          state.occ = b.dataset.filterOcc;
+          apply();
+        });
+      });
+      sizeChips.forEach(function (b) {
+        b.addEventListener('click', function () {
+          sizeChips.forEach(function (x) { x.classList.remove('is-active'); });
+          b.classList.add('is-active');
+          state.size = b.dataset.filterSize;
+          apply();
+        });
+      });
+    })();
+
+    /* ───── Cart drawer (mock — counts only) ───── */
+    (function () {
+      var toggle = document.getElementById('cartToggle');
+      var drawer = document.getElementById('cartDrawer');
+      var overlay = document.getElementById('cartOverlay');
+      var closeBtn = document.getElementById('cartClose');
+      var items = document.getElementById('cartItems');
+      var foot = document.getElementById('cartFoot');
+      var countEl = document.getElementById('cartCount');
+      var totalEl = document.getElementById('cartTotal');
+      var bag = [];
+      function open () { drawer.classList.add('is-open'); overlay.classList.add('is-open'); }
+      function close () { drawer.classList.remove('is-open'); overlay.classList.remove('is-open'); }
+      function fmt (n) { return n.toLocaleString('cs-CZ').replace(/\u00a0/g, ' ') + ' Kč'; }
+      function render () {
+        countEl.textContent = bag.length;
+        if (bag.length === 0) {
+          items.innerHTML = '<p class="cart-empty">Empty for now.<br>Pick a bouquet to start.</p>';
+          foot.hidden = true;
+          return;
+        }
+        items.innerHTML = bag.map(function (it) {
+          return '<div class="cart-item"><img src="' + it.img + '" alt="" /><div><p class="cart-item__name">' + it.name + '</p><p class="cart-item__qty">×' + it.qty + ' · ' + it.size + '</p></div><span class="cart-item__price">' + fmt(it.price * it.qty) + '</span></div>';
+        }).join('');
+        var total = bag.reduce(function (s, it) { return s + it.price * it.qty; }, 0);
+        totalEl.textContent = fmt(total);
+        foot.hidden = false;
+      }
+      function add (card) {
+        var name = card.querySelector('.shop-card__name').textContent;
+        var sub = card.querySelector('.shop-card__sub').textContent;
+        var img = card.querySelector('img').src;
+        var price = parseInt(card.querySelector('.shop-card__price').textContent.replace(/\D/g, ''), 10);
+        var key = card.dataset.product;
+        var existing = bag.find(function (b) { return b.key === key; });
+        if (existing) { existing.qty++; } else { bag.push({ key: key, name: name, size: sub, img: img, price: price, qty: 1 }); }
+        render();
+        open();
+      }
+      toggle.addEventListener('click', open);
+      closeBtn.addEventListener('click', close);
+      overlay.addEventListener('click', close);
+      document.querySelectorAll('[data-add-cart]').forEach(function (el) {
+        el.addEventListener('click', function (e) {
+          e.preventDefault();
+          var card = el.closest('.shop-card');
+          if (card) add(card);
+        });
+      });
+      render();
+    })();
+  </script>
+
+  <script src="i18n/dict.js?v=25"></script>
+
+  <script src="js/i18n.js?v=8"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

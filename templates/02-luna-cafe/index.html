@@ -3,14 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title data-i18n="meta.title">Café Luna · kaviareň a brunch v Brne</title>
-  <meta name="description" data-i18n="meta.description" content="Kaviareň, brunch a malé bistro v Brne-Vinohradoch." />
+  <title data-i18n="meta.title">Café Luna · roastery & brunch · Praha</title>
+  <meta name="description" data-i18n-attr="content|meta.description" content="Roastery, brunch and natural wine in Vinohrady, Prague. Specialty coffee, single-origin spotlight, seasonal menu." />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Café Luna · kaviareň a brunch" />
+  <meta property="og:title" content="Café Luna · roastery & brunch · Praha" />
   <meta property="og:image" content="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1600&q=80" />
   <meta name="theme-color" content="#5d7a3a" />
-  <link rel="icon" type="image/svg+xml" href="../../studio/favicon.svg" />
-  <link rel="stylesheet" href="css/theme.css" />
+  <link rel="icon" type="image/svg+xml" href="../../studio/favicon.svg?v=3" />
+  <link rel="stylesheet" href="css/theme.css?v=3" />
+  <link rel="stylesheet" href="css/layout.css?v=3" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
   <script type="application/ld+json">
@@ -18,12 +19,12 @@
     "@context": "https://schema.org",
     "@type": "CafeOrCoffeeShop",
     "name": "Café Luna",
-    "description": "Kaviareň a brunch bistro v Brne-Vinohradoch.",
+    "description": "Roastery, brunch and natural wine in Vinohrady, Prague.",
     "url": "https://cafeluna.cz",
     "telephone": "+420774111222",
     "email": "ahoj@cafeluna.cz",
-    "address": { "@type": "PostalAddress", "streetAddress": "Vinohrady 14", "addressLocality": "Brno", "postalCode": "618 00", "addressCountry": "CZ" },
-    "servesCuisine": ["Brunch", "Coffee", "European"],
+    "address": { "@type": "PostalAddress", "streetAddress": "Vinohradská 14", "addressLocality": "Praha 2", "postalCode": "120 00", "addressCountry": "CZ" },
+    "servesCuisine": ["Brunch", "Specialty coffee", "Natural wine"],
     "priceRange": "$$",
     "image": "https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1600&q=80"
   }
@@ -31,15 +32,8 @@
 </head>
 <body>
 
-  <a href="#main-content" class="skip-to-content">Skip to content</a>
+  <a href="#main-content" class="skip-to-content" data-i18n="a11y.skip">Skip to content</a>
   <div class="page-loader"><span class="page-loader__brand">Luna</span></div>
-
-  <div class="announcement-bar" id="announcementBar">
-    <div class="container">
-      <p data-i18n="announcement.text" data-i18n-html="true">Tento víkend: <strong>Pancake Sunday</strong>. <a href="#kontakt">Stôl</a></p>
-      <button class="announcement-bar__close" aria-label="Zavrieť">&times;</button>
-    </div>
-  </div>
 
   <div class="reading-progress"></div>
 
@@ -47,11 +41,11 @@
     <div class="container">
       <a href="index.html" class="navbar-brand"><span class="navbar-brand__dot"></span><span>Luna</span></a>
       <ul class="navbar-links">
-        <li><a href="#menu" data-i18n="nav.menu">Menu</a></li>
-        <li><a href="#brunch" data-i18n="nav.brunch">Brunch</a></li>
-        <li><a href="#hodiny" data-i18n="nav.hours">Otváracie hodiny</a></li>
-        <li><a href="#galeria" data-i18n="nav.gallery">Galéria</a></li>
-        <li><a href="#kontakt" data-i18n="nav.contact">Kontakt</a></li>
+        <li><a href="menu.html" data-i18n="nav.menu">Menu</a></li>
+        <li><a href="events.html" data-i18n="nav.events">Events</a></li>
+        <li><a href="#origin" data-i18n="nav.brewing">Now brewing</a></li>
+        <li><a href="#sourcing" data-i18n="nav.sourcing">Sourcing</a></li>
+        <li><a href="visit.html" data-i18n="nav.visit">Visit</a></li>
       </ul>
       <div class="navbar-right">
         <div class="lang-switch" data-lang-switch>
@@ -59,7 +53,7 @@
           <button class="lang-switch__btn" data-lang="cs">CS</button>
           <button class="lang-switch__btn" data-lang="en">EN</button>
         </div>
-        <a href="#kontakt" class="navbar-cta" data-i18n="nav.book">Rezervovať stôl</a>
+        <a href="visit.html" class="navbar-cta" data-i18n="nav.book">Reserve a table</a>
         <button class="navbar-hamburger"><span></span><span></span><span></span></button>
       </div>
     </div>
@@ -67,176 +61,281 @@
 
   <div class="mobile-menu">
     <ul class="mobile-menu__links">
-      <li><a href="#menu" data-i18n="nav.menu">Menu</a></li>
-      <li><a href="#brunch" data-i18n="nav.brunch">Brunch</a></li>
-      <li><a href="#hodiny" data-i18n="nav.hours">Otváracie hodiny</a></li>
-      <li><a href="#galeria" data-i18n="nav.gallery">Galéria</a></li>
-      <li><a href="#kontakt" data-i18n="nav.contact">Kontakt</a></li>
+      <li><a href="menu.html" data-i18n="nav.menu">Menu</a></li>
+      <li><a href="events.html" data-i18n="nav.events">Events</a></li>
+      <li><a href="#origin" data-i18n="nav.brewing">Now brewing</a></li>
+      <li><a href="#sourcing" data-i18n="nav.sourcing">Sourcing</a></li>
+      <li><a href="visit.html" data-i18n="nav.visit">Visit</a></li>
     </ul>
-    <div class="mobile-menu__cta"><a href="#kontakt" class="btn btn-accent" data-i18n="nav.book">Rezervovať stôl</a></div>
+    <div class="lang-switch" data-lang-switch role="group" aria-label="Language">
+      <button class="lang-switch__btn" data-lang="en">EN</button>
+      <button class="lang-switch__btn" data-lang="sk">SK</button>
+      <button class="lang-switch__btn" data-lang="cs">CS</button>
+    </div>
+
+    <div class="mobile-menu__cta"><a href="visit.html" class="btn btn-accent" data-i18n="nav.book">Reserve a table</a></div>
   </div>
 
-  <header class="banner" id="main-content">
-    <div class="banner__bg"><img src="https://images.unsplash.com/photo-1559925393-8be0ec4767c8?auto=format&fit=crop&w=2400&q=82" alt="" /></div>
-    <div class="banner__veil"></div>
+  <!-- ───── HERO: editorial split (left copy / right image) ───── -->
+  <header class="banner hero--magazine" id="main-content">
+    <div class="banner__bg"><img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=2400&q=82" alt="" /></div>
     <div class="container">
-      <p class="hero-label" data-i18n="hero.label">Kaviareň · brunch · Brno-Vinohrady</p>
-      <h1>
-        <span class="hero-line" data-i18n="hero.line1">Káva,</span>
-        <span class="hero-line hero-line--italic" data-i18n="hero.line2">ranný brunch,</span>
-        <span class="hero-line" data-i18n="hero.line3">občas víno.</span>
-      </h1>
-      <div class="hero-rule"></div>
-      <h2 data-i18n="hero.sub">Café Luna je miesto, kam chodíte na espresso, ostávate na šakšuku a vraciate sa, lebo vám je tu dobre.</h2>
-      <div class="hero-buttons">
-        <a href="#kontakt" class="btn btn-accent btn-lg" data-i18n="hero.btn1">Rezervovať stôl</a>
-        <a href="#menu" class="btn btn-ghost-light btn-lg" data-i18n="hero.btn2">Pozri menu</a>
+      <div class="hero-magazine__left">
+        <p class="hero-issue" data-i18n="hero.issue">Issue · Spring '26 · Vol. 04</p>
+        <h1 data-i18n-html="true" data-i18n="hero.title">Coffee for <em>slow</em> mornings</h1>
+        <h2 data-i18n="hero.sub">Café Luna is a small roastery and brunch bistro on Vinohradská 14. We roast every Tuesday, serve brunch every weekend and pour natural wine on Friday evenings.</h2>
+        <div class="hero-buttons">
+          <a href="visit.html" class="btn btn-accent btn-lg" data-i18n="hero.btn1">Reserve a table</a>
+          <a href="menu.html" class="btn btn-secondary btn-lg" data-i18n="hero.btn2">See the menu</a>
+        </div>
+        <div class="hero-meta">
+          <div><span data-i18n="hero.m1_label">Open today</span><strong data-i18n="hero.m1_value">8:00 — 21:00</strong></div>
+          <div><span data-i18n="hero.m2_label">Brunch</span><strong data-i18n="hero.m2_value">Sat &amp; Sun</strong></div>
+          <div><span data-i18n="hero.m3_label">Roast day</span><strong data-i18n="hero.m3_value">Every Tuesday</strong></div>
+        </div>
       </div>
+      <div class="hero-magazine__right"></div>
     </div>
-    <a href="#menu" class="scroll-indicator"><span class="scroll-indicator__line"></span></a>
   </header>
 
-  <div class="marquee">
-    <div class="marquee__inner">
-      <span class="marquee__item">Single Origin Coffee</span>
-      <span class="marquee__item">Sunday Brunch</span>
-      <span class="marquee__item">Domáce dezerty</span>
-      <span class="marquee__item">Veggie · Vegan</span>
-      <span class="marquee__item">Open 7 days</span>
-      <span class="marquee__item">Single Origin Coffee</span>
-      <span class="marquee__item">Sunday Brunch</span>
-      <span class="marquee__item">Domáce dezerty</span>
-      <span class="marquee__item">Veggie · Vegan</span>
-      <span class="marquee__item">Open 7 days</span>
+  <!-- ───── TODAY'S SPECIALS (chalkboard) ───── -->
+  <section class="specials fade-in" id="today">
+    <div class="container">
+      <div class="specials__head">
+        <h2 class="specials__title" data-i18n-html="true" data-i18n="today.title">Today on <em>the chalkboard</em></h2>
+        <span class="specials__date" data-i18n="today.date">— Thursday, May 7</span>
+      </div>
+      <div class="specials__grid">
+        <article class="special-card">
+          <p class="special-card__day" data-i18n="today.s1.day">From the bar</p>
+          <h3 class="special-card__name" data-i18n="today.s1.name">Cardamom flat white</h3>
+          <p class="special-card__desc" data-i18n="today.s1.desc">Our morning roast pulled long, with a whisper of cardamom and oat milk steamed silky.</p>
+          <p class="special-card__price" data-i18n="today.s1.price">95 Kč</p>
+        </article>
+        <article class="special-card">
+          <p class="special-card__day" data-i18n="today.s2.day">From the kitchen</p>
+          <h3 class="special-card__name" data-i18n="today.s2.name">Spring shakshuka</h3>
+          <p class="special-card__desc" data-i18n="today.s2.desc">Two eggs poached in a green tomato &amp; mint sugo, with feta from Polabí and a thick slice of sourdough.</p>
+          <p class="special-card__price" data-i18n="today.s2.price">240 Kč</p>
+        </article>
+        <article class="special-card">
+          <p class="special-card__day" data-i18n="today.s3.day">From the oven</p>
+          <h3 class="special-card__name" data-i18n="today.s3.name">Rhubarb & vanilla galette</h3>
+          <p class="special-card__desc" data-i18n="today.s3.desc">Buttery short-crust, rhubarb from Mělník, a crackle of demerara sugar on top.</p>
+          <p class="special-card__price" data-i18n="today.s3.price">120 Kč</p>
+        </article>
+      </div>
     </div>
-  </div>
+  </section>
 
-  <!-- INTRO -->
+  <!-- ───── SINGLE-ORIGIN SPOTLIGHT ───── -->
+  <section class="origin fade-in" id="origin">
+    <div class="container">
+      <div class="origin__inner">
+        <img class="origin__photo" loading="lazy" src="https://images.unsplash.com/photo-1559056199-641a0ac8b55e?auto=format&fit=crop&w=900&q=82" alt="" />
+        <div>
+          <p class="origin__eyebrow" data-i18n="origin.eyebrow">Now brewing · single origin</p>
+          <h2 class="origin__title" data-i18n-html="true" data-i18n="origin.title">Yirgacheffe, <em>Ethiopia</em></h2>
+          <p class="origin__sub" data-i18n="origin.sub">Roasted in-house, Tuesday last. On filter and espresso while it lasts.</p>
+
+          <div class="origin__notes">
+            <span class="origin__note" data-i18n="origin.n1">jasmine</span>
+            <span class="origin__note" data-i18n="origin.n2">bergamot</span>
+            <span class="origin__note" data-i18n="origin.n3">honey</span>
+            <span class="origin__note" data-i18n="origin.n4">stone fruit</span>
+          </div>
+
+          <div class="origin__details">
+            <div>
+              <p class="origin__detail-label" data-i18n="origin.d1_label">Process</p>
+              <p class="origin__detail-value" data-i18n="origin.d1_value">Natural</p>
+            </div>
+            <div>
+              <p class="origin__detail-label" data-i18n="origin.d2_label">Altitude</p>
+              <p class="origin__detail-value" data-i18n="origin.d2_value">1 950 — 2 100 m</p>
+            </div>
+            <div>
+              <p class="origin__detail-label" data-i18n="origin.d3_label">Roast</p>
+              <p class="origin__detail-value" data-i18n="origin.d3_value">Light · filter</p>
+            </div>
+          </div>
+
+          <p class="origin__price" data-i18n="origin.price">250 g · 320 Kč</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───── MENU TABS ───── -->
+  <section class="section fade-in" id="menu">
+    <div class="container">
+      <div class="section-header section-header--magazine">
+        <span class="section-label" data-i18n="menu.label">The menu</span>
+        <h2 data-i18n-html="true" data-i18n="menu.title">Honest food, <em>seasonal drinks</em></h2>
+        <p data-i18n="menu.lead">A short, seasonal menu. Coffee from our roastery, brunch all weekend, and natural wine after 5 pm on Fridays.</p>
+      </div>
+
+      <div class="menu-tabs" role="tablist">
+        <button class="menu-tab active" data-tab="coffee" data-i18n="menu.tab_coffee">Coffee</button>
+        <button class="menu-tab" data-tab="brunch" data-i18n="menu.tab_brunch">Brunch</button>
+        <button class="menu-tab" data-tab="bakery" data-i18n="menu.tab_bakery">Bakery</button>
+        <button class="menu-tab" data-tab="wine" data-i18n="menu.tab_wine">Natural wine</button>
+      </div>
+
+      <div class="menu-panel active" data-panel="coffee">
+        <ul class="menu-list menu-grid">
+          <li><div><h4 data-i18n="menu.coffee.i1.name">Espresso</h4><p data-i18n="menu.coffee.i1.desc">House roast, ristretto by default</p></div><span class="price" data-i18n="menu.coffee.i1.price">65 Kč</span></li>
+          <li><div><h4 data-i18n="menu.coffee.i2.name">Long black</h4><p data-i18n="menu.coffee.i2.desc">Double shot, hot water</p></div><span class="price" data-i18n="menu.coffee.i2.price">75 Kč</span></li>
+          <li><div><h4 data-i18n="menu.coffee.i3.name">Flat white</h4><p data-i18n="menu.coffee.i3.desc">Whole, oat or almond</p></div><span class="price" data-i18n="menu.coffee.i3.price">85 Kč</span></li>
+          <li><div><h4 data-i18n="menu.coffee.i4.name">Cappuccino</h4><p data-i18n="menu.coffee.i4.desc">Classic, double shot</p></div><span class="price" data-i18n="menu.coffee.i4.price">85 Kč</span></li>
+          <li><div><h4 data-i18n="menu.coffee.i5.name">V60 filter</h4><p data-i18n="menu.coffee.i5.desc">Today's single origin</p></div><span class="price" data-i18n="menu.coffee.i5.price">110 Kč</span></li>
+          <li><div><h4 data-i18n="menu.coffee.i6.name">Cold brew</h4><p data-i18n="menu.coffee.i6.desc">12-hour steep · with tonic +20</p></div><span class="price" data-i18n="menu.coffee.i6.price">95 Kč</span></li>
+        </ul>
+      </div>
+
+      <div class="menu-panel" data-panel="brunch">
+        <ul class="menu-list menu-grid">
+          <li><div><h4 data-i18n="menu.brunch.i1.name">Sourdough & eggs</h4><p data-i18n="menu.brunch.i1.desc">Two poached, smoked salt, herb butter</p></div><span class="price" data-i18n="menu.brunch.i1.price">220 Kč</span></li>
+          <li><div><h4 data-i18n="menu.brunch.i2.name">Spring shakshuka</h4><p data-i18n="menu.brunch.i2.desc">Green tomato &amp; mint, feta, sourdough</p></div><span class="price" data-i18n="menu.brunch.i2.price">240 Kč</span></li>
+          <li><div><h4 data-i18n="menu.brunch.i3.name">Avocado on rye</h4><p data-i18n="menu.brunch.i3.desc">Smashed avocado, chilli oil, lime, dukkah</p></div><span class="price" data-i18n="menu.brunch.i3.price">210 Kč</span></li>
+          <li><div><h4 data-i18n="menu.brunch.i4.name">Granola bowl</h4><p data-i18n="menu.brunch.i4.desc">House granola, yoghurt, seasonal fruit, honey</p></div><span class="price" data-i18n="menu.brunch.i4.price">180 Kč</span></li>
+          <li><div><h4 data-i18n="menu.brunch.i5.name">Salmon plate</h4><p data-i18n="menu.brunch.i5.desc">Cured salmon, dill cream, capers, rye</p></div><span class="price" data-i18n="menu.brunch.i5.price">280 Kč</span></li>
+          <li><div><h4 data-i18n="menu.brunch.i6.name">Pancake stack</h4><p data-i18n="menu.brunch.i6.desc">Buttermilk pancakes, maple, seasonal compote</p></div><span class="price" data-i18n="menu.brunch.i6.price">220 Kč</span></li>
+        </ul>
+      </div>
+
+      <div class="menu-panel" data-panel="bakery">
+        <ul class="menu-list menu-grid">
+          <li><div><h4 data-i18n="menu.bakery.i1.name">Croissant</h4><p data-i18n="menu.bakery.i1.desc">Butter, all-day favourite</p></div><span class="price" data-i18n="menu.bakery.i1.price">75 Kč</span></li>
+          <li><div><h4 data-i18n="menu.bakery.i2.name">Almond croissant</h4><p data-i18n="menu.bakery.i2.desc">Twice-baked, with frangipane</p></div><span class="price" data-i18n="menu.bakery.i2.price">95 Kč</span></li>
+          <li><div><h4 data-i18n="menu.bakery.i3.name">Cinnamon scroll</h4><p data-i18n="menu.bakery.i3.desc">Cardamom &amp; cinnamon, a Saturday tradition</p></div><span class="price" data-i18n="menu.bakery.i3.price">110 Kč</span></li>
+          <li><div><h4 data-i18n="menu.bakery.i4.name">Banana bread</h4><p data-i18n="menu.bakery.i4.desc">With pecans, slightly under-sweet</p></div><span class="price" data-i18n="menu.bakery.i4.price">95 Kč</span></li>
+          <li><div><h4 data-i18n="menu.bakery.i5.name">Rhubarb galette</h4><p data-i18n="menu.bakery.i5.desc">Today's special · while supplies last</p></div><span class="price" data-i18n="menu.bakery.i5.price">120 Kč</span></li>
+          <li><div><h4 data-i18n="menu.bakery.i6.name">Choc-tahini cookie</h4><p data-i18n="menu.bakery.i6.desc">Dark chocolate, sea salt, sesame</p></div><span class="price" data-i18n="menu.bakery.i6.price">75 Kč</span></li>
+        </ul>
+      </div>
+
+      <div class="menu-panel" data-panel="wine">
+        <ul class="menu-list menu-grid">
+          <li><div><h4 data-i18n="menu.wine.i1.name">Pet-Nat · Veltlin</h4><p data-i18n="menu.wine.i1.desc">Czech, biodynamic · 0,75 l</p></div><span class="price" data-i18n="menu.wine.i1.price">650 Kč</span></li>
+          <li><div><h4 data-i18n="menu.wine.i2.name">Skin-contact rosé</h4><p data-i18n="menu.wine.i2.desc">Slovenia · low-intervention</p></div><span class="price" data-i18n="menu.wine.i2.price">580 Kč</span></li>
+          <li><div><h4 data-i18n="menu.wine.i3.name">Frankovka</h4><p data-i18n="menu.wine.i3.desc">South Moravia · light, juicy</p></div><span class="price" data-i18n="menu.wine.i3.price">560 Kč</span></li>
+          <li><div><h4 data-i18n="menu.wine.i4.name">Glass of the day</h4><p data-i18n="menu.wine.i4.desc">Ask the bar · 0,15 l</p></div><span class="price" data-i18n="menu.wine.i4.price">130 Kč</span></li>
+          <li><div><h4 data-i18n="menu.wine.i5.name">Cheese plate</h4><p data-i18n="menu.wine.i5.desc">Three cheeses, honey, walnuts</p></div><span class="price" data-i18n="menu.wine.i5.price">280 Kč</span></li>
+          <li><div><h4 data-i18n="menu.wine.i6.name">Olives & bread</h4><p data-i18n="menu.wine.i6.desc">Castelvetrano olives, sourdough</p></div><span class="price" data-i18n="menu.wine.i6.price">160 Kč</span></li>
+        </ul>
+      </div>
+
+      <p style="text-align:center;margin-top:30px;color:var(--stone);font-size:0.9rem;font-style:italic;font-family:var(--serif)" data-i18n="menu.footer">All prices in CZK · vegetarian unless noted · we list allergens on request.</p>
+    </div>
+  </section>
+
+  <!-- ───── SOURCING STORY ───── -->
+  <section class="sourcing fade-in" id="sourcing">
+    <div class="sourcing__media"><img loading="lazy" src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=1400&q=82" alt="Coffee farm" /></div>
+    <div class="sourcing__copy">
+      <p class="sourcing__eyebrow" data-i18n="src.eyebrow">Where it comes from</p>
+      <h2 class="sourcing__title" data-i18n-html="true" data-i18n="src.title">Coffee with <em>a name attached</em></h2>
+      <p class="sourcing__text" data-i18n="src.p1">We work with three importers who buy direct from farms in Ethiopia, Kenya and Colombia. Every bag has a producer's name on it — when we know whose hands picked the cherries, we charge what they're actually worth.</p>
+      <p class="sourcing__text" data-i18n="src.p2">Our brunch ingredients come from Polabí (eggs, butter, herbs), Mělník (rhubarb, soft fruit) and Naše farma in Líbeznice (vegetables). The bakery is daily, the menu is short, the leftovers are minimal.</p>
+      <p class="sourcing__pull" data-i18n="src.pull">"Slow coffee, honest food, the same baristas every morning."</p>
+    </div>
+  </section>
+
+  <!-- ───── REVIEWS ───── -->
   <section class="section fade-in">
     <div class="container">
-      <div class="split">
-        <div>
-          <span class="section-label">Kto sme</span>
-          <h2>Tri ženy, jedna kuchyňa, kvalitná káva.</h2>
-          <p>Otvorili sme Lunu v 2021 ako miesto, kam by sme chceli chodiť aj my samé. Rosti je barista, Andrea pečie, Klára hosti. Spolu sme vytvorili kaviareň, ktorá sa neponáhľa.</p>
-          <p>Káva: Doubleshot Praha (espresso) a Five Elephant (filter). Suroviny: lokálne, sezónne. Sušienky a zákusky pečieme dnes ráno.</p>
+      <div class="section-header section-header--magazine">
+        <span class="section-label" data-i18n="rev.label">From regulars</span>
+        <h2 data-i18n-html="true" data-i18n="rev.title">A few <em>kind words</em></h2>
+      </div>
+      <div class="testimonial-slider">
+        <div class="testimonial-slider__track">
+          <article class="testimonial-card">
+            <p class="testimonial-card__stars">★ ★ ★ ★ ★</p>
+            <p class="testimonial-card__quote" data-i18n="rev.t1.quote">"I work from Luna three mornings a week. The coffee is the best in Vinohrady, the staff knows my order, and the rhubarb galette is dangerous."</p>
+            <div class="testimonial-card__author"><div><p class="testimonial-card__name" data-i18n="rev.t1.name">Marek</p><p class="testimonial-card__role" data-i18n="rev.t1.role">Regular since 2023</p></div></div>
+          </article>
+          <article class="testimonial-card">
+            <p class="testimonial-card__stars">★ ★ ★ ★ ★</p>
+            <p class="testimonial-card__quote" data-i18n="rev.t2.quote">"Brunch every Saturday, no exceptions. The shakshuka has ruined every other version for me."</p>
+            <div class="testimonial-card__author"><div><p class="testimonial-card__name" data-i18n="rev.t2.name">Petra</p><p class="testimonial-card__role" data-i18n="rev.t2.role">Regular since 2024</p></div></div>
+          </article>
+          <article class="testimonial-card">
+            <p class="testimonial-card__stars">★ ★ ★ ★ ★</p>
+            <p class="testimonial-card__quote" data-i18n="rev.t3.quote">"Friday natural wine night is the best small ritual in Praha 2 right now. Small list, big personality."</p>
+            <div class="testimonial-card__author"><div><p class="testimonial-card__name" data-i18n="rev.t3.name">Ondřej</p><p class="testimonial-card__role" data-i18n="rev.t3.role">Regular since 2024</p></div></div>
+          </article>
+          <article class="testimonial-card">
+            <p class="testimonial-card__stars">★ ★ ★ ★ ★</p>
+            <p class="testimonial-card__quote" data-i18n="rev.t4.quote">"You can taste that they actually care. About the coffee, the bread, even the playlist."</p>
+            <div class="testimonial-card__author"><div><p class="testimonial-card__name" data-i18n="rev.t4.name">Lucia</p><p class="testimonial-card__role" data-i18n="rev.t4.role">Regular since 2023</p></div></div>
+          </article>
         </div>
-        <div class="split__media">
-          <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1200&q=80" alt="Café Luna" />
+        <div class="testimonial-slider__nav">
+          <button class="testimonial-slider__btn testimonial-slider__btn--prev" aria-label="Previous"><i class="fa-solid fa-chevron-left"></i></button>
+          <div class="testimonial-slider__dots"></div>
+          <button class="testimonial-slider__btn testimonial-slider__btn--next" aria-label="Next"><i class="fa-solid fa-chevron-right"></i></button>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- MENU -->
-  <section class="section section--alt fade-in" id="menu">
+  <!-- ───── INSTAGRAM GRID ───── -->
+  <section class="section section--alt fade-in">
     <div class="container">
-      <div class="section-header">
-        <span class="section-label" data-i18n="menu.label">Menu</span>
-        <h2 data-i18n="menu.title">Čo varíme dnes</h2>
-        <p data-i18n="menu.lead">Kuchyňa do 14:00, káva celý deň.</p>
+      <div class="section-header section-header--magazine">
+        <span class="section-label" data-i18n="ig.label">@cafeluna.praha</span>
+        <h2 data-i18n-html="true" data-i18n="ig.title">A week <em>at the bar</em></h2>
       </div>
-
-      <div class="two-up">
-        <div>
-          <h3 style="color:var(--accent);font-family:var(--serif);font-style:italic;margin-bottom:14px">Káva</h3>
-          <ul class="menu-list">
-            <li><div><h4>Espresso</h4><p>Doubleshot Praha · single origin</p></div><span class="price">75 Kč</span></li>
-            <li><div><h4>Cappuccino</h4><p>Mliečna pena · 200 ml</p></div><span class="price">95 Kč</span></li>
-            <li><div><h4>Flat white</h4><p>Krátka mlieko, plné aróma</p></div><span class="price">98 Kč</span></li>
-            <li><div><h4>Cold brew</h4><p>16 hodín studené, čistá káva</p></div><span class="price">110 Kč</span></li>
-            <li><div><h4>Filter</h4><p>V90 · Five Elephant Berlin</p></div><span class="price">120 Kč</span></li>
-          </ul>
-        </div>
-        <div>
-          <h3 style="color:var(--accent);font-family:var(--serif);font-style:italic;margin-bottom:14px">Kuchyňa</h3>
-          <ul class="menu-list">
-            <li><div><h4>Eggs Benedict</h4><p>2 vajcia · holandez · šunka</p></div><span class="price">220 Kč</span></li>
-            <li><div><h4>Šakšuka</h4><p>Paradajková omáčka · vajcia · feta</p></div><span class="price">195 Kč</span></li>
-            <li><div><h4>Croissant + lock</h4><p>Avokádo · uhorka · prefermentovaný losos</p></div><span class="price">235 Kč</span></li>
-            <li><div><h4>Banana pancakes</h4><p>5× lievanec · javorový sirup</p></div><span class="price">175 Kč</span></li>
-            <li><div><h4>Granola bowl</h4><p>Yoghurt · sezónne ovocie · med</p></div><span class="price">165 Kč</span></li>
-          </ul>
-        </div>
+      <div class="insta-grid">
+        <a class="insta-tile" href="#"><img loading="lazy" src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=600&q=82" alt="" /></a>
+        <a class="insta-tile" href="#"><img loading="lazy" src="https://images.unsplash.com/photo-1559925393-8be0ec4767c8?auto=format&fit=crop&w=600&q=82" alt="" /></a>
+        <a class="insta-tile" href="#"><img loading="lazy" src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=600&q=82" alt="" /></a>
+        <a class="insta-tile" href="#"><img loading="lazy" src="https://images.unsplash.com/photo-1559056199-641a0ac8b55e?auto=format&fit=crop&w=600&q=82" alt="" /></a>
+        <a class="insta-tile" href="#"><img loading="lazy" src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?auto=format&fit=crop&w=600&q=82" alt="" /></a>
+        <a class="insta-tile" href="#"><img loading="lazy" src="https://images.unsplash.com/photo-1485808191679-5f86510681a2?auto=format&fit=crop&w=600&q=82" alt="" /></a>
       </div>
     </div>
   </section>
 
-  <!-- BRUNCH -->
-  <section class="section fade-in" id="brunch" style="background:var(--accent);color:white">
+  <!-- ───── NEWSLETTER ───── -->
+  <section class="newsletter fade-in">
+    <div class="container">
+      <h3 data-i18n-html="true" data-i18n="news.title">A short letter, <em>once a month</em></h3>
+      <p data-i18n="news.text">What's roasting, who's pouring, what's on the brunch menu. Two minutes to read, no spam.</p>
+      <form class="newsletter-form">
+        <input type="email" placeholder="your@email.com" data-i18n-attr="placeholder|news.placeholder" required />
+        <button type="submit" data-i18n="news.btn">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ───── VISIT (contact + hours) ───── -->
+  <section class="section section--dark fade-in" id="visit">
     <div class="container">
       <div class="split">
-        <div class="split__media" style="aspect-ratio:4/3">
-          <img src="https://images.unsplash.com/photo-1551782450-a2132b4ba21d?auto=format&fit=crop&w=1200&q=80" alt="Sunday brunch" />
-        </div>
         <div>
-          <span class="section-label" style="color:rgba(255,255,255,0.85)" data-i18n="brunch.label">Sunday Brunch</span>
-          <h2 style="color:white" data-i18n="brunch.title">Každú nedeľu od 9:00</h2>
-          <p style="color:rgba(255,255,255,0.9);font-size:1.1rem;line-height:1.8" data-i18n="brunch.text">Pancakes, šakšuka, eggs benedict a domáci croissant. Fixne 22 € — môžete jesť koľko chcete. Rezervácia povinná.</p>
-          <div style="margin-top:30px;display:flex;gap:14px;flex-wrap:wrap">
-            <a href="#kontakt" class="btn" style="background:white;color:var(--accent-deep)" data-i18n="nav.book">Rezervovať stôl</a>
+          <span class="section-label" style="color:var(--accent)" data-i18n="visit.label">Visit us</span>
+          <h2 style="color:white;font-family:var(--serif);font-size:clamp(2rem,4vw,3rem);margin:14px 0 18px" data-i18n-html="true" data-i18n="visit.title">Vinohradská 14, <em>Prague 2</em></h2>
+          <p style="color:rgba(255,255,255,0.78);max-width:480px;line-height:1.7;font-size:1.05rem" data-i18n="visit.text">100 metres from Náměstí Míru — look for the green awning. Walk-ins welcome on weekdays, weekend brunch is best with a reservation.</p>
+          <div style="margin:30px 0;display:flex;flex-direction:column;gap:14px;color:rgba(255,255,255,0.85)">
+            <p><i class="fa-solid fa-location-dot" style="color:var(--accent);width:24px"></i> Vinohradská 14, 120 00 Praha 2</p>
+            <p><i class="fa-solid fa-phone" style="color:var(--accent);width:24px"></i> <a href="tel:+420774111222" style="color:white;border-bottom:1px solid var(--accent)">+420 774 111 222</a></p>
+            <p><i class="fa-solid fa-envelope" style="color:var(--accent);width:24px"></i> <a href="mailto:ahoj@cafeluna.cz" style="color:white;border-bottom:1px solid var(--accent)">ahoj@cafeluna.cz</a></p>
+            <p><i class="fa-brands fa-instagram" style="color:var(--accent);width:24px"></i> @cafeluna.praha</p>
           </div>
+          <a href="visit.html" class="btn btn-accent btn-lg" data-i18n="visit.cta">Reserve a table</a>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- INSTAGRAM GRID -->
-  <section class="section fade-in" id="galeria">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-label" data-i18n="gallery.label">Galéria</span>
-        <h2 data-i18n="gallery.title">Atmosféra</h2>
-      </div>
-    </div>
-    <div class="insta-grid stagger-children">
-      <a href="social.html" class="insta-tile"><img loading="lazy" src="https://images.unsplash.com/photo-1497636577773-f1231844b336?auto=format&fit=crop&w=600&q=80" alt="" /></a>
-      <a href="social.html" class="insta-tile"><img loading="lazy" src="https://images.unsplash.com/photo-1481833761820-0509d3217039?auto=format&fit=crop&w=600&q=80" alt="" /></a>
-      <a href="social.html" class="insta-tile"><img loading="lazy" src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=600&q=80" alt="" /></a>
-      <a href="social.html" class="insta-tile"><img loading="lazy" src="https://images.unsplash.com/photo-1517991104123-1d56a6e81ed9?auto=format&fit=crop&w=600&q=80" alt="" /></a>
-      <a href="social.html" class="insta-tile"><img loading="lazy" src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?auto=format&fit=crop&w=600&q=80" alt="" /></a>
-      <a href="social.html" class="insta-tile"><img loading="lazy" src="https://images.unsplash.com/photo-1517433367423-c7e5b0f35086?auto=format&fit=crop&w=600&q=80" alt="" /></a>
-    </div>
-  </section>
-
-  <!-- HOURS + LOCATION -->
-  <section class="section section--alt fade-in" id="hodiny">
-    <div class="container">
-      <div class="split">
-        <div class="hours-card">
-          <h3 data-i18n="hours.title">Kedy sme tu</h3>
+        <div class="hours-card" style="background:rgba(255,255,255,0.04);border-color:rgba(255,255,255,0.1);color:white">
+          <h3 style="color:white" data-i18n="visit.hours_title">Opening hours</h3>
           <ul>
-            <li><span>Pondelok</span><span>8:00 – 18:00</span></li>
-            <li><span>Utorok</span><span>8:00 – 18:00</span></li>
-            <li><span>Streda</span><span>8:00 – 18:00</span></li>
-            <li class="today"><span>Štvrtok · dnes</span><span>8:00 – 22:00</span></li>
-            <li><span>Piatok</span><span>8:00 – 22:00</span></li>
-            <li><span>Sobota</span><span>9:00 – 22:00</span></li>
-            <li><span>Nedeľa · Brunch</span><span>9:00 – 16:00</span></li>
+            <li style="color:rgba(255,255,255,0.85);border-color:rgba(255,255,255,0.08)"><span data-i18n="visit.h1_label">Mon — Fri</span><span data-i18n="visit.h1_value">8:00 — 21:00</span></li>
+            <li style="color:rgba(255,255,255,0.85);border-color:rgba(255,255,255,0.08)"><span data-i18n="visit.h2_label">Saturday</span><span data-i18n="visit.h2_value">9:00 — 22:00 · brunch &amp; wine</span></li>
+            <li style="color:rgba(255,255,255,0.85);border-color:rgba(255,255,255,0.08)"><span data-i18n="visit.h3_label">Sunday</span><span data-i18n="visit.h3_value">9:00 — 17:00 · brunch only</span></li>
+            <li style="color:var(--accent);border-color:rgba(255,255,255,0.08);font-weight:600"><span data-i18n="visit.h4_label">Friday wine night</span><span data-i18n="visit.h4_value">17:00 — 23:00</span></li>
           </ul>
-          <p style="margin-top:20px;color:var(--muted);font-size:0.9rem"><i class="fa-solid fa-circle-info" style="color:var(--accent)"></i> Štvrtok–sobota večer máme aj víno a sýr.</p>
         </div>
-
-        <div>
-          <span class="section-label">Adresa</span>
-          <h2>Vinohrady 14, Brno</h2>
-          <p>5 minút pešo od námestia Svobody. Pri dverách máme stojan na bicykle a v lete vonkajšiu terasu.</p>
-          <p><i class="fa-solid fa-phone" style="color:var(--accent);margin-right:8px"></i> <a href="tel:+420774111222" style="color:var(--ink);border-bottom:1px solid var(--ink)">+420 774 111 222</a></p>
-          <p><i class="fa-solid fa-envelope" style="color:var(--accent);margin-right:8px"></i> <a href="mailto:ahoj@cafeluna.cz" style="color:var(--ink);border-bottom:1px solid var(--ink)">ahoj@cafeluna.cz</a></p>
-          <p><i class="fa-brands fa-instagram" style="color:var(--accent);margin-right:8px"></i> <a href="social.html" style="color:var(--ink);border-bottom:1px solid var(--ink)">@cafeluna.brno</a></p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <section class="section section--dark fade-in" id="kontakt">
-    <div class="container text-center">
-      <h2 style="color:white">Rezervujte si stôl</h2>
-      <p style="color:rgba(255,255,255,0.78);max-width:540px;margin:18px auto 36px;font-size:1.1rem">Stôl rezervujeme cez SimplyBook (24/7) alebo telefonicky. V piatok a sobotu večer odporúčame rezervovať dopredu.</p>
-      <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap">
-        <a href="#" class="btn btn-accent btn-lg">Online rezervácia</a>
-        <a href="tel:+420774111222" class="btn btn-ghost-light btn-lg">Zavolať</a>
       </div>
     </div>
   </section>
@@ -244,31 +343,45 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-bottom">
-        <p class="footer-bottom__copy">© 2026 Café Luna · made by Sage Studio</p>
+        <p class="footer-bottom__copy" data-i18n="footer.rights">© 2026 Café Luna</p>
         <div class="footer-bottom__links">
-          <a href="social.html">Sociálne siete</a>
-          <a href="../../studio/privacy.html">GDPR</a>
-          <a href="../../studio/index.html">Sage Studio</a>
+          <a href="social.html" data-i18n="nav.social">Instagram</a>
+          <a href="../../studio/privacy.html" data-i18n="footer.privacy">Privacy</a>
         </div>
       </div>
     </div>
   </footer>
 
-  <div class="mobile-cta"><a href="#kontakt" class="btn btn-accent" data-i18n="nav.book">Rezervovať stôl</a></div>
-  <div class="lightbox" id="lightbox"><button class="lightbox__close">&times;</button><img class="lightbox__img" src="" alt="" /></div>
-  <button class="back-to-top" aria-label="Hore"><i class="fa-solid fa-arrow-up"></i></button>
+  <button class="back-to-top" aria-label="Top"><i class="fa-solid fa-arrow-up"></i></button>
 
   <div class="cookie-banner" id="cookieBanner">
     <div class="cookie-banner__inner">
-      <p>Cookies pre lepší zážitok.</p>
+      <p data-i18n="cookies.text">We use cookies for a better experience.</p>
       <div class="cookie-banner__actions">
-        <button class="cookie-banner__btn cookie-banner__btn--accept" data-cookie="accept">Prijať</button>
-        <button class="cookie-banner__btn cookie-banner__btn--decline" data-cookie="decline">Odmietnuť</button>
+        <button class="cookie-banner__btn cookie-banner__btn--accept" data-cookie="accept" data-i18n="cookies.accept">Accept</button>
+        <button class="cookie-banner__btn cookie-banner__btn--decline" data-cookie="decline" data-i18n="cookies.decline">Decline</button>
       </div>
     </div>
   </div>
 
-  <script src="js/i18n.js"></script>
+  <!-- Tab switcher for menu -->
+  <script>
+    (function () {
+      var tabs = document.querySelectorAll('.menu-tab');
+      var panels = document.querySelectorAll('.menu-panel');
+      tabs.forEach(function (t) {
+        t.addEventListener('click', function () {
+          var key = t.dataset.tab;
+          tabs.forEach(function (b) { b.classList.toggle('active', b === t); });
+          panels.forEach(function (p) { p.classList.toggle('active', p.dataset.panel === key); });
+        });
+      });
+    })();
+  </script>
+
+  <script src="i18n/dict.js?v=25"></script>
+
+  <script src="js/i18n.js?v=8"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title data-i18n="sched.meta_title">Schedule · Aria · Praha</title>
+  <meta name="description" data-i18n-attr="content|sched.meta_desc" content="Live weekly schedule with real capacity, filters and online booking. Cancel up to 4 hours before class." />
+  <meta name="theme-color" content="#f5f1e8" />
+  <link rel="icon" type="image/svg+xml" href="../../studio/favicon.svg?v=3" />
+  <link rel="stylesheet" href="css/theme.css?v=4" />
+  <link rel="stylesheet" href="css/layout.css?v=4" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+
+  <a href="#main" class="skip-to-content" data-i18n="a11y.skip">Skip to content</a>
+  <div class="page-loader"><span class="page-loader__brand">Aria<i>.</i></span></div>
+  <div class="reading-progress" aria-hidden="true"></div>
+
+  <nav class="navbar" aria-label="Main navigation">
+    <div class="container">
+      <a href="index.html" class="navbar-brand"><span class="navbar-brand__dot"></span><span>Aria<i>.</i></span></a>
+      <ul class="navbar-links">
+        <li><a href="index.html#manifesto" data-i18n="nav.studio">Studio</a></li>
+        <li><a href="schedule.html" class="active" data-i18n="nav.schedule">Schedule</a></li>
+        <li><a href="classes.html" data-i18n="nav.classes">Classes</a></li>
+        <li><a href="index.html#teachers" data-i18n="nav.teachers">Teachers</a></li>
+        <li><a href="checkout.html" data-i18n="nav.passes">Passes</a></li>
+        <li><a href="index.html#contact" data-i18n="nav.contact">Visit</a></li>
+      </ul>
+      <div class="navbar-right">
+        <div class="lang-switch" data-lang-switch>
+          <button class="lang-switch__btn" data-lang="en">EN</button>
+          <button class="lang-switch__btn" data-lang="sk">SK</button>
+          <button class="lang-switch__btn" data-lang="cs">CS</button>
+        </div>
+        <a href="account.html" class="navbar-cta navbar-cta--ghost" id="navAccount" data-i18n="nav.account">My account</a>
+        <a href="intro.html" class="navbar-cta" data-i18n="nav.cta">Try a week</a>
+        <button class="navbar-hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mobile-menu">
+    <ul class="mobile-menu__links">
+      <li><a href="index.html#manifesto" data-i18n="nav.studio">Studio</a></li>
+      <li><a href="schedule.html" data-i18n="nav.schedule">Schedule</a></li>
+      <li><a href="classes.html" data-i18n="nav.classes">Classes</a></li>
+      <li><a href="index.html#teachers" data-i18n="nav.teachers">Teachers</a></li>
+      <li><a href="checkout.html" data-i18n="nav.passes">Passes</a></li>
+      <li><a href="account.html" data-i18n="nav.account">My account</a></li>
+      <li><a href="index.html#contact" data-i18n="nav.contact">Visit</a></li>
+    </ul>
+    <div class="lang-switch" data-lang-switch role="group" aria-label="Language">
+      <button class="lang-switch__btn" data-lang="en">EN</button>
+      <button class="lang-switch__btn" data-lang="sk">SK</button>
+      <button class="lang-switch__btn" data-lang="cs">CS</button>
+    </div>
+
+    <div class="mobile-menu__cta"><a href="intro.html" class="btn btn-accent" data-i18n="nav.cta">Try a week</a></div>
+  </div>
+
+  <header class="sub-hero" id="main">
+    <div class="sub-hero__inner">
+      <p class="sub-hero__crumb"><a href="index.html" data-i18n="sched.crumb_home">Aria</a> &nbsp;/&nbsp; <span data-i18n="sched.crumb">Schedule</span></p>
+      <h1 data-i18n-html="true" data-i18n="sched.title">Book a class</h1>
+      <p data-i18n="sched.lead">Live capacity, real teachers. Pay per class or use a pass — cancel free up to 4 hours before start.</p>
+    </div>
+  </header>
+
+  <!-- TOOLBAR -->
+  <div class="sched-toolbar">
+    <div class="sched-toolbar__inner">
+
+      <div class="sched-week-nav">
+        <button class="sched-week-nav__btn" id="weekPrev" aria-label="Previous week"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="sched-week-nav__today" id="weekToday" data-i18n="sched.today">Today</button>
+        <span class="sched-week-nav__label" id="weekLabel">—</span>
+        <button class="sched-week-nav__btn" id="weekNext" aria-label="Next week"><i class="fa-solid fa-chevron-right"></i></button>
+      </div>
+
+      <div class="sched-filters" role="group" aria-label="Filters">
+        <select class="sched-filter" id="filterType" aria-label="Class type">
+          <option value="" data-i18n="sched.f_all_types">All classes</option>
+          <option value="vin" data-i18n="sched.t_vin">Vinyasa</option>
+          <option value="yin" data-i18n="sched.t_yin">Yin</option>
+          <option value="pil" data-i18n="sched.t_pil">Pilates</option>
+          <option value="bre" data-i18n="sched.t_bre">Breath</option>
+          <option value="pwr" data-i18n="sched.t_pwr">Power flow</option>
+          <option value="med" data-i18n="sched.t_med">Meditation</option>
+          <option value="pre" data-i18n="sched.t_pre">Prenatal</option>
+        </select>
+        <select class="sched-filter" id="filterTeacher" aria-label="Teacher">
+          <option value="" data-i18n="sched.f_all_teachers">All teachers</option>
+        </select>
+        <select class="sched-filter" id="filterRoom" aria-label="Room">
+          <option value="" data-i18n="sched.f_all_rooms">All rooms</option>
+        </select>
+        <select class="sched-filter" id="filterLang" aria-label="Language">
+          <option value="" data-i18n="sched.f_all_langs">Any language</option>
+          <option value="cs">CS</option>
+          <option value="en">EN</option>
+          <option value="sk">SK</option>
+        </select>
+        <button class="sched-filter sched-filter--reset" id="filterReset" aria-label="Reset filters" title="Reset"><i class="fa-solid fa-rotate-left"></i></button>
+      </div>
+
+      <div class="sched-meta" id="schedMeta">
+        <span class="sched-meta__pulse"></span>
+        <span data-i18n="sched.live">Live · capacity updates every minute</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- LEGEND -->
+  <div class="sched-legend-row">
+    <span class="sched-legend"><span class="sched-legend__dot sched-legend__dot--vin"></span><span data-i18n="sched.t_vin">Vinyasa</span></span>
+    <span class="sched-legend"><span class="sched-legend__dot sched-legend__dot--yin"></span><span data-i18n="sched.t_yin">Yin</span></span>
+    <span class="sched-legend"><span class="sched-legend__dot sched-legend__dot--pil"></span><span data-i18n="sched.t_pil">Pilates</span></span>
+    <span class="sched-legend"><span class="sched-legend__dot sched-legend__dot--bre"></span><span data-i18n="sched.t_bre">Breath</span></span>
+    <span class="sched-legend"><span class="sched-legend__dot sched-legend__dot--pwr"></span><span data-i18n="sched.t_pwr">Power</span></span>
+    <span class="sched-legend"><span class="sched-legend__dot sched-legend__dot--med"></span><span data-i18n="sched.t_med">Meditation</span></span>
+    <span class="sched-legend"><span class="sched-legend__dot sched-legend__dot--pre"></span><span data-i18n="sched.t_pre">Prenatal</span></span>
+  </div>
+
+  <!-- GRID -->
+  <div class="sched-grid-wrap">
+    <div class="sched-grid" id="schedGrid"></div>
+  </div>
+
+  <!-- BOOKING MODAL -->
+  <div class="book-modal" id="bookModal" role="dialog" aria-modal="true" aria-labelledby="modalName" aria-hidden="true">
+    <div class="book-modal__inner book-modal__inner--lg">
+      <button class="book-modal__close" id="bookClose" aria-label="Close">&times;</button>
+
+      <!-- Step 1 — class details -->
+      <section class="book-modal__step is-active" data-step="details">
+        <span class="book-modal__type" id="modalType">Vinyasa</span>
+        <h3 id="modalName">Slow Flow</h3>
+        <p class="book-modal__meta" id="modalMeta">Mon · 07:00 — 08:00 · 60 min</p>
+
+        <div class="book-modal__capwrap">
+          <div class="book-modal__capbar"><div class="book-modal__capfill" id="modalCapFill"></div></div>
+          <div class="book-modal__caprow">
+            <span id="modalCapText">5 / 18 spots taken</span>
+            <span class="book-modal__capstate" id="modalCapState">open</span>
+          </div>
+        </div>
+
+        <div class="book-modal__rows">
+          <div class="book-modal__row"><span data-i18n="modal.teacher">Teacher</span><strong id="modalTeacher">—</strong></div>
+          <div class="book-modal__row"><span data-i18n="modal.room">Room</span><strong id="modalRoom">—</strong></div>
+          <div class="book-modal__row"><span data-i18n="modal.level">Level</span><strong id="modalLevel">—</strong></div>
+          <div class="book-modal__row"><span data-i18n="modal.language">Language</span><strong id="modalLang">—</strong></div>
+          <div class="book-modal__row"><span data-i18n="modal.dropin">Drop-in price</span><strong id="modalPrice">320 Kč</strong></div>
+        </div>
+
+        <p class="book-modal__rules" data-i18n="modal.rules">Free cancellation up to 4 hours before the start. Later than that, the credit is forfeited.</p>
+
+        <div class="book-modal__actions">
+          <button class="btn-pill btn-pill--ghost" id="btnUseCredit" type="button">
+            <span data-i18n="modal.use_credit">Use credit</span>
+            <small id="creditCount">0</small>
+          </button>
+          <button class="btn-pill btn-pill--solid" id="btnPay" type="button" data-i18n="modal.pay">Pay & book</button>
+        </div>
+        <p class="book-modal__alt" id="modalAlt"></p>
+      </section>
+
+      <!-- Step 2 — card mock -->
+      <section class="book-modal__step" data-step="pay">
+        <button class="book-modal__back" data-back type="button"><i class="fa-solid fa-arrow-left"></i> <span data-i18n="modal.back">Back</span></button>
+        <h3 data-i18n="pay.title">Pay by card</h3>
+        <p class="book-modal__meta" id="paySummary">—</p>
+
+        <form class="pay-form" id="payForm" autocomplete="off" novalidate>
+          <label class="pay-field"><span data-i18n="pay.holder">Cardholder</span><input type="text" name="holder" placeholder="Jana Nováková" required /></label>
+          <label class="pay-field"><span data-i18n="pay.number">Card number</span><input type="text" name="number" placeholder="4242 4242 4242 4242" inputmode="numeric" maxlength="19" required /></label>
+          <div class="pay-row">
+            <label class="pay-field"><span data-i18n="pay.exp">Expiry</span><input type="text" name="exp" placeholder="12/29" maxlength="5" required /></label>
+            <label class="pay-field"><span data-i18n="pay.cvc">CVC</span><input type="text" name="cvc" placeholder="123" maxlength="4" inputmode="numeric" required /></label>
+          </div>
+          <label class="pay-checkbox">
+            <input type="checkbox" name="save" />
+            <span data-i18n="pay.save">Save card for next time</span>
+          </label>
+          <button type="submit" class="btn-pill btn-pill--solid pay-submit" id="paySubmit"><span data-i18n="pay.submit">Pay 320 Kč</span></button>
+          <p class="pay-secure"><i class="fa-solid fa-lock"></i> <span data-i18n="pay.secure">3-D Secure · payments processed by GoPay</span></p>
+        </form>
+      </section>
+
+      <!-- Step 3 — 3DS -->
+      <section class="book-modal__step" data-step="threeds">
+        <h3 data-i18n="pay.tds_title">Verifying with your bank</h3>
+        <div class="tds-anim" aria-hidden="true">
+          <div class="tds-anim__ring"></div>
+          <div class="tds-anim__check"><i class="fa-solid fa-shield-halved"></i></div>
+        </div>
+        <p class="book-modal__meta" data-i18n="pay.tds_text">Confirm the payment in your banking app to continue.</p>
+      </section>
+
+      <!-- Step 4 — confirmation -->
+      <section class="book-modal__step" data-step="done">
+        <div class="book-done">
+          <div class="book-done__check"><i class="fa-solid fa-check"></i></div>
+          <h3 id="doneTitle" data-i18n="done.title">You're booked</h3>
+          <p class="book-modal__meta" id="doneSummary">—</p>
+          <div class="book-done__rows">
+            <div class="book-modal__row"><span data-i18n="modal.teacher">Teacher</span><strong id="doneTeacher">—</strong></div>
+            <div class="book-modal__row"><span data-i18n="modal.room">Room</span><strong id="doneRoom">—</strong></div>
+            <div class="book-modal__row"><span data-i18n="done.cancel_until">Free cancellation until</span><strong id="doneCancelUntil">—</strong></div>
+          </div>
+          <p class="book-done__email" data-i18n="done.email">A confirmation has been sent to your email.</p>
+          <div class="book-modal__actions book-modal__actions--center">
+            <a href="account.html" class="btn-pill btn-pill--ghost" data-i18n="done.account">My bookings</a>
+            <button class="btn-pill btn-pill--solid" id="doneClose" type="button" data-i18n="done.continue">Browse more</button>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <!-- TOAST -->
+  <div class="aria-toast" id="ariaToast" role="status" aria-live="polite"></div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p class="footer-bottom__copy" data-i18n="footer.rights">© 2026 Aria · movement studio</p>
+        <div class="footer-bottom__links">
+          <a href="https://instagram.com/aria.studio" target="_blank" rel="noopener">Instagram</a>
+          <a href="../../studio/privacy.html" data-i18n="footer.privacy">Privacy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Top"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <div class="cookie-banner" id="cookieBanner">
+    <div class="cookie-banner__inner">
+      <p data-i18n="cookies.text">We use cookies for a better experience.</p>
+      <div class="cookie-banner__actions">
+        <button class="cookie-banner__btn cookie-banner__btn--accept" data-cookie="accept" data-i18n="cookies.accept">Accept</button>
+        <button class="cookie-banner__btn cookie-banner__btn--decline" data-cookie="decline" data-i18n="cookies.decline">Decline</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="i18n/dict.js?v=25"></script>
+  <script src="js/i18n.js?v=8"></script>
+  <script src="js/booking.js?v=1"></script>
+  <script src="js/schedule.js?v=1"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

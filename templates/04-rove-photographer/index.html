@@ -3,14 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title data-i18n="meta.title">Studio Novák · svadobný a portrét fotograf, Košice</title>
-  <meta name="description" data-i18n="meta.description" content="Editoriálny svadobný a portrét fotograf v Košiciach." />
+  <title data-i18n="meta.title">Studio Novák · fine-art wedding photographer · Praha</title>
+  <meta name="description" data-i18n-attr="content|meta.description" content="Fine-art wedding and portrait photography. Editorial work in Prague, Vienna and beyond." />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Studio Novák · fotograf" />
+  <meta property="og:title" content="Studio Novák · fine-art wedding photographer" />
   <meta property="og:image" content="https://images.unsplash.com/photo-1606800052052-a08af7148866?auto=format&fit=crop&w=1600&q=80" />
   <meta name="theme-color" content="#0d0d0d" />
-  <link rel="icon" type="image/svg+xml" href="../../studio/favicon.svg" />
-  <link rel="stylesheet" href="css/theme.css" />
+  <link rel="icon" type="image/svg+xml" href="../../studio/favicon.svg?v=3" />
+  <link rel="stylesheet" href="css/theme.css?v=4" />
+  <link rel="stylesheet" href="css/layout.css?v=4" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
   <script type="application/ld+json">
@@ -18,38 +19,38 @@
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
     "name": "Studio Novák",
-    "description": "Editoriálny svadobný a portrét fotograf v Košiciach.",
-    "url": "https://studionovak.sk",
-    "telephone": "+421900333444",
-    "email": "ahoj@studionovak.sk",
-    "areaServed": ["Košice", "východné Slovensko"],
+    "description": "Fine-art wedding and portrait photographer based in Prague.",
+    "url": "https://studionovak.cz",
+    "telephone": "+420770333444",
+    "email": "ahoj@studionovak.cz",
+    "areaServed": ["Praha", "Česko", "Europe"],
     "priceRange": "€€€"
   }
   </script>
 </head>
 <body>
 
-  <a href="#main-content" class="skip-to-content">Skip to content</a>
-  <div class="page-loader" style="background:var(--bg)"><span class="page-loader__brand" style="color:var(--accent)">Studio Novák</span></div>
+  <a href="#main-content" class="skip-to-content" data-i18n="a11y.skip">Skip to content</a>
+  <div class="page-loader" style="background:var(--bg)"><span class="page-loader__brand" style="color:var(--accent);font-family:var(--serif);letter-spacing:0.18em;text-transform:uppercase">Studio Novák</span></div>
   <div class="reading-progress"></div>
 
   <nav class="navbar">
     <div class="container">
-      <a href="index.html" class="navbar-brand" style="color:var(--ink)"><span class="navbar-brand__dot" style="background:var(--accent)"></span><span>Studio Novák</span></a>
+      <a href="index.html" class="navbar-brand" style="color:var(--ink);font-family:var(--serif);letter-spacing:0.16em;text-transform:uppercase;font-size:1rem"><span class="navbar-brand__dot" style="background:var(--accent)"></span><span>Studio Novák</span></a>
       <ul class="navbar-links">
-        <li><a href="#prace" data-i18n="nav.work">Práce</a></li>
-        <li><a href="#svadby" data-i18n="nav.weddings">Svadby</a></li>
-        <li><a href="#portrety" data-i18n="nav.portraits">Portréty</a></li>
-        <li><a href="#balicky" data-i18n="nav.packages">Balíčky</a></li>
-        <li><a href="#kontakt" data-i18n="nav.contact">Kontakt</a></li>
+        <li><a href="portfolio.html" data-i18n="nav.portfolio">Portfolio</a></li>
+        <li><a href="#about" data-i18n="nav.about">About</a></li>
+        <li><a href="#investment" data-i18n="nav.invest">Investment</a></li>
+        <li><a href="journal.html" data-i18n="nav.journal">Journal</a></li>
+        <li><a href="#inquire" data-i18n="nav.inquire">Inquire</a></li>
       </ul>
       <div class="navbar-right">
         <div class="lang-switch" data-lang-switch>
+          <button class="lang-switch__btn" data-lang="en">EN</button>
           <button class="lang-switch__btn" data-lang="sk">SK</button>
           <button class="lang-switch__btn" data-lang="cs">CS</button>
-          <button class="lang-switch__btn" data-lang="en">EN</button>
         </div>
-        <a href="#kontakt" class="navbar-cta" data-i18n="nav.book">Rezervovať session</a>
+        <a href="#inquire" class="navbar-cta" data-i18n="nav.book">Inquire</a>
         <button class="navbar-hamburger"><span></span><span></span><span></span></button>
       </div>
     </div>
@@ -57,258 +58,282 @@
 
   <div class="mobile-menu" style="background:var(--bg)">
     <ul class="mobile-menu__links">
-      <li><a href="#prace" data-i18n="nav.work">Práce</a></li>
-      <li><a href="#svadby" data-i18n="nav.weddings">Svadby</a></li>
-      <li><a href="#portrety" data-i18n="nav.portraits">Portréty</a></li>
-      <li><a href="#balicky" data-i18n="nav.packages">Balíčky</a></li>
-      <li><a href="#kontakt" data-i18n="nav.contact">Kontakt</a></li>
+      <li><a href="portfolio.html" data-i18n="nav.portfolio">Portfolio</a></li>
+      <li><a href="#about" data-i18n="nav.about">About</a></li>
+      <li><a href="#investment" data-i18n="nav.invest">Investment</a></li>
+      <li><a href="journal.html" data-i18n="nav.journal">Journal</a></li>
+      <li><a href="#inquire" data-i18n="nav.inquire">Inquire</a></li>
     </ul>
+    <div class="lang-switch" data-lang-switch role="group" aria-label="Language">
+      <button class="lang-switch__btn" data-lang="en">EN</button>
+      <button class="lang-switch__btn" data-lang="sk">SK</button>
+      <button class="lang-switch__btn" data-lang="cs">CS</button>
+    </div>
+
   </div>
 
-  <header class="banner" id="main-content" style="min-height:100vh">
+  <!-- ───── HERO: silent, brand only ───── -->
+  <header class="banner hero--silent" id="main-content">
     <div class="banner__bg"><img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=2400&q=82" alt="" /></div>
     <div class="banner__veil"></div>
+    <span class="hero-corner-left" data-i18n="hero.corner_left">Sofia Novák · est. 2018 · Praha</span>
     <div class="container">
-      <p class="hero-label" data-i18n="hero.label">Svadobný · portrét fotograf · Košice</p>
-      <h1>
-        <span class="hero-line" data-i18n="hero.line1">Snímam</span>
-        <span class="hero-line hero-line--italic" data-i18n="hero.line2">vaše chvíle,</span>
-        <span class="hero-line" data-i18n="hero.line3">kým neutíchnu.</span>
-      </h1>
-      <div class="hero-rule"></div>
-      <h2 data-i18n="hero.sub">Som Sofia. Fotím svadby, portréty a editoriály v Košiciach a okolí. 8+ rokov, 200+ svadieb, štýl tichý, prirodzený, mierne filmový.</h2>
-      <div class="hero-buttons">
-        <a href="#prace" class="btn btn-accent btn-lg">Pozri portfólio</a>
-        <a href="#kontakt" class="btn btn-ghost-light btn-lg" data-i18n="nav.book">Rezervovať session</a>
-      </div>
+      <p class="hero-tag" data-i18n="hero.tag">Fine-art wedding &amp; portrait photography</p>
+      <h1 class="hero-name" data-i18n="hero.name">Studio Novák</h1>
     </div>
-    <a href="#prace" class="scroll-indicator"><span class="scroll-indicator__line"></span></a>
+    <span class="hero-corner" data-i18n="hero.corner_right">Selected works · 2024 — 2026</span>
+    <a href="portfolio.html" class="scroll-indicator" aria-label="Scroll"><span class="scroll-indicator__line"></span></a>
   </header>
 
   <div class="marquee">
     <div class="marquee__inner">
-      <span class="marquee__item">Weddings</span>
-      <span class="marquee__item">Portraits</span>
-      <span class="marquee__item">Engagement</span>
-      <span class="marquee__item">Editorial</span>
-      <span class="marquee__item">Family</span>
-      <span class="marquee__item">Maternity</span>
-      <span class="marquee__item">Weddings</span>
-      <span class="marquee__item">Portraits</span>
-      <span class="marquee__item">Engagement</span>
-      <span class="marquee__item">Editorial</span>
-      <span class="marquee__item">Family</span>
-      <span class="marquee__item">Maternity</span>
+      <span class="marquee__item" data-i18n="marquee.i1">Weddings</span>
+      <span class="marquee__item" data-i18n="marquee.i2">Engagements</span>
+      <span class="marquee__item" data-i18n="marquee.i3">Editorial</span>
+      <span class="marquee__item" data-i18n="marquee.i4">Family</span>
+      <span class="marquee__item" data-i18n="marquee.i5">Portraits</span>
+      <span class="marquee__item" data-i18n="marquee.i1">Weddings</span>
+      <span class="marquee__item" data-i18n="marquee.i2">Engagements</span>
+      <span class="marquee__item" data-i18n="marquee.i3">Editorial</span>
+      <span class="marquee__item" data-i18n="marquee.i4">Family</span>
+      <span class="marquee__item" data-i18n="marquee.i5">Portraits</span>
     </div>
   </div>
 
-  <!-- WORK -->
-  <section class="section fade-in" id="prace">
+  <!-- ───── FEATURED STORIES ───── -->
+  <section class="section fade-in" id="stories" data-frame="Frame 02 / 14 · Stories">
     <div class="container">
-      <div class="section-header">
-        <span class="section-label">Vybrané práce</span>
-        <h2>Galéria</h2>
-        <p>Tieto fotky sú výber z posledných 12 mesiacov. Klikom otvoríte väčší pohľad.</p>
+      <div class="section-header section-header--silent">
+        <span class="section-label" data-i18n="stories.label">Featured stories</span>
+        <h2 data-i18n-html="true" data-i18n="stories.title">Three weddings, <em>told in full</em></h2>
       </div>
-      <div class="photo-edit stagger-children">
-        <div class="photo-edit__item a"><img loading="lazy" src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1400&q=82" alt="" /></div>
-        <div class="photo-edit__item b"><img loading="lazy" src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=1000&q=82" alt="" /></div>
-        <div class="photo-edit__item c"><img loading="lazy" src="https://images.unsplash.com/photo-1591604466107-ec97de577aff?auto=format&fit=crop&w=1000&q=82" alt="" /></div>
-        <div class="photo-edit__item d"><img loading="lazy" src="https://images.unsplash.com/photo-1606800052052-a08af7148866?auto=format&fit=crop&w=1000&q=82" alt="" /></div>
-        <div class="photo-edit__item e"><img loading="lazy" src="https://images.unsplash.com/photo-1525258946800-98cfd641d0de?auto=format&fit=crop&w=1000&q=82" alt="" /></div>
-        <div class="photo-edit__item f"><img loading="lazy" src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=1000&q=82" alt="" /></div>
-      </div>
+
+      <article class="story">
+        <div class="story__head">
+          <img class="story__hero" loading="lazy" src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1400&q=82" alt="" />
+          <div class="story__meta">
+            <p class="story__loc" data-i18n="stories.s1.loc">Tereza &amp; Michal · Vinohrady, Praha · October 2025</p>
+            <h3 class="story__title" data-i18n-html="true" data-i18n="stories.s1.title">A garden wedding in <em>autumn light</em></h3>
+            <p class="story__text" data-i18n="stories.s1.text">A small ceremony in the courtyard, a long table of friends, an evening that drifted from coffee to candles. We followed the light and stayed quiet — the kind of day that asks not to be staged.</p>
+            <div class="story__details">
+              <div><span data-i18n="stories.s1.d1_label">Coverage</span><strong data-i18n="stories.s1.d1_value">10 hours</strong></div>
+              <div><span data-i18n="stories.s1.d2_label">Frames</span><strong data-i18n="stories.s1.d2_value">920 final</strong></div>
+              <div><span data-i18n="stories.s1.d3_label">Look</span><strong data-i18n="stories.s1.d3_value">Warm filmic</strong></div>
+            </div>
+          </div>
+        </div>
+        <div class="story__strip" data-drag-strip>
+          <img loading="lazy" src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=1000&q=82" alt="" />
+          <img loading="lazy" src="https://images.unsplash.com/photo-1591604466107-ec97de577aff?auto=format&fit=crop&w=1000&q=82" alt="" />
+          <img loading="lazy" src="https://images.unsplash.com/photo-1606800052052-a08af7148866?auto=format&fit=crop&w=1000&q=82" alt="" />
+          <img loading="lazy" src="https://images.unsplash.com/photo-1525258946800-98cfd641d0de?auto=format&fit=crop&w=1000&q=82" alt="" />
+          <img loading="lazy" src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=1000&q=82" alt="" />
+        </div>
+      </article>
+
+      <article class="story">
+        <div class="story__head">
+          <img class="story__hero" loading="lazy" src="https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?auto=format&fit=crop&w=1400&q=82" alt="" />
+          <div class="story__meta">
+            <p class="story__loc" data-i18n="stories.s2.loc">Petra &amp; Adam · Český Krumlov · June 2025</p>
+            <h3 class="story__title" data-i18n-html="true" data-i18n="stories.s2.title">A summer ceremony by <em>the river</em></h3>
+            <p class="story__text" data-i18n="stories.s2.text">A weekend in Český Krumlov — vows on the bank, dinner under the chestnuts, dancing until the lanterns gave out. Soft, golden, and a little wild around the edges.</p>
+            <div class="story__details">
+              <div><span data-i18n="stories.s2.d1_label">Coverage</span><strong data-i18n="stories.s2.d1_value">2 days</strong></div>
+              <div><span data-i18n="stories.s2.d2_label">Frames</span><strong data-i18n="stories.s2.d2_value">1 480 final</strong></div>
+              <div><span data-i18n="stories.s2.d3_label">Look</span><strong data-i18n="stories.s2.d3_value">Soft cinematic</strong></div>
+            </div>
+          </div>
+        </div>
+        <div class="story__strip" data-drag-strip>
+          <img loading="lazy" src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1000&q=82" alt="" />
+          <img loading="lazy" src="https://images.unsplash.com/photo-1525258946800-98cfd641d0de?auto=format&fit=crop&w=1000&q=82" alt="" />
+          <img loading="lazy" src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=1000&q=82" alt="" />
+          <img loading="lazy" src="https://images.unsplash.com/photo-1606800052052-a08af7148866?auto=format&fit=crop&w=1000&q=82" alt="" />
+          <img loading="lazy" src="https://images.unsplash.com/photo-1591604466107-ec97de577aff?auto=format&fit=crop&w=1000&q=82" alt="" />
+        </div>
+      </article>
+
+      <article class="story">
+        <div class="story__head">
+          <img class="story__hero" loading="lazy" src="https://images.unsplash.com/photo-1530023367847-a683933f4172?auto=format&fit=crop&w=1400&q=82" alt="" />
+          <div class="story__meta">
+            <p class="story__loc" data-i18n="stories.s3.loc">Lucia &amp; Tomáš · Vienna · April 2025</p>
+            <h3 class="story__title" data-i18n-html="true" data-i18n="stories.s3.title">A city-hall wedding, <em>one good dinner</em></h3>
+            <p class="story__text" data-i18n="stories.s3.text">An intimate elopement at the Vienna town hall, an afternoon walk to Augarten, and a dinner of twelve at Tian. No timeline, no stress — only a day they'd choose again.</p>
+            <div class="story__details">
+              <div><span data-i18n="stories.s3.d1_label">Coverage</span><strong data-i18n="stories.s3.d1_value">6 hours</strong></div>
+              <div><span data-i18n="stories.s3.d2_label">Frames</span><strong data-i18n="stories.s3.d2_value">540 final</strong></div>
+              <div><span data-i18n="stories.s3.d3_label">Look</span><strong data-i18n="stories.s3.d3_value">Editorial b&amp;w</strong></div>
+            </div>
+          </div>
+        </div>
+        <div class="story__strip" data-drag-strip>
+          <img loading="lazy" src="https://images.unsplash.com/photo-1530023367847-a683933f4172?auto=format&fit=crop&w=1000&q=82" alt="" />
+          <img loading="lazy" src="https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?auto=format&fit=crop&w=1000&q=82" alt="" />
+          <img loading="lazy" src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=1000&q=82" alt="" />
+          <img loading="lazy" src="https://images.unsplash.com/photo-1525258946800-98cfd641d0de?auto=format&fit=crop&w=1000&q=82" alt="" />
+        </div>
+      </article>
     </div>
   </section>
 
-  <!-- WEDDINGS -->
-  <section class="section section--alt fade-in" id="svadby">
+  <!-- ───── ABOUT ───── -->
+  <section class="about-silent fade-in" id="about">
     <div class="container">
-      <div class="split">
-        <div class="split__media">
-          <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1200&q=80" alt="" />
-        </div>
+      <div class="about-silent__inner">
+        <img class="about-silent__photo" loading="lazy" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=900&q=82" alt="Sofia Novák" />
         <div>
-          <span class="section-label">Svadby</span>
-          <h2>Celý deň, alebo len obrad — vy si vyberiete</h2>
-          <p>Pre svadbu strávim s vami 6–12 hodín. Celkový dojem buduje 800–1500 finálnych fotiek (RAW + retuš), 2–3 týždne dodanie, prístup do online galérie 12 mesiacov.</p>
-          <p>Cestujem zdarma do 100 km od Košíc. Pre destinačné svadby v zahraničí dodatočná dohoda.</p>
-          <a href="#balicky" class="btn btn-secondary">Pozri balíčky →</a>
+          <p class="about-silent__label" data-i18n="about.label">About the photographer</p>
+          <h2 class="about-silent__title" data-i18n-html="true" data-i18n="about.title">Hello, <em>I'm Sofia</em></h2>
+          <p data-i18n="about.p1">I've been photographing for eight years. I started as an assistant to a wedding photographer in Prague, spent a year in Berlin, and have run my own studio in Vinohrady since 2018.</p>
+          <p data-i18n="about.p2">My work is quiet. I look for the moment after the planned moment — when nobody is performing for the camera, but everything is still happening. That, to me, is what a photograph remembers.</p>
+          <p data-i18n="about.p3">I work primarily with natural light, on Sony A7 IV, with 50mm and 85mm prime lenses. Editing in Capture One — soft, warm, with a gentle filmic grain.</p>
+          <p class="about-silent__sig" data-i18n="about.sig">— Sofia</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- PORTRAITS -->
-  <section class="section fade-in" id="portrety">
-    <div class="container">
-      <div class="split">
-        <div>
-          <span class="section-label">Portréty</span>
-          <h2>Pre rodinu, pre nás dvoch, pre seba</h2>
-          <p>Portrétne sessions trvajú 60–90 minút v lokácii podľa dohody (interiér / outdoor). Dodávam 30–80 finálnych fotiek do 2 týždňov.</p>
-          <p>Špecializujem sa na <b>maternity</b> (tehotenské), <b>newborn</b> (novorodenci), <b>family</b> a <b>couple</b> shoots. Editoriálny štýl, prirodzené svetlo, decentná farebná korekcia.</p>
-          <a href="#balicky" class="btn btn-secondary">Pozri balíčky →</a>
-        </div>
-        <div class="split__media">
-          <img src="https://images.unsplash.com/photo-1606800052052-a08af7148866?auto=format&fit=crop&w=1200&q=80" alt="" />
-        </div>
+  <!-- ───── INVESTMENT (no public prices) ───── -->
+  <section class="fade-in" id="investment">
+    <div class="container" style="padding-top:130px">
+      <div class="section-header section-header--silent">
+        <span class="section-label" data-i18n="invest.label">Investment</span>
+        <h2 data-i18n-html="true" data-i18n="invest.title">Three ways <em>to work together</em></h2>
       </div>
+    </div>
+    <div class="investment">
+      <article class="invest-card">
+        <p class="invest-card__cat" data-i18n="invest.c1.cat">Engagement &amp; couple</p>
+        <h3 class="invest-card__title" data-i18n-html="true" data-i18n="invest.c1.title">Couples <em>session</em></h3>
+        <p class="invest-card__desc" data-i18n="invest.c1.desc">A quiet 90-minute session for two — in the city, in the countryside, anywhere with a story. Includes 40+ edited frames and an online gallery.</p>
+        <a href="#inquire" class="invest-card__cta" data-i18n="invest.cta">Inquire for details →</a>
+      </article>
+      <article class="invest-card">
+        <p class="invest-card__cat" data-i18n="invest.c2.cat">Wedding day</p>
+        <h3 class="invest-card__title" data-i18n-html="true" data-i18n="invest.c2.title">Wedding <em>collection</em></h3>
+        <p class="invest-card__desc" data-i18n="invest.c2.desc">Full-day weddings in Prague, the Czech countryside or destination. Coverage from getting ready to first dance, with an unhurried, story-led approach.</p>
+        <a href="#inquire" class="invest-card__cta" data-i18n="invest.cta">Inquire for details →</a>
+      </article>
+      <article class="invest-card">
+        <p class="invest-card__cat" data-i18n="invest.c3.cat">Editorial &amp; brand</p>
+        <h3 class="invest-card__title" data-i18n-html="true" data-i18n="invest.c3.title">Editorial <em>commissions</em></h3>
+        <p class="invest-card__desc" data-i18n="invest.c3.desc">Brand campaigns, restaurant menus, magazine commissions and creative editorials. Half-day and full-day rates with full commercial use.</p>
+        <a href="#inquire" class="invest-card__cta" data-i18n="invest.cta">Inquire for details →</a>
+      </article>
     </div>
   </section>
 
-  <!-- PACKAGES -->
-  <section class="section section--alt fade-in" id="balicky">
+  <!-- ───── JOURNAL ───── -->
+  <section class="section fade-in" id="journal" data-frame="Frame 11 / 14 · Journal" style="padding-top:130px;padding-bottom:130px">
     <div class="container">
-      <div class="section-header">
-        <span class="section-label" data-i18n="nav.packages">Balíčky</span>
-        <h2>Cenník</h2>
-        <p>Tieto sú odporúčané balíčky. Vždy ich viem prispôsobiť — napíšte, čo presne potrebujete.</p>
+      <div class="section-header section-header--silent">
+        <span class="section-label" data-i18n="jour.label">Journal</span>
+        <h2 data-i18n-html="true" data-i18n="jour.title">Recent <em>entries</em></h2>
       </div>
 
-      <div class="cards">
-        <article class="pkg-card">
-          <p class="pkg-card__sub">Portrét · 60 min</p>
-          <h3 class="pkg-card__name">Single Session</h3>
-          <ul>
-            <li>1 lokácia · 1 outfit</li>
-            <li>30 finálnych fotiek</li>
-            <li>Online galéria 12 mes</li>
-            <li>Dodanie do 2 týždňov</li>
-            <li>Ľahká retuš</li>
-          </ul>
-          <p class="price">280 €</p>
-          <a href="#kontakt" class="btn btn-secondary" style="margin-top:24px;width:100%">Rezervovať</a>
+      <div class="journal">
+        <article class="journal-card">
+          <img class="journal-card__photo" loading="lazy" src="https://images.unsplash.com/photo-1525258946800-98cfd641d0de?auto=format&fit=crop&w=900&q=82" alt="" />
+          <p class="journal-card__date" data-i18n="jour.j1.date">February 2026</p>
+          <h3 class="journal-card__title" data-i18n-html="true" data-i18n="jour.j1.title">Why I shoot <em>fewer weddings</em> each year</h3>
+          <p class="journal-card__excerpt" data-i18n="jour.j1.excerpt">A quiet note on capping the calendar at 14 weddings, what it does for the work, and why I think it matters.</p>
         </article>
-
-        <article class="pkg-card" style="border-color:var(--accent)">
-          <p class="pkg-card__sub" style="color:var(--accent)">Svadba · 8 hodín</p>
-          <h3 class="pkg-card__name">Wedding Story</h3>
-          <ul>
-            <li>8 hodín pokrytia</li>
-            <li>800+ finálnych fotiek</li>
-            <li>Engagement session bonus</li>
-            <li>Online galéria 12 mes</li>
-            <li>Dodanie do 4 týždňov</li>
-            <li>Tlačený album +200 €</li>
-          </ul>
-          <p class="price">1 480 €</p>
-          <a href="#kontakt" class="btn btn-accent" style="margin-top:24px;width:100%">Rezervovať</a>
+        <article class="journal-card">
+          <img class="journal-card__photo" loading="lazy" src="https://images.unsplash.com/photo-1591604466107-ec97de577aff?auto=format&fit=crop&w=900&q=82" alt="" />
+          <p class="journal-card__date" data-i18n="jour.j2.date">January 2026</p>
+          <h3 class="journal-card__title" data-i18n-html="true" data-i18n="jour.j2.title">A guide to <em>winter elopements</em> in Prague</h3>
+          <p class="journal-card__excerpt" data-i18n="jour.j2.excerpt">Light, locations and timing — a practical guide for couples planning a small winter wedding in the city.</p>
         </article>
-
-        <article class="pkg-card">
-          <p class="pkg-card__sub">Editorial · pol deň</p>
-          <h3 class="pkg-card__name">Brand Shoot</h3>
-          <ul>
-            <li>4 hodiny pokrytia</li>
-            <li>2 lokácie · 2 outfity</li>
-            <li>50 finálnych fotiek</li>
-            <li>Pre brand / IG / web</li>
-            <li>Plné komerčné použitie</li>
-            <li>Dodanie do 10 dní</li>
-          </ul>
-          <p class="price">580 €</p>
-          <a href="#kontakt" class="btn btn-secondary" style="margin-top:24px;width:100%">Rezervovať</a>
+        <article class="journal-card">
+          <img class="journal-card__photo" loading="lazy" src="https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?auto=format&fit=crop&w=900&q=82" alt="" />
+          <p class="journal-card__date" data-i18n="jour.j3.date">November 2025</p>
+          <h3 class="journal-card__title" data-i18n-html="true" data-i18n="jour.j3.title">Five questions <em>before you book</em></h3>
+          <p class="journal-card__excerpt" data-i18n="jour.j3.excerpt">A short list of things worth asking any wedding photographer before you sign — useful even if you don't book me.</p>
         </article>
       </div>
     </div>
   </section>
 
-  <!-- ABOUT -->
-  <section class="section fade-in">
+  <!-- ───── INQUIRY ───── -->
+  <section class="inquiry fade-in" id="inquire">
     <div class="container">
-      <div class="split">
-        <div class="split__media"><img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=1200&q=80" alt="Sofia Nováková" /></div>
-        <div>
-          <span class="section-label">O mne</span>
-          <h2>Som Sofia.</h2>
-          <p>Fotografujem 8 rokov. Začala som ako asistentka pre svadobného fotografa v Bratislave, potom som rok pôsobila v Berlíne a od 2018 vediem vlastné štúdio v Košiciach.</p>
-          <p>Moje fotky majú silne emocionálny charakter — uchopia ten okamih, kedy sa nikto necíti na fotku a zároveň všetko žije. Pre mňa je dobrá fotka tá, ktorá vám o tri roky pripomenie, ako ste sa vtedy cítili.</p>
-          <p>Pracujem na <b>Sony A7 IV</b>, <b>50mm 1.4 GM</b> a <b>85mm 1.4 GM</b>. Edit v Capture One a Photoshop. Štýl: prirodzený, mierne tlumené farby, gentle film grain.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+      <div class="inquiry__inner">
+        <span class="section-label" style="font-family:var(--sans);font-size:0.66rem;letter-spacing:0.42em;color:var(--accent)" data-i18n="inq.label">Inquire</span>
+        <h2 style="font-family:var(--serif);font-size:clamp(2.4rem,5vw,3.8rem);font-weight:400;color:var(--ink);letter-spacing:0.005em;line-height:1.1;margin:24px 0 18px" data-i18n-html="true" data-i18n="inq.title">Tell me <em>your story</em></h2>
+        <p style="font-family:var(--serif-body);font-style:italic;font-size:1.12rem;line-height:1.7;color:var(--ink);margin:0;max-width:580px;margin:0 auto" data-i18n="inq.text">I read every inquiry personally and reply within 48 hours with a tailored offer and the full collection details.</p>
 
-  <!-- TESTIMONIALS -->
-  <section class="section section--dark fade-in">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-label">Recenzie</span>
-        <h2>Čo hovoria klienti</h2>
-      </div>
-      <div class="testimonial-slider">
-        <div class="testimonial-slider__track">
-          <article class="testimonial-card">
-            <p class="testimonial-card__quote">Sofia spravila viac ako sme chceli. Fotky vyzerajú ako z editorialu Vogue, ale stále sme to my. Odporúčam každému.</p>
-            <div class="testimonial-card__author"><img class="testimonial-card__avatar" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=200&q=80" alt="" /><div><p class="testimonial-card__name">Tereza & Michal</p><p class="testimonial-card__role">Svadba · október 2025</p></div></div>
-          </article>
-          <article class="testimonial-card">
-            <p class="testimonial-card__quote">Vedela som, že Sofia je dobrá. Ale fotky moje rodiny sú niečo, čo budem ukazovať deťom o 30 rokov.</p>
-            <div class="testimonial-card__author"><img class="testimonial-card__avatar" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=200&q=80" alt="" /><div><p class="testimonial-card__name">Andrea</p><p class="testimonial-card__role">Family · 2025</p></div></div>
-          </article>
-          <article class="testimonial-card">
-            <p class="testimonial-card__quote">Pracovala s nami 6 hodín a počas celého focenia sme zabudli, že fotí. Presne to chcete od dobrého fotografa.</p>
-            <div class="testimonial-card__author"><img class="testimonial-card__avatar" src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=200&q=80" alt="" /><div><p class="testimonial-card__name">Karolína</p><p class="testimonial-card__role">Maternity · 2025</p></div></div>
-          </article>
-          <article class="testimonial-card">
-            <p class="testimonial-card__quote">Brand shoot bol extrémne profesionálny. Fotky sa nám hodili pre web aj IG kampane. Druhý termín je dohodnutý.</p>
-            <div class="testimonial-card__author"><img class="testimonial-card__avatar" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80" alt="" /><div><p class="testimonial-card__name">Bistro Salt</p><p class="testimonial-card__role">Brand · 2024</p></div></div>
-          </article>
-          <article class="testimonial-card">
-            <p class="testimonial-card__quote">Najlepšia investícia, čo sme do svadby dali. Fotky stoja za každé euro a o tri roky stále vraciame k galérii.</p>
-            <div class="testimonial-card__author"><img class="testimonial-card__avatar" src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=200&q=80" alt="" /><div><p class="testimonial-card__name">Petra & Adam</p><p class="testimonial-card__role">Svadba · 2023</p></div></div>
-          </article>
-        </div>
-        <div class="testimonial-slider__nav">
-          <button class="testimonial-slider__btn testimonial-slider__btn--prev"><i class="fa-solid fa-chevron-left"></i></button>
-          <div class="testimonial-slider__dots"></div>
-          <button class="testimonial-slider__btn testimonial-slider__btn--next"><i class="fa-solid fa-chevron-right"></i></button>
-        </div>
-      </div>
-    </div>
-  </section>
+        <form class="inquiry__form">
+          <div class="inquiry__row">
+            <div class="inquiry__field">
+              <label for="iq-name" data-i18n="inq.f.name">Your name</label>
+              <input id="iq-name" name="name" required />
+            </div>
+            <div class="inquiry__field">
+              <label for="iq-email" data-i18n="inq.f.email">Email</label>
+              <input id="iq-email" name="email" type="email" required />
+            </div>
+          </div>
+          <div class="inquiry__row">
+            <div class="inquiry__field">
+              <label for="iq-type" data-i18n="inq.f.type">Type of session</label>
+              <select id="iq-type" name="type" style="background:var(--bg-3)">
+                <option data-i18n="inq.f.type_wedding">Wedding</option>
+                <option data-i18n="inq.f.type_couple">Engagement / couple</option>
+                <option data-i18n="inq.f.type_editorial">Editorial / brand</option>
+                <option data-i18n="inq.f.type_other">Other</option>
+              </select>
+            </div>
+            <div class="inquiry__field">
+              <label for="iq-date" data-i18n="inq.f.date">Date (or month)</label>
+              <input id="iq-date" name="date" placeholder="May 2026" data-i18n-attr="placeholder|inq.f.date_ph" />
+            </div>
+          </div>
+          <div class="inquiry__field">
+            <label for="iq-loc" data-i18n="inq.f.loc">Location</label>
+            <input id="iq-loc" name="loc" placeholder="Praha, Český Krumlov, Wien…" data-i18n-attr="placeholder|inq.f.loc_ph" />
+          </div>
+          <div class="inquiry__field">
+            <label for="iq-msg" data-i18n="inq.f.msg">A few words about your day</label>
+            <textarea id="iq-msg" name="msg" rows="4"></textarea>
+          </div>
+          <button type="submit" class="inquiry__submit" data-i18n="inq.submit">Send inquiry</button>
+        </form>
 
-  <!-- CONTACT -->
-  <section class="section fade-in" id="kontakt" style="background:var(--bg-2)">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-label">Kontakt</span>
-        <h2>Rezervujte si session</h2>
-        <p>Pošlite stručný brief — kedy, kde, čo. Odpoviem do 24 hodín s návrhom ďalšieho kroku.</p>
+        <p class="inquiry__direct" data-i18n-html="true" data-i18n="inq.direct">or directly · <a href="mailto:ahoj@studionovak.cz">ahoj@studionovak.cz</a> · <a href="tel:+420770333444">+420 770 333 444</a></p>
       </div>
-
-      <div class="form-card form" style="max-width:680px;margin:0 auto;background:var(--bg-3);border-color:var(--line-soft)">
-        <label class="form__full" style="color:var(--ink-soft)"><span>Vaše meno</span><input name="name" required style="color:var(--ink);border-color:var(--line)" /></label>
-        <label style="color:var(--ink-soft)"><span>E-mail</span><input name="email" type="email" required style="color:var(--ink);border-color:var(--line)" /></label>
-        <label style="color:var(--ink-soft)"><span>Typ session</span><select name="type" style="color:var(--ink);border-color:var(--line);background:transparent"><option>Svadba</option><option>Portrét / family</option><option>Maternity</option><option>Brand / Editorial</option><option>Iné</option></select></label>
-        <label style="color:var(--ink-soft)"><span>Plánovaný dátum</span><input name="date" type="date" style="color:var(--ink);border-color:var(--line)" /></label>
-        <label style="color:var(--ink-soft)"><span>Lokalita</span><input name="loc" style="color:var(--ink);border-color:var(--line)" placeholder="Mesto, miesto" /></label>
-        <label class="form__full" style="color:var(--ink-soft)"><span>O čo vám ide</span><textarea name="msg" rows="4" required style="color:var(--ink);border-color:var(--line)"></textarea></label>
-        <button class="btn btn-accent form__submit">Odoslať brief</button>
-      </div>
-
-      <p class="text-center" style="margin-top:30px;color:var(--ink-soft)">alebo priamo <a href="mailto:ahoj@studionovak.sk" style="color:var(--accent);border-bottom:1px solid var(--accent)">ahoj@studionovak.sk</a> · <a href="tel:+421900333444" style="color:var(--accent);border-bottom:1px solid var(--accent)">+421 900 333 444</a></p>
     </div>
   </section>
 
   <footer class="footer">
     <div class="container">
       <div class="footer-bottom">
-        <p class="footer-bottom__copy">© 2026 Studio Novák · made by Sage Studio</p>
+        <p class="footer-bottom__copy" data-i18n="footer.rights">© 2026 Studio Novák · all rights reserved</p>
         <div class="footer-bottom__links">
-          <a href="social.html">Sociálne siete</a>
-          <a href="../../studio/privacy.html">GDPR</a>
-          <a href="../../studio/index.html">Sage Studio</a>
+          <a href="social.html" data-i18n="nav.social">Instagram</a>
+          <a href="../../studio/privacy.html" data-i18n="footer.privacy">Privacy</a>
         </div>
       </div>
     </div>
   </footer>
 
-  <div class="lightbox" id="lightbox"><button class="lightbox__close">&times;</button><img class="lightbox__img" src="" alt="" /></div>
-  <button class="back-to-top" aria-label="Hore" style="background:var(--accent);color:var(--bg)"><i class="fa-solid fa-arrow-up"></i></button>
+  <div class="lightbox" id="lightbox"><button class="lightbox__close" aria-label="Close">&times;</button><img class="lightbox__img" src="" alt="" /></div>
+  <button class="back-to-top" aria-label="Top" style="background:var(--accent);color:var(--bg)"><i class="fa-solid fa-arrow-up"></i></button>
 
-  <script src="js/i18n.js"></script>
+  <div class="cookie-banner" id="cookieBanner">
+    <div class="cookie-banner__inner">
+      <p data-i18n="cookies.text">We use cookies for a better experience.</p>
+      <div class="cookie-banner__actions">
+        <button class="cookie-banner__btn cookie-banner__btn--accept" data-cookie="accept" data-i18n="cookies.accept">Accept</button>
+        <button class="cookie-banner__btn cookie-banner__btn--decline" data-cookie="decline" data-i18n="cookies.decline">Decline</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="i18n/dict.js?v=25"></script>
+
+  <script src="js/i18n.js?v=8"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

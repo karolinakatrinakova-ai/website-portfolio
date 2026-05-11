@@ -1,0 +1,371 @@
+{
+  "a11y": {
+    "skip": "Preskočiť na obsah"
+  },
+  "meta": {
+    "title": "Sála · Reštaurácia · Praha · Vinohrady",
+    "description": "Sála — susedská reštaurácia na Vinohradskej. Moderná česká kuchyňa, prírodné vína, degustačné menu šesť večerov v týždni. Rezervácie otvorené."
+  },
+  "resvStrip": {
+    "now": "Rezervácie otvorené · Dnes večer aj na tento týždeň",
+    "cta": "Rezervovať stôl →"
+  },
+  "nav": {
+    "home": "Domov",
+    "menu": "Menu",
+    "wine": "Víno",
+    "chef": "Šéfkuchárka",
+    "visit": "Návšteva",
+    "cta": "Rezervovať"
+  },
+  "hero": {
+    "kicker": "Vinohradská 27 · Praha 2 · Otvorené od 2021",
+    "book": "Rezervácie →",
+    "title": "Sál<em>a</em>",
+    "sub": "Malá susedská reštaurácia vo Vinohradoch. Moderná česká kuchyňa z miestnych surovín, prírodné vína a otvorená kuchyňa. Štyridsať miest, šesť večerov v týždni.",
+    "ctaBook": "Rezervovať stôl",
+    "ctaMenu": "Pozrieť dnešné menu",
+    "hours": "Otvorené",
+    "hoursVal": "Ut–So · <em>17:30 → 23:00</em>",
+    "tasting": "Degustačné menu",
+    "tastingVal": "7 chodov · <em>1 880 Kč</em>",
+    "alacarte": "À la carte",
+    "alacarteVal": "3 + 4 + 4",
+    "address": "Kde nás nájdete",
+    "addressVal": "Vinohradská 27, Praha 2"
+  },
+  "tonight": {
+    "kicker": "Dnes v Sále · štvrtok",
+    "title": "Pečený celer s hnedým maslom, fermentovaný egreš a <em>letné bylinky</em>",
+    "desc": "Zeleninový chod, ktorý pripravujeme od jesene. Celý celer pečieme v soli štyri hodiny, glazujeme ho domácim hnedým maslom (pripravujeme ho čerstvé každý utorok) a dochucujeme fermentovaným egrešom z augustovej úrody. Servírujeme s usušenou trebuľkou a horskou saturejkou.",
+    "pair1": "K tomu · Riesling 2022",
+    "pair2": "alebo · Cider Hardanger",
+    "pair3": "nealko · brezová šťava",
+    "price": "À la carte · <strong>320 Kč</strong>   ·   V degustácii · 4. zo 7 chodov"
+  },
+  "manifesto": {
+    "kicker": "Pár slov z kuchyne",
+    "title": "Varíme z miestnych surovín a podľa <em>toho, čo prinesie sezóna</em>",
+    "p1": "Sála je malá reštaurácia v jedálni z roku 1908. Plechový strop, dlažba a okná na Vinohradskú sú pôvodné. My sme pridali drevený gril, otvorenú kuchyňu a modernú českú kuchyňu z toho, čo rastie tu a teraz.",
+    "p2": "Takmer všetko na tanieri pochádza z okruhu štyridsiatich kilometrov. Zeleninu pestujú Čermákovci v Lhote, mäso zo starých plemien dodáva Statek u Cibulky, syry syráreň na Ovocnom trhu, vajcia farma v Kostelci.",
+    "p3": "Jedno degustačné menu a krátka à la carte — obe meníme každé dva týždne. Vína moravské a rakúske, prírodné. V nedeľu a v pondelok máme zatvorené, aby mal celý tím dva voľné dni za sebou.",
+    "p4": "Príďte hladní a zostaňte chvíľu. Druhý pohár radi dolejeme.",
+    "sign": "— Anna a tím Sála",
+    "signSmall": "Šéfkuchárka · spolumajiteľka · od 2021"
+  },
+  "tasting": {
+    "kicker": "Degustačné menu · jar 2026",
+    "title": "Sedem chodov,<br/><em>jedno&nbsp;menu, deväťdesiat minút</em>",
+    "lede": "Prejdite myšou ponad chod a uvidíte tanier. Celé menu meníme každý druhý utorok. Vegetariánsku aj bezlepkovú verziu vieme pripraviť — stačí nám dať vedieť pri rezervácii.",
+    "c1": {
+      "name": "Studeno údený pstruh, kôprový <em>olej a nakladaná raž</em>",
+      "detail": "Pstruh z Českého Krumlova, údime ho nad jablkom. Uhorka z našej záhradky, naložená v minuloročnej srvátke. Kôprové kvety.",
+      "pair": "+ Cider · Hardanger"
+    },
+    "c2": {
+      "name": "Dvanásťhodinový vývar, <em>letné rajčiny</em>",
+      "detail": "Zo zrejúcich hovädzích kostí, opečenej cibule a našich údených rajčín z augustovej zavárky. Pri stole dochucujeme olejom z mesiačka.",
+      "pair": "+ Riesling · Velké Bílovice"
+    },
+    "c3": {
+      "name": "Pečený celer, hnedé maslo a <em>fermentovaný egreš</em>",
+      "detail": "Celer pečieme v soli štyri hodiny a glazujeme ho domácim hnedým maslom. Fermentovaný egreš z augusta. Podávame na kameni, dochutené horskou saturejkou.",
+      "pair": "+ Pet-Nat · Bratislava"
+    },
+    "c4": {
+      "name": "Kváskový chlieb, <em>kysnuté maslo a lardo</em>",
+      "detail": "Náš kvások udržiavame v tejto kuchyni od novembra 2021. Vyťahujeme ho horúci priamo z drevenej pece. Kysnuté maslo z Vysočiny, lardo zrejúce šesť mesiacov.",
+      "pair": "+ Veltlín · Pavlov"
+    },
+    "c5": {
+      "name": "Divoká kačica s fermentovanou čučoriedkou a <em>opečenou kapustou</em>",
+      "detail": "Česká divoká kačica zreje na kosti desať dní, glazujeme ju čučoriedkou z minulého leta. Opečená špicatá kapusta od Čermákovcov. Šťavu z panvice nalievame pri stole.",
+      "pair": "+ Frankovka · 2018"
+    },
+    "c6": {
+      "name": "Zrejúce syry z <em>Ovocného trhu</em>",
+      "detail": "Tri české syry zrejúce osem, dvanásť a osemnásť mesiacov v pivnici dve ulice odtiaľto. K nim chlieb s orechovým lístím a slivková mostarda zo septembra.",
+      "pair": "+ Pálava · 2021"
+    },
+    "c7": {
+      "name": "Pohánkový koláčik, <em>karamelizovaný med a kyslá smotana</em>",
+      "detail": "Teplý koláčik z praženej pohánky. Kyslá smotana z Kostelca, glazúra z medu zo sadu v Modleticiach — dvakrát skaramelizovaná a vychladnutá.",
+      "pair": "+ Tokaj Furmint"
+    },
+    "foot": {
+      "price": "7 chodov · <strong>1 880 Kč</strong>   ·   párovanie vín · 1 280 Kč",
+      "cta": "Rezervovať degustáciu →",
+      "note": "menu obnovujeme každé 2 týždne"
+    }
+  },
+  "wine": {
+    "kicker": "Pivnica · 180+ českých, moravských a rakúskych vinárov",
+    "title": "Živé víno<br/><em>od ľudí, ktorí ho pestujú</em>",
+    "lede": "Krátky lístok, takmer výhradne prírodné vína. Väčšinu nalievame na pohár. Doniesli ste si vlastnú fľašu? Korkovné je 350 Kč a putuje do prepitného pre kuchyňu.",
+    "w1": {
+      "type": "Biele s maceráciou",
+      "name": "Pálava <em>2022</em>",
+      "where": "Krásná hora · Mělník",
+      "notes": "Marhuľová šupka, sušený mesiaček, jemne soľ. Kuchynské víno — sadne k všetkému z grilu.",
+      "glass": "125 ml",
+      "price": "160 Kč"
+    },
+    "w2": {
+      "type": "Macerované · oranžové",
+      "name": "Veltlín <em>nature 2021</em>",
+      "where": "Sonberk · Pavlov",
+      "notes": "Šesť dní na šupkách, bez filtrácie. Dula, biely čaj, čistá horkosť na konci. Skvele pasuje k celerovému chodu.",
+      "glass": "125 ml",
+      "price": "190 Kč"
+    },
+    "w3": {
+      "type": "Pet-Nat",
+      "name": "Modrý Portugal <em>Pet-Nat 2023</em>",
+      "where": "Strekov · Šoltís",
+      "notes": "Plnené napol vykvasené, chladne dozrievajúce na kvasinkách. Lesná malina, kvások, jemne soľ. Pije sa ako pivo.",
+      "glass": "125 ml",
+      "price": "170 Kč"
+    },
+    "w4": {
+      "type": "Staré viniče · červené",
+      "name": "Frankovka <em>viniče 1976 · 2018</em>",
+      "where": "Dobrá Vinice · Mikulov",
+      "notes": "Päťdesiatročné viniče, osem mesiacov v starom dube. Dym, list ostružiny, železo. Pasuje ku kačici aj k syrom.",
+      "glass": "125 ml",
+      "price": "220 Kč"
+    }
+  },
+  "press": {
+    "kicker": "V tlači · 2022 — 2026",
+    "title": "Čo o nás <em>napísali</em>",
+    "r1": "Bib Gourmand <em>· 2024</em>",
+    "r1y": "potvrdené 2025 · 2026",
+    "r2": "14<em>/20</em>",
+    "r2y": "„objav roka 2024\"",
+    "r3": "88,5<em>/100</em>",
+    "r3y": "výber 2026",
+    "r4": "Zaradené <em>· 2025</em>",
+    "r4y": "stredná Európa · top 30",
+    "q1": "„Najtichšie sebavedomá nová reštaurácia v meste. Anna Hofmann varí jedlo, ktoré chutí presne ako ona — a ako Vinohrady v tomto týždni.\"",
+    "q1c": "— Lidové Noviny · jar 2025",
+    "q2": "„Štyridsať miest, jedno degustačné menu, otvorená kuchyňa — Sála má presne to presvedčenie, na ktoré Praha čakala.\"",
+    "q2c": "— Forbes Život · september 2024",
+    "q3": "„Vínny lístok roka. Moravsko-rakúske zameranie je najmúdrejšia kurátorská práca v krajine.\"",
+    "q3c": "— Wine & Spirits · 2024"
+  },
+  "chef": {
+    "kicker": "Šéfkuchárka",
+    "title": "Anna Hofmann <em>varí v Sále každý večer</em>",
+    "p1": "Anna sa narodila v Olomouci a vyučila sa vo Viedni. Dva roky pracovala u Frantzéna v Štokholme, rok u Maaema v Osle. V roku 2021 sa vrátila do Prahy otvoriť Sálu.",
+    "p2": "Šesť večerov v týždni stojí pri výdaji a takmer každý tanier dokladá sama. Menu plánuje vždy na dva týždne dopredu, podľa toho, čo prinesie sezóna.",
+    "cv1": "Prvá práca · Steirereck · Viedeň",
+    "cv2": "Sous · Frantzén · Štokholm",
+    "cv3": "Senior sous · Maaemo · Oslo",
+    "cv4": "Spoluzakladateľka · Sála · Praha",
+    "cv5": "Šéfkuchárka roka · Gourmand",
+    "cv6": "Bib Gourmand · Michelin"
+  },
+  "private": {
+    "kicker": "Privátna sála · pivnica",
+    "title": "Klenutá pivnica, <em>jeden dlhý stôl pre dvanásť</em>",
+    "text": "Pod jedálňou je klenutá tehlová pivnica s jedným dubovým stolom pre dvanásť. Vlastný vínny lístok, tlačené menu s menami hostí a Anna na privítanie pri dverách. Vhodné na narodeniny, firemné večere aj malé svadby.",
+    "l1": "Iba večer · od 19:00 · minimálne 4 hodiny",
+    "l2": "Iba degustačné menu · párovanie vín voliteľné · tlačené menu pre každého hosťa",
+    "l3": "Rezervovateľné utorok — sobota · 6 až 12 hostí",
+    "l4": "Od 2 600 Kč na hosťa · nápoje účtujeme zvlášť",
+    "cta1": "Spýtať sa na privátnu sálu →",
+    "cta2": "Alebo rezervovať bežný stôl"
+  },
+  "visit": {
+    "kicker": "Návšteva · Vinohradská 27",
+    "title": "Šesť večerov v týždni,<br/><em>v rovnakej miestnosti od roku 2021</em>",
+    "lede": "Dve minúty pešo od Námestia Mieru. Sála je na rohu Vinohradskej a Šafaříkovej — hľadajte tmavozelené dvere a plechový strop, ktorý vidíte cez okno.",
+    "d1": "Pondelok",
+    "d1t": "Zatvorené",
+    "d2": "Nedeľa",
+    "d2t": "Zatvorené",
+    "d3": "Utorok — piatok",
+    "d3t": "17:30 — 23:00",
+    "d4": "Sobota",
+    "d4t": "17:00 — 23:30",
+    "a1": "Sála",
+    "a2": "Vinohradská 27, 120 00 Praha 2 — Vinohrady",
+    "a3": "Otvoriť v Google Mapách →",
+    "p": {
+      "title": "Rezervácie <em>otvorené · tento týždeň</em>",
+      "text": "Rezervácia online vám zaberie menej ako minútu. Pri bare držíme pár miest pre tých, ktorí prídu bez rezervácie — od 17:30, kto skôr príde, ten skôr sedí.",
+      "cta1": "Rezervovať stôl →",
+      "cta2": "Pozrieť celé menu",
+      "call": "Alebo zavolať"
+    }
+  },
+  "footer": {
+    "tag": "Susedská reštaurácia na Vinohradskej.",
+    "addr": "Vinohradská 27<br/>120 00 Praha 2 — Vinohrady<br/>+420 221 234 567 · ahoj@sala.cz",
+    "c1": "Návšteva",
+    "c2": "O nás",
+    "c3": "Sledujte nás",
+    "l1": "Rezervácie",
+    "l2": "Menu",
+    "l3": "Vínny lístok",
+    "l4": "Privátna sála",
+    "l5": "Šéfkuchárka",
+    "l6": "Dnešné menu",
+    "l7": "V tlači",
+    "l8": "Kariéra",
+    "l9": "Newsletter",
+    "copy": "© 2026 Sála s.r.o. · Vinohrady · Praha",
+    "legal1": "Súkromie",
+    "legal2": "Podmienky",
+    "legal3": "Web · Karolína K."
+  },
+  "menu": {
+    "meta": {
+      "title": "Menu · Sála reštaurácia · Praha",
+      "description": "Celé menu Sály — degustačné, à la carte, prílohy a dezerty. Aktualizované každé dva týždne."
+    },
+    "resvStrip": "Menu obnovené · 5. mája 2026",
+    "h": {
+      "kicker": "Menu · jar 2026 · obnovujeme každé 2 týždne",
+      "title": "Malá kuchyňa,<br/><em>menu podľa sezóny</em>",
+      "lede": "V Sále môžete jesť dvomi spôsobmi — sedemchodovou degustáciou podľa toho, čo nesie sezóna, alebo si vyberiete z à la carte rozdelenej do štyroch kapitol. Bez ohľadu na to, čo si vyberiete, varíme to my; šéfkuchárka stojí v kuchyni každý večer."
+    },
+    "tasting": {
+      "title": "Degustačné menu <em>· sedem chodov</em>",
+      "note": "90 min · 1 880 Kč · párovanie 1 280 Kč"
+    },
+    "begin": {
+      "title": "Na úvod <em>· malé taniere</em>",
+      "note": "3 jedlá · ideálne na zdieľanie"
+    },
+    "field": {
+      "title": "Z poľa <em>· zelenina</em>",
+      "note": "4 jedlá · vegetariánske"
+    },
+    "fire": {
+      "title": "Z ohňa <em>· gril a rúra</em>",
+      "note": "4 hlavné · staré plemená, drevený gril"
+    },
+    "sweet": {
+      "title": "Sladké <em>· štyri dezerty</em>",
+      "note": "domáce · k dispozícii aj syrový tanier"
+    },
+    "b1": {
+      "name": "Kvások a <em>kysnuté maslo</em>",
+      "desc": "Náš kvások z drevenej pece, ktorý udržiavame v kuchyni od roku 2021. Kysnuté maslo z Vysočiny a údená maldonská soľ. <span class=\"menu-row__diet\"><span class=\"veg\">veg</span></span>"
+    },
+    "b2": {
+      "name": "Studeno údený pstruh, <em>nakladaná raž</em>",
+      "desc": "Pstruh z Českého Krumlova, kôprový olej, kyslá smotana z Kostelca. Toast z nakladanej raže."
+    },
+    "b3": {
+      "name": "Hovädzí tatarák, <em>opečená cibuľa, kapary</em>",
+      "desc": "Zrejúci ribcap zo Statku u Cibulky, ručne sekaný. Vývar z opečenej cibule, slané kapary, surový žĺtok."
+    },
+    "f1": {
+      "name": "Pečený celer, hnedé maslo, <em>fermentovaný egreš</em>",
+      "desc": "Celý celer pečený v soli štyri hodiny, glazovaný hnedým maslom (pripravujeme ho čerstvé každý utorok). <span class=\"menu-row__diet\"><span class=\"veg\">veg</span></span>"
+    },
+    "f2": {
+      "name": "Repový tatarák, <em>čierny orech</em>",
+      "desc": "Repa starých odrôd od Čermákovcov, údená nad senom. Nakladaný čierny orech, chrenový krém. <span class=\"menu-row__diet\"><span class=\"veg\">veg</span><span class=\"gf\">gf</span></span>"
+    },
+    "f3": {
+      "name": "Hispi kapusta z ohňa, <em>rasca, hnedé maslo</em>",
+      "desc": "Špicatá kapusta opečená nad bukom, omáčka z hnedého masla a opražená rasca. <span class=\"menu-row__diet\"><span class=\"veg\">veg</span></span>"
+    },
+    "f4": {
+      "name": "Jačmenné krúpy, <em>zrejúci syr, divoké bylinky</em>",
+      "desc": "Jačmenné krúpy varené ako rizoto, s dvojročným syrom z Ovocného trhu a bylinkami z okna kuchyne. <span class=\"menu-row__diet\"><span class=\"veg\">veg</span></span>"
+    },
+    "r1": {
+      "name": "Divoká kačica, fermentovaná čučoriedka, <em>opečená kapusta</em>",
+      "desc": "Česká divoká kačica zrejúca na kosti desať dní. Opečená kapusta, šťava z panvice nalievaná pri stole."
+    },
+    "r2": {
+      "name": "Bravčové plece starého plemena, <em>rasca, borievka</em>",
+      "desc": "Prešticová sviňa zo Statku u Cibulky, deväť hodín pomaly varená nad bukom. Nakladaná borievka, šťava s rascou."
+    },
+    "r3": {
+      "name": "Zrejúci ribeye, <em>opečená cibuľa, špikový mozog</em>",
+      "desc": "42 dní zrejúce šumavské hovädzie, opečené nad ohňom. Omáčka z opečenej cibule, špikový mozog na toaste. <span class=\"menu-row__diet\"><span class=\"spicy\">pre 2 osoby</span></span>"
+    },
+    "r4": {
+      "name": "Celá pečená kambala, <em>hnedé maslo, slanorožec</em>",
+      "desc": "Denne lovená kambala z Bretónska, pečená na kosti. Hnedé maslo, slanorožec, solený citrón. <span class=\"menu-row__diet\"><span class=\"spicy\">pre 2 osoby</span></span>"
+    },
+    "s1": {
+      "name": "Pohánkový koláčik, <em>karamelizovaný med, kyslá smotana</em>",
+      "desc": "Teplý koláčik z praženej pohánky. Kyslá smotana z Kostelca, dvakrát karamelizovaný med z Modletíc. <span class=\"menu-row__diet\"><span class=\"veg\">veg</span></span>"
+    },
+    "s2": {
+      "name": "Slivka a <em>ovsený drobenec</em>",
+      "desc": "Slivky zo septembrovej zavárky, ovsený drobenec a údený vanilkový krém. <span class=\"menu-row__diet\"><span class=\"veg\">veg</span></span>"
+    },
+    "s3": {
+      "name": "Zmrzlina z kyslej smotany, <em>čierne ríbezle, slad</em>",
+      "desc": "Zmrzlina z kyslej smotany, ktorú točíme každý deň. Naložené čierne ríbezle a opražený sladový drobenec. <span class=\"menu-row__diet\"><span class=\"veg\">veg</span><span class=\"gf\">gf</span></span>"
+    },
+    "s4": {
+      "name": "Syrový tanier z <em>Ovocného trhu</em>",
+      "desc": "Tri české syry zrejúce 8, 12 a 18 mesiacov. K nim chlieb s orechovým lístím a slivková mostarda. <span class=\"menu-row__diet\"><span class=\"veg\">veg</span></span>"
+    },
+    "key1": "Alergény · prosíme, dajte nám vedieť pri rezervácii",
+    "key2": "Servis · 12 % pripočítavame ku všetkým stolom",
+    "cta": "Rezervovať stôl →"
+  },
+  "resv": {
+    "meta": {
+      "title": "Rezervácie · Sála reštaurácia",
+      "description": "Rezervujte si stôl v Sále — Vinohradská 27, Praha. Degustačné menu aj à la carte. Otvorené Ut–So."
+    },
+    "strip": "Stoly uvoľňujeme 14 dní dopredu · Utorok — Sobota",
+    "strip.cta": "alebo zavolajte +420 221 234 567",
+    "h": {
+      "kicker": "Rezervácie · Sála Praha",
+      "title": "Tri kroky,<br/><em>do minúty hotovo</em>",
+      "lede": "Pár miest si držíme pre tých, ktorí prídu bez rezervácie do baru — väčšinu večerov sa však jedáleň zaplní dva týždne dopredu. Vyberte si dátum, čas a počet hostí, a my vám potvrdíme cez e-mail."
+    },
+    "s1": "Kedy",
+    "s2": "Kto",
+    "s3": "Vy",
+    "s4": "Hotovo",
+    "st1": {
+      "title": "Kedy by ste <em>chceli prísť?</em>",
+      "text": "Vyberte si dátum v najbližších 14 dňoch. Posedenia začíname o 17:30, posledné usadenie je o 21:30 (v sobotu o 22:00).",
+      "dateLabel": "Dátum",
+      "timeLabel": "Čas"
+    },
+    "st2": {
+      "title": "Koľko <em>vás bude?</em>",
+      "text": "Online až do 6 hostí. Pre 7 a viac <a href=\"mailto:private@sala.cz\" style=\"color:var(--accent);border-bottom:1px solid var(--accent);text-decoration:none\">napíšte nám o privátnu sálu</a> — pripravíme vám dlhý stôl."
+    },
+    "st3": {
+      "title": "Pár <em>posledných detailov</em>",
+      "text": "Kontaktné údaje použijeme iba na potvrdenie rezervácie a na to, aby sme vás vedeli kontaktovať, ak by sa niečo zmenilo. Alergie a špeciálne požiadavky vítame — vieme okolo nich variť.",
+      "name": "Celé meno",
+      "email": "E-mail",
+      "phone": "Telefón",
+      "notes": "Alergie, príležitosť, špeciálne požiadavky",
+      "notesPh": "napr. jeden vegetarián, jeden alergický na celer, oslavujeme výročie"
+    },
+    "next": "Ďalej →",
+    "back": "← Späť",
+    "confirm": "Potvrdiť rezerváciu →",
+    "st4": {
+      "title": "Vidíme sa <em>v Sále</em>",
+      "text": "Potvrdenie už putuje do vašej schránky. Stôl držíme 15 minút po čase rezervácie — ak by ste meškali, krátko nám zavolajte a miesto vám podržíme dlhšie.",
+      "home": "← Späť na úvod",
+      "menu": "Pozrieť menu",
+      "signoff": "— Anna a tím Sála"
+    },
+    "sum": {
+      "title": "Vaša rezervácia <em>· Sála</em>",
+      "text": "Štyridsať miest, jedno degustačné menu a krátka à la carte. Odpíšeme vám do 24 hodín.",
+      "date": "Dátum",
+      "time": "Čas",
+      "size": "Hostia",
+      "note": "„Druhý pohár vína nalejeme ochotne.\"<br>— Anna"
+    }
+  }
+}

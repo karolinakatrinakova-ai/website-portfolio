@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title data-i18n="chk.meta_title">Passes & checkout · Aria · Praha</title>
+  <meta name="description" data-i18n-attr="content|chk.meta_desc" content="Buy a pass — drop-in, intro week, 5- or 10-class pack, or unlimited month. Pay securely online." />
+  <meta name="theme-color" content="#f5f1e8" />
+  <link rel="icon" type="image/svg+xml" href="../../studio/favicon.svg?v=3" />
+  <link rel="stylesheet" href="css/theme.css?v=4" />
+  <link rel="stylesheet" href="css/layout.css?v=4" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+
+  <a href="#main" class="skip-to-content" data-i18n="a11y.skip">Skip to content</a>
+  <div class="page-loader"><span class="page-loader__brand">Aria<i>.</i></span></div>
+  <div class="reading-progress" aria-hidden="true"></div>
+
+  <nav class="navbar" aria-label="Main navigation">
+    <div class="container">
+      <a href="index.html" class="navbar-brand"><span class="navbar-brand__dot"></span><span>Aria<i>.</i></span></a>
+      <ul class="navbar-links">
+        <li><a href="index.html#manifesto" data-i18n="nav.studio">Studio</a></li>
+        <li><a href="schedule.html" data-i18n="nav.schedule">Schedule</a></li>
+        <li><a href="classes.html" data-i18n="nav.classes">Classes</a></li>
+        <li><a href="index.html#teachers" data-i18n="nav.teachers">Teachers</a></li>
+        <li><a href="checkout.html" class="active" data-i18n="nav.passes">Passes</a></li>
+        <li><a href="index.html#contact" data-i18n="nav.contact">Visit</a></li>
+      </ul>
+      <div class="navbar-right">
+        <div class="lang-switch" data-lang-switch>
+          <button class="lang-switch__btn" data-lang="en">EN</button>
+          <button class="lang-switch__btn" data-lang="sk">SK</button>
+          <button class="lang-switch__btn" data-lang="cs">CS</button>
+        </div>
+        <a href="account.html" class="navbar-cta navbar-cta--ghost" data-i18n="nav.account">My account</a>
+        <a href="intro.html" class="navbar-cta" data-i18n="nav.cta">Try a week</a>
+        <button class="navbar-hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mobile-menu">
+    <ul class="mobile-menu__links">
+      <li><a href="index.html#manifesto" data-i18n="nav.studio">Studio</a></li>
+      <li><a href="schedule.html" data-i18n="nav.schedule">Schedule</a></li>
+      <li><a href="classes.html" data-i18n="nav.classes">Classes</a></li>
+      <li><a href="index.html#teachers" data-i18n="nav.teachers">Teachers</a></li>
+      <li><a href="checkout.html" data-i18n="nav.passes">Passes</a></li>
+      <li><a href="account.html" data-i18n="nav.account">My account</a></li>
+      <li><a href="index.html#contact" data-i18n="nav.contact">Visit</a></li>
+    </ul>
+    <div class="lang-switch" data-lang-switch role="group" aria-label="Language">
+      <button class="lang-switch__btn" data-lang="en">EN</button>
+      <button class="lang-switch__btn" data-lang="sk">SK</button>
+      <button class="lang-switch__btn" data-lang="cs">CS</button>
+    </div>
+    <div class="mobile-menu__cta"><a href="intro.html" class="btn btn-accent" data-i18n="nav.cta">Try a week</a></div>
+  </div>
+
+  <header class="sub-hero" id="main">
+    <div class="sub-hero__inner">
+      <p class="sub-hero__crumb"><a href="index.html" data-i18n="chk.crumb_home">Aria</a> &nbsp;/&nbsp; <span data-i18n="chk.crumb">Passes</span></p>
+      <h1 data-i18n="chk.title">Pick a pass</h1>
+      <p data-i18n="chk.lead">Pay per class, by pack, or unlimited for a month. Cancel free up to 4 hours before any class.</p>
+    </div>
+  </header>
+
+  <!-- pass cards -->
+  <section class="chk-passes">
+    <div class="chk-passes__grid" id="passGrid"></div>
+  </section>
+
+  <!-- Step 2 — Card -->
+  <div class="chk-pay" id="chkPay">
+    <div class="chk-pay__inner">
+      <button class="chk-pay__close" id="chkClose" aria-label="Close">&times;</button>
+
+      <section class="book-modal__step is-active" data-step="pay">
+        <span class="book-modal__type" id="payTag">Pass</span>
+        <h3 id="payHead">Pay</h3>
+        <p class="book-modal__meta" id="paySub">—</p>
+
+        <form class="pay-form" id="payForm" autocomplete="off" novalidate>
+          <label class="pay-field"><span data-i18n="pay.email">Email for receipt</span><input type="email" name="email" placeholder="jana@example.com" required /></label>
+          <label class="pay-field"><span data-i18n="pay.holder">Cardholder</span><input type="text" name="holder" placeholder="Jana Nováková" required /></label>
+          <label class="pay-field"><span data-i18n="pay.number">Card number</span><input type="text" name="number" placeholder="4242 4242 4242 4242" inputmode="numeric" maxlength="19" required /></label>
+          <div class="pay-row">
+            <label class="pay-field"><span data-i18n="pay.exp">Expiry</span><input type="text" name="exp" placeholder="12/29" maxlength="5" required /></label>
+            <label class="pay-field"><span data-i18n="pay.cvc">CVC</span><input type="text" name="cvc" placeholder="123" maxlength="4" inputmode="numeric" required /></label>
+          </div>
+          <button type="submit" class="btn-pill btn-pill--solid pay-submit" id="paySubmit"><span data-i18n="pay.submit">Pay</span></button>
+          <p class="pay-secure"><i class="fa-solid fa-lock"></i> <span data-i18n="pay.secure">3-D Secure · payments processed by GoPay</span></p>
+        </form>
+      </section>
+
+      <section class="book-modal__step" data-step="threeds">
+        <h3 data-i18n="pay.tds_title">Verifying with your bank</h3>
+        <div class="tds-anim" aria-hidden="true">
+          <div class="tds-anim__ring"></div>
+          <div class="tds-anim__check"><i class="fa-solid fa-shield-halved"></i></div>
+        </div>
+        <p class="book-modal__meta" data-i18n="pay.tds_text">Confirm the payment in your banking app to continue.</p>
+      </section>
+
+      <section class="book-modal__step" data-step="done">
+        <div class="book-done">
+          <div class="book-done__check"><i class="fa-solid fa-check"></i></div>
+          <h3 data-i18n="chk.done_title">Pass added to your account</h3>
+          <p class="book-modal__meta" id="doneSub">—</p>
+          <p class="book-done__email" data-i18n="done.email">A confirmation has been sent to your email.</p>
+          <div class="book-modal__actions book-modal__actions--center">
+            <a href="schedule.html" class="btn-pill btn-pill--solid" data-i18n="chk.done_book">Book a class →</a>
+            <a href="account.html" class="btn-pill btn-pill--ghost" data-i18n="done.account">My bookings</a>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </div>
+
+  <div class="aria-toast" id="ariaToast" role="status" aria-live="polite"></div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p class="footer-bottom__copy" data-i18n="footer.rights">© 2026 Aria · movement studio</p>
+        <div class="footer-bottom__links">
+          <a href="https://instagram.com/aria.studio" target="_blank" rel="noopener">Instagram</a>
+          <a href="../../studio/privacy.html" data-i18n="footer.privacy">Privacy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Top"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <script src="i18n/dict.js?v=25"></script>
+  <script src="js/i18n.js?v=8"></script>
+  <script src="js/booking.js?v=1"></script>
+  <script src="js/checkout.js?v=1"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

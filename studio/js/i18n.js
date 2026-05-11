@@ -1,10 +1,10 @@
 /* ============================================================================
-   SAGE STUDIO · i18n
+   i18n
    - Loads i18n/<lang>.json (en / sk / cs)
    - Applies translations to elements with [data-i18n="key"] (text)
                                        and [data-i18n-attr="attribute|key"]
    - Switcher: [data-lang-switch] buttons with data-lang="en|sk|cs"
-   - Persists in localStorage as 'sage_lang'
+   - Persists in localStorage as 'site_lang'
    - Default: EN (with browser-language detection on first visit)
    ========================================================================== */
 
@@ -67,7 +67,11 @@
   var cache = {};
   function load(lang) {
     if (cache[lang]) return Promise.resolve(cache[lang]);
-    var url = (window.SAGE_I18N_PATH || './i18n/') + lang + '.json';
+    if (window.__sage_i18n && window.__sage_i18n[lang]) {
+      cache[lang] = window.__sage_i18n[lang];
+      return Promise.resolve(cache[lang]);
+    }
+    var url = (window.SITE_I18N_PATH || './i18n/') + lang + '.json';
     return fetch(url).then(function (r) {
       if (!r.ok) throw new Error('i18n load failed: ' + url);
       return r.json();
@@ -87,8 +91,10 @@
       });
     });
     return load(lang).then(function (dict) {
+      window.Sage.lang = lang;
+      window.Sage.dict = dict;
       applyDict(dict);
-      window.dispatchEvent(new CustomEvent('sage:lang-change', { detail: { lang: lang, dict: dict } }));
+      window.dispatchEvent(new CustomEvent('lang:change', { detail: { lang: lang, dict: dict } }));
     }).catch(function (err) {
       console.warn('[i18n]', err);
       if (lang !== FALLBACK) setLang(FALLBACK, false);
@@ -102,11 +108,11 @@
     setLang(btn.dataset.lang, true);
   });
 
-  var initial = detect();
-  setLang(initial, false);
-
   window.Sage = window.Sage || {};
   window.Sage.setLang = setLang;
   window.Sage.getLang = function () { return localStorage.getItem(STORAGE_KEY) || detect(); };
   window.Sage.SUPPORTED_LANGS = SUPPORTED;
+  window.Sage.lang = detect();
+
+  setLang(window.Sage.lang, false);
 })();

@@ -2,11 +2,16 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <title>Stem · botanical florist · Bratislava</title>
-  <meta name="description" content="Boutique florist in Bratislava — seasonal bouquets, weddings, gifts, same-day delivery. Hand-tied flowers from local growers." />
-  <meta name="theme-color" content="#fbf7f1" />
-  <link rel="stylesheet" href="css/theme.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="meta.title">Stem · botanical studio · Praha</title>
+  <meta name="description" data-i18n-attr="content|meta.description" content="A small botanical studio in Prague. Seasonal bouquets, weddings, weekly subscriptions, workshops." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Stem · botanical studio · Praha" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1487530811176-3780de880c2d?auto=format&fit=crop&w=1600&q=80" />
+  <meta name="theme-color" content="#6a7a55" />
+  <link rel="icon" type="image/svg+xml" href="../../studio/favicon.svg" />
+  <link rel="stylesheet" href="css/theme.css?v=3" />
+  <link rel="stylesheet" href="css/layout.css?v=3" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
   <script type="application/ld+json">
@@ -14,43 +19,41 @@
     "@context": "https://schema.org",
     "@type": "Florist",
     "name": "Stem",
-    "url": "https://stem.example",
-    "telephone": "+421 900 555 666",
-    "email": "hello@stem.flowers",
-    "address": { "@type": "PostalAddress", "streetAddress": "Panská 8", "addressLocality": "Bratislava", "postalCode": "811 01", "addressCountry": "SK" },
-    "openingHours": ["Mo-Fr 09:00-19:00", "Sa 09:00-15:00"],
+    "description": "A small botanical studio in Prague — seasonal bouquets, weddings and workshops.",
+    "url": "https://stem.studio",
+    "telephone": "+420770222333",
+    "email": "ahoj@stem.studio",
+    "address": { "@type": "PostalAddress", "streetAddress": "Slezská 30", "addressLocality": "Praha 2", "postalCode": "120 00", "addressCountry": "CZ" },
     "priceRange": "€€"
   }
   </script>
 </head>
 <body>
 
-  <a href="#main" class="skip-to-content">Skip to content</a>
-  <div class="page-loader"><span class="page-loader__brand">Stem<i>.</i></span></div>
-  <div class="reading-progress" aria-hidden="true"></div>
+  <a href="#main-content" class="skip-to-content" data-i18n="a11y.skip">Skip to content</a>
+  <div class="page-loader"><span class="page-loader__brand" style="font-style:italic">Stem</span></div>
 
-  <!-- Same-day delivery banner -->
-  <div class="delivery-strip">
-    <span data-i18n="delivery.text" data-i18n-html="true">🌿 Same-day delivery in Bratislava · Order by 13:00 · <a href="#shop" style="color:white;text-decoration:underline">Shop now</a></span>
-  </div>
+  <div class="delivery-strip" data-i18n-html="true" data-i18n="delivery.strip">Same-day delivery in Prague · order before <strong>14:00</strong></div>
 
-  <nav class="navbar" aria-label="Main navigation">
+  <div class="reading-progress"></div>
+
+  <nav class="navbar">
     <div class="container">
-      <a href="index.html" class="navbar-brand"><span class="navbar-brand__dot"></span><span>Stem<i>.</i></span></a>
+      <a href="index.html" class="navbar-brand" style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.5rem;text-transform:lowercase;letter-spacing:0"><span class="navbar-brand__dot"></span><span>Stem</span></a>
       <ul class="navbar-links">
-        <li><a href="#shop" data-i18n="nav.shop">Shop</a></li>
-        <li><a href="#weddings" data-i18n="nav.weddings">Weddings</a></li>
-        <li><a href="#workshops" data-i18n="nav.workshops">Workshops</a></li>
-        <li><a href="#story" data-i18n="nav.story">Our story</a></li>
-        <li><a href="#contact" data-i18n="nav.contact">Visit us</a></li>
+        <li><a href="shop.html" data-i18n="nav.shop">shop</a></li>
+        <li><a href="#subscribe" data-i18n="nav.sub">subscribe</a></li>
+        <li><a href="weddings.html" data-i18n="nav.weddings">weddings</a></li>
+        <li><a href="workshops.html" data-i18n="nav.workshops">workshops</a></li>
+        <li><a href="#studio" data-i18n="nav.studio">studio</a></li>
       </ul>
       <div class="navbar-right">
         <div class="lang-switch" data-lang-switch>
-          <button class="lang-switch__btn" data-lang="en">EN</button>
           <button class="lang-switch__btn" data-lang="sk">SK</button>
           <button class="lang-switch__btn" data-lang="cs">CS</button>
+          <button class="lang-switch__btn" data-lang="en">EN</button>
         </div>
-        <a href="#shop" class="navbar-cta" data-i18n="nav.cta">Order flowers</a>
+        <a href="shop.html" class="navbar-cta" data-i18n="nav.cta">order now</a>
         <button class="navbar-hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
       </div>
     </div>
@@ -58,208 +61,371 @@
 
   <div class="mobile-menu">
     <ul class="mobile-menu__links">
-      <li><a href="#shop" data-i18n="nav.shop">Shop</a></li>
-      <li><a href="#weddings" data-i18n="nav.weddings">Weddings</a></li>
-      <li><a href="#workshops" data-i18n="nav.workshops">Workshops</a></li>
-      <li><a href="#story" data-i18n="nav.story">Our story</a></li>
-      <li><a href="#contact" data-i18n="nav.contact">Visit us</a></li>
+      <li><a href="shop.html" data-i18n="nav.shop">shop</a></li>
+      <li><a href="#subscribe" data-i18n="nav.sub">subscribe</a></li>
+      <li><a href="weddings.html" data-i18n="nav.weddings">weddings</a></li>
+      <li><a href="workshops.html" data-i18n="nav.workshops">workshops</a></li>
+      <li><a href="#studio" data-i18n="nav.studio">studio</a></li>
     </ul>
-    <div class="mobile-menu__cta">
-      <a href="#shop" class="btn btn-accent" data-i18n="nav.cta">Order flowers</a>
+    <div class="lang-switch" data-lang-switch role="group" aria-label="Language">
+      <button class="lang-switch__btn" data-lang="en">EN</button>
+      <button class="lang-switch__btn" data-lang="sk">SK</button>
+      <button class="lang-switch__btn" data-lang="cs">CS</button>
     </div>
+
+    <div class="mobile-menu__cta"><a href="shop.html" class="btn btn-accent" data-i18n="nav.cta">order now</a></div>
   </div>
 
-  <!-- HERO -->
-  <header class="banner" id="main">
-    <div class="banner__bg" aria-hidden="true">
-      <img src="https://images.unsplash.com/photo-1487530811176-3780de880c2d?auto=format&fit=crop&w=2400&q=82" alt="" />
-    </div>
+  <!-- ───── HERO: botanical close-up ───── -->
+  <header class="banner hero--botanical" id="main-content">
+    <div class="banner__bg"><img src="https://images.unsplash.com/photo-1487530811176-3780de880c2d?auto=format&fit=crop&w=2400&q=82" alt="" /></div>
     <div class="banner__veil"></div>
     <div class="container">
-      <p class="hero-label" data-i18n="hero.label">Botanical florist · Bratislava Old Town</p>
-      <h1>
-        <span class="hero-line" data-i18n="hero.line1">Flowers,</span>
-        <span class="hero-line hero-line--italic" data-i18n="hero.line2">picked in the morning,</span>
-        <span class="hero-line" data-i18n="hero.line3">on your table by lunch.</span>
-      </h1>
-      <div class="hero-rule"></div>
-      <h2 data-i18n="hero.sub">Stem is a small flower shop on Panská in the Old Town. We work with local growers, source seasonally, and tie every bouquet by hand. Same-day delivery across Bratislava.</h2>
+      <p class="hero-eyebrow" data-i18n="hero.eyebrow">A botanical studio · Praha</p>
+      <h1 data-i18n-html="true" data-i18n="hero.title">Seasonal flowers, <span class="ampersand">&amp;</span> a quiet studio</h1>
+      <h2 data-i18n="hero.sub">Hand-tied seasonal bouquets, romantic weddings and a workshop once a month. We grow what we can — the rest from local Czech farms. Never anything flown in.</h2>
       <div class="hero-buttons">
-        <a href="#shop" class="btn btn-accent btn-lg" data-i18n="hero.btn_primary">Shop bouquets</a>
-        <a href="#weddings" class="btn btn-ghost-light btn-lg" data-i18n="hero.btn_secondary">Wedding inquiries</a>
+        <a href="shop.html" class="btn btn-accent btn-lg" data-i18n="hero.btn1">order a bouquet</a>
+        <a href="weddings.html" class="btn btn-ghost-light btn-lg" data-i18n="hero.btn2">weddings</a>
       </div>
+      <p class="hero-tagline" data-i18n-html="true" data-i18n="hero.tag">seasons <span>/</span> events <span>/</span> studio <span>/</span> shop</p>
     </div>
-    <a href="#season" class="scroll-indicator" aria-label="Scroll"><span class="scroll-indicator__line"></span></a>
+    <a href="#services" class="scroll-indicator" aria-label="Scroll"><span class="scroll-indicator__line"></span></a>
   </header>
 
-  <!-- SEASONAL COLLECTION (innovative feature: rotating monthly) -->
-  <section class="section fade-in" id="season">
+  <!-- ───── SERVICES OVERVIEW — clear list of what we do ───── -->
+  <section class="services-overview fade-in" id="services">
     <div class="container">
-      <div class="section-header">
-        <span class="section-label" data-i18n="season.label">In season this month</span>
-        <h2 data-i18n="season.title">May · the garden in full bloom</h2>
-        <p data-i18n="season.text">Each bouquet is composed from what's flowering this week. Below, a snapshot of what we're working with right now — peonies, ranunculus, lilac, garden roses.</p>
+      <div class="services-overview__head">
+        <span class="section-label" data-i18n="services.label">What we do</span>
+        <h2 data-i18n-html="true" data-i18n="services.title">Four ways we work with <strong>flowers</strong></h2>
+        <p data-i18n="services.lead">Pick what fits — order a bouquet today, set up a weekly delivery, learn to make your own, or plan a wedding with us.</p>
       </div>
-
-      <div class="season-grid stagger-children">
-        <a href="#shop" class="season-card">
-          <div class="season-card__media"><img loading="lazy" src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=800&q=80" alt="Peony bouquet" /></div>
-          <div class="season-card__body">
-            <span class="season-card__tag" data-i18n="season.c1.tag">Signature</span>
-            <h3 data-i18n="season.c1.title">Peony Party</h3>
-            <p class="season-card__price">€48</p>
+      <div class="services-grid">
+        <a class="service-card" href="#shop">
+          <div class="service-card__icon"><i class="fa-solid fa-bag-shopping"></i></div>
+          <h3 class="service-card__name" data-i18n="services.s1.name">Bouquets</h3>
+          <p class="service-card__desc" data-i18n="services.s1.desc">Hand-tied seasonal bouquets in four sizes. Delivered same day across Prague.</p>
+          <div class="service-card__foot">
+            <span class="service-card__price" data-i18n="services.s1.price">From 650 Kč</span>
+            <span class="service-card__cta" data-i18n="services.s1.cta">Order →</span>
           </div>
         </a>
-        <a href="#shop" class="season-card">
-          <div class="season-card__media"><img loading="lazy" src="https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?auto=format&fit=crop&w=800&q=80" alt="Garden mix bouquet" /></div>
-          <div class="season-card__body">
-            <span class="season-card__tag" data-i18n="season.c2.tag">Seasonal</span>
-            <h3 data-i18n="season.c2.title">Garden mix</h3>
-            <p class="season-card__price">€38</p>
+        <a class="service-card service-card--feat" href="#subscribe">
+          <div class="service-card__icon"><i class="fa-solid fa-calendar-week"></i></div>
+          <span class="service-card__badge" data-i18n="services.s2.badge">Most loved</span>
+          <h3 class="service-card__name" data-i18n="services.s2.name">Subscriptions</h3>
+          <p class="service-card__desc" data-i18n="services.s2.desc">Weekly, fortnightly or monthly fresh flowers — at home or in the office. Pause anytime.</p>
+          <div class="service-card__foot">
+            <span class="service-card__price" data-i18n="services.s2.price">From 540 Kč/week</span>
+            <span class="service-card__cta" data-i18n="services.s2.cta">Set up →</span>
           </div>
         </a>
-        <a href="#shop" class="season-card">
-          <div class="season-card__media"><img loading="lazy" src="https://images.unsplash.com/photo-1525310072745-f49212b5ac6d?auto=format&fit=crop&w=800&q=80" alt="Pastel ranunculus" /></div>
-          <div class="season-card__body">
-            <span class="season-card__tag" data-i18n="season.c3.tag">Soft palette</span>
-            <h3 data-i18n="season.c3.title">Pastel romance</h3>
-            <p class="season-card__price">€42</p>
+        <a class="service-card" href="workshops.html">
+          <div class="service-card__icon"><i class="fa-solid fa-leaf"></i></div>
+          <h3 class="service-card__name" data-i18n="services.s3.name">Workshops</h3>
+          <p class="service-card__desc" data-i18n="services.s3.desc">Once a month at the studio. Small groups, real flowers, espresso and natural wine included.</p>
+          <div class="service-card__foot">
+            <span class="service-card__price" data-i18n="services.s3.price">From 1 650 Kč</span>
+            <span class="service-card__cta" data-i18n="services.s3.cta">See dates →</span>
           </div>
         </a>
-        <a href="#shop" class="season-card">
-          <div class="season-card__media"><img loading="lazy" src="https://images.unsplash.com/photo-1587814969392-f88a09ed4d51?auto=format&fit=crop&w=800&q=80" alt="Wildflower bouquet" /></div>
-          <div class="season-card__body">
-            <span class="season-card__tag" data-i18n="season.c4.tag">Field-style</span>
-            <h3 data-i18n="season.c4.title">Wildflower bunch</h3>
-            <p class="season-card__price">€32</p>
+        <a class="service-card" href="weddings.html">
+          <div class="service-card__icon"><i class="fa-solid fa-heart"></i></div>
+          <h3 class="service-card__name" data-i18n="services.s4.name">Weddings</h3>
+          <p class="service-card__desc" data-i18n="services.s4.desc">Garden-grown bridal flowers and full venue installations. 6–10 couples per season.</p>
+          <div class="service-card__foot">
+            <span class="service-card__price" data-i18n="services.s4.price">By inquiry</span>
+            <span class="service-card__cta" data-i18n="services.s4.cta">Send brief →</span>
           </div>
         </a>
-      </div>
-      <div style="text-align:center;margin-top:40px">
-        <a href="#shop" class="btn btn-secondary" data-i18n="season.cta">See all bouquets →</a>
       </div>
     </div>
   </section>
 
-  <!-- SHOP CATEGORIES -->
-  <section class="section section--alt fade-in" id="shop">
+  <!-- ───── THIS WEEK'S BLOOMS ───── -->
+  <section class="blooms fade-in" id="blooms">
+    <div class="blooms__head">
+      <h2 class="blooms__title" data-i18n-html="true" data-i18n="blooms.title">What's blooming <strong>this week</strong></h2>
+      <span class="blooms__week" data-i18n="blooms.week">Week 19 · 6 — 12 May</span>
+    </div>
+    <div class="blooms__strip">
+      <article class="bloom-card">
+        <img class="bloom-card__photo" loading="lazy" src="https://images.unsplash.com/photo-1518895949257-7621c3c786d7?auto=format&fit=crop&w=600&q=82" alt="Peonies" />
+        <div class="bloom-card__body">
+          <h3 class="bloom-card__name" data-i18n="blooms.b1.name">Peonies</h3>
+          <p class="bloom-card__latin" data-i18n="blooms.b1.latin">Paeonia lactiflora</p>
+          <p class="bloom-card__meta"><span data-i18n="blooms.b1.season">in season</span><span data-i18n="blooms.b1.origin">Mělník, CZ</span></p>
+        </div>
+      </article>
+      <article class="bloom-card">
+        <img class="bloom-card__photo" loading="lazy" src="https://images.unsplash.com/photo-1487530811176-3780de880c2d?auto=format&fit=crop&w=600&q=82" alt="Ranunculus" />
+        <div class="bloom-card__body">
+          <h3 class="bloom-card__name" data-i18n="blooms.b2.name">Ranunculus</h3>
+          <p class="bloom-card__latin" data-i18n="blooms.b2.latin">Ranunculus asiaticus</p>
+          <p class="bloom-card__meta"><span data-i18n="blooms.b2.season">last week</span><span data-i18n="blooms.b2.origin">Polabí, CZ</span></p>
+        </div>
+      </article>
+      <article class="bloom-card">
+        <img class="bloom-card__photo" loading="lazy" src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=600&q=82" alt="Sweet pea" />
+        <div class="bloom-card__body">
+          <h3 class="bloom-card__name" data-i18n="blooms.b3.name">Sweet pea</h3>
+          <p class="bloom-card__latin" data-i18n="blooms.b3.latin">Lathyrus odoratus</p>
+          <p class="bloom-card__meta"><span data-i18n="blooms.b3.season">just in</span><span data-i18n="blooms.b3.origin">Naše farma</span></p>
+        </div>
+      </article>
+      <article class="bloom-card">
+        <img class="bloom-card__photo" loading="lazy" src="https://images.unsplash.com/photo-1494972308805-463bc619d34e?auto=format&fit=crop&w=600&q=82" alt="Garden roses" />
+        <div class="bloom-card__body">
+          <h3 class="bloom-card__name" data-i18n="blooms.b4.name">Garden roses</h3>
+          <p class="bloom-card__latin" data-i18n="blooms.b4.latin">Rosa David Austin</p>
+          <p class="bloom-card__meta"><span data-i18n="blooms.b4.season">in season</span><span data-i18n="blooms.b4.origin">our garden</span></p>
+        </div>
+      </article>
+      <article class="bloom-card">
+        <img class="bloom-card__photo" loading="lazy" src="https://images.unsplash.com/photo-1469259943454-aa100abba749?auto=format&fit=crop&w=600&q=82" alt="Lilac" />
+        <div class="bloom-card__body">
+          <h3 class="bloom-card__name" data-i18n="blooms.b5.name">Lilac</h3>
+          <p class="bloom-card__latin" data-i18n="blooms.b5.latin">Syringa vulgaris</p>
+          <p class="bloom-card__meta"><span data-i18n="blooms.b5.season">final week</span><span data-i18n="blooms.b5.origin">our garden</span></p>
+        </div>
+      </article>
+      <article class="bloom-card">
+        <img class="bloom-card__photo" loading="lazy" src="https://images.unsplash.com/photo-1502977249166-824b3a8a4d6d?auto=format&fit=crop&w=600&q=82" alt="Tulips" />
+        <div class="bloom-card__body">
+          <h3 class="bloom-card__name" data-i18n="blooms.b6.name">Parrot tulips</h3>
+          <p class="bloom-card__latin" data-i18n="blooms.b6.latin">Tulipa Apricot Parrot</p>
+          <p class="bloom-card__meta"><span data-i18n="blooms.b6.season">final days</span><span data-i18n="blooms.b6.origin">Mělník</span></p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <div class="botanical-divider"><span class="botanical-divider__leaf">✿</span></div>
+
+  <!-- ───── BOUQUETS SHOP ───── -->
+  <section class="section fade-in" id="shop">
     <div class="container">
-      <div class="section-header">
+      <div class="section-header section-header--botanical">
         <span class="section-label" data-i18n="shop.label">Shop</span>
-        <h2 data-i18n="shop.title">Choose by occasion</h2>
-        <p data-i18n="shop.text">Same-day delivery in Bratislava if you order before 13:00. Recipient note included free with every order. International shipping by request.</p>
+        <h2 data-i18n-html="true" data-i18n="shop.title">Hand-tied. Same day. In season.</h2>
+        <p data-i18n="shop.lead">Hand-tied, wrapped in unbleached paper, delivered same-day in Prague. Each bouquet is one-off — what's in season the day you order.</p>
       </div>
-
-      <div class="cards stagger-children">
-        <article class="icon-card"><span class="icon-card__num"><i class="fa-solid fa-heart"></i></span><h3 data-i18n="shop.s1.title">Just because</h3><p data-i18n="shop.s1.text">Hand-tied seasonal bouquets from €28. Delivered with a personal note.</p></article>
-        <article class="icon-card"><span class="icon-card__num"><i class="fa-solid fa-cake-candles"></i></span><h3 data-i18n="shop.s2.title">Birthdays &amp; celebrations</h3><p data-i18n="shop.s2.text">Bigger, brighter, with extras like wine, candles or a cake.</p></article>
-        <article class="icon-card"><span class="icon-card__num"><i class="fa-solid fa-mug-saucer"></i></span><h3 data-i18n="shop.s3.title">Get well / sympathy</h3><p data-i18n="shop.s3.text">Soft palettes, calmer shapes, suitable for hospitals and homes.</p></article>
-        <article class="icon-card"><span class="icon-card__num"><i class="fa-solid fa-briefcase"></i></span><h3 data-i18n="shop.s4.title">Office &amp; subscriptions</h3><p data-i18n="shop.s4.text">Weekly fresh flowers for your reception, café or studio. From €60/week.</p></article>
-        <article class="icon-card"><span class="icon-card__num"><i class="fa-solid fa-house-chimney-window"></i></span><h3 data-i18n="shop.s5.title">Dried &amp; preserved</h3><p data-i18n="shop.s5.text">For interiors that need a long-lasting moment of botanical detail.</p></article>
-        <article class="icon-card"><span class="icon-card__num"><i class="fa-solid fa-gift"></i></span><h3 data-i18n="shop.s6.title">Gift bundles</h3><p data-i18n="shop.s6.text">Bouquet + chocolate + handwritten card, ready to give.</p></article>
+      <div class="season-grid">
+        <a class="season-card" href="#">
+          <div class="season-card__media"><img loading="lazy" src="https://images.unsplash.com/photo-1487530811176-3780de880c2d?auto=format&fit=crop&w=900&q=82" alt="" /></div>
+          <div class="season-card__body">
+            <span class="season-card__tag" data-i18n="shop.s1.tag">Small</span>
+            <h3 style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.5rem;font-weight:500;margin:8px 0 6px" data-i18n="shop.s1.name">The Letter</h3>
+            <p style="font-style:italic;font-family:'Cormorant Garamond',serif;font-size:1rem;color:var(--ink-soft);margin:0 0 12px" data-i18n="shop.s1.desc">A short, sweet posy — for a reason or no reason at all.</p>
+            <p class="season-card__price" data-i18n="shop.s1.price">650 Kč</p>
+          </div>
+        </a>
+        <a class="season-card" href="#">
+          <div class="season-card__media"><img loading="lazy" src="https://images.unsplash.com/photo-1518895949257-7621c3c786d7?auto=format&fit=crop&w=900&q=82" alt="" /></div>
+          <div class="season-card__body">
+            <span class="season-card__tag" data-i18n="shop.s2.tag">Medium</span>
+            <h3 style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.5rem;font-weight:500;margin:8px 0 6px" data-i18n="shop.s2.name">The Sunday</h3>
+            <p style="font-style:italic;font-family:'Cormorant Garamond',serif;font-size:1rem;color:var(--ink-soft);margin:0 0 12px" data-i18n="shop.s2.desc">A generous bouquet for the dinner table or a kind gesture.</p>
+            <p class="season-card__price" data-i18n="shop.s2.price">1 250 Kč</p>
+          </div>
+        </a>
+        <a class="season-card" href="#">
+          <div class="season-card__media"><img loading="lazy" src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=900&q=82" alt="" /></div>
+          <div class="season-card__body">
+            <span class="season-card__tag" data-i18n="shop.s3.tag">Signature</span>
+            <h3 style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.5rem;font-weight:500;margin:8px 0 6px" data-i18n="shop.s3.name">The Studio</h3>
+            <p style="font-style:italic;font-family:'Cormorant Garamond',serif;font-size:1rem;color:var(--ink-soft);margin:0 0 12px" data-i18n="shop.s3.desc">Our florist's choice of the week — the one we'd take home ourselves.</p>
+            <p class="season-card__price" data-i18n="shop.s3.price">1 950 Kč</p>
+          </div>
+        </a>
+        <a class="season-card" href="#">
+          <div class="season-card__media"><img loading="lazy" src="https://images.unsplash.com/photo-1494972308805-463bc619d34e?auto=format&fit=crop&w=900&q=82" alt="" /></div>
+          <div class="season-card__body">
+            <span class="season-card__tag" data-i18n="shop.s4.tag">Luxury</span>
+            <h3 style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.5rem;font-weight:500;margin:8px 0 6px" data-i18n="shop.s4.name">The Garden</h3>
+            <p style="font-style:italic;font-family:'Cormorant Garamond',serif;font-size:1rem;color:var(--ink-soft);margin:0 0 12px" data-i18n="shop.s4.desc">Our most extravagant bouquet — built around peonies, garden roses, sweet pea.</p>
+            <p class="season-card__price" data-i18n="shop.s4.price">3 200 Kč</p>
+          </div>
+        </a>
       </div>
     </div>
   </section>
 
-  <!-- WEDDINGS BLOCK (innovative: dedicated wedding services with consultation) -->
+  <div class="sprig-divider" aria-hidden="true"><span class="sprig-divider__icon"></span></div>
+
+  <!-- ───── SUBSCRIPTIONS ───── -->
+  <section class="subscriptions fade-in" id="subscribe">
+    <div class="container">
+      <div class="section-header section-header--botanical">
+        <span class="section-label" data-i18n="sub.label">Subscriptions</span>
+        <h2 data-i18n-html="true" data-i18n="sub.title">Subscribe to <strong>fresh flowers</strong></h2>
+        <p data-i18n="sub.lead">A subscription is the slow-flower way to keep flowers in your home or office. Pause anytime, change frequency, or skip a delivery.</p>
+      </div>
+
+      <div class="sub-table">
+        <div class="sub-table__row">
+          <div class="sub-table__cell sub-table__head">&nbsp;</div>
+          <div class="sub-table__cell sub-table__head" data-i18n="sub.t3.title">Weekly</div>
+          <div class="sub-table__cell sub-table__head sub-table__head--feat" data-badge="Most loved" data-i18n-attr="data-badge|sub.t2.badge" data-i18n="sub.t2.title">Fortnightly</div>
+          <div class="sub-table__cell sub-table__head" data-i18n="sub.t1.title">Monthly</div>
+        </div>
+        <div class="sub-table__row">
+          <div class="sub-table__cell sub-table__feat" data-i18n="sub.row1">Frequency</div>
+          <div class="sub-table__cell sub-table__price">540 Kč<small data-i18n="sub.t3.freq">every week</small></div>
+          <div class="sub-table__cell sub-table__price sub-table__price--feat">580 Kč<small data-i18n="sub.t2.freq">every 2 weeks</small></div>
+          <div class="sub-table__cell sub-table__price">650 Kč<small data-i18n="sub.t1.freq">every 4 weeks</small></div>
+        </div>
+        <div class="sub-table__row">
+          <div class="sub-table__cell sub-table__feat" data-i18n="sub.row2">Bouquet size</div>
+          <div class="sub-table__cell" data-i18n="sub.t3.size">Choice each week</div>
+          <div class="sub-table__cell" data-i18n="sub.t2.size">Sunday bouquet</div>
+          <div class="sub-table__cell" data-i18n="sub.t1.size">Letter posy</div>
+        </div>
+        <div class="sub-table__row">
+          <div class="sub-table__cell sub-table__feat" data-i18n="sub.row3">Free delivery</div>
+          <div class="sub-table__cell"><i class="fa-solid fa-check" style="color:var(--accent)"></i></div>
+          <div class="sub-table__cell"><i class="fa-solid fa-check" style="color:var(--accent)"></i></div>
+          <div class="sub-table__cell"><i class="fa-solid fa-check" style="color:var(--accent)"></i></div>
+        </div>
+        <div class="sub-table__row">
+          <div class="sub-table__cell sub-table__feat" data-i18n="sub.row4">Pause / skip</div>
+          <div class="sub-table__cell" data-i18n="sub.row4_value">Anytime, free</div>
+          <div class="sub-table__cell" data-i18n="sub.row4_value">Anytime, free</div>
+          <div class="sub-table__cell" data-i18n="sub.row4_value">Anytime, free</div>
+        </div>
+        <div class="sub-table__row">
+          <div class="sub-table__cell sub-table__feat" data-i18n="sub.row5">Workshop discount</div>
+          <div class="sub-table__cell" data-i18n="sub.t3.workshop">−20%</div>
+          <div class="sub-table__cell" data-i18n="sub.t2.workshop">−15%</div>
+          <div class="sub-table__cell"><i class="fa-solid fa-xmark" style="color:var(--muted)"></i></div>
+        </div>
+        <div class="sub-table__row">
+          <div class="sub-table__cell sub-table__cta">&nbsp;</div>
+          <div class="sub-table__cell sub-table__cta"><a href="#" data-i18n="sub.cta">subscribe</a></div>
+          <div class="sub-table__cell sub-table__cta sub-table__cta--feat"><a href="#" data-i18n="sub.cta">subscribe</a></div>
+          <div class="sub-table__cell sub-table__cta"><a href="#" data-i18n="sub.cta">subscribe</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="sprig-divider" aria-hidden="true"><span class="sprig-divider__icon"></span></div>
+
+  <!-- ───── WEDDINGS ───── -->
   <section class="section fade-in" id="weddings">
     <div class="container">
-      <div class="wedding-block">
-        <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=2000&q=80" alt="Wedding florals" />
-        <div class="wedding-block__inner">
-          <span class="section-label" style="color:rgba(255,255,255,0.85)" data-i18n="wedding.label">Weddings &amp; events</span>
-          <h2 data-i18n="wedding.title">For the days that matter most.</h2>
-          <p data-i18n="wedding.text">Bridal bouquets, ceremony arches, reception centerpieces, boutonnières — everything tied with care. We work with around 20 weddings a year, so we never overbook. Free 60-minute consultation, no obligation.</p>
-          <a href="mailto:weddings@stem.flowers" class="btn btn-accent btn-lg" data-i18n="wedding.cta">Request a wedding consult</a>
+      <div class="wedding-showcase">
+        <div class="wedding-showcase__media">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=1100&q=82" alt="" />
+          <img loading="lazy" src="https://images.unsplash.com/photo-1525772764200-be829a350797?auto=format&fit=crop&w=600&q=82" alt="" />
+          <img loading="lazy" src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=600&q=82" alt="" />
+        </div>
+        <div class="wedding-showcase__copy">
+          <span class="section-label" style="font-family:var(--sans);font-size:0.7rem;letter-spacing:0.42em;color:var(--accent);font-weight:500" data-i18n="wed.label">Weddings &amp; events</span>
+          <h2 data-i18n-html="true" data-i18n="wed.title">Flowers that look <strong>just-picked</strong></h2>
+          <p data-i18n="wed.p1">We design romantic, soft, garden-grown weddings — bouquets, ceremony arches, table runs and full venue installations. We work with 6–10 couples per season.</p>
+          <p data-i18n="wed.p2">First, a coffee. Then a brief, a moodboard, a quote. Once we book your date we hold it — no overbooking, no shortcuts on quality.</p>
+          <a href="mailto:ahoj@stem.studio?subject=Wedding%20inquiry" class="btn btn-secondary" style="margin-top:14px" data-i18n="wed.cta">request a brief →</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- STORY -->
-  <section class="section section--alt fade-in" id="story">
+  <!-- ───── WORKSHOPS ───── -->
+  <section class="section section--alt fade-in" id="workshops">
     <div class="container">
-      <div class="split">
-        <div class="split__media">
-          <img src="https://images.unsplash.com/photo-1561181286-d3fee7d55364?auto=format&fit=crop&w=1100&q=80" alt="Florist at work" />
-        </div>
-        <div>
-          <span class="section-label" data-i18n="story.label">Our story</span>
-          <h2 data-i18n="story.title">Three years in Old Town, one idea.</h2>
-          <p data-i18n="story.p1">We opened Stem in 2022 because we couldn't find a flower shop in Bratislava that worked the way we wanted to work — seasonally, locally, and slowly. Most shops sell the same imported tulips year-round. We don't.</p>
-          <p data-i18n="story.p2">Every Monday we drive to growers in Senec and Pezinok. Whatever's beautiful that week is what we tie that week. If a flower can't survive the journey, it doesn't make the bouquet.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- WORKSHOPS (innovative: events calendar) -->
-  <section class="section fade-in" id="workshops">
-    <div class="container">
-      <div class="section-header">
+      <div class="section-header section-header--botanical">
         <span class="section-label" data-i18n="ws.label">Workshops</span>
-        <h2 data-i18n="ws.title">Learn to tie a bouquet, properly.</h2>
-        <p data-i18n="ws.text">2-hour Saturday workshops, max 8 people. We teach the principles — texture, scale, color, line — and you go home with the bouquet you made.</p>
+        <h2 data-i18n-html="true" data-i18n="ws.title">Make something <strong>with your hands</strong></h2>
+        <p data-i18n="ws.lead">Once-a-month workshops at the studio. Small groups (max 8), seasonal themes, espresso and natural wine included.</p>
       </div>
-
-      <div class="workshops">
-        <div class="workshop-item">
-          <span class="workshop-item__date">May 24</span>
-          <div class="workshop-item__title"><h4 data-i18n="ws.w1.title">Spring garden bouquet</h4><p data-i18n="ws.w1.sub">Saturday · 10:00–12:00 · €58 · 6 spots left</p></div>
-          <a href="mailto:hello@stem.flowers?subject=May%2024%20workshop" class="workshop-item__btn" data-i18n="ws.book">Book →</a>
-        </div>
-        <div class="workshop-item">
-          <span class="workshop-item__date">Jun 14</span>
-          <div class="workshop-item__title"><h4 data-i18n="ws.w2.title">Peony &amp; rose hand-tie</h4><p data-i18n="ws.w2.sub">Saturday · 10:00–12:00 · €68 · 4 spots left</p></div>
-          <a href="mailto:hello@stem.flowers?subject=Jun%2014%20workshop" class="workshop-item__btn" data-i18n="ws.book">Book →</a>
-        </div>
-        <div class="workshop-item">
-          <span class="workshop-item__date">Jun 28</span>
-          <div class="workshop-item__title"><h4 data-i18n="ws.w3.title">Wreath making · summer edition</h4><p data-i18n="ws.w3.sub">Saturday · 10:00–13:00 · €78 · 8 spots left</p></div>
-          <a href="mailto:hello@stem.flowers?subject=Jun%2028%20workshop" class="workshop-item__btn" data-i18n="ws.book">Book →</a>
-        </div>
-        <div class="workshop-item">
-          <span class="workshop-item__date">Jul 12</span>
-          <div class="workshop-item__title"><h4 data-i18n="ws.w4.title">Dried flower arrangement</h4><p data-i18n="ws.w4.sub">Saturday · 10:00–12:30 · €62 · 8 spots left</p></div>
-          <a href="mailto:hello@stem.flowers?subject=Jul%2012%20workshop" class="workshop-item__btn" data-i18n="ws.book">Book →</a>
-        </div>
+      <div class="workshops-cal">
+        <article class="workshop-card">
+          <div class="workshop-card__date">
+            <span class="workshop-card__date-day" data-i18n="ws.w1.day">18</span>
+            <span class="workshop-card__date-mo" data-i18n="ws.w1.mo">May 2026</span>
+          </div>
+          <div class="workshop-card__body">
+            <h3 class="workshop-card__title" data-i18n="ws.w1.title">Spring hand-tied bouquet</h3>
+            <p class="workshop-card__meta"><span data-i18n="ws.w1.time">Sat 10:00</span><span data-i18n="ws.w1.dur">3 hours</span><span data-i18n="ws.w1.spots">2 spots left</span></p>
+            <p class="workshop-card__desc" data-i18n="ws.w1.desc">Build a generous spring bouquet with peonies, ranunculus and our garden's first sweet pea. You leave with the bouquet and the technique.</p>
+            <p class="workshop-card__price" data-i18n="ws.w1.price">1 950 Kč</p>
+            <a href="#" class="workshop-card__cta" data-i18n="ws.cta">reserve a spot →</a>
+          </div>
+        </article>
+        <article class="workshop-card">
+          <div class="workshop-card__date">
+            <span class="workshop-card__date-day" data-i18n="ws.w2.day">15</span>
+            <span class="workshop-card__date-mo" data-i18n="ws.w2.mo">Jun 2026</span>
+          </div>
+          <div class="workshop-card__body">
+            <h3 class="workshop-card__title" data-i18n="ws.w2.title">Garden roses, foam-free</h3>
+            <p class="workshop-card__meta"><span data-i18n="ws.w2.time">Sun 14:00</span><span data-i18n="ws.w2.dur">3 hours</span><span data-i18n="ws.w2.spots">5 spots left</span></p>
+            <p class="workshop-card__desc" data-i18n="ws.w2.desc">A summer arrangement at peak rose season. We work foam-free with kenzans and chicken wire — better for the planet, better for the design.</p>
+            <p class="workshop-card__price" data-i18n="ws.w2.price">1 950 Kč</p>
+            <a href="#" class="workshop-card__cta" data-i18n="ws.cta">reserve a spot →</a>
+          </div>
+        </article>
+        <article class="workshop-card">
+          <div class="workshop-card__date">
+            <span class="workshop-card__date-day" data-i18n="ws.w3.day">06</span>
+            <span class="workshop-card__date-mo" data-i18n="ws.w3.mo">Jul 2026</span>
+          </div>
+          <div class="workshop-card__body">
+            <h3 class="workshop-card__title" data-i18n="ws.w3.title">Summer wreath</h3>
+            <p class="workshop-card__meta"><span data-i18n="ws.w3.time">Sat 10:00</span><span data-i18n="ws.w3.dur">2.5 hours</span><span data-i18n="ws.w3.spots">8 spots</span></p>
+            <p class="workshop-card__desc" data-i18n="ws.w3.desc">A wild summer wreath — herbs, garden flowers, dried elements that age beautifully on your door for months.</p>
+            <p class="workshop-card__price" data-i18n="ws.w3.price">1 650 Kč</p>
+            <a href="#" class="workshop-card__cta" data-i18n="ws.cta">reserve a spot →</a>
+          </div>
+        </article>
       </div>
     </div>
   </section>
 
-  <!-- TESTIMONIALS -->
-  <section class="section section--alt fade-in">
+  <div class="sprig-divider" aria-hidden="true"><span class="sprig-divider__icon"></span></div>
+
+  <!-- ───── STUDIO STORY ───── -->
+  <section class="studio-story fade-in" id="studio">
+    <div class="studio-story__media"><img loading="lazy" src="https://images.unsplash.com/photo-1487070183336-b863922373d4?auto=format&fit=crop&w=1200&q=82" alt="Stem studio" /></div>
+    <div class="studio-story__copy">
+      <p class="studio-story__eyebrow" data-i18n="story.eyebrow">The studio</p>
+      <h2 class="studio-story__title" data-i18n-html="true" data-i18n="story.title">A small <strong>botanical studio</strong> in Vinohrady</h2>
+      <p data-i18n="story.p1">Stem began as a flower stand at the Sunday market in 2019. Today we work from a small studio on Slezská — five florists, one delivery van, one rule: only flowers we'd put in our own home.</p>
+      <p data-i18n="story.p2">We grow what we can in a quarter-hectare garden in Polabí (sweet pea, garden roses, dahlia, herbs) and source the rest from three Czech growers — Mělník, Polabí, and a small farm in South Moravia.</p>
+      <p class="studio-story__sig" data-i18n="story.sig">— Eva, Stem founder</p>
+    </div>
+  </section>
+
+  <!-- ───── REVIEWS ───── -->
+  <section class="section fade-in">
     <div class="container">
-      <div class="section-header">
-        <span class="section-label" data-i18n="rev.label">Reviews</span>
-        <h2 data-i18n="rev.title">What people say</h2>
+      <div class="section-header section-header--botanical">
+        <span class="section-label" data-i18n="rev.label">Kind words</span>
+        <h2 data-i18n-html="true" data-i18n="rev.title">From <strong>our regulars</strong></h2>
       </div>
       <div class="testimonial-slider">
         <div class="testimonial-slider__track">
           <article class="testimonial-card">
             <p class="testimonial-card__stars">★ ★ ★ ★ ★</p>
-            <p class="testimonial-card__quote" data-i18n="rev.t1">"The bouquet for my mum's birthday arrived two hours after I ordered. Looked twice as nice as the photo. She still has it dried on her dresser."</p>
-            <div class="testimonial-card__author"><div><p class="testimonial-card__name">Zuzana</p><p class="testimonial-card__role">Bratislava</p></div></div>
+            <p class="testimonial-card__quote" data-i18n="rev.t1.quote">"The Sunday bouquet has become a Saturday ritual. The flowers last twice as long as anything from a supermarket — and it actually feels seasonal."</p>
+            <div class="testimonial-card__author"><div><p class="testimonial-card__name" data-i18n="rev.t1.name">Andrea</p><p class="testimonial-card__role" data-i18n="rev.t1.role">Subscriber since 2024</p></div></div>
           </article>
           <article class="testimonial-card">
             <p class="testimonial-card__stars">★ ★ ★ ★ ★</p>
-            <p class="testimonial-card__quote" data-i18n="rev.t2">"They did all the florals for our wedding — bridal, ceremony, six tables. Stress-free, on budget, exactly what we discussed. Best money we spent."</p>
-            <div class="testimonial-card__author"><div><p class="testimonial-card__name">Klára &amp; Tomáš</p><p class="testimonial-card__role">Wedding · 2024</p></div></div>
+            <p class="testimonial-card__quote" data-i18n="rev.t2.quote">"Eva designed our wedding flowers and I cried twice — once at the ceremony, once when I saw the bouquet in the morning."</p>
+            <div class="testimonial-card__author"><div><p class="testimonial-card__name" data-i18n="rev.t2.name">Tereza &amp; Michal</p><p class="testimonial-card__role" data-i18n="rev.t2.role">Wedding · 2025</p></div></div>
           </article>
           <article class="testimonial-card">
             <p class="testimonial-card__stars">★ ★ ★ ★ ★</p>
-            <p class="testimonial-card__quote" data-i18n="rev.t3">"We have weekly subscription for our reception desk. Different combinations every Monday, never stale. Worth every euro."</p>
-            <div class="testimonial-card__author"><div><p class="testimonial-card__name">Studio Kruh</p><p class="testimonial-card__role">Office subscription</p></div></div>
+            <p class="testimonial-card__quote" data-i18n="rev.t3.quote">"Did the spring workshop. Took the bouquet home, refilled the water for two weeks, and learned more in three hours than from a year of Pinterest."</p>
+            <div class="testimonial-card__author"><div><p class="testimonial-card__name" data-i18n="rev.t3.name">Lucia</p><p class="testimonial-card__role" data-i18n="rev.t3.role">Workshop · 2025</p></div></div>
           </article>
           <article class="testimonial-card">
             <p class="testimonial-card__stars">★ ★ ★ ★ ★</p>
-            <p class="testimonial-card__quote" data-i18n="rev.t4">"I did a wreath workshop with Stem for my hen-do. We were 8, drank wine, made wreaths, ate snacks. Best 3 hours."</p>
-            <div class="testimonial-card__author"><div><p class="testimonial-card__name">Linda</p><p class="testimonial-card__role">Workshop · 2024</p></div></div>
-          </article>
-          <article class="testimonial-card">
-            <p class="testimonial-card__stars">★ ★ ★ ★ ★</p>
-            <p class="testimonial-card__quote" data-i18n="rev.t5">"My sympathy bouquet was just right — soft, small, no cliché lilies. They got it without me having to explain."</p>
-            <div class="testimonial-card__author"><div><p class="testimonial-card__name">Martin</p><p class="testimonial-card__role">Sympathy delivery</p></div></div>
+            <p class="testimonial-card__quote" data-i18n="rev.t4.quote">"The Garden bouquet for my mum's birthday was unreasonably beautiful. She said it looked like a painting. She's not wrong."</p>
+            <div class="testimonial-card__author"><div><p class="testimonial-card__name" data-i18n="rev.t4.name">Petra</p><p class="testimonial-card__role" data-i18n="rev.t4.role">Customer · 2025</p></div></div>
           </article>
         </div>
         <div class="testimonial-slider__nav">
@@ -271,29 +437,29 @@
     </div>
   </section>
 
-  <!-- CONTACT / VISIT -->
-  <section class="section fade-in" id="contact">
+  <!-- ───── CONTACT ───── -->
+  <section class="section section--dark fade-in" id="contact">
     <div class="container">
-      <div class="section-header">
-        <span class="section-label" data-i18n="contact.label">Visit us</span>
-        <h2 data-i18n="contact.title">Open Monday to Saturday</h2>
-        <p data-i18n="contact.text">Walk-ins always welcome. For weddings and bigger orders please email ahead so we can keep enough flowers for you.</p>
-      </div>
-      <div class="two-up" style="margin-top:40px">
+      <div class="split">
         <div>
-          <h3 style="margin-bottom:14px" data-i18n="contact.hours_title">Hours</h3>
-          <ul style="list-style:none;padding:0;margin:0;color:var(--ink-soft);line-height:2">
-            <li data-i18n="contact.h1">Mon–Fri · 9:00 – 19:00</li>
-            <li data-i18n="contact.h2">Saturday · 9:00 – 15:00</li>
-            <li data-i18n="contact.h3">Sunday · closed (deliveries on request)</li>
-          </ul>
+          <span class="section-label" style="color:var(--accent);font-family:var(--sans);letter-spacing:0.42em;font-size:0.7rem;font-weight:500" data-i18n="contact.label">Visit the studio</span>
+          <h2 style="font-family:'Cormorant Garamond',serif;font-style:italic;color:white;font-size:clamp(2rem,4vw,3rem);margin:14px 0 18px" data-i18n-html="true" data-i18n="contact.title">Slezská 30, <strong>Prague 2</strong></h2>
+          <p style="color:rgba(255,255,255,0.82);max-width:480px;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.15rem;line-height:1.7" data-i18n="contact.text">A 5-minute walk from Náměstí Míru — through the green door at the back of the courtyard. Open Tuesday to Saturday, by appointment outside that.</p>
+          <div style="margin:30px 0;display:flex;flex-direction:column;gap:14px;color:rgba(255,255,255,0.85)">
+            <p><i class="fa-solid fa-phone" style="color:var(--accent);width:24px"></i> <a href="tel:+420770222333" style="color:white;border-bottom:1px solid var(--accent)">+420 770 222 333</a></p>
+            <p><i class="fa-solid fa-envelope" style="color:var(--accent);width:24px"></i> <a href="mailto:ahoj@stem.studio" style="color:white;border-bottom:1px solid var(--accent)">ahoj@stem.studio</a></p>
+            <p><i class="fa-brands fa-instagram" style="color:var(--accent);width:24px"></i> @stem.studio</p>
+          </div>
         </div>
         <div>
-          <h3 style="margin-bottom:14px" data-i18n="contact.find_title">Where to find us</h3>
-          <p style="margin:0 0 6px"><strong>Panská 8, 811 01 Bratislava</strong></p>
-          <p style="margin:0 0 6px">+421 900 555 666</p>
-          <p style="margin:0 0 18px">hello@stem.flowers</p>
-          <a href="https://maps.google.com/?q=Panská+8+Bratislava" class="btn btn-secondary" target="_blank" rel="noopener" data-i18n="contact.map">Open in Maps →</a>
+          <span class="section-label" style="color:var(--accent);font-family:var(--sans);letter-spacing:0.42em;font-size:0.7rem;font-weight:500" data-i18n="contact.hours_label">Open</span>
+          <ul style="list-style:none;padding:0;margin:14px 0 0;color:rgba(255,255,255,0.86);line-height:2.2;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.15rem">
+            <li data-i18n="contact.h1">Tue — Fri · 10:00 — 19:00</li>
+            <li data-i18n="contact.h2">Saturday · 9:00 — 17:00</li>
+            <li data-i18n="contact.h3">Sun &amp; Mon · closed</li>
+            <li style="color:var(--accent)" data-i18n="contact.h4">Same-day delivery · order before 14:00</li>
+          </ul>
+          <a href="shop.html" class="btn btn-accent" style="margin-top:24px" data-i18n="contact.cta">order online →</a>
         </div>
       </div>
     </div>
@@ -302,21 +468,20 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-bottom">
-        <p class="footer-bottom__copy">© 2026 Stem · made by Sage Studio</p>
+        <p class="footer-bottom__copy" data-i18n="footer.rights">© 2026 Stem · botanical studio</p>
         <div class="footer-bottom__links">
-          <a href="../../studio/index.html">Sage Studio</a>
-          <a href="#shop" data-i18n="nav.shop">Shop</a>
-          <a href="#weddings" data-i18n="nav.weddings">Weddings</a>
+          <a href="https://instagram.com/stem.studio" target="_blank" rel="noopener" data-i18n="nav.social">Instagram</a>
+          <a href="../../studio/privacy.html" data-i18n="footer.privacy">Privacy</a>
         </div>
       </div>
     </div>
   </footer>
 
-  <button class="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+  <button class="back-to-top" aria-label="Top"><i class="fa-solid fa-arrow-up"></i></button>
 
   <div class="cookie-banner" id="cookieBanner">
     <div class="cookie-banner__inner">
-      <p data-i18n="cookies.text">Cookies for a better experience.</p>
+      <p data-i18n="cookies.text">We use cookies for a better experience.</p>
       <div class="cookie-banner__actions">
         <button class="cookie-banner__btn cookie-banner__btn--accept" data-cookie="accept" data-i18n="cookies.accept">Accept</button>
         <button class="cookie-banner__btn cookie-banner__btn--decline" data-cookie="decline" data-i18n="cookies.decline">Decline</button>
@@ -324,7 +489,9 @@
     </div>
   </div>
 
-  <script src="js/i18n.js"></script>
+  <script src="i18n/dict.js?v=25"></script>
+
+  <script src="js/i18n.js?v=4"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

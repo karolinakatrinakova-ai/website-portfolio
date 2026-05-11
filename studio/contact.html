@@ -3,27 +3,26 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <title>Contact · Sage Studio</title>
-  <meta name="description" content="Write to me. A few words about your business and we'll talk." />
+  <title data-i18n="contact.meta_title">Contact · My website portfolio</title>
+  <meta name="description" data-i18n-attr="content|contact.meta_description" content="Write to me. A few words about your business and we'll talk." />
   <meta name="theme-color" content="#f7f3ec" />
-  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg?v=3" />
+  <link rel="stylesheet" href="css/style.css?v=6" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 <body>
-  <a href="#main-content" class="skip-to-content">Skip to content</a>
+  <a href="#main-content" class="skip-to-content" data-i18n="a11y.skip">Skip to content</a>
 
-  <div class="page-loader"><span class="page-loader__brand">Sage<i>.</i></span></div>
+  <div class="page-loader"><span class="page-loader__brand">Karolína K<i>.</i></span></div>
   <div class="reading-progress" aria-hidden="true"></div>
 
   <nav class="navbar scrolled" aria-label="Main navigation">
     <div class="container">
-      <a href="index.html" class="navbar-brand"><span class="navbar-brand__dot"></span><span>Sage<i>.</i></span></a>
+      <a href="index.html" class="navbar-brand"><span class="navbar-brand__dot"></span><span>Karolína K<i>.</i></span></a>
       <ul class="navbar-links">
         <li><a href="index.html" data-i18n="nav.home">Home</a></li>
-        <li><a href="about.html" data-i18n="nav.about">About</a></li>
         <li><a href="services.html" data-i18n="nav.services">Services</a></li>
-        <li><a href="portfolio.html" data-i18n="nav.portfolio">Work</a></li>
+        <li><a href="portfolio.html" data-i18n="nav.portfolio">Demos</a></li>
         <li><a href="contact.html" class="active" data-i18n="nav.contact">Contact</a></li>
       </ul>
       <div class="navbar-right">
@@ -32,7 +31,7 @@
           <button class="lang-switch__btn" data-lang="sk">SK</button>
           <button class="lang-switch__btn" data-lang="cs">CS</button>
         </div>
-        <a href="#contact-form" class="navbar-cta">↓ Form</a>
+        <a href="#contact-form" class="navbar-cta" data-i18n="contact.form_jump">↓ Form</a>
         <button class="navbar-hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
       </div>
     </div>
@@ -40,12 +39,16 @@
 
   <div class="mobile-menu">
     <ul class="mobile-menu__links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="portfolio.html">Work</a></li>
-      <li><a href="contact.html">Contact</a></li>
+      <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+      <li><a href="services.html" data-i18n="nav.services">Services</a></li>
+      <li><a href="portfolio.html" data-i18n="nav.portfolio">Demos</a></li>
+      <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
     </ul>
+    <div class="lang-switch" data-lang-switch role="group" aria-label="Language">
+      <button class="lang-switch__btn" data-lang="en">EN</button>
+      <button class="lang-switch__btn" data-lang="sk">SK</button>
+      <button class="lang-switch__btn" data-lang="cs">CS</button>
+    </div>
   </div>
 
   <main id="main-content" style="padding-top:120px">
@@ -53,7 +56,7 @@
       <div class="container">
         <div class="section-header">
           <span class="section-label" data-i18n="contact.label">Contact</span>
-          <h1 data-i18n="contact.title">Let's talk</h1>
+          <h1 data-i18n="contact.title">Tell me about your business</h1>
           <p data-i18n="contact.text">Write to me about your business and what you'd like to make. I'll reply within a couple of days.</p>
         </div>
       </div>
@@ -63,7 +66,7 @@
       <div class="container">
         <div class="split">
           <div>
-            <h2 style="margin-bottom:24px">Two ways to reach me</h2>
+            <h2 style="margin-bottom:24px" data-i18n="contact.heading">Contact</h2>
 
             <div style="display:flex;flex-direction:column;gap:24px">
               <div style="display:flex;gap:16px;align-items:start">
@@ -71,7 +74,7 @@
                 <div>
                   <p style="font-size:0.78rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--muted);margin:0 0 4px;font-weight:600" data-i18n="contact.email_label">Email</p>
                   <a href="mailto:karolina.katrinakova@gmail.com" style="font-family:var(--serif);font-size:1.4rem;color:var(--ink);border-bottom:1px solid var(--ink)">karolina.katrinakova@gmail.com</a>
-                  <p style="margin-top:6px;color:var(--muted);font-size:0.86rem">Reply within a couple of days.</p>
+                  <p style="margin-top:6px;color:var(--muted);font-size:0.86rem" data-i18n="contact.email_note">Reply within a couple of days.</p>
                 </div>
               </div>
 
@@ -80,13 +83,14 @@
                 <div>
                   <p style="font-size:0.78rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--muted);margin:0 0 4px;font-weight:600" data-i18n="contact.phone_label">Phone</p>
                   <a href="tel:+420774504320" style="font-family:var(--serif);font-size:1.5rem;color:var(--ink);border-bottom:1px solid var(--ink)">+420 774 504 320</a>
-                  <p style="margin-top:6px;color:var(--muted);font-size:0.86rem">Mon–Fri, business hours.</p>
+                  <p style="margin-top:6px;color:var(--muted);font-size:0.86rem" data-i18n="contact.phone_note">Mon–Fri, business hours.</p>
                 </div>
               </div>
             </div>
           </div>
 
           <form class="form-card form" id="leadForm" novalidate>
+            <p style="font-size:0.85rem;color:var(--muted);margin:0 0 16px;line-height:1.6" data-i18n="contact.form.note">After you click send, your email app will open with a pre-filled message. If nothing happens, just write to <b>karolina.katrinakova@gmail.com</b>.</p>
             <label class="form__full"><span data-i18n="contact.form.name">Your name</span><input name="name" required /></label>
             <label><span data-i18n="contact.form.biz">Business / what you do</span><input name="biz" /></label>
             <label><span data-i18n="contact.form.contact">Email or phone</span><input name="contact" required /></label>
@@ -102,10 +106,9 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-bottom" style="padding-top:0;border:0">
-        <p class="footer-bottom__copy" data-i18n="footer.rights">© 2026 Sage Studio · Karolína Katriňáková</p>
+        <p class="footer-bottom__copy" data-i18n="footer.rights">© 2026 Karolína Katriňáková</p>
         <div class="footer-bottom__links">
           <a href="privacy.html" data-i18n="footer.privacy">Privacy</a>
-          <a href="terms.html" data-i18n="footer.terms">Terms</a>
           <a href="index.html" data-i18n="nav.home">Back to home</a>
         </div>
       </div>
@@ -114,25 +117,45 @@
 
   <button class="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
 
+  <script src="i18n/dict.js?v=25"></script>
   <script src="js/i18n.js"></script>
   <script src="js/main.js"></script>
   <script>
     (function () {
       var f = document.getElementById('leadForm');
       var status = f.querySelector('.form__status');
+      var L = (window.Sage && window.Sage.dict) || {};
+      var lang = (window.Sage && window.Sage.lang) || 'en';
+
+      var msgs = {
+        en: {
+          missing: 'Please fill in your name, contact and a short message.',
+          opening: 'Opening your email app. If nothing happens, write to karolina.katrinakova@gmail.com.'
+        },
+        sk: {
+          missing: 'Vyplňte meno, kontakt a krátku správu.',
+          opening: 'Otvára sa váš e-mailový klient. Ak sa nič neudeje, napíšte na karolina.katrinakova@gmail.com.'
+        },
+        cs: {
+          missing: 'Vyplňte jméno, kontakt a krátkou zprávu.',
+          opening: 'Otevírá se váš e-mailový klient. Pokud se nic nestane, napište na karolina.katrinakova@gmail.com.'
+        }
+      };
+
       f.addEventListener('submit', function (e) {
         e.preventDefault();
         var data = Object.fromEntries(new FormData(f));
+        var L = msgs[(window.Sage && window.Sage.lang) || 'en'] || msgs.en;
         if (!data.name || !data.contact || !data.message) {
           status.classList.add('form__status--error');
-          status.textContent = 'Please fill in your name, contact and a short message.';
+          status.textContent = L.missing;
           return;
         }
         var subject = 'Inquiry: ' + data.name + (data.biz ? ' / ' + data.biz : '');
         var body = ['Name: ' + data.name, 'Business: ' + (data.biz || '—'), 'Contact: ' + data.contact, '', data.message].join('\n');
         window.location.href = 'mailto:karolina.katrinakova@gmail.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
         status.classList.remove('form__status--error');
-        status.textContent = 'Opening your email client. If nothing happens, write to karolina.katrinakova@gmail.com.';
+        status.textContent = L.opening;
       });
     })();
   </script>

@@ -1,11 +1,750 @@
 {
-  "meta": { "title": "Café Luna · kavárna a brunch v Brně", "description": "Kavárna, brunch a malé bistro v Brně-Vinohradech. Každou neděli speciální brunch menu. Rezervace online." },
-  "nav": { "home": "Domů", "menu": "Menu", "brunch": "Brunch", "hours": "Otevírací doba", "gallery": "Galerie", "contact": "Kontakt", "book": "Rezervovat stůl" },
-  "announcement": { "text": "Tento víkend: <strong>Pancake Sunday</strong> — banánové lívance s javorovým sirupem. <a href='#kontakt'>Stůl</a>" },
-  "hero": { "label": "Kavárna · brunch · Brno-Vinohrady", "line1": "Káva,", "line2": "ranní brunch,", "line3": "občas víno.", "sub": "Café Luna je místo, kam chodíte na espresso, zůstáváte na šakšuku a vracíte se, protože je vám tu dobře.", "btn1": "Rezervovat stůl", "btn2": "Prohlédnout menu" },
-  "menu": { "label": "Menu", "title": "Co vaříme dnes", "lead": "Kuchyně do 14:00, káva celý den. Plné menu k nahlédnutí na místě — toto jsou nejoblíbenější věci." },
-  "brunch": { "label": "Sunday Brunch", "title": "Každou neděli od 9:00", "text": "Pancakes, šakšuka, eggs benedict a domácí croissant. Fixně 550 Kč na osobu — můžete jíst kolik chcete. Rezervace povinná." },
-  "gallery": { "label": "Galerie", "title": "Atmosféra" },
-  "hours": { "label": "Otevírací doba", "title": "Kdy tu jsme" },
-  "contact": { "label": "Kontakt", "title": "Přijďte se podívat" }
+  "meta": {
+    "title": "Café Luna · pražírna a brunch · Praha",
+    "description": "Malá pražírna, brunch bistro a naturální víno na Vinohradech v Praze. Specialty káva, týdenní single-origin a krátké sezonní menu."
+  },
+  "a11y": {
+    "skip": "Přeskočit na obsah"
+  },
+  "nav": {
+    "today": "Dnes",
+    "brewing": "Právě pražíme",
+    "menu": "Menu",
+    "events": "Program",
+    "sourcing": "Odkud to máme",
+    "visit": "Návštěva",
+    "book": "Rezervovat stůl",
+    "social": "Instagram"
+  },
+  "hero": {
+    "issue": "Vydání · jaro '26 · roč. 04",
+    "title": "Káva pro <em>pomalá</em> rána",
+    "sub": "Café Luna je malá pražírna a brunch bistro na Vinohradské 14. Pražíme každé úterý, brunch podáváme celý víkend a v pátek večer otevíráme naturální víno.",
+    "btn1": "Rezervovat stůl",
+    "btn2": "Zobrazit menu",
+    "m1_label": "Dnes otevřeno",
+    "m1_value": "8:00 — 21:00",
+    "m2_label": "Brunch",
+    "m2_value": "So a Ne",
+    "m3_label": "Pražíme",
+    "m3_value": "Každé úterý"
+  },
+  "today": {
+    "title": "Dnes na <em>tabuli</em>",
+    "date": "— čtvrtek, 7. května",
+    "s1": {
+      "day": "Z baru",
+      "name": "Cardamom flat white",
+      "desc": "Naše ranní pražba vytažená delší dobou, s náznakem kardamomu a hedvábně našlehaným ovesným mlékem.",
+      "price": "95 Kč"
+    },
+    "s2": {
+      "day": "Z kuchyně",
+      "name": "Jarní shakshuka",
+      "desc": "Dvě pošírovaná vejce v omáčce ze zelených rajčat a máty, feta z Polabí a tlustý krajíc kvasového chleba.",
+      "price": "240 Kč"
+    },
+    "s3": {
+      "day": "Z pece",
+      "name": "Rebarborovo-vanilková galette",
+      "desc": "Máslové křehké těsto, rebarbora z Mělníka a křupavá vrstva demerara cukru navrch.",
+      "price": "120 Kč"
+    }
+  },
+  "origin": {
+    "eyebrow": "Právě pražíme · single origin",
+    "title": "Yirgacheffe, <em>Etiopie</em>",
+    "sub": "Upraženo u nás minulé úterý. Na filtru i jako espresso, dokud vystačí.",
+    "n1": "jasmín",
+    "n2": "bergamot",
+    "n3": "med",
+    "n4": "peckovice",
+    "d1_label": "Zpracování",
+    "d1_value": "Natural",
+    "d2_label": "Nadm. výška",
+    "d2_value": "1 950 — 2 100 m",
+    "d3_label": "Pražba",
+    "d3_value": "Světlá · filter",
+    "price": "250 g · 320 Kč"
+  },
+  "menu": {
+    "label": "Menu",
+    "title": "Poctivé jídlo, <em>sezonní nápoje</em>",
+    "lead": "Krátké sezonní menu. Káva z naší vlastní pražírny, brunch po celý víkend a naturální víno v pátek od 17:00.",
+    "tab_coffee": "Káva",
+    "tab_brunch": "Brunch",
+    "tab_bakery": "Pekárna",
+    "tab_wine": "Naturální víno",
+    "footer": "Všechny ceny v Kč · vegetariánské, pokud není uvedeno jinak · alergeny na vyžádání.",
+    "coffee": {
+      "i1": {
+        "name": "Espresso",
+        "desc": "Domácí pražba, standardně ristretto",
+        "price": "65 Kč"
+      },
+      "i2": {
+        "name": "Long black",
+        "desc": "Dvojité espresso, horká voda",
+        "price": "75 Kč"
+      },
+      "i3": {
+        "name": "Flat white",
+        "desc": "Plnotučné, ovesné nebo mandlové",
+        "price": "85 Kč"
+      },
+      "i4": {
+        "name": "Cappuccino",
+        "desc": "Klasika, dvojité espresso",
+        "price": "85 Kč"
+      },
+      "i5": {
+        "name": "V60 filter",
+        "desc": "Dnešní single origin",
+        "price": "110 Kč"
+      },
+      "i6": {
+        "name": "Cold brew",
+        "desc": "12hodinový louh · s tonikem +20",
+        "price": "95 Kč"
+      }
+    },
+    "brunch": {
+      "i1": {
+        "name": "Kvasový chléb a vejce",
+        "desc": "Dvě pošírovaná, uzená sůl, bylinkové máslo",
+        "price": "220 Kč"
+      },
+      "i2": {
+        "name": "Jarní shakshuka",
+        "desc": "Zelená rajčata a máta, feta, kvasový chléb",
+        "price": "240 Kč"
+      },
+      "i3": {
+        "name": "Avokádo na žitném",
+        "desc": "Rozmačkané avokádo, čili olej, limetka, dukkah",
+        "price": "210 Kč"
+      },
+      "i4": {
+        "name": "Granola miska",
+        "desc": "Domácí granola, jogurt, sezónní ovoce, med",
+        "price": "180 Kč"
+      },
+      "i5": {
+        "name": "Lososový talíř",
+        "desc": "Uzený losos, koprový krém, kapary, žito",
+        "price": "280 Kč"
+      },
+      "i6": {
+        "name": "Lívance v hromadě",
+        "desc": "Podmáslové lívance, javor, sezónní kompot",
+        "price": "220 Kč"
+      }
+    },
+    "bakery": {
+      "i1": {
+        "name": "Croissant",
+        "desc": "Máslový, klasika",
+        "price": "75 Kč"
+      },
+      "i2": {
+        "name": "Mandlový croissant",
+        "desc": "Dvakrát pečený, s frangipanem",
+        "price": "95 Kč"
+      },
+      "i3": {
+        "name": "Skořicová spirála",
+        "desc": "Kardamom a skořice, sobotní tradice",
+        "price": "110 Kč"
+      },
+      "i4": {
+        "name": "Banánový chlebíček",
+        "desc": "S pekany, jemně nedoslazený",
+        "price": "95 Kč"
+      },
+      "i5": {
+        "name": "Rebarborová galetka",
+        "desc": "Dnešní speciál · dokud vystačí",
+        "price": "120 Kč"
+      },
+      "i6": {
+        "name": "Čoko-tahini sušenka",
+        "desc": "Hořká čokoláda, mořská sůl, sezam",
+        "price": "75 Kč"
+      }
+    },
+    "wine": {
+      "i1": {
+        "name": "Pet-Nat · Veltlín",
+        "desc": "ČR, biodynamika · 0,75 l",
+        "price": "650 Kč"
+      },
+      "i2": {
+        "name": "Skin-contact rosé",
+        "desc": "Slovinsko · low-intervention",
+        "price": "580 Kč"
+      },
+      "i3": {
+        "name": "Frankovka",
+        "desc": "Jižní Morava · lehká, šťavnatá",
+        "price": "560 Kč"
+      },
+      "i4": {
+        "name": "Sklenice dne",
+        "desc": "Zeptejte se u baru · 0,15 l",
+        "price": "130 Kč"
+      },
+      "i5": {
+        "name": "Talíř sýrů",
+        "desc": "Tři druhy, med, vlašské ořechy",
+        "price": "280 Kč"
+      },
+      "i6": {
+        "name": "Olivy a chléb",
+        "desc": "Castelvetrano olivy, kvasový chléb",
+        "price": "160 Kč"
+      }
+    }
+  },
+  "src": {
+    "eyebrow": "Odkud naše káva pochází",
+    "title": "Káva, která <em>má jméno</em>",
+    "p1": "Pracujeme se třemi dovozci, kteří nakupují přímo od farem v Etiopii, Keni a Kolumbii. Na každém sáčku je jméno pěstitele — víme, kdo kávu sklízel, a platíme férovou cenu.",
+    "p2": "Suroviny chodí z Polabí, Mělníka a Naší farmy v Líbeznicích. Pekárna je denní, menu krátké, zbytků minimum.",
+    "pull": "„Pomalá káva, poctivé jídlo a ti samí baristé každé ráno.\""
+  },
+  "rev": {
+    "label": "Slovy štamgastů",
+    "title": "Pár <em>milých slov</em>",
+    "t1": {
+      "quote": "Z Luny pracuju tři rána v týdnu. Káva je nejlepší ve Vinohradech, obsluha zná mou objednávku — a ta rebarborová galette je vážně nebezpečná.",
+      "name": "Marek",
+      "role": "Štamgast od 2023"
+    },
+    "t2": {
+      "quote": "Brunch každou sobotu, žádné výjimky. Jejich shakshuka mi zkazila všechny ostatní verze.",
+      "name": "Petra",
+      "role": "Štamgastka od 2024"
+    },
+    "t3": {
+      "quote": "Páteční večer s naturálním vínem je teď nejlepší malý rituál v Praze 2. Krátký lístek, velká osobnost.",
+      "name": "Ondřej",
+      "role": "Štamgast od 2024"
+    },
+    "t4": {
+      "quote": "Je cítit, že jim na tom opravdu záleží — na kávě, na chlebu, i na playlistu.",
+      "name": "Lucia",
+      "role": "Štamgastka od 2023"
+    }
+  },
+  "ig": {
+    "label": "@cafeluna.praha",
+    "title": "Týden <em>u pultu</em>"
+  },
+  "news": {
+    "title": "Krátký newsletter, <em>jednou měsíčně</em>",
+    "text": "Co právě pražíme, kdo stojí za barem, co je na brunchové tabuli. Dvě minuty čtení a nikdy žádný spam.",
+    "placeholder": "tvuj@email.com",
+    "btn": "Odebírat"
+  },
+  "visit": {
+    "label": "Návštěva",
+    "title": "Vinohradská 14, <em>Praha 2</em>",
+    "text": "100 metrů od Náměstí Míru — hledejte zelenou markýzu. Přes týden jste vítáni i bez rezervace, na víkendový brunch raději stůl rezervujte předem.",
+    "cta": "Rezervovat stůl",
+    "hours_title": "Otevírací doba",
+    "h1_label": "Po — Pá",
+    "h1_value": "8:00 — 21:00",
+    "h2_label": "Sobota",
+    "h2_value": "9:00 — 22:00 · brunch a víno",
+    "h3_label": "Neděle",
+    "h3_value": "9:00 — 17:00 · jen brunch",
+    "h4_label": "Páteční wine night",
+    "h4_value": "17:00 — 23:00"
+  },
+  "cookies": {
+    "text": "Používáme cookies pro lepší zážitek.",
+    "accept": "Přijmout",
+    "decline": "Odmítnout"
+  },
+  "footer": {
+    "rights": "© 2026 Café Luna",
+    "privacy": "Soukromí"
+  },
+  "menu_pg": {
+    "meta_title": "Kompletní menu · Café Luna",
+    "meta_desc": "Kompletní menu Luny — káva z naší pražírny, víkendový brunch, denní pečivo, natural wine a krátký pantry seznam. Aktualizováno každé pondělí.",
+    "crumb_home": "Café Luna",
+    "crumb": "Kompletní menu",
+    "issue": "Jaro '26 · tištěno týdně",
+    "title": "Poctivé jídlo, <em>sezonní nápoje</em>",
+    "lead": "Krátký, záměrně malý seznam. Brunchová tabule se mění v pondělí, pekárna rotuje každý den a naturální víno je vždy to, co nám právě přivezl vinař.",
+    "caveat": "— tiskneme každý týden znovu —",
+    "aside": {
+      "coffee": "Káva",
+      "coffee_n": "A — H",
+      "brunch": "Brunch",
+      "brunch_n": "So & Ne",
+      "allday": "Celodenní",
+      "allday_n": "11—17",
+      "bakery": "Pekárna",
+      "bakery_n": "denně",
+      "wine": "Natural wine",
+      "wine_n": "Pá 17—23",
+      "pantry": "Pantry & zrna",
+      "pantry_n": "domů",
+      "key": "Dieta & alergeny",
+      "key_n": "klíč"
+    },
+    "tag": {
+      "veg": "veg",
+      "vegan": "vegan",
+      "gf": "gf"
+    },
+    "coffee": {
+      "title": "Káva · <em>domácí pražírna</em>",
+      "note": "— upraženo v úterý, pijeme celý týden —",
+      "r1": {
+        "name": "Espresso",
+        "desc": "Domácí pražení, standardně ristretto. Single shot.",
+        "price": "65 Kč"
+      },
+      "r2": {
+        "name": "Long black",
+        "desc": "Double shot zalitý horkou vodou.",
+        "price": "75 Kč"
+      },
+      "r3": {
+        "name": "Flat white",
+        "desc": "Plnotučné · ovesné · mandlové · sójové. Stejná cena.",
+        "price": "85 Kč"
+      },
+      "r4": {
+        "name": "Cappuccino",
+        "desc": "Klasické italské, double shot.",
+        "price": "85 Kč"
+      },
+      "r5": {
+        "name": "V60 filter",
+        "desc": "Dnešní single origin · zeptejte se baru na chuťové tóny.",
+        "price": "110 Kč"
+      },
+      "r6": {
+        "name": "Cold brew",
+        "desc": "12hodinový louh · s tonikem +20 Kč.",
+        "price": "95 Kč"
+      },
+      "r7": {
+        "name": "Cardamom flat white",
+        "desc": "Domácí káva, ovesné mléko, špetka kardamonu.",
+        "price": "95 Kč"
+      },
+      "r8": {
+        "name": "Affogato",
+        "desc": "Vanilkové gelato + double espresso. Pouze víkendy.",
+        "price": "130 Kč"
+      },
+      "r9": {
+        "name": "Horká čokoláda",
+        "desc": "70 % tmavá, ovesné mléko, mořská sůl.",
+        "price": "110 Kč"
+      },
+      "r10": {
+        "name": "Matcha latte",
+        "desc": "Ceremonial-grade matcha, ovesné mléko.",
+        "price": "120 Kč"
+      },
+      "r11": {
+        "name": "Domácí chai",
+        "desc": "Kardamon, hřebíček, zázvor. Vařené, ne sirup.",
+        "price": "110 Kč"
+      },
+      "r12": {
+        "name": "Čaj v konvičce",
+        "desc": "Sypaný · zeptejte se na dnešní výběr.",
+        "price": "95 Kč"
+      }
+    },
+    "brunch": {
+      "title": "Brunch · <em>pouze víkendy</em>",
+      "note": "— sobota 9—15, neděle 9—17 —",
+      "r1": {
+        "name": "Sourdough & vejce",
+        "desc": "Dvě ztracená vejce na opečeném Antonínka chlebě, uzená sůl, kousek bylinkového másla, listový salát.",
+        "price": "220 Kč"
+      },
+      "r2": {
+        "name": "Jarní shakshuka",
+        "desc": "Dvě vejce v omáčce ze zelených rajčat a máty, feta z Polabí, Antonínka sourdough.",
+        "price": "240 Kč"
+      },
+      "r3": {
+        "name": "Avokádo na žitném",
+        "desc": "Rozmačkané avokádo, chilli olej, limetka, dukkah na šumavské žitné. Vejce navrch +35.",
+        "price": "210 Kč"
+      },
+      "r4": {
+        "name": "Granola bowl",
+        "desc": "Domácí granola, bio jogurt, sezónní ovoce, surový med. Vegan s kokosovým jog.",
+        "price": "180 Kč"
+      },
+      "r5": {
+        "name": "Lososová deska",
+        "desc": "Domácí naložený losos, koprový krém, kapary, kvašená šalotka, žitné toasty.",
+        "price": "280 Kč"
+      },
+      "r6": {
+        "name": "Máslové lívance",
+        "desc": "Tři kusy, javorový sirup, sezónní kompot (dnes: rebarbora & vanilka).",
+        "price": "220 Kč"
+      },
+      "r7": {
+        "name": "Pomalu vařené fazole",
+        "desc": "Borlotti vařené přes noc s rajčetem a uzenou paprikou, vejce z Polabí, sourdough.",
+        "price": "240 Kč"
+      },
+      "r8": {
+        "name": "Brunch deska (pro dva)",
+        "desc": "Sourdough, losos, sýry, pickle, dvě měkká vejce, džem, med, dvě kávy.",
+        "price": "680 Kč"
+      }
+    },
+    "allday": {
+      "title": "Celodenní jídla · <em>11—17</em>",
+      "note": "— krátký seznam, rychlý servis —",
+      "r1": {
+        "name": "Cibulová & gruyère polévka",
+        "desc": "Pomalu vařená, se sourdough croutonem.",
+        "price": "160 Kč"
+      },
+      "r2": {
+        "name": "Quiche dne",
+        "desc": "Dnes: pórek & gruyère. Včetně přílohy ze salátu.",
+        "price": "220 Kč"
+      },
+      "r3": {
+        "name": "Otevřený sendvič",
+        "desc": "Antonínka sourdough · vyberte dva: losos, sýr, šunka, houbové pâté.",
+        "price": "210 Kč"
+      },
+      "r4": {
+        "name": "Grain & green bowl",
+        "desc": "Perlový kroupy, citronová pečená kořenovka, dukkah, bylinkový jog (nebo vegan tahini).",
+        "price": "220 Kč"
+      },
+      "r5": {
+        "name": "Kuřecí deska",
+        "desc": "Volně chované kuře, bylinkový kuskus, harissa jog, kvašené zelí.",
+        "price": "280 Kč"
+      },
+      "r6": {
+        "name": "Salát dne",
+        "desc": "Cokoliv je právě nejlepší na trhu — zeptejte se kuchyně.",
+        "price": "200 Kč"
+      }
+    },
+    "bakery": {
+      "title": "Pekárna · <em>pečené každé ráno</em>",
+      "note": "— do vyprodání —",
+      "r1": {
+        "name": "Croissant",
+        "desc": "Plně máslový, celodenní klasika.",
+        "price": "75 Kč"
+      },
+      "r2": {
+        "name": "Mandlový croissant",
+        "desc": "Dvakrát pečený, plněný frangipane.",
+        "price": "95 Kč"
+      },
+      "r3": {
+        "name": "Pain au chocolat",
+        "desc": "70 % tmavé čokoládové tyčky.",
+        "price": "95 Kč"
+      },
+      "r4": {
+        "name": "Skořicový závitek",
+        "desc": "Kardamon a skořice · sobotní tradice.",
+        "price": "110 Kč"
+      },
+      "r5": {
+        "name": "Banánový chléb",
+        "desc": "S pekany, mírně méně sladký.",
+        "price": "95 Kč"
+      },
+      "r6": {
+        "name": "Rebarborová galette",
+        "desc": "Dnešní specialita · do vyprodání.",
+        "price": "120 Kč"
+      },
+      "r7": {
+        "name": "Choc-tahini cookie",
+        "desc": "Tmavá čokoláda, mořská sůl, sezam.",
+        "price": "75 Kč"
+      },
+      "r8": {
+        "name": "Sourdough chléb",
+        "desc": "800 g · domů, pečeme denně do vyprodání.",
+        "price": "160 Kč"
+      }
+    },
+    "wine": {
+      "title": "Natural wine · <em>páteční večery</em>",
+      "note": "— pouze low-intervention · 17:00 — 23:00 —",
+      "r1": {
+        "name": "Pet-Nat · Veltlín",
+        "desc": "České, biodynamické · 0,75 l.",
+        "price": "650 Kč"
+      },
+      "r2": {
+        "name": "Skin-contact rosé",
+        "desc": "Slovinsko · low-intervention · 0,75 l.",
+        "price": "580 Kč"
+      },
+      "r3": {
+        "name": "Frankovka",
+        "desc": "Jižní Morava · lehké, šťavnaté · 0,75 l.",
+        "price": "560 Kč"
+      },
+      "r4": {
+        "name": "Skleničkový den",
+        "desc": "Zeptejte se baru · 0,15 l.",
+        "price": "130 Kč"
+      },
+      "r5": {
+        "name": "Sýrová deska",
+        "desc": "Tři sýry, polabský med, vlašské ořechy, sourdough.",
+        "price": "280 Kč"
+      },
+      "r6": {
+        "name": "Olivy & chléb",
+        "desc": "Castelvetrano olivy, sourdough, olivový olej.",
+        "price": "160 Kč"
+      },
+      "r7": {
+        "name": "Charcuterie deska",
+        "desc": "Tři masa, dva pickle, kornišony, sourdough.",
+        "price": "320 Kč"
+      },
+      "r8": {
+        "name": "Anchovies toast",
+        "desc": "Cantabria sardelky, máslo, citronová kůra, sourdough.",
+        "price": "220 Kč"
+      }
+    },
+    "pantry": {
+      "title": "Pantry · <em>domů</em>",
+      "note": "— malé věci, dělané s láskou —",
+      "r1": {
+        "name": "Domácí zrna · 250 g",
+        "desc": "Dnešní single origin · celá nebo mletá.",
+        "price": "320 Kč"
+      },
+      "r2": {
+        "name": "Domácí granola · 400 g",
+        "desc": "Oves, mandle, lískové ořechy, javorový sirup, mořská sůl.",
+        "price": "240 Kč"
+      },
+      "r3": {
+        "name": "Sourdough kvásek",
+        "desc": "Živý, ve sklenici · s návodem na péči.",
+        "price": "90 Kč"
+      },
+      "r4": {
+        "name": "Polabský med · 250 g",
+        "desc": "Z malé včelnice za Mělníkem.",
+        "price": "220 Kč"
+      },
+      "r5": {
+        "name": "Luna tote",
+        "desc": "Hrubá bavlna, sítotisk Praha 7.",
+        "price": "350 Kč"
+      },
+      "r6": {
+        "name": "Předplatné kávy",
+        "desc": "250 g každé dva týdny · pauza kdykoliv.",
+        "price": "580 Kč/m"
+      }
+    },
+    "key": {
+      "label": "Klíč dieta a alergeny",
+      "veg": "<b>veg</b> — vegetariánské",
+      "vegan": "<b>vegan</b> — plně rostlinné",
+      "gf": "<b>gf</b> — bezlepková verze, zeptejte se",
+      "foot": "Plný seznam alergenů k dispozici — před objednáním řekněte baristovi o svých alergiích."
+    }
+  },
+  "ev_pg": {
+    "meta_title": "Program · Café Luna",
+    "meta_desc": "Páteční natural wine večery, měsíční cuppingy, supper kluby a občasné křty knih. Tady je následujících osm týdnů v Café Luna.",
+    "crumb_home": "Café Luna",
+    "crumb": "Program",
+    "issue": "Kalendář · jaro '26",
+    "title": "Malý <em>kalendář</em>",
+    "lead": "Páteční natural wine večery každý týden, měsíční cuppingy, občasné supper kluby. Většina podniků je zdarma nebo pay-what-you-want — pár je s lístky.",
+    "may": "květen · pá",
+    "may2": "květen · po",
+    "may3": "květen · pá",
+    "may4": "květen · pá",
+    "may5": "květen · so",
+    "may6": "květen · so",
+    "jun": "červen · pá",
+    "jun2": "červen · so",
+    "jun3": "červen · čt",
+    "jun4": "červen · pá",
+    "book": "Rezervovat →",
+    "hl": {
+      "eyebrow": "Zvýrazněno · Supper Club",
+      "title": "Spring Supper Club <em>se šéfkuchařkou Eliškou Procházkovou</em>",
+      "text": "Šestichodové degustační menu okolo první polabské chřestu a mělnické rebarbory. Eliška vaří na našem passe pouze jeden večer — dvacet míst, family-style u dlouhého stolu.",
+      "m1_label": "Kdy",
+      "m1_value": "pátek 22. května · 19:00",
+      "m2_label": "Lístky",
+      "m2_value": "1 480 Kč · 6 chodů + párování",
+      "m3_label": "Místa",
+      "m3_value": "pouze 20 · 4 volná",
+      "cta": "Rezervovat místo →"
+    },
+    "e1": {
+      "type": "Wine night",
+      "title": "Páteční wine night · slovinské skin-contact",
+      "desc": "Šest otevřených lahví v baru. Olivy, sourdough, anchovies toast. Bez lístků, walk-in nebo rezervace. Zavíráme 23:00.",
+      "m_strong": "17:00 — 23:00",
+      "m_text": "Zdarma · pay-as-you-pour"
+    },
+    "e2": {
+      "type": "Cupping",
+      "title": "Měsíční cupping kávy · Etiopie focus",
+      "desc": "Šest šarží z Yirgacheffe, Sidamo a Guji, naslepo na cupping stole. Vede náš pražič Tomáš.",
+      "m_strong": "19:00 — 20:30",
+      "m_text": "280 Kč · 12 míst"
+    },
+    "e3": {
+      "type": "Wine night",
+      "title": "Páteční wine night · české pet-nat",
+      "desc": "Pět lahví od tří moravských vinařů. Bar otevírá po skleničkách v 17, celé lahve od 18.",
+      "m_strong": "17:00 — 23:00",
+      "m_text": "Zdarma · pay-as-you-pour"
+    },
+    "e4": {
+      "type": "Supper club",
+      "title": "Spring Supper Club s Eliškou Procházkovou",
+      "desc": "Šestichodové family-style menu. První chřest, mělnická rebarbora, pomalá jehněčí, čerstvé sýry. Pouze 20 míst.",
+      "m_strong": "19:00 — 23:00",
+      "m_text": "1 480 Kč · 4 volná"
+    },
+    "e5": {
+      "type": "Workshop",
+      "title": "Sourdough workshop s Antonínka pekárnou",
+      "desc": "Tři hodiny, hands-on, domů si vezmete kvásek a svůj první chléb. Káva a brunch zahrnuté mezi kynutími.",
+      "m_strong": "10:00 — 13:00",
+      "m_text": "980 Kč · 8 míst"
+    },
+    "e6": {
+      "type": "Live music",
+      "title": "Slow Saturday · sólo kytara s Janem Veselým",
+      "desc": "Tichý akustický set během brunchu. Žádné vstupné — jen zůstaňte déle, než jste plánovali.",
+      "m_strong": "11:00 — 13:00",
+      "m_text": "Zdarma · brunch servis"
+    },
+    "e7": {
+      "type": "Křest knihy",
+      "title": "Křest knihy · „Slow Coffee“ s Annou Kubíčkovou",
+      "desc": "Čtení z první Annie knihy o specialty coffee kultuře ve střední Evropě, plus Q&A a sklenička pet-nat.",
+      "m_strong": "19:30 — 21:30",
+      "m_text": "Zdarma · kniha v prodeji"
+    },
+    "e8": {
+      "type": "Workshop",
+      "title": "Brewing doma · pour-over základy",
+      "desc": "Dvě hodiny s naším head baristou o mletí, poměru a třech jediných věcech, na kterých doma reálně záleží. Domů 250 g balíček dnešní filter kávy.",
+      "m_strong": "10:00 — 12:00",
+      "m_text": "680 Kč · 8 míst"
+    },
+    "e9": {
+      "type": "Privátní akce",
+      "title": "Zavřeno pro privátní akci · Studio Luna výročí",
+      "desc": "Café celý den zavřené pro privátní rezervaci. Bar otevírá v pátek v 8:00. Omlouváme se za nepříjemnost.",
+      "m_strong": "Celý den",
+      "m_text": "Café zavřeno"
+    },
+    "e10": {
+      "type": "Wine night",
+      "title": "Páteční wine night · italská orange wine",
+      "desc": "Pět lahví z Friuli a Sicílie. Lehké večerní menu v kuchyni, live DJ od 20:00.",
+      "m_strong": "17:00 — 23:00",
+      "m_text": "Zdarma · pay-as-you-pour"
+    },
+    "foot": "Chcete uspořádat privátní akci pro 12+ lidí? Napište na <a href=\"mailto:ahoj@cafeluna.cz\" style=\"color:var(--accent);border-bottom:1px solid var(--accent)\">ahoj@cafeluna.cz</a> datum a větu o příležitosti."
+  },
+  "visit_pg": {
+    "meta_title": "Návštěva & rezervace · Café Luna",
+    "meta_desc": "Rezervujte si stůl v Café Luna na Vinohradech, Praha 2. Brunch, večerní bistro, páteční wine night, privátní akce. Potvrdíme SMS do hodiny.",
+    "crumb_home": "Café Luna",
+    "crumb": "Návštěva & rezervace",
+    "issue": "Vinohradská 14 · Praha 2",
+    "title": "Rezervujte si <em>stůl</em>",
+    "lead": "Walk-in vítáme. Pro víkendový brunch, páteční wine night a skupiny 6+ doporučujeme rezervaci. Potvrdíme SMS do hodiny.",
+    "f": {
+      "name_label": "Vaše jméno",
+      "name_ph": "Marek Novák",
+      "phone_label": "Telefon",
+      "phone_ph": "+420 774 111 222",
+      "email_label": "E-mail",
+      "email_ph": "marek@example.cz",
+      "guests_label": "Hosté",
+      "g1": "2 osoby",
+      "g2": "3 osoby",
+      "g3": "4 osoby",
+      "g4": "5 osob",
+      "g5": "6 osob",
+      "g6": "7+ (dlouhý stůl)",
+      "occ_label": "Příležitost",
+      "o1": "Pracovní snídaně",
+      "o2": "Oběd / káva",
+      "o3": "Víkendový brunch",
+      "o4": "Páteční wine night",
+      "o5": "Narozeniny / oslava",
+      "o6": "Privátní akce (12+)",
+      "date_label": "Datum",
+      "time_label": "Preferovaný čas",
+      "t1": "8:30",
+      "t2": "10:00",
+      "t3": "12:00",
+      "t4": "14:00",
+      "t5": "17:00",
+      "t6": "19:00",
+      "t7": "20:30",
+      "notes_label": "Něco, co bychom měli vědět?",
+      "notes_ph": "Narozeninový dort, alergie, preferujete dlouhý stůl, pes pod ním…",
+      "submit": "Odeslat rezervaci"
+    },
+    "aside": {
+      "title": "Pár <em>užitečných poznámek</em>",
+      "l1": "V pracovních dnech jsou walk-in vždy vítáni — pro ranní klientelu držíme zhruba polovinu místnosti.",
+      "l2": "Stoly pro šest a více, prosíme rezervovat alespoň 24 hodin dopředu — dlouhý stůl připravíme speciálně.",
+      "l3": "Brunchová rezervace trvá 90 minut. Kávu nikdy nevyháníme — jen neposadíme stejné místo dvakrát za sebou.",
+      "l4": "Psi jsou vítáni — u dveří máme misku s vodou a pamlsek za barem.",
+      "l5": "Dva kočárky se vejdou pohodlně; při třech a více vás poprosíme o tišší termín.",
+      "l6": "Pracovat z Luny je v pracovních dnech v pořádku do 11:00. Víkendy a večery po 17:00 jsou bez obrazovek.",
+      "hours_title": "Otevírací doba",
+      "h1_label": "Po — Pá",
+      "h1_value": "8:00 — 21:00",
+      "h2_label": "Sobota",
+      "h2_value": "9:00 — 22:00",
+      "h3_label": "Neděle",
+      "h3_value": "9:00 — 17:00",
+      "h4_label": "Páteční wine night",
+      "h4_value": "17:00 — 23:00"
+    },
+    "gt": {
+      "label": "Jak se k nám dostat",
+      "title": "Vinohradská 14, <em>Praha 2</em>",
+      "lead": "2 minuty pěšky z Náměstí Míru (linka A), nebo 6 minut z Muzea (linky A & C). Tramvaj 11 staví přímo před dveřmi.",
+      "metro_t": "Metro",
+      "metro_d": "Náměstí Míru (A) · 2 min pěšky · ze stanice doleva.",
+      "tram_t": "Tramvaj",
+      "tram_d": "11, 13 staví přímo před (Italská). Noční 91 také.",
+      "bike_t": "Kolo",
+      "bike_d": "Dva stojany pod markýzou. Rekola stanice 60 m východně na Vinohradské."
+    }
+  }
 }

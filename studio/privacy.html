@@ -3,71 +3,79 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <title>Privacy · Sage Studio</title>
-  <meta name="description" content="How I handle your personal data. GDPR compliant." />
+  <title data-i18n="privacy.meta_title">Privacy · My website portfolio</title>
+  <meta name="description" data-i18n-attr="content|privacy.meta_description" content="How this website handles your data — short, plain English." />
   <meta name="theme-color" content="#f7f3ec" />
-  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg?v=3" />
+  <link rel="stylesheet" href="css/style.css?v=6" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 <body>
-  <nav class="navbar scrolled">
+  <a href="#main-content" class="skip-to-content" data-i18n="a11y.skip">Skip to content</a>
+
+  <nav class="navbar scrolled" aria-label="Main navigation">
     <div class="container">
-      <a href="index.html" class="navbar-brand"><span class="navbar-brand__dot"></span><span>Sage<i>.</i></span></a>
+      <a href="index.html" class="navbar-brand"><span class="navbar-brand__dot"></span><span>Karolína K<i>.</i></span></a>
       <ul class="navbar-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="portfolio.html">Work</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+        <li><a href="services.html" data-i18n="nav.services">Services</a></li>
+        <li><a href="portfolio.html" data-i18n="nav.portfolio">Demos</a></li>
+        <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
       </ul>
+      <div class="navbar-right">
+        <div class="lang-switch" data-lang-switch>
+          <button class="lang-switch__btn" data-lang="en">EN</button>
+          <button class="lang-switch__btn" data-lang="sk">SK</button>
+          <button class="lang-switch__btn" data-lang="cs">CS</button>
+        </div>
+        <a href="contact.html" class="navbar-cta" data-i18n="nav.cta">Get in touch</a>
+        <button class="navbar-hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
     </div>
   </nav>
 
-  <main style="padding:140px 0 80px">
-    <article class="container" style="max-width:780px">
-      <span class="section-label">Legal</span>
-      <h1>Privacy</h1>
-      <p style="color:var(--muted)">Last updated: May 2026</p>
+  <div class="mobile-menu">
+    <ul class="mobile-menu__links">
+      <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+      <li><a href="services.html" data-i18n="nav.services">Services</a></li>
+      <li><a href="portfolio.html" data-i18n="nav.portfolio">Demos</a></li>
+      <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+    </ul>
+    <div class="lang-switch" data-lang-switch role="group" aria-label="Language">
+      <button class="lang-switch__btn" data-lang="en">EN</button>
+      <button class="lang-switch__btn" data-lang="sk">SK</button>
+      <button class="lang-switch__btn" data-lang="cs">CS</button>
+    </div>
+  </div>
 
-      <h3 style="margin-top:50px">1. Who runs this site</h3>
-      <p>Sage Studio is run by <b>Karolína Katriňáková</b>, sole trader. Contact: <a href="mailto:karolina.katrinakova@gmail.com">karolina.katrinakova@gmail.com</a>.</p>
+  <main id="main-content" style="padding:120px 24px 80px;max-width:780px;margin:0 auto">
+    <p class="section-label" data-i18n="privacy.label" style="text-transform:uppercase;letter-spacing:0.18em;font-size:0.78rem;color:var(--ink-soft);margin:0 0 16px">Privacy</p>
+    <h1 data-i18n="privacy.title" style="font-family:var(--serif);font-size:clamp(2rem,4vw,3rem);line-height:1.1;margin:0 0 32px">A short, plain privacy note</h1>
 
-      <h3 style="margin-top:32px">2. What data I collect</h3>
-      <p>When you write to me through the contact form or by email, I receive: your name, email, phone (if you provide it), business name, and the contents of your message. That's it.</p>
+    <article style="font-family:var(--sans);font-size:1.05rem;line-height:1.8;color:var(--ink)">
+      <p data-i18n="privacy.intro">This is a small portfolio site. I don't run analytics, ads or any tracking. Your visit isn't recorded anywhere.</p>
 
-      <h3 style="margin-top:32px">3. Why and how long</h3>
-      <p>I use this only to reply to you and prepare a quote if relevant. After our conversation ends, I keep the messages for up to 12 months and then delete them. Invoices are kept for the legally required period.</p>
+      <h2 data-i18n="privacy.h_cookies" style="font-family:var(--serif);font-size:1.4rem;margin:36px 0 12px">What your browser stores</h2>
+      <p data-i18n="privacy.p_cookies">Two tiny things, kept only in your browser: your chosen language (EN, SK or CS), and your answer to the cookie banner. That's all — nothing is sent to me or anyone else.</p>
 
-      <h3 style="margin-top:32px">4. Who else sees it</h3>
-      <p>No one. I don't sell, share, or pass your data to any third party. The site uses standard hosting and your contact form messages come straight to my inbox.</p>
+      <h2 data-i18n="privacy.h_contact" style="font-family:var(--serif);font-size:1.4rem;margin:36px 0 12px">When you write to me</h2>
+      <p data-i18n="privacy.p_contact">If you email me or send the contact form, your message arrives in my inbox. I use it only to reply. I don't share it with anyone and I don't sign you up to any newsletter.</p>
 
-      <h3 style="margin-top:32px">5. Your rights</h3>
-      <ul style="line-height:2;color:var(--ink-soft)">
-        <li>The right to know what data I hold about you</li>
-        <li>The right to correct anything wrong</li>
-        <li>The right to be deleted ("right to be forgotten")</li>
-        <li>The right to object to processing</li>
-        <li>The right to file a complaint with your data protection authority</li>
-      </ul>
-      <p>Just write to me at <a href="mailto:karolina.katrinakova@gmail.com">karolina.katrinakova@gmail.com</a>.</p>
+      <h2 data-i18n="privacy.h_rights" style="font-family:var(--serif);font-size:1.4rem;margin:36px 0 12px">Your rights</h2>
+      <p data-i18n="privacy.p_rights">Email me at <a href="mailto:karolina.katrinakova@gmail.com" style="color:var(--accent)">karolina.katrinakova@gmail.com</a> any time and I'll tell you what (if anything) I have stored about you, or delete it.</p>
 
-      <h3 style="margin-top:32px">6. Cookies</h3>
-      <p>The site uses only <b>necessary</b> cookies (to remember your language preference). You'll be asked on your first visit.</p>
+      <p data-i18n="privacy.updated" style="margin-top:48px;color:var(--ink-soft);font-size:0.95rem">Last updated: May 2026</p>
     </article>
+
+    <p style="margin-top:60px"><a href="index.html" data-i18n="privacy.back" style="color:var(--accent);font-weight:500">← Back to home</a></p>
   </main>
 
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-bottom" style="padding-top:0;border:0">
-        <p class="footer-bottom__copy">© 2026 Sage Studio · Karolína Katriňáková</p>
-        <div class="footer-bottom__links">
-          <a href="terms.html">Terms</a>
-          <a href="index.html">Back to home</a>
-        </div>
-      </div>
-    </div>
+  <footer class="footer-min" style="padding:40px 24px;border-top:1px solid var(--line)">
+    <div class="container"><div class="footer-bottom" style="padding-top:0;border:0"><p class="footer-bottom__copy" data-i18n="footer.rights">© 2026 Karolína Katriňáková</p><div class="footer-bottom__links"><a href="index.html" data-i18n="nav.home">Back to home</a></div></div></div>
   </footer>
+
+  <script src="i18n/dict.js?v=25"></script>
+  <script src="js/i18n.js?v=2"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

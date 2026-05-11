@@ -3,18 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <title data-i18n="meta.title">Sage Studio · Hand-built websites for small businesses</title>
+  <title data-i18n="meta.title">My website portfolio · Karolína Katriňáková</title>
   <meta name="description" data-i18n-attr="content|meta.description" content="Hand-built, considered websites for small businesses. Personal, simple, made with care." />
 
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Sage Studio · Hand-built websites for small businesses" />
+  <meta property="og:title" content="My website portfolio · Karolína Katriňáková" />
   <meta property="og:description" content="Personal, simple, considered websites for small businesses." />
   <meta property="og:image" content="https://images.unsplash.com/photo-1496062031456-07b8f162a322?auto=format&fit=crop&w=1600&q=80" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="theme-color" content="#f7f3ec" />
 
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/style.css?v=6" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
   <script type="application/ld+json">
@@ -36,7 +36,7 @@
 
   <!-- Page loader -->
   <div class="page-loader" aria-hidden="true">
-    <span class="page-loader__brand">Sage<i>.</i></span>
+    <span class="page-loader__brand">Karolína K<i>.</i></span>
   </div>
 
   <!-- Reading progress -->
@@ -47,14 +47,13 @@
     <div class="container">
       <a href="index.html" class="navbar-brand">
         <span class="navbar-brand__dot" aria-hidden="true"></span>
-        <span>Sage<i>.</i></span>
+        <span>Karolína K<i>.</i></span>
       </a>
 
       <ul class="navbar-links">
         <li><a href="index.html" class="active" data-i18n="nav.home">Home</a></li>
-        <li><a href="about.html" data-i18n="nav.about">About</a></li>
         <li><a href="services.html" data-i18n="nav.services">Services</a></li>
-        <li><a href="portfolio.html" data-i18n="nav.portfolio">Work</a></li>
+        <li><a href="portfolio.html" data-i18n="nav.portfolio">Demos</a></li>
         <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
       </ul>
 
@@ -76,17 +75,21 @@
   <div class="mobile-menu" aria-hidden="true">
     <ul class="mobile-menu__links">
       <li><a href="index.html" data-i18n="nav.home">Home</a></li>
-      <li><a href="about.html" data-i18n="nav.about">About</a></li>
       <li><a href="services.html" data-i18n="nav.services">Services</a></li>
-      <li><a href="portfolio.html" data-i18n="nav.portfolio">Work</a></li>
+      <li><a href="portfolio.html" data-i18n="nav.portfolio">Demos</a></li>
       <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
     </ul>
+    <div class="lang-switch" data-lang-switch role="group" aria-label="Language">
+      <button class="lang-switch__btn" data-lang="en">EN</button>
+      <button class="lang-switch__btn" data-lang="sk">SK</button>
+      <button class="lang-switch__btn" data-lang="cs">CS</button>
+    </div>
     <div class="mobile-menu__cta">
       <a href="contact.html" class="btn btn-accent" data-i18n="nav.cta">Get in touch</a>
     </div>
     <div class="mobile-menu__bottom">
       <a href="https://linkedin.com/in/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-      <a href="social.html" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="mailto:karolina.katrinakova@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
     </div>
   </div>
 
@@ -98,23 +101,38 @@
     <div class="banner__veil" aria-hidden="true"></div>
 
     <div class="container">
-      <p class="hero-label" data-i18n="hero.label">Sage Studio · Prague</p>
+      <p class="hero-label" data-i18n="hero.label">My website portfolio</p>
       <h1>
         <span class="hero-line" data-i18n="hero.line1">Hand-built</span>
         <span class="hero-line hero-line--italic" data-i18n="hero.line2">websites,</span>
-        <span class="hero-line" data-i18n="hero.line3">made with care.</span>
+        <span class="hero-line" data-i18n="hero.line3">made with care</span>
       </h1>
       <div class="hero-rule"></div>
-      <h2 data-i18n="hero.sub">A small studio for small businesses. I design and build simple, considered websites — the kind that fit your work, not the other way around.</h2>
+      <h2 data-i18n="hero.sub">Custom websites for small businesses. Below are 7 fully working demos — click around as much as you like. Yours will look different — designed around your business, your customers and your goals.</h2>
       <div class="hero-buttons">
-        <a href="portfolio.html" class="btn btn-accent btn-lg" data-i18n="hero.btn_primary">See my work</a>
-        <a href="about.html" class="btn btn-ghost-light btn-lg" data-i18n="hero.btn_secondary">About me</a>
+        <a href="contact.html" class="btn btn-accent btn-lg" data-i18n="hero.btn_primary">Get in touch</a>
+        <a href="#demos" class="btn btn-ghost-light btn-lg" data-i18n="hero.btn_secondary">Browse the demos ↓</a>
       </div>
     </div>
-    <a href="#intro" class="scroll-indicator" aria-label="Scroll down">
+    <a href="#demo-strip" class="scroll-indicator" aria-label="Scroll down">
       <span class="scroll-indicator__line"></span>
     </a>
   </header>
+
+  <!-- DEMO EXPLAINER STRIP -->
+  <section class="demo-strip" id="demo-strip" aria-label="About the demos">
+    <div class="container">
+      <div class="demo-strip__inner">
+        <div class="demo-strip__pill" aria-hidden="true">
+          <span class="demo-strip__dot"></span>
+          <span data-i18n="demo_strip.tag">Live, interactive demos</span>
+        </div>
+        <p class="demo-strip__text"><strong data-i18n="demo_strip.title">Everything below is fully clickable.</strong>
+          <span data-i18n="demo_strip.text">Each demo is a real, working website I built from scratch — booking flows, schedules, shopping carts, forms, three languages. Click around as long as you'd like. Yours won't look like any of these — it'll be designed entirely around your business.</span>
+        </p>
+      </div>
+    </div>
+  </section>
 
   <!-- Marquee -->
   <div class="marquee" aria-hidden="true">
@@ -140,194 +158,402 @@
     </div>
   </div>
 
-  <!-- INTRO -->
-  <section class="section fade-in" id="intro">
+  <!-- DEMOS -->
+  <section class="section section--alt fade-in" id="demos">
     <div class="container">
       <div class="section-header">
-        <span class="section-label" data-i18n="intro.label">Hi</span>
-        <h2 data-i18n="intro.title">A small studio. One person. Real attention.</h2>
-        <p data-i18n="intro.text">I build websites the way good objects are made — slowly, with thought, and only what's needed. No templates rolled out from a factory, no agency layers between you and the work.</p>
+        <span class="section-label" data-i18n="portfolio.label">Demos</span>
+        <h2 data-i18n="portfolio.title">7 demo sites you can fully click through.</h2>
+        <p data-i18n="portfolio.lead"><strong data-i18n="portfolio.lead_strong">Yours won't look like any of these.</strong> <span data-i18n="portfolio.lead_text">These are live demos — they're here to show what's possible. Your site will be designed entirely around your business, your customers and your goals.</span></p>
+      </div>
+
+      <div class="cards stagger-children">
+        <a href="../templates/07-sala-restaurant/index.html" class="card card--demo">
+          <span class="card__demo-badge" data-i18n="portfolio.demo_badge">DEMO · Click to explore</span>
+          <img loading="lazy" src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1200&q=80" alt="Sála restaurant" />
+          <div class="card__body">
+            <p class="card__tag" data-i18n="portfolio.p7.tag">Restaurant</p>
+            <h3 data-i18n="portfolio.p7.title">Sála</h3>
+            <p data-i18n="portfolio.p7.text">Interactive 7-course tasting menu, wine list, 3-step reservations, press wall.</p>
+            <span class="card__cta" data-i18n="portfolio.open">Open the demo →</span>
+          </div>
+        </a>
+
+        <a href="../templates/06-aria-yoga-studio/index.html" class="card card--demo">
+          <span class="card__demo-badge" data-i18n="portfolio.demo_badge">DEMO · Click to explore</span>
+          <img loading="lazy" src="https://images.unsplash.com/photo-1545205597-3d9d02c29597?auto=format&fit=crop&w=1200&q=80" alt="Aria yoga studio" />
+          <div class="card__body">
+            <p class="card__tag" data-i18n="portfolio.p6.tag">Yoga &amp; Pilates</p>
+            <h3 data-i18n="portfolio.p6.title">Aria</h3>
+            <p data-i18n="portfolio.p6.text">Live booking system, weekly schedule, capacity tracking, card payment, passes.</p>
+            <span class="card__cta" data-i18n="portfolio.open">Open the demo →</span>
+          </div>
+        </a>
+
+        <a href="../templates/01-lumi-hair-salon/index.html" class="card card--demo">
+          <span class="card__demo-badge" data-i18n="portfolio.demo_badge">DEMO · Click to explore</span>
+          <img loading="lazy" src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1200&q=80" alt="Lumi hair salon" />
+          <div class="card__body">
+            <p class="card__tag" data-i18n="portfolio.p1.tag">Hair salon</p>
+            <h3 data-i18n="portfolio.p1.title">Lumi</h3>
+            <p data-i18n="portfolio.p1.text">4-step online booking, full price book, stylist profiles, before/after gallery.</p>
+            <span class="card__cta" data-i18n="portfolio.open">Open the demo →</span>
+          </div>
+        </a>
+
+        <a href="../templates/05-stem-florist/index.html" class="card card--demo">
+          <span class="card__demo-badge" data-i18n="portfolio.demo_badge">DEMO · Click to explore</span>
+          <img loading="lazy" src="https://images.unsplash.com/photo-1487530811176-3780de880c2d?auto=format&fit=crop&w=1200&q=80" alt="Stem florist" />
+          <div class="card__body">
+            <p class="card__tag" data-i18n="portfolio.p5.tag">Florist</p>
+            <h3 data-i18n="portfolio.p5.title">Stem</h3>
+            <p data-i18n="portfolio.p5.text">Online shop, delivery checker, cart, subscriptions, weddings inquiry, workshops.</p>
+            <span class="card__cta" data-i18n="portfolio.open">Open the demo →</span>
+          </div>
+        </a>
+
+        <a href="../templates/02-luna-cafe/index.html" class="card card--demo">
+          <span class="card__demo-badge" data-i18n="portfolio.demo_badge">DEMO · Click to explore</span>
+          <img loading="lazy" src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1200&q=80" alt="Luna café" />
+          <div class="card__body">
+            <p class="card__tag" data-i18n="portfolio.p2.tag">Café · brunch</p>
+            <h3 data-i18n="portfolio.p2.title">Luna</h3>
+            <p data-i18n="portfolio.p2.text">Full menu with allergens, events calendar, daily specials, reservation form.</p>
+            <span class="card__cta" data-i18n="portfolio.open">Open the demo →</span>
+          </div>
+        </a>
+
+        <a href="../templates/03-mend-physiotherapy/index.html" class="card card--demo">
+          <span class="card__demo-badge" data-i18n="portfolio.demo_badge">DEMO · Click to explore</span>
+          <img loading="lazy" src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1200&q=80" alt="Mend physiotherapy" />
+          <div class="card__body">
+            <p class="card__tag" data-i18n="portfolio.p3.tag">Physiotherapy</p>
+            <h3 data-i18n="portfolio.p3.title">Mend</h3>
+            <p data-i18n="portfolio.p3.text">Filterable conditions library, 4-step booking, insurance/Multisport info, FAQ.</p>
+            <span class="card__cta" data-i18n="portfolio.open">Open the demo →</span>
+          </div>
+        </a>
+
+        <a href="../templates/04-rove-photographer/index.html" class="card card--demo">
+          <span class="card__demo-badge" data-i18n="portfolio.demo_badge">DEMO · Click to explore</span>
+          <img loading="lazy" src="https://images.unsplash.com/photo-1606800052052-a08af7148866?auto=format&fit=crop&w=1200&q=80" alt="Rove photographer" />
+          <div class="card__body">
+            <p class="card__tag" data-i18n="portfolio.p4.tag">Photographer</p>
+            <h3 data-i18n="portfolio.p4.title">Rove</h3>
+            <p data-i18n="portfolio.p4.text">Editorial portfolio, filterable gallery with full-screen lightbox, journal, inquiry.</p>
+            <span class="card__cta" data-i18n="portfolio.open">Open the demo →</span>
+          </div>
+        </a>
+
+      </div>
+
+      <div class="demos-footnote">
+        <p data-i18n="portfolio.footnote"><strong>None of these is your business.</strong> Your site will be different — different colours, different structure, different features, different voice. These exist to show what's possible. Tell me about your business and I'll sketch what yours could look like.</p>
+        <a href="contact.html" class="btn btn-accent" data-i18n="portfolio.footnote_cta">Sketch mine →</a>
       </div>
     </div>
   </section>
 
-  <!-- ABOUT TEASER (with Kofio experience) -->
-  <section class="section section--alt fade-in" id="about-teaser">
+  <!-- ABOUT / EXPERTISE -->
+  <section class="section fade-in" id="intro">
     <div class="container">
-      <div class="split">
-        <div class="split__media">
-          <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=1100&q=80" alt="Sage Studio founder portrait" />
+      <div class="about-split">
+        <div class="about-split__media">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1675868374456-47fd0067d12e?auto=format&fit=crop&w=1100&q=82" alt="A modern MacBook on a quiet desk" />
         </div>
-        <div>
-          <span class="section-label" data-i18n="about_teaser.label">About</span>
-          <h2 data-i18n="about_teaser.title">Hi, I'm Karolína.</h2>
-          <p data-i18n="about_teaser.p1">I'm a designer-developer with a real-world marketing background. I worked at <strong>Kofio</strong> running marketing, social-media content, ad campaigns, business analytics, team management and AI workflows — so I think about websites the way I'd think about any other piece of a small business: they should be simple, useful, and make sense.</p>
-          <p data-i18n="about_teaser.p2">Sage Studio is the next chapter — a quiet space where I make websites for the kind of business you can call by name.</p>
-          <a href="about.html" class="btn btn-secondary" style="margin-top:18px" data-i18n="about_teaser.cta">More about me →</a>
+        <div class="about-split__copy">
+          <span class="section-label" data-i18n="intro.label">About me</span>
+          <h2 data-i18n="intro.title">A solo studio with a marketing brain</h2>
+          <p data-i18n="intro.text">Every project gets my full attention from first sketch to launch — no handoffs, no junior teams. I try to build websites that actually help your business grow, not just look pretty. Yours will be fast, lightweight, owned by you (no monthly platform fees) and designed specifically around how <em>your</em> customers think.</p>
+          <ul class="about-split__bullets">
+            <li><i class="fa-solid fa-check" aria-hidden="true"></i> <span data-i18n="intro.b1">Custom-coded — no Wix, no WordPress, no template lock-in.</span></li>
+            <li><i class="fa-solid fa-check" aria-hidden="true"></i> <span data-i18n="intro.b2">UX research before design: I study your industry & best-in-class.</span></li>
+            <li><i class="fa-solid fa-check" aria-hidden="true"></i> <span data-i18n="intro.b3">Plain, warm copy in 3 languages — written from a marketing brain.</span></li>
+            <li><i class="fa-solid fa-check" aria-hidden="true"></i> <span data-i18n="intro.b4">You own everything: domain, code, photos. No subscriptions.</span></li>
+          </ul>
+          <a href="contact.html" class="btn btn-secondary" data-i18n="intro.cta">Tell me about your project</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- SERVICES (slimmed: only what beginner can realistically deliver) -->
-  <section class="section fade-in" id="services">
+  <!-- SERVICES -->
+  <section class="section section--alt fade-in" id="services">
     <div class="container">
       <div class="section-header">
         <span class="section-label" data-i18n="services.label">Services</span>
-        <h2 data-i18n="services.title">What I can help you with</h2>
-        <p data-i18n="services.lead">Honest scope. I do these things, and I do them with care.</p>
+        <h2 data-i18n="services.title">Everything you need, from one person.</h2>
+        <p data-i18n="services.lead">Strategy, design, code, copy and care — done by me, end to end. No handoffs, no agency overhead.</p>
       </div>
 
       <div class="cards stagger-children">
         <article class="icon-card">
           <span class="icon-card__num">01</span>
-          <h3 data-i18n="services.s1.title">Designing your website</h3>
-          <p class="card__tag" data-i18n="services.s1.tag">Visual design</p>
-          <p data-i18n="services.s1.text">A look that fits your business — calm, considered, on brand. We sketch ideas together and refine until it feels right.</p>
+          <h3 data-i18n="services.s1.title">Strategy &amp; UX</h3>
+          <p class="card__tag" data-i18n="services.s1.tag">Research first</p>
+          <p data-i18n="services.s1.text">I study your industry, your competitors and the best sites in the world in your sector — then design around what actually wins customers.</p>
         </article>
         <article class="icon-card">
           <span class="icon-card__num">02</span>
-          <h3 data-i18n="services.s2.title">Building it by hand</h3>
-          <p class="card__tag" data-i18n="services.s2.tag">Development</p>
-          <p data-i18n="services.s2.text">Hand-coded HTML, CSS and JavaScript. No bloated platforms, no monthly subscriptions for things you don't need.</p>
+          <h3 data-i18n="services.s2.title">Custom design &amp; build</h3>
+          <p class="card__tag" data-i18n="services.s2.tag">From scratch</p>
+          <p data-i18n="services.s2.text">A look that's only yours — no template, no Wix, no monthly fees. Fast, light, mobile-first, and yours to keep forever.</p>
         </article>
         <article class="icon-card">
           <span class="icon-card__num">03</span>
-          <h3 data-i18n="services.s3.title">Writing the words</h3>
-          <p class="card__tag" data-i18n="services.s3.tag">Copywriting</p>
-          <p data-i18n="services.s3.text">If you don't have time to write, I'll draft your home page in plain, warm language — drawing on my marketing background.</p>
+          <h3 data-i18n="services.s3.title">Copy that converts</h3>
+          <p class="card__tag" data-i18n="services.s3.tag">Marketing brain</p>
+          <p data-i18n="services.s3.text">Plain, warm words written from a marketing background — so visitors understand what you offer in 5 seconds and want to book.</p>
         </article>
         <article class="icon-card">
           <span class="icon-card__num">04</span>
-          <h3 data-i18n="services.s4.title">Helping people find you</h3>
-          <p class="card__tag" data-i18n="services.s4.tag">Local visibility</p>
-          <p data-i18n="services.s4.text">Setting up your Google Map listing and basic on-page SEO so locals can find you when they search.</p>
+          <h3 data-i18n="services.s4.title">Be found locally</h3>
+          <p class="card__tag" data-i18n="services.s4.tag">Local SEO</p>
+          <p data-i18n="services.s4.text">Google Maps listing, on-page SEO, structured data — so when someone nearby searches for what you offer, you show up first.</p>
         </article>
         <article class="icon-card">
           <span class="icon-card__num">05</span>
-          <h3 data-i18n="services.s5.title">EN + SK + CS toggle</h3>
-          <p class="card__tag" data-i18n="services.s5.tag">Multilingual</p>
-          <p data-i18n="services.s5.text">If your clients come from across the border, your website can speak their language. Like this one does.</p>
+          <h3 data-i18n="services.s5.title">Three languages</h3>
+          <p class="card__tag" data-i18n="services.s5.tag">EN · SK · CS</p>
+          <p data-i18n="services.s5.text">Tourists, expats, cross-border clients — one click and your whole site speaks their language. Just like this one (try EN/SK/CS up top).</p>
         </article>
         <article class="icon-card">
           <span class="icon-card__num">06</span>
-          <h3 data-i18n="services.s6.title">Small monthly check-ups</h3>
-          <p class="card__tag" data-i18n="services.s6.tag">Care</p>
-          <p data-i18n="services.s6.text">If you'd like, I can keep an eye on the site each month — minor edits, fresh photos, small content updates. Optional.</p>
+          <h3 data-i18n="services.s6.title">Ongoing care</h3>
+          <p class="card__tag" data-i18n="services.s6.tag">Optional</p>
+          <p data-i18n="services.s6.text">A real human to write to. Edits, fresh photos, content updates, small tweaks — only when you actually need them.</p>
         </article>
       </div>
     </div>
   </section>
 
-  <!-- PORTFOLIO -->
-  <section class="section section--alt fade-in" id="portfolio">
+  <!-- FEATURES — what I can build into your site -->
+  <section class="section fade-in" id="features">
     <div class="container">
       <div class="section-header">
-        <span class="section-label" data-i18n="portfolio.label">Work</span>
-        <h2 data-i18n="portfolio.title">A few things I've made</h2>
-        <p data-i18n="portfolio.lead">Different industries, the same approach: hand-built, simple, considered.</p>
+        <span class="section-label" data-i18n="features.label">Features</span>
+        <h2 data-i18n="features.title">What your website can include.</h2>
+        <p data-i18n="features.lead">Pick what your business actually needs, skip the rest. The website itself is custom-coded — no Wix, no WordPress, no heavy templates. For payments, bookings and emails I plug in proven third-party platforms — picked per project — so your data stays safe and things just work.</p>
       </div>
 
-      <div class="cards stagger-children">
-        <a href="../templates/01-lumi-hair-salon/index.html" class="card">
-          <img loading="lazy" src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1200&q=80" alt="Lumi hair salon" />
-          <div class="card__body">
-            <p class="card__tag" data-i18n="portfolio.p1.tag">Hair salon</p>
-            <h3 data-i18n="portfolio.p1.title">Lumi</h3>
-            <p data-i18n="portfolio.p1.text">A warm, classic salon site — gallery, services, online booking.</p>
-            <span class="card__cta" data-i18n="portfolio.open">View →</span>
-          </div>
-        </a>
-
-        <a href="../templates/02-luna-cafe/index.html" class="card">
-          <img loading="lazy" src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1200&q=80" alt="Luna café" />
-          <div class="card__body">
-            <p class="card__tag" data-i18n="portfolio.p2.tag">Café · brunch</p>
-            <h3 data-i18n="portfolio.p2.title">Luna</h3>
-            <p data-i18n="portfolio.p2.text">For cafés that also live on Instagram — menu, hours, atmosphere.</p>
-            <span class="card__cta" data-i18n="portfolio.open">View →</span>
-          </div>
-        </a>
-
-        <a href="../templates/03-mend-physiotherapy/index.html" class="card">
-          <img loading="lazy" src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1200&q=80" alt="Mend physiotherapy" />
-          <div class="card__body">
-            <p class="card__tag" data-i18n="portfolio.p3.tag">Physiotherapy</p>
-            <h3 data-i18n="portfolio.p3.title">Mend</h3>
-            <p data-i18n="portfolio.p3.text">A calm clinic site — conditions, therapies, therapist profile.</p>
-            <span class="card__cta" data-i18n="portfolio.open">View →</span>
-          </div>
-        </a>
-
-        <a href="../templates/04-rove-photographer/index.html" class="card">
-          <img loading="lazy" src="https://images.unsplash.com/photo-1606800052052-a08af7148866?auto=format&fit=crop&w=1200&q=80" alt="Rove photographer" />
-          <div class="card__body">
-            <p class="card__tag" data-i18n="portfolio.p4.tag">Photographer</p>
-            <h3 data-i18n="portfolio.p4.title">Rove</h3>
-            <p data-i18n="portfolio.p4.text">Editorial portfolio for a wedding / portrait photographer.</p>
-            <span class="card__cta" data-i18n="portfolio.open">View →</span>
-          </div>
-        </a>
-
-        <a href="../templates/05-stem-florist/index.html" class="card">
-          <img loading="lazy" src="https://images.unsplash.com/photo-1487530811176-3780de880c2d?auto=format&fit=crop&w=1200&q=80" alt="Stem florist" />
-          <div class="card__body">
-            <p class="card__tag" data-i18n="portfolio.p5.tag">Florist</p>
-            <h3 data-i18n="portfolio.p5.title">Stem</h3>
-            <p data-i18n="portfolio.p5.text">Boutique florist with seasonal collections and weddings.</p>
-            <span class="card__cta" data-i18n="portfolio.open">View →</span>
-          </div>
-        </a>
-
-        <a href="../templates/06-aria-yoga-studio/index.html" class="card">
-          <img loading="lazy" src="https://images.unsplash.com/photo-1545205597-3d9d02c29597?auto=format&fit=crop&w=1200&q=80" alt="Aria yoga studio" />
-          <div class="card__body">
-            <p class="card__tag" data-i18n="portfolio.p6.tag">Yoga &amp; Pilates</p>
-            <h3 data-i18n="portfolio.p6.title">Aria</h3>
-            <p data-i18n="portfolio.p6.text">A small movement studio — schedule, teachers, intro pass.</p>
-            <span class="card__cta" data-i18n="portfolio.open">View →</span>
-          </div>
-        </a>
+      <div class="features-grid stagger-children">
+        <article class="feature-card">
+          <i class="fa-solid fa-calendar-check feature-card__icon" aria-hidden="true"></i>
+          <h4 data-i18n="features.f1.title">Online booking &amp; payment</h4>
+          <p data-i18n="features.f1.text">Booking system with calendar, capacity and cancellation rules. Card payment, automatic email confirmations. Through a trusted booking platform — or a custom solution like in the Aria demo.</p>
+        </article>
+        <article class="feature-card">
+          <i class="fa-solid fa-bag-shopping feature-card__icon" aria-hidden="true"></i>
+          <h4 data-i18n="features.f2.title">Online shop &amp; cart</h4>
+          <p data-i18n="features.f2.text">Products, variants, delivery zones, cart and checkout. Through a trusted e-commerce platform — chosen by scale and needs. Like in the Stem florist demo.</p>
+        </article>
+        <article class="feature-card">
+          <i class="fa-solid fa-table-cells-large feature-card__icon" aria-hidden="true"></i>
+          <h4 data-i18n="features.f3.title">Weekly schedule</h4>
+          <p data-i18n="features.f3.text">A weekly schedule grid you update yourself. Clients see what's free and filter by class, teacher or room. Try it on Aria.</p>
+        </article>
+        <article class="feature-card">
+          <i class="fa-solid fa-language feature-card__icon" aria-hidden="true"></i>
+          <h4 data-i18n="features.f4.title">3+ languages</h4>
+          <p data-i18n="features.f4.text">One click switches the entire site. Perfect for tourist towns, B&amp;Bs, photographers, border-region businesses.</p>
+        </article>
+        <article class="feature-card">
+          <i class="fa-solid fa-images feature-card__icon" aria-hidden="true"></i>
+          <h4 data-i18n="features.f5.title">Galleries &amp; lookbooks</h4>
+          <p data-i18n="features.f5.text">Filterable, full-screen, before/after — whatever shows your work best. See Rove (photo) and Lumi (salon).</p>
+        </article>
+        <article class="feature-card">
+          <i class="fa-solid fa-id-badge feature-card__icon" aria-hidden="true"></i>
+          <h4 data-i18n="features.f6.title">Customer accounts</h4>
+          <p data-i18n="features.f6.text">Login, booking history, passes and credits. Clients come back more often when the site remembers them.</p>
+        </article>
+        <article class="feature-card">
+          <i class="fa-solid fa-utensils feature-card__icon" aria-hidden="true"></i>
+          <h4 data-i18n="features.f7.title">Menus &amp; reservations</h4>
+          <p data-i18n="features.f7.text">Tasting menus, daily specials, allergens, 3-step reservations. See Sála (restaurant) and Luna (café).</p>
+        </article>
+        <article class="feature-card">
+          <i class="fa-solid fa-credit-card feature-card__icon" aria-hidden="true"></i>
+          <h4 data-i18n="features.f8.title">Card payment &amp; passes</h4>
+          <p data-i18n="features.f8.text">Card payment through a trusted, secure payment provider. Single visits, multi-class passes, gift cards, subscriptions.</p>
+        </article>
+        <article class="feature-card">
+          <i class="fa-solid fa-location-dot feature-card__icon" aria-hidden="true"></i>
+          <h4 data-i18n="features.f9.title">Maps &amp; directions</h4>
+          <p data-i18n="features.f9.text">Live Google Maps, opening hours, parking notes, public-transport stops, click-to-call.</p>
+        </article>
+        <article class="feature-card">
+          <i class="fa-solid fa-pen-nib feature-card__icon" aria-hidden="true"></i>
+          <h4 data-i18n="features.f10.title">Blog / journal</h4>
+          <p data-i18n="features.f10.text">Easy-to-update articles for SEO and brand voice. You write in plain text, the site stays beautiful.</p>
+        </article>
+        <article class="feature-card">
+          <i class="fa-solid fa-envelope-open-text feature-card__icon" aria-hidden="true"></i>
+          <h4 data-i18n="features.f11.title">Forms &amp; lead capture</h4>
+          <p data-i18n="features.f11.text">Wedding inquiries, contact forms, quote requests — straight to your inbox, with anti-spam.</p>
+        </article>
+        <article class="feature-card">
+          <i class="fa-solid fa-star feature-card__icon" aria-hidden="true"></i>
+          <h4 data-i18n="features.f12.title">Reviews &amp; testimonials</h4>
+          <p data-i18n="features.f12.text">Selected reviews shown on your site + a button to your Google reviews. Social proof builds trust faster than anything else.</p>
+        </article>
+        <article class="feature-card">
+          <i class="fa-solid fa-magnifying-glass feature-card__icon" aria-hidden="true"></i>
+          <h4 data-i18n="features.f13.title">SEO &amp; analytics</h4>
+          <p data-i18n="features.f13.text">On-page SEO, sitemap, schema, GA4 / Plausible, Search Console — set up properly from day one.</p>
+        </article>
+        <article class="feature-card">
+          <i class="fa-solid fa-mobile-screen feature-card__icon" aria-hidden="true"></i>
+          <h4 data-i18n="features.f14.title">Mobile-first, accessible</h4>
+          <p data-i18n="features.f14.text">90%+ of small-business traffic is mobile. I design for the phone first, then expand. WCAG-friendly.</p>
+        </article>
+        <article class="feature-card">
+          <i class="fa-solid fa-bell feature-card__icon" aria-hidden="true"></i>
+          <h4 data-i18n="features.f15.title">Emails &amp; newsletter</h4>
+          <p data-i18n="features.f15.text">Contact form → straight to your inbox. Optional newsletter through a trusted email platform — whichever fits you best.</p>
+        </article>
+        <article class="feature-card feature-card--more">
+          <i class="fa-solid fa-plus feature-card__icon" aria-hidden="true"></i>
+          <h4 data-i18n="features.f16.title">Something else?</h4>
+          <p data-i18n="features.f16.text">If you can describe it, it's probably doable. Loyalty programs, memberships, integrations — just ask.</p>
+        </article>
       </div>
     </div>
   </section>
 
-  <!-- PRICING (simplified: discussed individually) -->
-  <section class="section fade-in" id="pricing-section">
+  <!-- HOW WE WORK / PROCESS -->
+  <section class="section section--alt fade-in" id="process">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label" data-i18n="process.label">How it works</span>
+        <h2 data-i18n="process.title">From first message to live site.</h2>
+        <p data-i18n="process.lead">Four honest steps. No surprises, no upsells, no agency runaround. You always know what's happening and what comes next.</p>
+      </div>
+
+      <ol class="process-steps stagger-children">
+        <li class="process-step">
+          <span class="process-step__num">01</span>
+          <h3 data-i18n="process.p1.title">A quick call</h3>
+          <p data-i18n="process.p1.text">You tell me about your business, your customers, your goals. I listen, ask questions, share what tends to work in your sector. No pressure, no commitment.</p>
+        </li>
+        <li class="process-step">
+          <span class="process-step__num">02</span>
+          <h3 data-i18n="process.p2.title">Research &amp; fixed quote</h3>
+          <p data-i18n="process.p2.text">I look at your competitors and the best-in-class sites in your sector. Then I send a written scope and a fixed price — in plain language, no hourly games.</p>
+        </li>
+        <li class="process-step">
+          <span class="process-step__num">03</span>
+          <h3 data-i18n="process.p3.title">Design &amp; build</h3>
+          <p data-i18n="process.p3.text">I design the site, write the copy, and code it from scratch. You see progress every few days and we refine together. Most projects launch in 2–4 weeks.</p>
+        </li>
+        <li class="process-step">
+          <span class="process-step__num">04</span>
+          <h3 data-i18n="process.p4.title">Launch &amp; care</h3>
+          <p data-i18n="process.p4.text">We go live, set up your domain &amp; analytics and make sure everything works. Optional monthly care so you don't have to think about updates, fixes or hosting.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- WHY CUSTOM (vs templates / agency) -->
+  <section class="section fade-in" id="why-custom">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label" data-i18n="why.label">Why custom</span>
+        <h2 data-i18n="why.title">Why a custom site beats a template.</h2>
+        <p data-i18n="why.lead">A small business doesn't need a generic page that looks like everyone else's. It needs a site that turns visitors into customers — and that's only possible when it's built around your specific business.</p>
+      </div>
+
+      <div class="why-table">
+        <div class="why-table__col why-table__col--mine">
+          <p class="why-table__tag" data-i18n="why.mine.tag">Custom (me)</p>
+          <h3 data-i18n="why.mine.title">A site built for you</h3>
+          <ul>
+            <li data-i18n="why.mine.l1">Designed around <em>your</em> customers</li>
+            <li data-i18n="why.mine.l2">Custom-coded — fast, light, SEO-ready</li>
+            <li data-i18n="why.mine.l3">No monthly platform fees, you own everything</li>
+            <li data-i18n="why.mine.l4">Any feature, any layout, no template limits</li>
+            <li data-i18n="why.mine.l5">One person you can write to anytime</li>
+          </ul>
+          <p class="why-table__price" data-i18n="why.mine.price">From a few hundred €, fixed quote.</p>
+        </div>
+        <div class="why-table__col">
+          <p class="why-table__tag" data-i18n="why.tpl.tag">Wix / Squarespace</p>
+          <h3 data-i18n="why.tpl.title">A template everyone shares</h3>
+          <ul>
+            <li data-i18n="why.tpl.l1">Looks like thousands of others</li>
+            <li data-i18n="why.tpl.l2">Slow — heavy code, poor mobile scores</li>
+            <li data-i18n="why.tpl.l3">€15–40 / month forever</li>
+            <li data-i18n="why.tpl.l4">Limited features, locked into their ecosystem</li>
+            <li data-i18n="why.tpl.l5">Generic support chat</li>
+          </ul>
+          <p class="why-table__price" data-i18n="why.tpl.price">€200–500 / year, every year.</p>
+        </div>
+        <div class="why-table__col">
+          <p class="why-table__tag" data-i18n="why.ag.tag">Agency</p>
+          <h3 data-i18n="why.ag.title">Five people, lots of meetings</h3>
+          <ul>
+            <li data-i18n="why.ag.l1">High overhead — most of the price is process</li>
+            <li data-i18n="why.ag.l2">Account managers, not the people who build it</li>
+            <li data-i18n="why.ag.l3">3–6 months timeline</li>
+            <li data-i18n="why.ag.l4">Hard to get small changes after launch</li>
+            <li data-i18n="why.ag.l5">Often built on the same templates anyway</li>
+          </ul>
+          <p class="why-table__price" data-i18n="why.ag.price">€5,000–25,000 to start.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- PRICING -->
+  <section class="section section--alt fade-in" id="pricing-section">
     <div class="container">
       <div class="section-header" style="max-width: 700px">
         <span class="section-label" data-i18n="pricing.label">Pricing</span>
-        <h2 data-i18n="pricing.title">Discussed individually</h2>
-        <p data-i18n="pricing.lead">Every project is different. Some are a one-page site, some are a small shop, some need extra care. We'll talk through what you actually need and I'll send you a clear, fixed quote — no surprises.</p>
-        <a href="contact.html" class="btn btn-secondary btn-lg" style="margin-top:24px" data-i18n="pricing.cta">Tell me about your project</a>
+        <h2 data-i18n="pricing.title">Fixed quote, no hourly games.</h2>
+        <p data-i18n="pricing.lead">Every business needs something different — some need one page, some a shop, some a booking system. After our first call I send a written, fixed quote. You always know what you're getting and what it costs.</p>
+        <a href="contact.html" class="btn btn-secondary btn-lg" style="margin-top:24px" data-i18n="pricing.cta">Get a free quote</a>
       </div>
     </div>
   </section>
 
   <!-- FAQ -->
-  <section class="section section--alt fade-in" id="faq-section">
+  <section class="section fade-in" id="faq-section">
     <div class="container">
       <div class="section-header">
         <span class="section-label" data-i18n="faq.label">FAQ</span>
-        <h2 data-i18n="faq.title">A few things you might be wondering</h2>
+        <h2 data-i18n="faq.title">A few things you might be wondering.</h2>
       </div>
 
       <div class="faq">
-        <details class="faq__item">
-          <summary class="faq__question" data-i18n="faq.q1">I already have a domain and an old website. Can you do something with that?</summary>
-          <p class="faq__answer" data-i18n="faq.a1">Yes. We can either move the domain to a new website or redesign on top of what you have — depends on the setup. We'll figure it out together on the first call.</p>
+        <details class="faq__item" open>
+          <summary class="faq__question" data-i18n="faq.q0">Are these demos real client websites?</summary>
+          <p class="faq__answer" data-i18n="faq.a0">No. They are showcase demos I built from scratch to show what's possible. Real client work stays private. Your site will be entirely your own — different colours, structure, features and voice.</p>
         </details>
         <details class="faq__item">
-          <summary class="faq__question" data-i18n="faq.q2">What if I don't have any photos?</summary>
-          <p class="faq__answer" data-i18n="faq.a2">For the first version we can use beautiful free photos from Unsplash — the same kind you see across this website. Later, when you're ready, we replace them with your own.</p>
+          <summary class="faq__question" data-i18n="faq.q5">How long does it take?</summary>
+          <p class="faq__answer" data-i18n="faq.a5">Most small-business sites go live in 2–4 weeks. Bigger projects with shops, booking systems or memberships take 4–8 weeks. You'll get a clear timeline in the quote.</p>
         </details>
         <details class="faq__item">
-          <summary class="faq__question" data-i18n="faq.q3">Will I be able to make small edits myself?</summary>
-          <p class="faq__answer" data-i18n="faq.a3">For simple things like text, prices and photos — yes. I'll show you how. For bigger changes, just write to me.</p>
+          <summary class="faq__question" data-i18n="faq.q6">Will it look like one of the demos above?</summary>
+          <p class="faq__answer" data-i18n="faq.a6">No — and that's the point. Every site is designed from a blank canvas around your business. The demos just show what's technically possible (booking, shop, multilingual, schedule, etc.). Yours will be its own thing.</p>
         </details>
         <details class="faq__item">
-          <summary class="faq__question" data-i18n="faq.q4">Do you only work for the kinds of businesses shown here?</summary>
-          <p class="faq__answer" data-i18n="faq.a4">Not at all. The work above is just what I have ready to show. If you run a small business and you'd like a website, write to me and we'll see if it's a fit.</p>
+          <summary class="faq__question" data-i18n="faq.q1">I already have a domain and an old website. Can we keep them?</summary>
+          <p class="faq__answer" data-i18n="faq.a1">Yes. We can keep your domain and either redesign on top of what you have or move you to something new — depending on the setup. We'll figure it out on the first call.</p>
+        </details>
+        <details class="faq__item">
+          <summary class="faq__question" data-i18n="faq.q2">What if I don't have any photos yet?</summary>
+          <p class="faq__answer" data-i18n="faq.a2">No problem. For the first version we can use beautiful free photos (like the ones on this site). Later, when you're ready, we swap them for your own.</p>
+        </details>
+        <details class="faq__item">
+          <summary class="faq__question" data-i18n="faq.q7">What if my business isn't in the demos?</summary>
+          <p class="faq__answer" data-i18n="faq.a7">It probably isn't — there are a million kinds of small businesses and only 7 demos here. Write to me, tell me what you do, and I'll show you sites I'd reference for your sector and what I'd build.</p>
+        </details>
+        <details class="faq__item">
+          <summary class="faq__question" data-i18n="faq.q4">Are there ongoing costs?</summary>
+          <p class="faq__answer" data-i18n="faq.a4">Just hosting and domain (around €5–10 / month, paid directly to the providers). No platform fees to me, ever. Optional monthly care if you want a real human on call for edits.</p>
         </details>
       </div>
     </div>
@@ -336,9 +562,11 @@
   <!-- CTA BAND -->
   <section class="section section--dark fade-in" id="cta">
     <div class="container text-center">
-      <h2 data-i18n="cta_band.title">If you're thinking about a website, write to me.</h2>
-      <p style="max-width:560px;margin:20px auto 36px;font-size:1.1rem" data-i18n="cta_band.text">No pressure, no commitment. Just a short conversation about what you'd like to make.</p>
+      <p class="cta-band__eyebrow" data-i18n="cta_band.eyebrow">Free, no-pressure quote</p>
+      <h2 data-i18n="cta_band.title">Tell me about your business.</h2>
+      <p style="max-width:580px;margin:20px auto 36px;font-size:1.1rem" data-i18n="cta_band.text">No pressure, no commitment. Just a short conversation about what you'd like to make — I'll show you what I'd build and roughly what it would cost. If it's not a fit, no harm done.</p>
       <a href="contact.html" class="btn btn-accent btn-lg" data-i18n="cta_band.btn">Get in touch</a>
+      <p class="cta-band__sub" data-i18n="cta_band.sub">Reply within 48 hours · EN · SK · CS</p>
     </div>
   </section>
 
@@ -347,21 +575,21 @@
     <div class="container">
       <div class="footer-top">
         <div class="footer-brand">
-          <h2>Sage<i>.</i></h2>
-          <p data-i18n="footer.tagline">Hand-built websites for small businesses. Made with care, in Prague and Bratislava.</p>
+          <h2>Karolína K<i>.</i></h2>
+          <p data-i18n="footer.tagline">A small portfolio of hand-built websites.</p>
           <div class="footer-socials">
             <a href="https://linkedin.com/in/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href="social.html" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="mailto:karolina.katrinakova@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
           </div>
         </div>
       </div>
 
       <div class="footer-grid">
         <div class="footer-col">
-          <h4 data-i18n="footer.col_studio">Studio</h4>
-          <a href="about.html" data-i18n="nav.about">About</a>
+          <h4 data-i18n="footer.col_studio">Portfolio</h4>
           <a href="services.html" data-i18n="nav.services">Services</a>
-          <a href="portfolio.html" data-i18n="nav.portfolio">Work</a>
+          <a href="portfolio.html" data-i18n="nav.portfolio">Demos</a>
+          <a href="contact.html" data-i18n="nav.contact">Contact</a>
         </div>
         <div class="footer-col">
           <h4 data-i18n="footer.col_work">Selected work</h4>
@@ -371,12 +599,7 @@
           <a href="../templates/04-rove-photographer/index.html">Rove · photo</a>
           <a href="../templates/05-stem-florist/index.html">Stem · florist</a>
           <a href="../templates/06-aria-yoga-studio/index.html">Aria · yoga</a>
-        </div>
-        <div class="footer-col">
-          <h4 data-i18n="footer.col_resources">Resources</h4>
-          <a href="social.html" data-i18n="nav.social">Social</a>
-          <a href="privacy.html" data-i18n="footer.privacy">Privacy</a>
-          <a href="terms.html" data-i18n="footer.terms">Terms</a>
+          <a href="../templates/07-sala-restaurant/index.html">Sála · restaurant</a>
         </div>
         <div class="footer-col">
           <h4 data-i18n="footer.col_contact">Contact</h4>
@@ -386,10 +609,9 @@
       </div>
 
       <div class="footer-bottom">
-        <p class="footer-bottom__copy" data-i18n="footer.rights">© 2026 Sage Studio · Karolína Katriňáková</p>
+        <p class="footer-bottom__copy" data-i18n="footer.rights">© 2026 Karolína Katriňáková</p>
         <div class="footer-bottom__links">
           <a href="privacy.html" data-i18n="footer.privacy">Privacy</a>
-          <a href="terms.html" data-i18n="footer.terms">Terms</a>
           <a href="javascript:void(0)" onclick="localStorage.removeItem('sage_cookies');document.getElementById('cookieBanner').style.display=''" data-i18n="footer.cookies">Cookies</a>
         </div>
       </div>
@@ -413,14 +635,15 @@
   <!-- Cookie banner -->
   <div class="cookie-banner" id="cookieBanner">
     <div class="cookie-banner__inner">
-      <p data-i18n="cookies.text">This site uses cookies to improve your experience.</p>
+      <p data-i18n="cookies.text">This site only saves your language choice and your answer to this banner — both stored in your browser. No tracking, no analytics.</p>
       <div class="cookie-banner__actions">
-        <button class="cookie-banner__btn cookie-banner__btn--accept" data-cookie="accept" data-i18n="cookies.accept">Accept</button>
-        <button class="cookie-banner__btn cookie-banner__btn--decline" data-cookie="decline" data-i18n="cookies.decline">Decline</button>
+        <button class="cookie-banner__btn cookie-banner__btn--accept" data-cookie="accept" data-i18n="cookies.accept">OK</button>
+        <button class="cookie-banner__btn cookie-banner__btn--decline" data-cookie="decline" data-i18n="cookies.decline">Close</button>
       </div>
     </div>
   </div>
 
+  <script src="i18n/dict.js?v=25"></script>
   <script src="js/i18n.js"></script>
   <script src="js/main.js"></script>
 </body>

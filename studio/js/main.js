@@ -26,6 +26,7 @@
   var progressBar = document.querySelector('.reading-progress');
   var mobileCta = document.querySelector('.mobile-cta');
   var lastScrollY = 0;
+  var hasHeroBanner = !!document.querySelector('.banner');
 
   function onScroll() {
     var y = window.scrollY;
@@ -34,7 +35,7 @@
       progressBar.style.width = (docH > 0 ? (y / docH) * 100 : 0) + '%';
     }
     if (navbar) {
-      navbar.classList.toggle('scrolled', y > 60);
+      navbar.classList.toggle('scrolled', hasHeroBanner ? y > 60 : true);
       if (y > 300 && y > lastScrollY) {
         navbar.classList.add('hidden');
       } else {
@@ -114,7 +115,7 @@
     statNumbers.forEach(function (el) { statObs.observe(el); });
   }
 
-  /* ─── Page exit transitions ─── */
+  /* ─── Page exit transitions (skips same-page anchor links) ─── */
   document.addEventListener('click', function (e) {
     var link = e.target.closest('a[href]');
     if (!link) return;
@@ -122,6 +123,22 @@
     if (!href || href.startsWith('#') || href.startsWith('http') || href.startsWith('//')
         || href.startsWith('mailto:') || href.startsWith('tel:') || link.target === '_blank'
         || link.hasAttribute('download') || link.dataset.noTransition) return;
+    // Detect same-page navigation (e.g. "index.html#chef" while on index.html)
+    // — let the browser handle hash scrolling without fading the page out.
+    try {
+      var url = new URL(link.href, window.location.href);
+      if (url.pathname === window.location.pathname && url.hash) {
+        e.preventDefault();
+        var target = document.querySelector(url.hash);
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          history.pushState(null, '', url.hash);
+        } else {
+          window.location.hash = url.hash;
+        }
+        return;
+      }
+    } catch (err) { /* fall through to normal exit */ }
     e.preventDefault();
     document.body.classList.add('page-exit');
     setTimeout(function () { window.location.href = href; }, 300);
@@ -267,26 +284,26 @@
   /* ─── Cookie banner ─── */
   var cb = document.getElementById('cookieBanner');
   if (cb) {
-    if (localStorage.getItem('sage_cookies')) {
+    if (localStorage.getItem('petal_cookies')) {
       cb.style.display = 'none';
     }
     cb.querySelectorAll('[data-cookie="accept"]').forEach(function (b) {
       b.addEventListener('click', function () {
         cb.style.display = 'none';
-        localStorage.setItem('sage_cookies', 'accepted');
+        localStorage.setItem('petal_cookies', 'accepted');
       });
     });
     cb.querySelectorAll('[data-cookie="decline"]').forEach(function (b) {
       b.addEventListener('click', function () {
         cb.style.display = 'none';
-        localStorage.setItem('sage_cookies', 'declined');
+        localStorage.setItem('petal_cookies', 'declined');
       });
     });
   }
 
   /* ─── Intro offer modal ─── */
   var io2 = document.getElementById('introOffer');
-  if (io2 && !sessionStorage.getItem('sage_intro')) {
+  if (io2 && !sessionStorage.getItem('petal_intro')) {
     setTimeout(function () {
       io2.classList.add('active');
       document.body.style.overflow = 'hidden';
@@ -294,7 +311,7 @@
     function close2() {
       io2.classList.remove('active');
       document.body.style.overflow = '';
-      sessionStorage.setItem('sage_intro', 'seen');
+      sessionStorage.setItem('petal_intro', 'seen');
     }
     io2.querySelector('.intro-offer__overlay').addEventListener('click', close2);
     io2.querySelector('.intro-offer__close').addEventListener('click', close2);
@@ -308,14 +325,14 @@
 
   /* ─── Announcement bar close ─── */
   var ab = document.querySelector('.announcement-bar');
-  if (ab && localStorage.getItem('sage_announcement_closed') === '1') {
+  if (ab && localStorage.getItem('petal_announcement_closed') === '1') {
     ab.style.display = 'none';
   }
   var abClose = document.querySelector('.announcement-bar__close');
   if (abClose) {
     abClose.addEventListener('click', function () {
       ab.style.display = 'none';
-      localStorage.setItem('sage_announcement_closed', '1');
+      localStorage.setItem('petal_announcement_closed', '1');
     });
   }
 

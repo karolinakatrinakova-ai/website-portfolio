@@ -1,5 +1,6 @@
 /* Studio Novák · editorial, dark, luxury */
-@import url("../../../studio/css/style.css");
+@import url("../../../studio/css/style.css?v=3");
+@import url("https://fonts.googleapis.com/css2?family=Italiana&family=Cormorant+Infant:ital,wght@0,400;1,400&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=PT+Serif:ital,wght@0,400;0,700;1,400&family=Tenor+Sans&display=swap");
 
 :root {
   --bg:           #0d0d0d;
@@ -19,21 +20,42 @@
   --olive:        #7a8c6e;
   --plum:         #5b3a4f;
 
+  /* Rove typography: serif body (PT Serif) — only template with a serif body.
+     Italiana for fashion display headlines (all-caps), Cormorant Infant italic
+     for delicate sub-heads, Tenor Sans for tracked uppercase kickers. */
   --serif:        "Italiana", "Cormorant Garamond", serif;
-  --sans:         "Inter", system-ui, sans-serif;
+  --serif-body:   "PT Serif", Georgia, serif;
+  --serif-italic: "Cormorant Infant", "Cormorant Garamond", Georgia, serif;
+  --sans:         "Tenor Sans", "Inter", system-ui, sans-serif;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Italiana&family=Cormorant+Garamond:ital,wght@0,400;1,400&family=Inter:wght@300;400;500;600&display=swap");
+body { background: var(--bg); color: var(--ink-soft); font-family: var(--serif-body); font-size: 16.5px; line-height: 1.75; font-weight: 400; }
 
-body { background: var(--bg); color: var(--ink-soft); }
+h1, h2, h3 { font-family: var(--serif); color: var(--ink); font-weight: 400; letter-spacing: 0.04em; text-transform: uppercase; line-height: 1.08; }
+h1 { letter-spacing: 0.06em; }
+h4, h5, h6 { font-family: var(--serif-italic); font-style: italic; font-weight: 400; letter-spacing: 0; text-transform: none; }
 
-h1, h2, h3 { font-family: var(--serif); color: var(--ink); font-weight: 400; letter-spacing: 0.005em; }
+/* Italic accents inside H1/H2 use delicate Cormorant Infant italic */
+h1 em, h2 em, h3 em { font-family: var(--serif-italic); font-style: italic; text-transform: none; letter-spacing: 0; font-weight: 400; }
 
-p { color: var(--ink-soft); }
+/* All eyebrow / kicker labels use Tenor Sans tracked uppercase */
+.section-eyebrow, .section-label, .hero-eyebrow, .nav-link, .navbar-links a,
+.navbar-cta, .btn, .footer-bottom__copy, .journal-card__cat, .lang-switch__btn,
+.tier-eyebrow, .label, [data-i18n*="label"], small.kicker {
+  font-family: var(--sans); letter-spacing: 0.22em; text-transform: uppercase;
+}
+
+p { color: var(--ink-soft); font-family: var(--serif-body); font-weight: 400; }
+p strong { font-weight: 700; color: var(--ink); }
 ::selection { background: var(--accent); color: var(--bg); }
 
-.banner__veil { background: linear-gradient(180deg, rgba(13,13,13,0.5) 0%, rgba(13,13,13,0.85) 100%); }
+.banner__veil { background: linear-gradient(180deg, rgba(13,13,13,0.55) 0%, rgba(13,13,13,0.75) 50%, rgba(13,13,13,0.85) 100%); }
 .hero-rule { background: var(--accent); }
+.hero-line--italic {
+  color: #e8d8b8;
+  text-shadow: 0 2px 18px rgba(0, 0, 0, 0.55), 0 1px 4px rgba(0, 0, 0, 0.35);
+}
+.banner h1 { text-shadow: 0 2px 18px rgba(0, 0, 0, 0.45), 0 1px 4px rgba(0, 0, 0, 0.35); }
 
 .section { background: var(--bg); }
 .section--alt { background: var(--bg-2); }
@@ -124,3 +146,20 @@ p { color: var(--ink-soft); }
 .pkg-card li { padding: 10px 0; border-bottom: 1px solid var(--line-soft); color: var(--ink-soft); font-size: 0.94rem; }
 .pkg-card li:last-child { border-bottom: 0; }
 .pkg-card .price { font-family: var(--serif); font-size: 2.6rem; color: var(--ink); margin: 0; }
+
+/* ─── Rove navbar override: scrolled state must be DARK on dark theme ─── */
+.navbar.scrolled {
+  background: rgba(13, 13, 13, 0.88) !important;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.06) !important;
+}
+.navbar.scrolled .navbar-brand,
+.navbar.scrolled .navbar-cta { color: var(--ink) !important; border-color: rgba(247, 244, 238, 0.4) !important; }
+.navbar.scrolled .navbar-links a { color: rgba(247, 244, 238, 0.78) !important; }
+.navbar.scrolled .navbar-links a:hover,
+.navbar.scrolled .navbar-links a.active,
+.navbar.scrolled .navbar-links a.is-current { color: var(--ink) !important; }
+.navbar.scrolled .navbar-cta:hover { background: var(--accent) !important; color: var(--bg) !important; border-color: var(--accent) !important; }
+.navbar.scrolled .navbar-hamburger span { background: var(--ink) !important; }
+.navbar.scrolled .lang-switch { background: rgba(255, 255, 255, 0.06); border-color: rgba(255, 255, 255, 0.12); }
+.navbar.scrolled .lang-switch__btn { color: rgba(247, 244, 238, 0.6); }
+.navbar.scrolled .lang-switch__btn.active { background: var(--ink); color: var(--bg); }

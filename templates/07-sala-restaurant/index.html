@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title data-i18n="meta.title">Sála · Restaurant · Praha · Vinohrady</title>
+  <meta name="description" data-i18n-attr="content|meta.description" content="Sála — neighborhood restaurant on Vinohradská. Modern Czech cooking, natural wine, tasting menu six nights a week. Reservations open." />
+  <meta name="theme-color" content="#0f2620" />
+  <link rel="icon" type="image/svg+xml" href="../../studio/favicon.svg?v=3" />
+  <link rel="stylesheet" href="css/theme.css?v=3" />
+  <link rel="stylesheet" href="css/layout.css?v=3" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+
+  <a href="#main" class="skip-to-content" data-i18n="a11y.skip">Skip to content</a>
+  <div class="page-loader"><span class="page-loader__brand">Sál<i>a</i></span></div>
+  <div class="reading-progress"></div>
+
+  <div class="resv-strip">
+    <span data-i18n="resvStrip.now">Reservations open · Tonight &amp; this week</span>
+    <span class="resv-strip__sep">·</span>
+    <a href="reservations.html" data-i18n="resvStrip.cta">Book a table →</a>
+  </div>
+
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="navbar-brand"><span class="navbar-brand__dot"></span><span>Sál<i>a</i></span></a>
+      <ul class="navbar-links">
+        <li><a href="index.html" class="active" data-i18n="nav.home">Home</a></li>
+        <li><a href="menu.html" data-i18n="nav.menu">Menu</a></li>
+        <li><a href="index.html#wine" data-i18n="nav.wine">Wine</a></li>
+        <li><a href="index.html#chef" data-i18n="nav.chef">Chef</a></li>
+        <li><a href="index.html#visit" data-i18n="nav.visit">Visit</a></li>
+      </ul>
+      <div class="navbar-right">
+        <div class="lang-switch" data-lang-switch><button class="lang-switch__btn" data-lang="en">EN</button><button class="lang-switch__btn" data-lang="sk">SK</button><button class="lang-switch__btn" data-lang="cs">CS</button></div>
+        <a href="reservations.html" class="navbar-cta" data-i18n="nav.cta">Reserve</a>
+        <button class="navbar-hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mobile-menu">
+    <ul class="mobile-menu__links">
+      <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+      <li><a href="menu.html" data-i18n="nav.menu">Menu</a></li>
+      <li><a href="index.html#wine" data-i18n="nav.wine">Wine</a></li>
+      <li><a href="index.html#chef" data-i18n="nav.chef">Chef</a></li>
+      <li><a href="index.html#visit" data-i18n="nav.visit">Visit</a></li>
+      <li><a href="reservations.html" data-i18n="nav.cta">Reserve</a></li>
+    </ul>
+    <div class="lang-switch" data-lang-switch role="group" aria-label="Language">
+      <button class="lang-switch__btn" data-lang="en">EN</button>
+      <button class="lang-switch__btn" data-lang="sk">SK</button>
+      <button class="lang-switch__btn" data-lang="cs">CS</button>
+    </div>
+
+  </div>
+
+  <!-- ─── MARQUEE HERO ─── -->
+  <header class="banner banner--sala" id="main">
+    <div class="banner__bg">
+      <img src="https://images.unsplash.com/photo-1481833761820-0509d3217039?auto=format&fit=crop&w=2400&q=82" alt="Sála restaurant interior · candlelit dining room" />
+    </div>
+    <div class="banner__veil"></div>
+
+    <div class="container">
+      <div class="sala-hero__top">
+        <span data-i18n="hero.kicker">Vinohradská 27 · Praha 2 · Since 2021</span>
+        <a href="reservations.html" data-i18n="hero.book">Reservations →</a>
+      </div>
+
+      <h1 class="sala-hero__title" data-i18n="hero.title" data-i18n-html="true">Sál<em>a</em></h1>
+      <p class="sala-hero__sub" data-i18n="hero.sub">A neighborhood restaurant. Modern Czech cooking, natural wine, an open kitchen and the same forty seats six nights a week.</p>
+
+      <div class="sala-hero__cta">
+        <a href="reservations.html" class="btn btn-primary" data-i18n="hero.ctaBook">Reserve a table</a>
+        <a href="menu.html" class="btn btn-outline" style="color:#f5efde;border-color:rgba(245,239,222,0.6)" data-i18n="hero.ctaMenu">See tonight's menu</a>
+      </div>
+
+      <dl class="sala-hero__bottom">
+        <div><dt data-i18n="hero.hours">Open</dt><dd data-i18n="hero.hoursVal" data-i18n-html="true">Tue–Sat · <em>17:30 → 23:00</em></dd></div>
+        <div><dt data-i18n="hero.tasting">Tasting menu</dt><dd data-i18n="hero.tastingVal" data-i18n-html="true">7 courses · <em>1 880 Kč</em></dd></div>
+        <div><dt data-i18n="hero.alacarte">À la carte</dt><dd data-i18n="hero.alacarteVal">3 + 4 + 4</dd></div>
+        <div><dt data-i18n="hero.address">Find us</dt><dd data-i18n="hero.addressVal">Vinohradská 27, Praha 2</dd></div>
+      </dl>
+    </div>
+  </header>
+
+  <!-- ─── TONIGHT AT SÁLA ─── -->
+  <section class="tonight">
+    <div class="container">
+      <div class="tonight__inner">
+        <div class="tonight__media fade-in">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1577106263724-2c8e03bfe9cf?auto=format&fit=crop&w=1400&q=82" alt="" />
+        </div>
+        <div class="fade-in">
+          <p class="tonight__kicker" data-i18n="tonight.kicker">Tonight at Sála · Thursday</p>
+          <h2 class="tonight__title" data-i18n="tonight.title" data-i18n-html="true">Roasted celeriac with brown butter, fermented gooseberry & <em>summer herbs</em></h2>
+          <p class="tonight__desc" data-i18n="tonight.desc">A vegetable course we've been working on since the first frost. Whole celeriac roasted in salt for four hours, glazed with the brown butter we make every Tuesday, and finished with a gooseberry ferment from August. Served with last summer's chervil and mountain savory, dried in the kitchen window.</p>
+          <ul class="tonight__pairings">
+            <li data-i18n="tonight.pair1">Pairs with · Riesling 2022</li>
+            <li data-i18n="tonight.pair2">or · Cider, Hardanger</li>
+            <li data-i18n="tonight.pair3">non-alc · Birch</li>
+          </ul>
+          <p class="tonight__price" data-i18n="tonight.price" data-i18n-html="true">À la carte · <strong>320 Kč</strong>   ·   Within the tasting · course 4 of 7</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── MANIFESTO ─── -->
+  <section class="manifesto fade-in">
+    <div class="container">
+      <div class="manifesto__body">
+        <span class="manifesto__kicker" data-i18n="manifesto.kicker">A letter from the kitchen</span>
+        <h2 class="manifesto__title" data-i18n="manifesto.title" data-i18n-html="true">We cook with what's local — <em>and what the season brings</em></h2>
+        <div class="manifesto__cols">
+          <p data-i18n="manifesto.p1">Sála is a forty-seat restaurant in a 1908 dining hall — the room kept its original tin ceiling, tile floor and wide windows looking onto Vinohradská. We took those four walls, a wood-burning grill, and a question we keep asking: what does Czech cooking taste like, here, now, when we use what's still in the ground?</p>
+          <p data-i18n="manifesto.p2">Almost everything on the plate comes from inside a forty-kilometre radius. Vegetables from the Čermáks at Lhota since the spring of 2021. Pork and old-breed lamb from Statek u Cibulky. Cheese from the dairy at Ovocný Trh, eggs from the small farm in Kostelec. Whatever we cannot grow we ferment, smoke, dry, age — the larder runs the menu more than we do.</p>
+          <p data-i18n="manifesto.p3">There is one tasting menu and a small à la carte; both change every two weeks. Wine is natural — almost entirely Moravian and Austrian — poured by people who know the growers. We are open six evenings a week and we close on Sundays and Mondays so the whole team has two days off in a row.</p>
+          <p data-i18n="manifesto.p4">If you come, come hungry, stay long. We will keep the second pour of wine going.</p>
+        </div>
+        <p class="manifesto__sign" data-i18n="manifesto.sign" data-i18n-html="true">— Anna &amp; the Sála team<small data-i18n="manifesto.signSmall">Chef · co-owner · since 2021</small></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── TASTING MENU STAGE ─── -->
+  <section class="tasting" id="tasting">
+    <div class="container">
+      <div class="tasting__head fade-in">
+        <div>
+          <span class="section-eyebrow" data-i18n="tasting.kicker">The Tasting · Spring 2026</span>
+          <h2 data-i18n="tasting.title" data-i18n-html="true">Seven courses,<br/><em>one&nbsp;menu, ninety minutes</em></h2>
+        </div>
+        <p class="lede" data-i18n="tasting.lede">Hover a course to see the plate. The full menu changes every two Tuesdays. Vegetarian and gluten-free versions are available — please tell us when you book.</p>
+      </div>
+
+      <div class="tasting__grid" data-tasting>
+        <div class="tasting__rows">
+          <div class="tasting__row is-active" tabindex="0" data-image="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1400&q=82">
+            <span class="tasting__num">01</span>
+            <div>
+              <h3 class="tasting__name" data-i18n="tasting.c1.name" data-i18n-html="true">Cold-smoked trout with dill <em>oil and pickled rye</em></h3>
+              <p class="tasting__detail" data-i18n="tasting.c1.detail">Český Krumlov trout, smoked over apple. Cucumber from the kitchen garden, brined in last year's whey. Dill flowers.</p>
+            </div>
+            <span class="tasting__pairing" data-i18n="tasting.c1.pair">+ Cider · Hardanger</span>
+          </div>
+
+          <div class="tasting__row" tabindex="0" data-image="https://images.unsplash.com/photo-1485963631004-f2f00b1d6606?auto=format&fit=crop&w=1400&q=82">
+            <span class="tasting__num">02</span>
+            <div>
+              <h3 class="tasting__name" data-i18n="tasting.c2.name" data-i18n-html="true">Twelve-hour broth with <em>summer tomatoes</em></h3>
+              <p class="tasting__detail" data-i18n="tasting.c2.detail">Aged beef bones, charred onion, our smoked tomato preserve from August. Finished tableside with marigold oil.</p>
+            </div>
+            <span class="tasting__pairing" data-i18n="tasting.c2.pair">+ Riesling · Velké Bílovice</span>
+          </div>
+
+          <div class="tasting__row" tabindex="0" data-image="https://images.unsplash.com/photo-1577106263724-2c8e03bfe9cf?auto=format&fit=crop&w=1400&q=82">
+            <span class="tasting__num">03</span>
+            <div>
+              <h3 class="tasting__name" data-i18n="tasting.c3.name" data-i18n-html="true">Roasted celeriac, brown butter and <em>fermented gooseberry</em></h3>
+              <p class="tasting__detail" data-i18n="tasting.c3.detail">Celeriac roasted in salt for four hours, glazed with our brown butter. Gooseberry ferment from August. Served on a stone, finished with mountain savory.</p>
+            </div>
+            <span class="tasting__pairing" data-i18n="tasting.c3.pair">+ Pet-Nat · Bratislava</span>
+          </div>
+
+          <div class="tasting__row" tabindex="0" data-image="https://images.unsplash.com/photo-1559329007-40df8a9345d8?auto=format&fit=crop&w=1400&q=82">
+            <span class="tasting__num">04</span>
+            <div>
+              <h3 class="tasting__name" data-i18n="tasting.c4.name" data-i18n-html="true">Sourdough bread course with <em>cultured butter and lardo</em></h3>
+              <p class="tasting__detail" data-i18n="tasting.c4.detail">Our sourdough — fed in this kitchen since November 2021 — pulled hot from the wood oven. Cultured butter from Vysočina, lardo cured for six months in our cellar.</p>
+            </div>
+            <span class="tasting__pairing" data-i18n="tasting.c4.pair">+ Veltlín · Pavlov</span>
+          </div>
+
+          <div class="tasting__row" tabindex="0" data-image="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1400&q=82">
+            <span class="tasting__num">05</span>
+            <div>
+              <h3 class="tasting__name" data-i18n="tasting.c5.name" data-i18n-html="true">Wild duck with fermented blueberry and <em>charred cabbage</em></h3>
+              <p class="tasting__detail" data-i18n="tasting.c5.detail">Bohemian wild duck, aged on the bone for ten days, glazed with last summer's blueberry. Charred pointed cabbage from the Čermáks. Pan jus poured at the table.</p>
+            </div>
+            <span class="tasting__pairing" data-i18n="tasting.c5.pair">+ Frankovka · 2018</span>
+          </div>
+
+          <div class="tasting__row" tabindex="0" data-image="https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&w=1400&q=82">
+            <span class="tasting__num">06</span>
+            <div>
+              <h3 class="tasting__name" data-i18n="tasting.c6.name" data-i18n-html="true">Aged cheeses from <em>Ovocný Trh</em></h3>
+              <p class="tasting__detail" data-i18n="tasting.c6.detail">Three Czech cheeses, aged eight, twelve, eighteen months in the cellar two streets from here. Walnut-leaf bread, plum mostarda from the September pickle.</p>
+            </div>
+            <span class="tasting__pairing" data-i18n="tasting.c6.pair">+ Pálava · 2021</span>
+          </div>
+
+          <div class="tasting__row" tabindex="0" data-image="https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=1400&q=82">
+            <span class="tasting__num">07</span>
+            <div>
+              <h3 class="tasting__name" data-i18n="tasting.c7.name" data-i18n-html="true">Buckwheat sponge cake with <em>caramelised honey and sour cream</em></h3>
+              <p class="tasting__detail" data-i18n="tasting.c7.detail">A warm cake of toasted buckwheat, served with sour cream from Kostelec and a glaze of honey from the orchard at Modletice — caramelized and cooled twice.</p>
+            </div>
+            <span class="tasting__pairing" data-i18n="tasting.c7.pair">+ Tokaj Furmint</span>
+          </div>
+        </div>
+
+        <div class="tasting__stage">
+          <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1400&q=82" alt="Course image" />
+        </div>
+      </div>
+
+      <div class="tasting__foot fade-in">
+        <p class="tasting__foot__price" data-i18n="tasting.foot.price" data-i18n-html="true">7 courses · <strong>1 880 Kč</strong>   ·   wine pairing · 1 280 Kč</p>
+        <a href="reservations.html" class="btn btn-accent" data-i18n="tasting.foot.cta">Reserve the tasting →</a>
+        <span class="tasting__foot__note" data-i18n="tasting.foot.note">menu refreshes every 2 weeks</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── WINE ─── -->
+  <section class="wine" id="wine">
+    <div class="container">
+      <span class="section-eyebrow" data-i18n="wine.kicker">Cellar · 180+ Czech, Moravian, Austrian growers</span>
+      <h2 data-i18n="wine.title" data-i18n-html="true">Living wine,<br/><em>from the people who grow it</em></h2>
+      <p class="wine__lede" data-i18n="wine.lede">A short list, almost entirely natural. Most are poured by the glass. Bring whatever you like — corkage is 350 Kč and goes to the kitchen tip.</p>
+
+      <div class="wine__grid">
+        <div class="wine__card wine__card--white fade-in">
+          <span class="wine__bottle"></span>
+          <p class="wine__type" data-i18n="wine.w1.type">Skin-contact white</p>
+          <h3 class="wine__name" data-i18n="wine.w1.name" data-i18n-html="true">Pálava <em>2022</em></h3>
+          <p class="wine__where" data-i18n="wine.w1.where">Krásná hora · Mělník</p>
+          <p class="wine__notes" data-i18n="wine.w1.notes">Apricot skin, dried marigold, salt. A kitchen wine — drinks with anything that comes off the grill.</p>
+          <p class="wine__pour"><span data-i18n="wine.w1.glass">125 ml</span><span data-i18n="wine.w1.price">160 Kč</span></p>
+        </div>
+
+        <div class="wine__card wine__card--orange fade-in">
+          <span class="wine__bottle"></span>
+          <p class="wine__type" data-i18n="wine.w2.type">Macerated · orange</p>
+          <h3 class="wine__name" data-i18n="wine.w2.name" data-i18n-html="true">Veltlín <em>nature 2021</em></h3>
+          <p class="wine__where" data-i18n="wine.w2.where">Sonberk · Pavlov</p>
+          <p class="wine__notes" data-i18n="wine.w2.notes">Six days on skins, no filter. Quince, white tea, a clean bitterness on the finish — the wine for the celeriac course.</p>
+          <p class="wine__pour"><span data-i18n="wine.w2.glass">125 ml</span><span data-i18n="wine.w2.price">190 Kč</span></p>
+        </div>
+
+        <div class="wine__card wine__card--bubble fade-in">
+          <span class="wine__bottle"></span>
+          <p class="wine__type" data-i18n="wine.w3.type">Pet-Nat</p>
+          <h3 class="wine__name" data-i18n="wine.w3.name" data-i18n-html="true">Modrý Portugal <em>Pet-Nat 2023</em></h3>
+          <p class="wine__where" data-i18n="wine.w3.where">Strekov · Šoltís</p>
+          <p class="wine__notes" data-i18n="wine.w3.notes">Bottled half-fermented, cold-aged on lees. Wild raspberry, sourdough, light salt. Drinks like a beer.</p>
+          <p class="wine__pour"><span data-i18n="wine.w3.glass">125 ml</span><span data-i18n="wine.w3.price">170 Kč</span></p>
+        </div>
+
+        <div class="wine__card wine__card--red fade-in">
+          <span class="wine__bottle"></span>
+          <p class="wine__type" data-i18n="wine.w4.type">Old-vine red</p>
+          <h3 class="wine__name" data-i18n="wine.w4.name" data-i18n-html="true">Frankovka <em>1976 vines · 2018</em></h3>
+          <p class="wine__where" data-i18n="wine.w4.where">Dobrá Vinice · Mikulov</p>
+          <p class="wine__notes" data-i18n="wine.w4.notes">Fifty-year vines, eight months in old oak. Smoke, blackberry leaf, iron — pours with the duck and the cheese.</p>
+          <p class="wine__pour"><span data-i18n="wine.w4.glass">125 ml</span><span data-i18n="wine.w4.price">220 Kč</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── PRESS WALL ─── -->
+  <section class="press">
+    <div class="container">
+      <div class="press__head fade-in">
+        <span class="section-eyebrow" data-i18n="press.kicker">Press · 2022 — 2026</span>
+        <h2 data-i18n="press.title" data-i18n-html="true">What people <em>have written</em></h2>
+      </div>
+
+      <div class="press__row">
+        <div class="press__cell">
+          <p class="press__cell__org">Michelin Guide</p>
+          <p class="press__cell__rating" data-i18n="press.r1" data-i18n-html="true">Bib Gourmand <em>· 2024</em></p>
+          <p class="press__cell__year" data-i18n="press.r1y">retained 2025 · 2026</p>
+        </div>
+        <div class="press__cell">
+          <p class="press__cell__org">Gault &amp; Millau CZ</p>
+          <p class="press__cell__rating" data-i18n="press.r2" data-i18n-html="true">14<em>/20</em></p>
+          <p class="press__cell__year" data-i18n="press.r2y">"discovery of the year 2024"</p>
+        </div>
+        <div class="press__cell">
+          <p class="press__cell__org">La Liste</p>
+          <p class="press__cell__rating" data-i18n="press.r3" data-i18n-html="true">88.5<em>/100</em></p>
+          <p class="press__cell__year" data-i18n="press.r3y">2026 selection</p>
+        </div>
+        <div class="press__cell">
+          <p class="press__cell__org">50 Best Discovery</p>
+          <p class="press__cell__rating" data-i18n="press.r4" data-i18n-html="true">Listed <em>· 2025</em></p>
+          <p class="press__cell__year" data-i18n="press.r4y">central europe · top 30</p>
+        </div>
+      </div>
+
+      <div class="press__quotes">
+        <blockquote class="press__quote fade-in">
+          <p data-i18n="press.q1">"The most quietly confident new restaurant in the city. Anna Hofmann is cooking food that tastes specifically of her — and of Vinohrady, in this exact week."</p>
+          <cite data-i18n="press.q1c">— Lidové Noviny · Spring 2025</cite>
+        </blockquote>
+        <blockquote class="press__quote fade-in">
+          <p data-i18n="press.q2">"Forty seats, one tasting menu, an open kitchen — Sála has the kind of conviction Prague has been waiting for."</p>
+          <cite data-i18n="press.q2c">— Forbes Život · September 2024</cite>
+        </blockquote>
+        <blockquote class="press__quote fade-in">
+          <p data-i18n="press.q3">"A wine list of the year. The Moravian-and-Austrian focus is the smartest editing in the country."</p>
+          <cite data-i18n="press.q3c">— Wine &amp; Spirits · 2024</cite>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CHEF ─── -->
+  <section class="chef" id="chef">
+    <div class="container">
+      <div class="chef__inner">
+        <div class="chef__media fade-in">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1706988328012-a89a4151283d?auto=format&fit=crop&w=1200&q=82" alt="Chef Anna Hofmann at the pass" />
+        </div>
+        <div class="fade-in">
+          <span class="section-eyebrow" data-i18n="chef.kicker">The chef</span>
+          <h2 data-i18n="chef.title" data-i18n-html="true">Anna Hofmann <em>cooks here every night</em></h2>
+          <div class="chef__bio">
+            <p data-i18n="chef.p1">Born in Olomouc, trained in Vienna, two years at Frantzén in Stockholm and a year at Maaemo in Oslo. Anna came back to Prague in 2021 to open Sála — forty seats, an open kitchen, and a question about what modern Czech cooking could become.</p>
+            <p data-i18n="chef.p2">She works the pass six nights a week, plates almost every dish that leaves the kitchen herself, and runs the menu as a single, stubborn point of view: a fortnight at a time, written by the season and the larder.</p>
+          </div>
+          <ul class="chef__career">
+            <li><time>2010</time><span data-i18n="chef.cv1">First job · Steirereck · Vienna</span></li>
+            <li><time>2014</time><span data-i18n="chef.cv2">Sous · Frantzén · Stockholm</span></li>
+            <li><time>2018</time><span data-i18n="chef.cv3">Senior sous · Maaemo · Oslo</span></li>
+            <li><time>2021</time><span data-i18n="chef.cv4">Co-founder · Sála · Praha</span></li>
+            <li><time>2024</time><span data-i18n="chef.cv5">Chef of the year · Gourmand</span></li>
+            <li><time>2025</time><span data-i18n="chef.cv6">Bib Gourmand · Michelin</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── PRIVATE DINING ─── -->
+  <section class="private" id="private">
+    <div class="private__inner">
+      <div class="private__media">
+        <img loading="lazy" src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1600&q=82" alt="Private dining room" />
+      </div>
+      <div class="private__copy">
+        <span class="section-eyebrow" style="color:var(--gold)" data-i18n="private.kicker">Private dining · the Cellar Room</span>
+        <h2 data-i18n="private.title" data-i18n-html="true">A separate room, <em>one long table for twelve</em></h2>
+        <p data-i18n="private.text">Below the dining room, a vaulted brick cellar set with a single oak table for twelve. Dedicated wine list, a printed menu with your guests' names, and Anna at the door for a hello. We host these for birthdays, business dinners and the occasional small wedding.</p>
+        <ul class="private__list">
+          <li data-i18n="private.l1">Dinner only · 19:00 onwards · 4-hour minimum</li>
+          <li data-i18n="private.l2">Tasting menu only · wine pairing optional · printed menus</li>
+          <li data-i18n="private.l3">Bookable Tuesday — Saturday · 6 to 12 guests</li>
+          <li data-i18n="private.l4">From 2 600 Kč per guest · drinks at consumption</li>
+        </ul>
+        <div class="private__cta">
+          <a href="mailto:private@sala.cz" class="btn" style="background:var(--gold);color:var(--accent-deep);border-color:var(--gold)" data-i18n="private.cta1">Inquire about the room →</a>
+          <a href="reservations.html" class="btn" style="background:transparent;color:var(--gold-soft);border-color:rgba(245,239,222,0.4)" data-i18n="private.cta2">Or book a table</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── VISIT ─── -->
+  <section class="visit" id="visit">
+    <div class="container">
+      <div class="visit__inner">
+        <div class="fade-in">
+          <span class="section-eyebrow" data-i18n="visit.kicker">Visit · Vinohradská 27</span>
+          <h2 data-i18n="visit.title" data-i18n-html="true">Open six nights a week,<br/><em>in the same room since 2021</em></h2>
+          <p class="visit__lede" data-i18n="visit.lede">A two-minute walk from Náměstí Míru. The dining room sits on the corner of Vinohradská and Šafaříkova — look for the deep-green door and the tin ceiling through the window.</p>
+
+          <ul class="visit__hours">
+            <li><span data-i18n="visit.d1">Monday</span><time class="closed" data-i18n="visit.d1t">Closed</time></li>
+            <li class="closed"><span data-i18n="visit.d2">Sunday</span><time class="closed" data-i18n="visit.d2t">Closed</time></li>
+            <li><span data-i18n="visit.d3">Tuesday — Friday</span><time data-i18n="visit.d3t">17:30 — 23:00</time></li>
+            <li><span data-i18n="visit.d4">Saturday</span><time data-i18n="visit.d4t">17:00 — 23:30</time></li>
+          </ul>
+
+          <p class="visit__address">
+            <strong data-i18n="visit.a1">Sála</strong>
+            <span data-i18n="visit.a2">Vinohradská 27, 120 00 Praha 2 — Vinohrady</span>
+            <a href="https://maps.google.com/?q=Vinohradsk%C3%A1+27,+Praha+2" target="_blank" rel="noopener noreferrer" data-i18n="visit.a3">Open in Google Maps →</a>
+          </p>
+        </div>
+
+        <aside class="visit__panel fade-in">
+          <h3 data-i18n="visit.p.title" data-i18n-html="true">Reservations <em>open · this week</em></h3>
+          <p data-i18n="visit.p.text">Book online in under a minute. We hold a small number of walk-in seats at the bar from 17:30 — first come, first served.</p>
+          <a href="reservations.html" class="btn" style="background:var(--gold);color:var(--accent-deep);border-color:var(--gold)" data-i18n="visit.p.cta1">Book a table →</a>
+          <a href="menu.html" class="btn" style="background:transparent;color:var(--gold-soft);border-color:rgba(245,239,222,0.4)" data-i18n="visit.p.cta2">See the full menu</a>
+          <p class="visit__panel__call">
+            <span data-i18n="visit.p.call">Or call</span>
+            <a href="tel:+420221234567">+420 221 234 567</a>
+          </p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ─── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div>
+          <p class="footer__brand">Sál<em>a</em></p>
+          <p class="footer__tag" data-i18n="footer.tag">A neighborhood restaurant on Vinohradská.</p>
+          <p class="footer__addr" data-i18n="footer.addr" data-i18n-html="true">Vinohradská 27<br/>120 00 Praha 2 — Vinohrady<br/>+420 221 234 567 · ahoj@sala.cz</p>
+        </div>
+        <div class="footer__col">
+          <h4 data-i18n="footer.c1">Visit</h4>
+          <ul>
+            <li><a href="reservations.html" data-i18n="footer.l1">Reservations</a></li>
+            <li><a href="menu.html" data-i18n="footer.l2">The menu</a></li>
+            <li><a href="index.html#wine" data-i18n="footer.l3">Wine list</a></li>
+            <li><a href="index.html#private" data-i18n="footer.l4">Private dining</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4 data-i18n="footer.c2">About</h4>
+          <ul>
+            <li><a href="index.html#chef" data-i18n="footer.l5">The chef</a></li>
+            <li><a href="index.html#tasting" data-i18n="footer.l6">Tonight's menu</a></li>
+            <li><a href="mailto:press@sala.cz" data-i18n="footer.l7">Press</a></li>
+            <li><a href="mailto:work@sala.cz" data-i18n="footer.l8">Careers</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4 data-i18n="footer.c3">Follow</h4>
+          <ul>
+            <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+            <li><a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+            <li><a href="mailto:newsletter@sala.cz" data-i18n="footer.l9">Newsletter</a></li>
+            <li><a href="mailto:ahoj@sala.cz">ahoj@sala.cz</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-bottom__copy" data-i18n="footer.copy">© 2026 Sála s.r.o. · Vinohrady · Praha</p>
+        <div class="footer-bottom__links">
+          <a href="#" data-i18n="footer.legal1">Privacy</a>
+          <a href="#" data-i18n="footer.legal2">Terms</a>
+          <a href="../../studio/portfolio.html" data-i18n="footer.legal3">Site by Karolína K.</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <script src="i18n/dict.js?v=25"></script>
+  <script src="js/i18n.js?v=8"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

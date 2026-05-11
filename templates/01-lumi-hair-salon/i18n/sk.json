@@ -1,12 +1,549 @@
 {
-  "meta": { "title": "Salón Lumi · kaderníctvo Bratislava", "description": "Moderné dámske kaderníctvo v centre Bratislavy. Rezervujte si termín online — strih, farba, ošetrenie pre dlhé vlasy." },
-  "nav": { "home": "Domov", "services": "Služby", "team": "Tím", "gallery": "Galéria", "reviews": "Recenzie", "contact": "Kontakt", "book": "Rezervovať" },
-  "announcement": { "text": "Apríl: <strong>−15 %</strong> na strih + farbu pre nové klientky. <a href='#kontakt'>Rezervovať</a>" },
-  "hero": { "label": "Kaderníctvo · Staré Mesto Bratislava", "line1": "Vlasy,", "line2": "ako keď", "line3": "ste z dovolenky.", "sub": "Salón Lumi — kaderníctvo, kde sa vraciate. Špecializujeme sa na dlhé vlasy, balayage a strih, pri ktorom nemusíte premýšľať, ako sa po troch dňoch budete česať.", "btn1": "Rezervovať termín", "btn2": "Pozri služby" },
-  "services": { "label": "Služby", "title": "Cenník", "lead": "Pre nové klientky pridávame pri prvej návšteve konzultáciu zdarma." },
-  "team": { "label": "Tím", "title": "Tri ruky, ktoré vás čakajú" },
-  "gallery": { "label": "Galéria", "title": "Naša práca" },
-  "reviews": { "label": "Recenzie", "title": "Klientky o nás" },
-  "contact": { "label": "Kontakt", "title": "Otvorené dnes do 19:00", "address": "Štúrova 12, 811 02 Bratislava", "hours_mon": "Po–Pi 9:00 – 19:00", "hours_sat": "So 9:00 – 14:00", "hours_sun": "Ne zatvorené" },
-  "footer": { "tagline": "Salón Lumi · od 2018 v centre Bratislavy", "rights": "© 2026 Salón Lumi · vytvoril sage.design" }
+  "meta": {
+    "title": "Salón Lumi · prémiové kaderníctvo Praha",
+    "description": "Prémiové kaderníctvo v centre Prahy. Strih, farba a balayage v tíme, ktorý vás vie počúvať. Online rezervácia — prvá konzultácia zadarmo."
+  },
+  "a11y": {
+    "skip": "Preskočiť na obsah"
+  },
+  "nav": {
+    "salon": "O nás",
+    "services": "Služby",
+    "team": "Tím",
+    "gallery": "Lookbook",
+    "contact": "Kontakt",
+    "book": "Rezervovať online",
+    "social": "Sociálne siete"
+  },
+  "hero": {
+    "eyebrow": "Prémiové kaderníctvo · Praha 2",
+    "brand": "Salón",
+    "brand_italic": "Lumi",
+    "line": "Strih · Farba · Balayage · Starostlivosť",
+    "sub": "Kaderníčky, ktoré vás naozaj počúvajú. Úprimná rada a strih alebo farba, ktorá pasuje k vašim vlasom aj k vášmu každodennému životu."
+  },
+  "marquee": {
+    "i1": "Strihy na mieru",
+    "i2": "Balayage a zosvetlenie",
+    "i3": "Starostlivosť Olaplex",
+    "i4": "Svadobný styling",
+    "i5": "Prvá konzultácia zadarmo"
+  },
+  "about": {
+    "label": "O salóne",
+    "title": "Malý pražský salón, kde sa točí všetko okolo vás, vašich vlasov a výsledku",
+    "p1": "V centre Prahy od roku 2018. Tím sa nemení, salón zostáva malý zámerne — vaša kaderníčka na vás má vždy čas.",
+    "p2": "Špecializujeme sa na dlhé vlasy a farbenie, ktoré pekne zarastá — balayage, foliage a jemný melír. Bez agresívneho odfarbovania."
+  },
+  "stats": {
+    "s1": "rokov na Vinohradskej",
+    "s2": "spokojných klientok",
+    "s3": "kaderníčok v tíme",
+    "s4": "nominácií · BOMTON CUP"
+  },
+  "services": {
+    "label": "Služby",
+    "title": "Starostlivosť, ktorá <em>pasuje do vášho života</em>",
+    "lead": "Krátky prehľad toho, čo robíme — vyberte si, čo je pre vás. Prvá konzultácia je vždy zadarmo a k ničomu vás nezaväzuje.",
+    "s1": {
+      "title": "Strihy na mieru",
+      "desc": "Strih navrhnutý podľa tvaru tváre, typu vlasov a toho, ako vlasy reálne nosíte. Vždy začneme krátkym rozhovorom o tom, čo si predstavujete.",
+      "price": "Od <strong>35 €</strong>"
+    },
+    "s2": {
+      "title": "Farbenie a tónovanie",
+      "desc": "Odtieň zvolíme tak, aby vyzeral prirodzene, elegantne a zladene — nikdy nie cez čiaru. Na požiadanie aj bez amoniaku.",
+      "price": "Od <strong>65 €</strong>"
+    },
+    "s3": {
+      "title": "Balayage a zosvetlenie",
+      "desc": "Ručne maľované pramienky, ktoré pridajú vlasom hĺbku a trochu rozjasnenia — bez ostrých kontrastov a bez náročného odrastu.",
+      "price": "Od <strong>95 €</strong>"
+    },
+    "s4": {
+      "title": "Starostlivosť a regenerácia",
+      "desc": "Olaplex, hair botox a bonding ošetrenie. Prémiová starostlivosť, ktorú vám odporučíme len vtedy, keď ju vaše vlasy naozaj potrebujú.",
+      "price": "Od <strong>25 €</strong>"
+    }
+  },
+  "quote": {
+    "text": "Vieme, <em>ako veľmi</em> na vlasoch záleží. Preto začíname rozhovorom, nikdy vás netlačíme do zbytočných služieb a odtieň farby vám ukážeme ešte pred začiatkom.",
+    "sub": "— tím Lumi"
+  },
+  "team": {
+    "label": "Tím",
+    "title": "Za každou návštevou stoja <em>skúsené ruky</em>",
+    "lead": "Malý tím, ktorý je spolu už roky. Každá z nás sa špecializuje na niečo iné — vyberte si tú, ktorej štýl je vám najbližší.",
+    "p1": {
+      "name": "Ema Nováková",
+      "role": "Top stylistka · 8 rokov"
+    },
+    "p2": {
+      "name": "Lucia Veselá",
+      "role": "Špecialistka na farbu · 6 rokov"
+    },
+    "p3": {
+      "name": "Hana Krajčová",
+      "role": "Svadby a styling · 5 rokov"
+    },
+    "p4": {
+      "name": "Klára Dušková",
+      "role": "Junior stylistka · 2 roky"
+    }
+  },
+  "lookbook": {
+    "label": "Lookbook",
+    "title": "Pár nedávnych <em>premien</em>",
+    "lead": "Malý výber strihov a farebných premien z posledných mesiacov."
+  },
+  "reviews": {
+    "label": "Hlasy klientok",
+    "title": "Čo o nás <em>hovoria klientky</em>",
+    "t1": {
+      "quote": "Po prvej návšteve som tam jednoducho zostala chodiť — a som tam pravidelne už tri roky. Eme dôverujem svoje vlasy ako nikomu inému v meste.",
+      "name": "Dominika",
+      "role": "Klientka od 2021"
+    },
+    "t2": {
+      "quote": "Najlepšie balayage v Prahe. Je vidno, že naozaj vedia, čo robia. A nikdy ma netlačia do drahších služieb.",
+      "name": "Zuzana",
+      "role": "Klientka od 2020"
+    },
+    "t3": {
+      "quote": "Príjemný interiér, dobrá káva, profesionálny tím. Odporúčam ich všetkým kamarátkam — a na dlhé vlasy sú top v meste.",
+      "name": "Veronika",
+      "role": "Klientka od 2022"
+    },
+    "t4": {
+      "quote": "Lucia mi v zime spravila tmavšiu farbu, na leto sme prešli na svetlejšie balayage. Stále to vyzerá úplne prirodzene. Ďakujem!",
+      "name": "Petra",
+      "role": "Klientka od 2023"
+    },
+    "t5": {
+      "quote": "Pôvodne som tam šla iba na strih. Dnes tam chodí celá moja rodina — vrátane mojej dcéry.",
+      "name": "Andrea",
+      "role": "Klientka od 2019"
+    }
+  },
+  "faq": {
+    "label": "FAQ",
+    "title": "Časté <em>otázky</em>",
+    "q1": "Ako dlho dopredu sa mám objednať?",
+    "a1": "Pri strihu zvyčajne týždeň, pri farbení dva týždne. Pred Vianocami a pred letom rátajte radšej s tromi týždňami.",
+    "q2": "Robíte konzultácie pred prvou návštevou?",
+    "a2": "Áno — 15 minút zadarmo, e-mailom alebo telefonicky. Stačí poslať pár fotiek vlasov a my vám napíšeme, či sa to, čo chcete, dá zariadiť.",
+    "q3": "Kde sa dá zaparkovať?",
+    "a3": "Modrá zóna priamo pred salónom alebo platený parkovací dom OC Flora 5 minút pešo.",
+    "q4": "Akceptujete platby kartou?",
+    "a4": "Áno — kartou, hotovosťou, Apple Pay aj Google Pay."
+  },
+  "contact": {
+    "label": "Kontakt",
+    "title": "Dnes otvorené do 19:00",
+    "lead": "Online rezervácia funguje 24/7. Telefonicky nás zastihnete počas otváracích hodín.",
+    "address": "Vinohradská 24, 120 00 Praha 2",
+    "hours_mon": "Po–Pi 9:00 – 19:00",
+    "hours_sat": "So 9:00 – 14:00",
+    "hours_sun": "Ne zatvorené",
+    "btn_call": "Zavolať"
+  },
+  "cookies": {
+    "text": "Používame cookies, aby sme vám poskytli lepší zážitok.",
+    "accept": "Prijať",
+    "decline": "Odmietnuť"
+  },
+  "footer": {
+    "rights": "© 2026 Salón Lumi",
+    "privacy": "Ochrana osobných údajov"
+  },
+  "svc_pg": {
+    "meta_title": "Služby a cenník · Salón Lumi",
+    "meta_desc": "Kompletná ponuka a cenník — strihy, farbenie, balayage, starostlivosť a svadobný styling. Vždy s konzultáciou zadarmo.",
+    "crumb_home": "Salón Lumi",
+    "crumb": "Služby",
+    "title": "Náš kompletný <em>cenník</em>",
+    "lead": "Každú návštevu otvárame krátkou konzultáciou zadarmo. Ceny nižšie sú orientačné; konečnú cenu odsúhlasíme spoločne pred začiatkom.",
+    "cuts": {
+      "num": "01 — Strihy",
+      "title": "Strihy <em>na mieru</em>",
+      "desc": "Strih, ktorý sedí vašej tvári, hustote vlasov a tomu, ako vlasy reálne nosíte. Na záver vám ukážeme krátky styling, aby look prežil aj ráno doma.",
+      "r1": {
+        "name": "Dámsky strih na mieru",
+        "desc": "Umytie, signature strih a styling. V cene konzultácia a jednoduchý plán starostlivosti po strihu.",
+        "time": "90 min",
+        "price": "od 45 €"
+      },
+      "r2": {
+        "name": "Strih dlhých vlasov",
+        "desc": "Špecializovaný prístup pre vlasy pod plecia — jemné vrstvenie, ošetrenie končekov a zachovanie dĺžky.",
+        "time": "90 min",
+        "price": "od 55 €"
+      },
+      "r3": {
+        "name": "Zastrihnutie ofiny",
+        "desc": "Údržbové zastrihnutie medzi celými strihmi — rezervujte do 6 týždňov od poslednej návštevy.",
+        "time": "20 min",
+        "price": "15 €"
+      },
+      "r4": {
+        "name": "Pánsky strih + brada",
+        "desc": "Strihanie nožnicami alebo strojčekom s finišom horúcim uterákom. Úpravu brady pridáme ako doplnok.",
+        "time": "45 min",
+        "price": "od 35 €"
+      }
+    },
+    "col": {
+      "num": "02 — Farbenie",
+      "title": "Farbenie a <em>tónovanie</em>",
+      "desc": "Pracujeme s Wellou, Olaplexom a bezamoniakovými systémami. Novým klientkam vždy robíme test a odtieň ukážeme v dennom svetle ešte pred začiatkom.",
+      "r1": {
+        "name": "Korekcia odrastov",
+        "desc": "Údržbové farbenie pri korienkoch, jemne zladené s existujúcim odtieňom. Najlepšie 6–8 týždňov po poslednej návšteve.",
+        "time": "90 min",
+        "price": "od 65 €"
+      },
+      "r2": {
+        "name": "Plné jednotónové farbenie",
+        "desc": "Od korienkov po končeky v jednom zvolenom odtieni. V cene aj glaze finiš pre lesk.",
+        "time": "2,5 h",
+        "price": "od 95 €"
+      },
+      "r3": {
+        "name": "Glaze / gloss",
+        "desc": "20-minútové ošetrenie na osvieženie tónu a lesku — ideálne medzi farbeniami.",
+        "time": "30 min",
+        "price": "35 €"
+      },
+      "r4": {
+        "name": "Integrácia šedín",
+        "desc": "Jemné, nenápadné prepojenie šedín, ktoré pekne zarastajú. Bez ostrej hranice pri korienkoch.",
+        "time": "2 h",
+        "price": "od 85 €"
+      }
+    },
+    "bal": {
+      "num": "03 — Balayage a zosvetlenie",
+      "title": "Jemné <em>balayage</em> a zosvetlenie",
+      "desc": "Naša signature služba. Maľované rukou, nikdy nie ostré, vždy s podporou Olaplexu. Cena závisí od dĺžky a hustoty — odsúhlasíme ju pri konzultácii.",
+      "r1": {
+        "name": "Čiastočné balayage",
+        "desc": "Pramienky okolo tváre a pri pesinke. Ideálne pri prvom balayage alebo na nenáročné osvieženie.",
+        "time": "2,5 h",
+        "price": "od 120 €"
+      },
+      "r2": {
+        "name": "Plné balayage",
+        "desc": "Maľované rozjasnenie po celej hlave, finišované tónujúcim glazem pre rozmer.",
+        "time": "3,5 h",
+        "price": "od 180 €"
+      },
+      "r3": {
+        "name": "Foilyage / dimension",
+        "desc": "Balayage s fóliovými akcentmi pre svetlejší výsledok pri zachovaní mäkkých korienkov.",
+        "time": "3,5 h",
+        "price": "od 195 €"
+      },
+      "r4": {
+        "name": "Korekcia farby",
+        "desc": "Pre klientky, ktoré opravujú predchádzajúcu službu. Vždy s platenou 30-min strand-test konzultáciou týždeň vopred.",
+        "time": "podľa rozsahu",
+        "price": "podľa rozsahu"
+      }
+    },
+    "care": {
+      "num": "04 — Starostlivosť",
+      "title": "Oprava a <em>regenerácia</em>",
+      "desc": "Salónne ošetrenia a domáce programy. Neodporúčame ošetrenia, ktoré vlasy nepotrebujú — radšej prídete menej často, než aby ste platili viac, ako je nutné.",
+      "r1": {
+        "name": "Olaplex samostatne",
+        "desc": "Cielené obnovenie väzieb pre vlasy zaťažené farbením, teplom alebo predĺžením. Odporúčame každé 4–6 týždňov.",
+        "time": "45 min",
+        "price": "35 €"
+      },
+      "r2": {
+        "name": "K18 hĺbková maska",
+        "desc": "4-minútová peptidová maska, ktorá obnovuje keratínové reťazce. Najlepšie v kombinácii s farbením.",
+        "time": "30 min",
+        "price": "42 €"
+      },
+      "r3": {
+        "name": "Rituál pokožky",
+        "desc": "Hĺbkové čistenie pokožky s masážou — peeling, rozpustenie olejov a 12-min uvoľnenie tlakových bodov.",
+        "time": "40 min",
+        "price": "38 €"
+      },
+      "r4": {
+        "name": "Svadobná skúška + deň svadby",
+        "desc": "Predsvadobná skúška plus styling v deň svadby. V cene aj úvodná videokonzultácia podľa moodboardu a doprava v rámci Prahy 1–10.",
+        "time": "2 návštevy",
+        "price": "od 280 €"
+      }
+    },
+    "add": {
+      "title": "Bežné doplnky",
+      "lead": "Pridajte k akejkoľvek službe pri rezervácii. Odporučíme len to, čo vaše vlasy reálne potrebujú.",
+      "a1": {
+        "name": "Príplatok za dlhé vlasy (pod stred chrbta)",
+        "price": "+15 €"
+      },
+      "a2": {
+        "name": "Glaze osvieženie tónu",
+        "price": "+25 €"
+      },
+      "a3": {
+        "name": "K18 in-shower booster",
+        "price": "+18 €"
+      },
+      "a4": {
+        "name": "Styling fénovaním",
+        "price": "+22 €"
+      },
+      "a5": {
+        "name": "Tónovanie obočia",
+        "price": "+12 €"
+      },
+      "a6": {
+        "name": "Olaplex No. 3 domov",
+        "price": "+28 €"
+      }
+    },
+    "vou": {
+      "eyebrow": "Darček, ktorý ostáva",
+      "title": "Salónne poukazy, <em>tlačené ručne</em>",
+      "text": "Poukaz na ľubovoľnú službu alebo na otvorenú sumu (od 30 €). Ručne tlačený na bavlnenom papieri, hotový do 2 dní. Platnosť 12 mesiacov.",
+      "cta": "Objednať poukaz →"
+    }
+  },
+  "team_pg": {
+    "meta_title": "Náš tím · Salón Lumi",
+    "meta_desc": "Spoznajte stylistky Lumi — osem rokov praxe, štyri nominácie na BOMTON CUP a špecializácia na dlhé vlasy, balayage a svadby.",
+    "crumb_home": "Salón Lumi",
+    "crumb": "Tím",
+    "title": "Päť stylistiek, <em>jeden salón</em>",
+    "lead": "Malý, zámerne tichý tím. Každá z nás sa špecializuje na niečo iné — vyberte si tú, ktorej práca k vám hovorí, alebo vás napárujeme pri konzultácii.",
+    "m_yrs": "Roky",
+    "m_lang": "Jazyk",
+    "m_book": "Rezervovať u",
+    "m_book_cta": "Rezervovať →",
+    "s1": {
+      "role": "Top stylistka · zakladateľka",
+      "name": "Ema Nováková",
+      "b1": "Ema založila Lumi v roku 2018 po siedmich rokoch v Berlíne a Prahe. Wella Master Colour Expert, tri roky finalistka BOMTON CUP. Špecialistka na dlhé vrstvené vlasy.",
+      "b2": "Pred prvým farbením vždy 15-minútová konzultácia. V jednej návšteve nezosvetľuje viac ako dva levely. Klientky chodia cca každých 6 týždňov.",
+      "t1": "Špecialistka na dlhé vlasy",
+      "t2": "Jemný balayage",
+      "t3": "Wella master colour",
+      "t4": "Svadobné skúšky",
+      "yrs": "8",
+      "lang": "CZ · EN"
+    },
+    "s2": {
+      "role": "Špecialistka na farbu",
+      "name": "Lucia Veselá",
+      "b1": "Naša rezidenčná koloristka od 2020. Goldwell certifikácia vo Viedni. V salóne vedie korekcie farieb — práce na 4–5 hodín, vždy s predchádzajúcim strand-testom.",
+      "b2": "Špecializuje sa na integráciu šedín — z mesačných korekcií do tónu, ktorý sa pekne zarastá. Keď vás unavuje cyklus údržby, je jej kreslo pre vás.",
+      "t1": "Korekcia farby",
+      "t2": "Integrácia šedín",
+      "t3": "Goldwell certified",
+      "t4": "Glossing",
+      "yrs": "6",
+      "lang": "CZ · DE · EN"
+    },
+    "s3": {
+      "role": "Svadby a editorial",
+      "name": "Hana Krajčová",
+      "b1": "V Lumi od 2021. Predtým štyri sezóny pre Czech Vogue a otvárala tím hotela Augustine. Jar–jeseň svadby, v zime editorialy.",
+      "b2": "Vždy so skúškou — žiadny deň svadby bez prípravy. Cestuje na obrady po ČR aj SR. Úvodná videokonzultácia s moodboardom je v cene.",
+      "t1": "Svadobný styling",
+      "t2": "Editorial",
+      "t3": "Účes / event",
+      "t4": "Cestuje za svadbou",
+      "yrs": "5",
+      "lang": "SK · CZ · EN"
+    },
+    "s4": {
+      "role": "Junior stylistka",
+      "name": "Klára Dušková",
+      "b1": "Učňovku v Lumi dokončila v 2024, teraz vedie vlastné kreslo. Dva roky sa učila popri Eme, Olaplex Level 2.",
+      "b2": "Rezervácia u Kláry je o 20 % nižšia ako seniorské sadzby — chceme, aby rástla s klientkami, ktorým sa páči jej štýl.",
+      "t1": "Strihy",
+      "t2": "Korekcia odrastov",
+      "t3": "Olaplex Lvl 2",
+      "t4": "Junior cena",
+      "yrs": "2",
+      "lang": "CZ · EN"
+    },
+    "ba": {
+      "label": "Pred · Po",
+      "title": "Pár nedávnych <em>premien</em>",
+      "lead": "Šesť klientok, ktoré nám dovolili podeliť sa o ich fotky. Look napravo je vždy ten, ktorý si odniesli zo salónu — neupravený doma znova kvôli fotke.",
+      "b1": {
+        "cat": "Jemné balayage · Ema",
+        "title": "Z box-dye na nenáročné jemné balayage",
+        "note": "Tri sedenia s odstupom 8 týždňov. Olaplex pri každej návšteve a žiadne fólie nad level 7."
+      },
+      "b2": {
+        "cat": "Tvar dlhých vlasov · Ema",
+        "title": "Dĺžka zachovaná, váha odobratá a končeky obnovené",
+        "note": "Jediná návšteva. Ubrali sme dva centimetre dĺžky a 20 % váhy zo stredných partií."
+      },
+      "b3": {
+        "cat": "Šediny · Lucia",
+        "title": "Z mesačných korekcií do jemného prirodzeného splývania",
+        "note": "Dve návštevy s polročným odstupom. Natiahli sme odrast a chladné tóny sme prepísali stredom dĺžky."
+      },
+      "b4": {
+        "cat": "Svadobná skúška · Hana",
+        "title": "Voľný romantický účes na svadbu v Českom Krumlove",
+        "note": "Skúška v utorok, deň D v sobotu. Nevesta si želala, aby pri sluchách nebolo nič pripnuté."
+      },
+      "b5": {
+        "cat": "Korekcia · Lucia",
+        "title": "Z mosadzného odtieňa späť na čistú chladnú blond",
+        "note": "Štvorhodinová korekcia so strand-testom týždeň vopred. Glaze osvieženie po štyroch týždňoch."
+      },
+      "b6": {
+        "cat": "Prvý strih · Klára",
+        "title": "Prvý poriadny strih po dvoch rokoch — jemné vrstvenie a nová ofina",
+        "note": "Deväťdesiat minút bez farbenia. Vrstvy sme dorezali za sucha, aby sme videli, ako vlasy prirodzene padajú."
+      }
+    }
+  },
+  "book_pg": {
+    "meta_title": "Online rezervácia · Salón Lumi",
+    "meta_desc": "Vyberte si službu, stylistku a čas — potvrdíme písomne do štyroch pracovných hodín. Pätnásťminútová konzultácia zadarmo je vždy súčasťou.",
+    "crumb_home": "Salón Lumi",
+    "crumb": "Online rezervácia",
+    "title": "Rezervujte si <em>návštevu</em>",
+    "lead": "Štyri krátke kroky. Potvrdíme vám písomne do 4 pracovných hodín a pred každým farbením je 15-minútová konzultácia zadarmo vždy súčasťou.",
+    "step1": {
+      "num": "Krok 01",
+      "label": "Služba"
+    },
+    "step2": {
+      "num": "Krok 02",
+      "label": "Stylistka"
+    },
+    "step3": {
+      "num": "Krok 03",
+      "label": "Dátum a čas"
+    },
+    "step4": {
+      "num": "Krok 04",
+      "label": "Vaše údaje"
+    },
+    "s1": {
+      "title": "Čo môžeme pre vás <em>urobiť?</em>",
+      "lead": "Vyberte najbližšiu možnosť — doladíme spolu pri konzultácii. Príplatok za dlhé vlasy platí pri dĺžke pod stred chrbta.",
+      "o1": {
+        "name": "Strih na mieru",
+        "meta": "90 min · s konzultáciou",
+        "price": "od 45 €"
+      },
+      "o2": {
+        "name": "Strih dlhých vlasov",
+        "meta": "90 min · pre vlasy pod plecia",
+        "price": "od 55 €"
+      },
+      "o3": {
+        "name": "Korekcia odrastov",
+        "meta": "90 min · korienky + glaze",
+        "price": "od 65 €"
+      },
+      "o4": {
+        "name": "Plné jednotónové farbenie",
+        "meta": "2,5 h · od korienkov po končeky",
+        "price": "od 95 €"
+      },
+      "o5": {
+        "name": "Plné balayage",
+        "meta": "3,5 h · maľované rukou",
+        "price": "od 180 €"
+      },
+      "o6": {
+        "name": "Olaplex samostatne",
+        "meta": "45 min · obnova väzieb",
+        "price": "35 €"
+      },
+      "o7": {
+        "name": "Svadobná skúška + deň",
+        "meta": "2 h · skúška + deň svadby",
+        "price": "od 280 €"
+      },
+      "o8": {
+        "name": "Iba konzultácia",
+        "meta": "20 min · pred farbením alebo korekciou",
+        "price": "zadarmo"
+      }
+    },
+    "s2": {
+      "title": "Vyberte si <em>stylistku</em>",
+      "lead": "Alebo nechajte to na nás — odporučíme podľa služby, dĺžky vlasov a podľa toho, kto má v daný týždeň voľno.",
+      "any": {
+        "name": "Vyberte za mňa",
+        "role": "Bez preferencie"
+      },
+      "ema": {
+        "name": "Ema Nováková",
+        "role": "Top stylistka"
+      },
+      "lucia": {
+        "name": "Lucia Veselá",
+        "role": "Farbenie"
+      },
+      "hana": {
+        "name": "Hana Krajčová",
+        "role": "Svadby"
+      },
+      "klara": {
+        "name": "Klára Dušková",
+        "role": "Junior · −20 %"
+      }
+    },
+    "s3": {
+      "title": "Vyberte <em>dátum a čas</em>",
+      "lead": "Aktuálny prehľad voľných termínov na nasledujúcich 10 pracovných dní. Sobotné popoludnia sa zvyčajne plnia ako prvé — na jar a v decembri rezervujte 3 týždne dopredu.",
+      "d1": "Ut 12. mája",
+      "d1c": "3 termíny",
+      "d2": "St 13. mája",
+      "d2c": "5 termínov",
+      "d3": "Št 14. mája",
+      "d3c": "obsadené",
+      "d4": "Pi 15. mája",
+      "d4c": "2 termíny",
+      "d5": "So 16. mája",
+      "d5c": "1 termín",
+      "d6": "Po 18. mája",
+      "d6c": "6 termínov"
+    },
+    "s4": {
+      "title": "Pár <em>posledných údajov</em>",
+      "lead": "Potvrdenie pošleme SMS-kou do 4 pracovných hodín. Bezplatné zrušenie do 24 hodín pred návštevou.",
+      "f": {
+        "name_label": "Vaše meno",
+        "name_ph": "Anna Nováková",
+        "phone_label": "Telefón",
+        "phone_ph": "+420 770 111 222",
+        "email_label": "E-mail",
+        "email_ph": "anna@example.cz",
+        "notes_label": "Niečo, čo by sme mali vedieť?",
+        "notes_ph": "Foto poslednej farby / citlivosti / preferovaná stylistka…"
+      },
+      "sum": {
+        "title": "Vaša rezervácia",
+        "svc": "Služba",
+        "svcEmpty": "— vyberte službu",
+        "styl": "Stylistka",
+        "stylEmpty": "— ktorákoľvek",
+        "when": "Kedy",
+        "whenEmpty": "— vyberte dátum",
+        "price": "Cena",
+        "priceEmpty": "— stanovíme pri konzultácii"
+      }
+    },
+    "actions": {
+      "prev": "← Späť",
+      "next": "Pokračovať →"
+    }
+  }
 }

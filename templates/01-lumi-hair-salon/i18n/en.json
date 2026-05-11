@@ -1,12 +1,549 @@
 {
-  "meta": { "title": "Salón Lumi · hair salon in Bratislava", "description": "Modern women's hair salon in central Bratislava. Book online — cut, color, treatments for long hair." },
-  "nav": { "home": "Home", "services": "Services", "team": "Team", "gallery": "Gallery", "reviews": "Reviews", "contact": "Contact", "book": "Book" },
-  "announcement": { "text": "April: <strong>−15 %</strong> on cut + color for new clients. <a href='#kontakt'>Book now</a>" },
-  "hero": { "label": "Hair salon · Old Town Bratislava", "line1": "Hair,", "line2": "like you just", "line3": "got back from vacation.", "sub": "Salón Lumi — the hair salon you return to. We specialize in long hair, balayage, and a cut you don't have to fight every morning.", "btn1": "Book a slot", "btn2": "See services" },
-  "services": { "label": "Services", "title": "Price list", "lead": "First visit includes a free consultation for new clients." },
-  "team": { "label": "Team", "title": "Three pairs of hands waiting for you" },
-  "gallery": { "label": "Gallery", "title": "Our work" },
-  "reviews": { "label": "Reviews", "title": "What clients say" },
-  "contact": { "label": "Contact", "title": "Open today until 7:00 PM", "address": "Štúrova 12, 811 02 Bratislava", "hours_mon": "Mon–Fri 9:00 AM – 7:00 PM", "hours_sat": "Sat 9:00 AM – 2:00 PM", "hours_sun": "Sun closed" },
-  "footer": { "tagline": "Salón Lumi · since 2018 in central Bratislava", "rights": "© 2026 Salón Lumi · made by sage.design" }
+  "meta": {
+    "title": "Salón Lumi · premium hair salon in Prague",
+    "description": "A premium hair salon in central Prague. Cuts, colour and balayage with a team that listens. Book online — first consultation is free."
+  },
+  "a11y": {
+    "skip": "Skip to content"
+  },
+  "nav": {
+    "salon": "About",
+    "services": "Services",
+    "team": "Team",
+    "gallery": "Lookbook",
+    "contact": "Contact",
+    "book": "Book online",
+    "social": "Social"
+  },
+  "hero": {
+    "eyebrow": "Premium hair salon · Prague 2",
+    "brand": "Salón",
+    "brand_italic": "Lumi",
+    "line": "Cut · Colour · Balayage · Care",
+    "sub": "Hairstylists who actually listen. Honest advice and a colour or cut that fits both your hair and your everyday life."
+  },
+  "marquee": {
+    "i1": "Cuts tailored to you",
+    "i2": "Balayage and lightening",
+    "i3": "Olaplex care",
+    "i4": "Bridal styling",
+    "i5": "First consultation is free"
+  },
+  "about": {
+    "label": "About the salon",
+    "title": "A small Prague salon where the focus is on you, your hair and the result",
+    "p1": "In central Prague since 2018. The team hardly changes, the salon stays small on purpose — your stylist always has time to listen.",
+    "p2": "We specialise in long hair and colour that grows out beautifully — balayage, foliage and soft highlights. No harsh bleach, no monthly fixes."
+  },
+  "stats": {
+    "s1": "years on Vinohradská",
+    "s2": "happy clients",
+    "s3": "stylists in our team",
+    "s4": "BOMTON CUP nominations"
+  },
+  "services": {
+    "label": "Services",
+    "title": "Hair care that <em>fits your life</em>",
+    "lead": "A short overview of what we do — pick what speaks to you. The first consultation is always free, with no obligation.",
+    "s1": {
+      "title": "Cuts tailored to you",
+      "desc": "A cut shaped around your face, hair type and the way you actually wear it. Always starts with a short conversation about what you want.",
+      "price": "From <strong>35 €</strong>"
+    },
+    "s2": {
+      "title": "Colour and toning",
+      "desc": "A shade chosen to look natural, elegant and harmonic — never overdone. Ammonia-free options available on request.",
+      "price": "From <strong>65 €</strong>"
+    },
+    "s3": {
+      "title": "Balayage and lightening",
+      "desc": "Hand-painted highlights that add depth and a little lightness — without harsh contrasts and without high-maintenance roots.",
+      "price": "From <strong>95 €</strong>"
+    },
+    "s4": {
+      "title": "Care and regeneration",
+      "desc": "Olaplex, hair botox and bonding treatments. Premium care that we'll only recommend when your hair really needs it.",
+      "price": "From <strong>25 €</strong>"
+    }
+  },
+  "quote": {
+    "text": "We know <em>how much</em> your hair matters. That's why every visit starts with a real conversation, never with a sales pitch — and we always show you the colour in daylight before we begin.",
+    "sub": "— the Lumi team"
+  },
+  "team": {
+    "label": "The team",
+    "title": "Behind every visit, <em>experienced hands</em>",
+    "lead": "A small team that's been together for years. Each of us specialises in something different — pick whoever's work feels closest to yours.",
+    "p1": {
+      "name": "Ema Nováková",
+      "role": "Top stylist · 8 years"
+    },
+    "p2": {
+      "name": "Lucia Veselá",
+      "role": "Colour specialist · 6 years"
+    },
+    "p3": {
+      "name": "Hana Krajčová",
+      "role": "Bridal & styling · 5 years"
+    },
+    "p4": {
+      "name": "Klára Dušková",
+      "role": "Junior stylist · 2 years"
+    }
+  },
+  "lookbook": {
+    "label": "Lookbook",
+    "title": "A few recent <em>transformations</em>",
+    "lead": "A small selection of cuts and colour transformations from the past few months."
+  },
+  "reviews": {
+    "label": "Client voices",
+    "title": "What our clients <em>say</em>",
+    "t1": {
+      "quote": "After my first visit I just kept coming back, and I've been a regular for three years now. I trust Ema with my hair more than anyone else in this city.",
+      "name": "Dominika",
+      "role": "Client since 2021"
+    },
+    "t2": {
+      "quote": "The best balayage in Prague. You can see they really know what they're doing — and they never push me into more expensive services.",
+      "name": "Zuzana",
+      "role": "Client since 2020"
+    },
+    "t3": {
+      "quote": "Lovely interior, good coffee, professional team. I recommend them to all my friends — and for long hair they're the best in the city.",
+      "name": "Veronika",
+      "role": "Client since 2022"
+    },
+    "t4": {
+      "quote": "Lucia gave me a darker shade for winter, and we moved to a soft balayage for the summer. It still looks completely natural — thank you!",
+      "name": "Petra",
+      "role": "Client since 2023"
+    },
+    "t5": {
+      "quote": "I originally came in just for a cut. Today my whole family goes there — including my daughter.",
+      "name": "Andrea",
+      "role": "Client since 2019"
+    }
+  },
+  "faq": {
+    "label": "FAQ",
+    "title": "Common <em>questions</em>",
+    "q1": "How far in advance should I book?",
+    "a1": "About a week ahead for a cut and two weeks for colour. Around Christmas and just before summer, plan three weeks ahead.",
+    "q2": "Do you offer a consultation before the first visit?",
+    "a2": "Yes — fifteen minutes, free of charge, by email or phone. Just send us a few photos of your hair and we'll let you know whether what you want is realistic.",
+    "q3": "Where can I park?",
+    "a3": "Blue zone right outside the salon, or in the OC Flora paid car park, a 5-minute walk away.",
+    "q4": "Do you accept card payments?",
+    "a4": "Yes — card, cash, Apple Pay and Google Pay."
+  },
+  "contact": {
+    "label": "Contact",
+    "title": "Open today until 19:00",
+    "lead": "Online booking is open 24/7. By phone, you can reach us during opening hours.",
+    "address": "Vinohradská 24, 120 00 Prague 2",
+    "hours_mon": "Mon–Fri 9:00 – 19:00",
+    "hours_sat": "Sat 9:00 – 14:00",
+    "hours_sun": "Sun closed",
+    "btn_call": "Call us"
+  },
+  "cookies": {
+    "text": "We use cookies to give you a better experience.",
+    "accept": "Accept",
+    "decline": "Decline"
+  },
+  "footer": {
+    "rights": "© 2026 Salón Lumi",
+    "privacy": "Privacy policy"
+  },
+  "svc_pg": {
+    "meta_title": "Services and price list · Salón Lumi",
+    "meta_desc": "Our complete service menu and price list — cuts, colour, balayage, care and bridal styling. Always with a free consultation.",
+    "crumb_home": "Salón Lumi",
+    "crumb": "Services",
+    "title": "Our complete <em>price list</em>",
+    "lead": "Every appointment starts with a short, free consultation. The prices below are starting points; we'll always agree the final price before we begin.",
+    "cuts": {
+      "num": "01 — Cuts",
+      "title": "Cuts tailored <em>to you</em>",
+      "desc": "A cut shaped to your face, hair density and the way you really wear it. We finish with a short styling lesson so the look survives the next morning at home.",
+      "r1": {
+        "name": "Women's tailored cut",
+        "desc": "Wash, signature cut and finish styling. Includes a consultation and a simple post-cut care plan.",
+        "time": "90 min",
+        "price": "from 45 €"
+      },
+      "r2": {
+        "name": "Long-hair cut & shape",
+        "desc": "A specialised approach for hair past the shoulders — soft layering, ends repaired and length preserved.",
+        "time": "90 min",
+        "price": "from 55 €"
+      },
+      "r3": {
+        "name": "Fringe trim",
+        "desc": "A maintenance trim between full cuts — book within 6 weeks of your last visit.",
+        "time": "20 min",
+        "price": "15 €"
+      },
+      "r4": {
+        "name": "Men's cut & beard",
+        "desc": "Scissor or clipper cut with a hot-towel finish. Beard trim available as an add-on.",
+        "time": "45 min",
+        "price": "from 35 €"
+      }
+    },
+    "col": {
+      "num": "02 — Colour",
+      "title": "Colour and <em>toning</em>",
+      "desc": "We work with Wella, Olaplex and ammonia-free systems. We always patch-test new clients and show you the colour swatch in your own daylight before we begin.",
+      "r1": {
+        "name": "Roots refresh",
+        "desc": "Maintenance colour at the roots, blended into your existing tone. Best 6–8 weeks after your last visit.",
+        "time": "90 min",
+        "price": "from 65 €"
+      },
+      "r2": {
+        "name": "Full single-tone colour",
+        "desc": "From roots to ends in a single chosen tone. Includes a glaze finish for shine.",
+        "time": "2.5 h",
+        "price": "from 95 €"
+      },
+      "r3": {
+        "name": "Glaze / gloss",
+        "desc": "A 20-minute treatment to refresh tone and shine — perfect between full colours.",
+        "time": "30 min",
+        "price": "35 €"
+      },
+      "r4": {
+        "name": "Grey blending",
+        "desc": "A soft, low-maintenance way to blend in greys so they grow out gracefully — without a hard line at the roots.",
+        "time": "2 h",
+        "price": "from 85 €"
+      }
+    },
+    "bal": {
+      "num": "03 — Balayage and lightening",
+      "title": "Soft <em>balayage</em> and lightening",
+      "desc": "Our signature service. Hand-painted, never harsh and always supported by Olaplex. The final price depends on length and density — we'll confirm it at the consultation.",
+      "r1": {
+        "name": "Partial balayage",
+        "desc": "Lighter pieces around the face and parting. Ideal for first-timers or for a low-maintenance refresh.",
+        "time": "2.5 h",
+        "price": "from 120 €"
+      },
+      "r2": {
+        "name": "Full-head balayage",
+        "desc": "Hand-painted lightening across the whole canopy, finished with a tonal glaze for depth.",
+        "time": "3.5 h",
+        "price": "from 180 €"
+      },
+      "r3": {
+        "name": "Foilyage / dimensional",
+        "desc": "Balayage with foil-pressed accents for a brighter result while keeping the roots soft.",
+        "time": "3.5 h",
+        "price": "from 195 €"
+      },
+      "r4": {
+        "name": "Colour correction",
+        "desc": "For clients fixing a previous service. Always preceded by a paid 30-minute strand-test consultation a week before.",
+        "time": "by quote",
+        "price": "by quote"
+      }
+    },
+    "care": {
+      "num": "04 — Care",
+      "title": "Repair and <em>regeneration</em>",
+      "desc": "In-salon treatments and at-home programmes. We'll only recommend a treatment if your hair actually needs it — we'd rather you came in less often than spent more than you should.",
+      "r1": {
+        "name": "Olaplex treatment",
+        "desc": "A targeted bond-rebuilder for hair stressed by colour, heat or extensions. We recommend it every 4–6 weeks.",
+        "time": "45 min",
+        "price": "35 €"
+      },
+      "r2": {
+        "name": "K18 deep mask",
+        "desc": "A 4-minute peptide mask that rebuilds keratin chains. Best paired with colour services.",
+        "time": "30 min",
+        "price": "42 €"
+      },
+      "r3": {
+        "name": "Scalp ritual",
+        "desc": "A massage-led scalp cleanse — exfoliation, oil dissolve and a 12-minute pressure-point release.",
+        "time": "40 min",
+        "price": "38 €"
+      },
+      "r4": {
+        "name": "Bridal trial + wedding day",
+        "desc": "A pre-wedding trial run plus styling on the day. Includes a moodboard call and travel within Prague 1–10.",
+        "time": "2 visits",
+        "price": "from 280 €"
+      }
+    },
+    "add": {
+      "title": "Common add-ons",
+      "lead": "Add to any service when you book. We'll only suggest what your hair actually needs.",
+      "a1": {
+        "name": "Long-hair surcharge (past mid-back)",
+        "price": "+15 €"
+      },
+      "a2": {
+        "name": "Glaze tone refresh",
+        "price": "+25 €"
+      },
+      "a3": {
+        "name": "K18 in-shower booster",
+        "price": "+18 €"
+      },
+      "a4": {
+        "name": "Blow-dry style finish",
+        "price": "+22 €"
+      },
+      "a5": {
+        "name": "Eyebrow tint",
+        "price": "+12 €"
+      },
+      "a6": {
+        "name": "Take-home Olaplex No. 3",
+        "price": "+28 €"
+      }
+    },
+    "vou": {
+      "eyebrow": "A gift that lasts",
+      "title": "Salon vouchers, <em>printed by hand</em>",
+      "text": "A voucher for any service or for an open amount (from 30 €). Hand-pressed on cotton card, ready in two working days. Valid 12 months.",
+      "cta": "Order a voucher →"
+    }
+  },
+  "team_pg": {
+    "meta_title": "Our team · Salón Lumi",
+    "meta_desc": "Meet the Lumi stylists — eight years of practice, four BOMTON CUP nominations and a clear focus on long hair, balayage and bridal.",
+    "crumb_home": "Salón Lumi",
+    "crumb": "Team",
+    "title": "Five stylists, <em>one salon</em>",
+    "lead": "A small, deliberately quiet team. Each of us specialises in something different — pick the stylist whose work speaks to you, or let us match you at the consultation.",
+    "m_yrs": "Years",
+    "m_lang": "Speaks",
+    "m_book": "Book with",
+    "m_book_cta": "Book →",
+    "s1": {
+      "role": "Top stylist · founder",
+      "name": "Ema Nováková",
+      "b1": "Ema founded Lumi in 2018 after seven years between Berlin and Prague. Wella Master Colour Expert, three-time BOMTON CUP finalist. Her chair specialises in long, layered hair.",
+      "b2": "Always a 15-minute consultation before a first colour. Never more than two levels lifted in one session. Clients come back every six weeks or so.",
+      "t1": "Long-hair specialist",
+      "t2": "Soft balayage",
+      "t3": "Wella master colour",
+      "t4": "Bridal trials",
+      "yrs": "8",
+      "lang": "CZ · EN"
+    },
+    "s2": {
+      "role": "Colour specialist",
+      "name": "Lucia Veselá",
+      "b1": "Our resident colourist since 2020. Trained under Goldwell in Vienna. Runs the salon's correction work — long sessions, always with a strand-test the week before.",
+      "b2": "Her speciality is grey integration — out of the monthly root cycle, into a tone that grows out gracefully. If you're tired of constant maintenance, this is her chair.",
+      "t1": "Colour correction",
+      "t2": "Grey integration",
+      "t3": "Goldwell certified",
+      "t4": "Glossing",
+      "yrs": "6",
+      "lang": "CZ · DE · EN"
+    },
+    "s3": {
+      "role": "Bridal & editorial",
+      "name": "Hana Krajčová",
+      "b1": "Joined Lumi in 2021 after four seasons styling for Czech Vogue and the opening team at Augustine. Spring–autumn weddings; winter editorials.",
+      "b2": "Always a trial — never a day-of surprise. Travels for ceremonies across Czechia and Slovakia. A moodboard call is included in every wedding fee.",
+      "t1": "Bridal styling",
+      "t2": "Editorial",
+      "t3": "Updo / event",
+      "t4": "Travels for weddings",
+      "yrs": "5",
+      "lang": "SK · CZ · EN"
+    },
+    "s4": {
+      "role": "Junior stylist",
+      "name": "Klára Dušková",
+      "b1": "Finished her apprenticeship at Lumi in 2024 and now runs her own chair. Trained alongside Ema for two years; Olaplex Level 2.",
+      "b2": "Booking with Klára is 20% below senior rates — we want her to grow with clients who genuinely like her style.",
+      "t1": "Cuts",
+      "t2": "Roots refresh",
+      "t3": "Olaplex Lvl 2",
+      "t4": "Junior rate",
+      "yrs": "2",
+      "lang": "CZ · EN"
+    },
+    "ba": {
+      "label": "Before · After",
+      "title": "A few <em>recent transformations</em>",
+      "lead": "Six clients who let us share their photos. The look on the right is always how their hair looked at the end of the appointment — never re-styled at home for the photo.",
+      "b1": {
+        "cat": "Soft balayage · Ema",
+        "title": "From box-dye to a low-maintenance soft balayage",
+        "note": "Three sessions, eight weeks apart. Olaplex on every visit and no foils above level 7."
+      },
+      "b2": {
+        "cat": "Long-hair shape · Ema",
+        "title": "Length preserved, weight removed and the ends rebuilt",
+        "note": "A single visit. We took two centimetres off the length and 20% of the weight from the mid-lengths."
+      },
+      "b3": {
+        "cat": "Grey integration · Lucia",
+        "title": "Out of monthly root touch-ups, into a soft natural blend",
+        "note": "Two visits, six months apart. We stretched the regrowth and pulled cool tones through the mid-lengths."
+      },
+      "b4": {
+        "cat": "Bridal trial · Hana",
+        "title": "A loose, romantic updo for a Český Krumlov wedding",
+        "note": "Trial on the Tuesday, the real day on the Saturday. The bride asked for nothing pinned at the temples."
+      },
+      "b5": {
+        "cat": "Colour correction · Lucia",
+        "title": "From a brassy lift back to a clean, even, cool blonde",
+        "note": "A four-hour correction with a strand-test the week before. Glaze refresh four weeks later."
+      },
+      "b6": {
+        "cat": "First haircut · Klára",
+        "title": "A first proper cut in two years — soft layers and a fresh fringe",
+        "note": "Ninety minutes, no colour. We dry-cut the layers after the wash to read the natural fall of the hair."
+      }
+    }
+  },
+  "book_pg": {
+    "meta_title": "Book online · Salón Lumi",
+    "meta_desc": "Pick a service, a stylist and a time — confirmed in writing within four working hours. A free 15-minute consultation is always included.",
+    "crumb_home": "Salón Lumi",
+    "crumb": "Book online",
+    "title": "Book <em>your visit</em>",
+    "lead": "Four short steps. We'll confirm in writing within four working hours, and a free 15-minute consultation is always included before any colour service.",
+    "step1": {
+      "num": "Step 01",
+      "label": "Service"
+    },
+    "step2": {
+      "num": "Step 02",
+      "label": "Stylist"
+    },
+    "step3": {
+      "num": "Step 03",
+      "label": "Date and time"
+    },
+    "step4": {
+      "num": "Step 04",
+      "label": "Your details"
+    },
+    "s1": {
+      "title": "What can we <em>do for you?</em>",
+      "lead": "Pick the closest match — we'll fine-tune at the consultation. The long-hair surcharge applies if your hair is longer than mid-back.",
+      "o1": {
+        "name": "Tailored cut",
+        "meta": "90 min · with consultation",
+        "price": "from 45 €"
+      },
+      "o2": {
+        "name": "Long-hair cut & shape",
+        "meta": "90 min · for hair past the shoulder",
+        "price": "from 55 €"
+      },
+      "o3": {
+        "name": "Roots refresh",
+        "meta": "90 min · regrowth + glaze",
+        "price": "from 65 €"
+      },
+      "o4": {
+        "name": "Full single-tone colour",
+        "meta": "2.5 h · roots to ends",
+        "price": "from 95 €"
+      },
+      "o5": {
+        "name": "Full-head balayage",
+        "meta": "3.5 h · hand-painted",
+        "price": "from 180 €"
+      },
+      "o6": {
+        "name": "Olaplex treatment",
+        "meta": "45 min · bond rebuild",
+        "price": "35 €"
+      },
+      "o7": {
+        "name": "Bridal trial + wedding day",
+        "meta": "2 h · trial + wedding day",
+        "price": "from 280 €"
+      },
+      "o8": {
+        "name": "Consultation only",
+        "meta": "20 min · before colour or correction",
+        "price": "free"
+      }
+    },
+    "s2": {
+      "title": "Pick <em>your stylist</em>",
+      "lead": "Or let us match you — we'll suggest the right person based on the service, your hair length and who has space the week you want.",
+      "any": {
+        "name": "Match me",
+        "role": "No preference"
+      },
+      "ema": {
+        "name": "Ema Nováková",
+        "role": "Top stylist"
+      },
+      "lucia": {
+        "name": "Lucia Veselá",
+        "role": "Colour"
+      },
+      "hana": {
+        "name": "Hana Krajčová",
+        "role": "Bridal"
+      },
+      "klara": {
+        "name": "Klára Dušková",
+        "role": "Junior · −20 %"
+      }
+    },
+    "s3": {
+      "title": "Pick a <em>date and time</em>",
+      "lead": "A live view of openings for the next ten working days. Saturday afternoons usually fill up first — book three weeks ahead in spring and December.",
+      "d1": "Tue 12 May",
+      "d1c": "3 slots",
+      "d2": "Wed 13 May",
+      "d2c": "5 slots",
+      "d3": "Thu 14 May",
+      "d3c": "full",
+      "d4": "Fri 15 May",
+      "d4c": "2 slots",
+      "d5": "Sat 16 May",
+      "d5c": "1 slot",
+      "d6": "Mon 18 May",
+      "d6c": "6 slots"
+    },
+    "s4": {
+      "title": "A few <em>final details</em>",
+      "lead": "We'll text you a confirmation within four working hours. Free cancellation up to twenty-four hours before your visit.",
+      "f": {
+        "name_label": "Your name",
+        "name_ph": "Anna Nováková",
+        "phone_label": "Phone",
+        "phone_ph": "+420 770 111 222",
+        "email_label": "E-mail",
+        "email_ph": "anna@example.cz",
+        "notes_label": "Anything we should know?",
+        "notes_ph": "Photo of recent colour / sensitivities / preferred stylist…"
+      },
+      "sum": {
+        "title": "Your booking",
+        "svc": "Service",
+        "svcEmpty": "— pick a service",
+        "styl": "Stylist",
+        "stylEmpty": "— anyone",
+        "when": "When",
+        "whenEmpty": "— pick a date",
+        "price": "Price",
+        "priceEmpty": "— set at consultation"
+      }
+    },
+    "actions": {
+      "prev": "← Back",
+      "next": "Continue →"
+    }
+  }
 }

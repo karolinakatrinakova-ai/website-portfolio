@@ -1,5 +1,188 @@
 {
-  "meta": { "title": "Studio Novák · wedding & portrait photography, Košice", "description": "Editorial wedding and portrait photographer in Košice. Gallery, packages, contact." },
-  "nav": { "home": "Home", "work": "Work", "weddings": "Weddings", "portraits": "Portraits", "packages": "Packages", "about": "About", "contact": "Contact", "book": "Book a session" },
-  "hero": { "label": "Wedding · portrait photography · Košice", "line1": "I capture", "line2": "your moments", "line3": "before they fade.", "sub": "I'm Sofia. I shoot weddings, portraits and editorials in Košice and beyond. 8+ years, 200+ weddings, a quiet, natural, slightly filmic style." }
+  "meta": {
+    "title": "Studio Novák · fine-art wedding photographer · Prague",
+    "description": "Fine-art wedding and portrait photography in Prague, Vienna and beyond. Sofia Novák — quietly cinematic wedding stories."
+  },
+  "a11y": {
+    "skip": "Skip to content"
+  },
+  "nav": {
+    "stories": "Stories",
+    "portfolio": "Portfolio",
+    "about": "About",
+    "invest": "Pricing",
+    "journal": "Journal",
+    "inquire": "Inquire",
+    "book": "Inquire",
+    "social": "Instagram"
+  },
+  "hero": {
+    "tag": "Fine-art wedding & portrait photography",
+    "name": "Studio Novák",
+    "corner_left": "Sofia Novák · est. 2018 · Prague",
+    "corner_right": "Selected works · 2024 — 2026"
+  },
+  "marquee": {
+    "i1": "Weddings",
+    "i2": "Engagements",
+    "i3": "Editorial",
+    "i4": "Family",
+    "i5": "Portraits"
+  },
+  "stories": {
+    "label": "Featured stories",
+    "title": "Three weddings, <em>told in full</em>",
+    "s1": {
+      "loc": "Tereza & Michal · Vinohrady, Prague · October 2025",
+      "title": "A garden wedding in <em>autumn light</em>",
+      "text": "A small ceremony in the courtyard, a long table of friends and an evening that drifted from coffee to candles. We followed the light and stayed quiet — the kind of day that's better when nobody poses for the camera.",
+      "d1_label": "Coverage",
+      "d1_value": "10 hours",
+      "d2_label": "Final photos",
+      "d2_value": "920",
+      "d3_label": "Look",
+      "d3_value": "Warm filmic"
+    },
+    "s2": {
+      "loc": "Petra & Adam · Český Krumlov · June 2025",
+      "title": "A summer ceremony by <em>the river</em>",
+      "text": "A weekend in Český Krumlov — vows on the riverbank, dinner under the chestnut trees and dancing until the lanterns went out. Soft, golden and a little wild around the edges.",
+      "d1_label": "Coverage",
+      "d1_value": "2 days",
+      "d2_label": "Final photos",
+      "d2_value": "1 480",
+      "d3_label": "Look",
+      "d3_value": "Soft cinematic"
+    },
+    "s3": {
+      "loc": "Lucia & Tomáš · Vienna · April 2025",
+      "title": "A city-hall wedding, <em>one good dinner</em>",
+      "text": "An intimate elopement at Vienna town hall, an afternoon walk through Augarten and dinner for twelve at Tian. No timeline, no stress — only a day they'd happily live again.",
+      "d1_label": "Coverage",
+      "d1_value": "6 hours",
+      "d2_label": "Final photos",
+      "d2_value": "540",
+      "d3_label": "Look",
+      "d3_value": "Editorial b&w"
+    }
+  },
+  "about": {
+    "label": "About the photographer",
+    "title": "Hello, <em>I'm Sofia</em>",
+    "p1": "I've been photographing for eight years. After assisting in Prague and a year in Berlin, I've run my own studio in Vinohrady since 2018.",
+    "p2": "My work is quiet. I look for the moment just after the planned one — when nobody's performing for the camera, but everything is still happening.",
+    "p3": "I work mostly with natural light, on a Sony A7 IV with 50 mm and 85 mm prime lenses. I edit in Capture One — soft, warm and with a gentle film grain.",
+    "sig": "— Sofia"
+  },
+  "invest": {
+    "label": "Pricing",
+    "title": "Three ways <em>to work together</em>",
+    "cta": "Get in touch for details →",
+    "c1": {
+      "cat": "Engagement & couples",
+      "title": "Couples <em>session</em>",
+      "desc": "A relaxed 90-minute session for two — in the city, in the countryside or anywhere with a story. Includes 40+ edited photos and an online gallery."
+    },
+    "c2": {
+      "cat": "Your wedding day",
+      "title": "Wedding <em>collection</em>",
+      "desc": "Full-day weddings in Prague, the Czech countryside or as a destination. Coverage from getting ready to the first dance, with an unhurried, story-led approach."
+    },
+    "c3": {
+      "cat": "Editorial & brand",
+      "title": "Editorial <em>commissions</em>",
+      "desc": "Brand campaigns, restaurant menus, magazine commissions and creative editorials. Half-day and full-day rates with full commercial usage rights."
+    }
+  },
+  "jour": {
+    "label": "Journal",
+    "title": "Recent <em>entries</em>",
+    "j1": {
+      "date": "February 2026",
+      "title": "Why I shoot <em>fewer weddings</em> each year",
+      "excerpt": "A short note on why I cap my calendar at 14 weddings a year, what that does for the work, and why it really matters to me."
+    },
+    "j2": {
+      "date": "January 2026",
+      "title": "A guide to <em>winter elopements</em> in Prague",
+      "excerpt": "Light, locations and timing — a practical guide for couples planning a small winter wedding in the city."
+    },
+    "j3": {
+      "date": "November 2025",
+      "title": "Five questions <em>before you book</em>",
+      "excerpt": "A short list of things worth asking any wedding photographer before you sign a contract — useful even if you don't end up booking me."
+    }
+  },
+  "inq": {
+    "label": "Get in touch",
+    "title": "Tell me <em>your story</em>",
+    "text": "I read every enquiry myself and reply within 48 hours with a tailored offer and the full details of every collection.",
+    "submit": "Send enquiry",
+    "direct": "or write directly · <a href=\"mailto:ahoj@studionovak.cz\">ahoj@studionovak.cz</a> · <a href=\"tel:+420770333444\">+420 770 333 444</a>",
+    "f": {
+      "name": "Your name",
+      "email": "Email",
+      "type": "Type of session",
+      "type_wedding": "Wedding",
+      "type_couple": "Engagement / couples",
+      "type_editorial": "Editorial / brand",
+      "type_other": "Other",
+      "date": "Date (or month)",
+      "date_ph": "May 2026",
+      "loc": "Location",
+      "loc_ph": "Prague, Český Krumlov, Vienna…",
+      "msg": "A few words about your day"
+    }
+  },
+  "cookies": {
+    "text": "We use cookies to give you a better experience.",
+    "accept": "Accept",
+    "decline": "Decline"
+  },
+  "footer": {
+    "rights": "© 2026 Studio Novák · all rights reserved",
+    "privacy": "Privacy"
+  },
+  "portf": {
+    "meta_title": "Portfolio · Studio Novák · fine-art wedding photographer",
+    "meta_desc": "Selected work — weddings, elopements and editorial. Prague, Vienna and beyond.",
+    "crumb_home": "Studio Novák",
+    "crumb": "Portfolio",
+    "title": "Selected works",
+    "lead": "A small, careful selection from the last two years. The full archive is shared with prospective clients on request.",
+    "f_all": "All",
+    "f_wed": "Weddings",
+    "f_elope": "Elopements",
+    "f_ed": "Editorial",
+    "f_por": "Portrait"
+  },
+  "jrn": {
+    "meta_title": "Journal · Studio Novák",
+    "meta_desc": "Long-form notes from the studio — featured weddings, planning advice and the things we're thinking about.",
+    "crumb": "Journal",
+    "title": "Journal",
+    "lead": "Featured weddings, both technical and reflective notes, and the questions I get asked most often. New entries roughly every six weeks.",
+    "read": "Read →",
+    "p1_meta": "Wedding · 12 April 2026 · 14 min read",
+    "p1_title": "Klára & Tomáš at the farmhouse — a study in afternoon light",
+    "p1_ex": "Sixty guests, one renovated farmhouse north of Prague and exactly the kind of cream-linen tablecloth the wind kept playing with. We arrived at noon and didn't put the camera down for nine hours. The full story, technical notes and why the bouquet shed petals with every step she took.",
+    "p2_meta": "Elopement · 28 March 2026 · 8 min read",
+    "p2_title": "Eight guests, a forest and the kind of quiet that doesn't survive a wedding party",
+    "p2_ex": "Eva and Marek's elopement near Karlštejn — why I love days like this even more than the big ones, and why \"small\" never means \"simple\".",
+    "p3_meta": "Notes · 14 March 2026 · 6 min read",
+    "p3_title": "A timeline that won't ruin your wedding day",
+    "p3_ex": "The single biggest gift you can give yourselves: thirty unscheduled minutes between the ceremony and the reception. A practical guide to building a day that actually breathes.",
+    "p4_meta": "Wedding · 22 February 2026 · 11 min read",
+    "p4_title": "Anna & Jan, a city wedding at Villa Pellé",
+    "p4_ex": "Eighty-five guests, three full installations and a bouquet that weighed exactly the right amount. Why I still shoot the first dance on film, even now.",
+    "p5_meta": "On the craft · 4 February 2026 · 9 min read",
+    "p5_title": "Why I still shoot on film (some of it, some of the time)",
+    "p5_ex": "Not out of nostalgia. Not for marketing. A practical answer to a question I get every week: why film really matters, and when I choose digital instead.",
+    "p6_meta": "FAQ · 18 January 2026 · 7 min read",
+    "p6_title": "\"How many photos will we get?\" and other things you don't need to worry about",
+    "p6_ex": "Six recurring questions, six honest answers — including why the number you actually want isn't 1,500 photos.",
+    "p7_meta": "Travel · 22 December 2025 · 5 min read",
+    "p7_title": "Where I travel — and why I don't take every wedding",
+    "p7_ex": "A look at my calendar for 2026 and 2027. I work with a maximum of fourteen weddings a year — and here's what that means in practice."
+  }
 }

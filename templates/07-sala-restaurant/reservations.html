@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title data-i18n="resv.meta.title">Reservations · Sála restaurant</title>
+  <meta name="description" data-i18n-attr="content|resv.meta.description" content="Reserve a table at Sála — Vinohradská 27, Praha. Tasting menu and à la carte. Open Tue–Sat." />
+  <meta name="theme-color" content="#0f2620" />
+  <link rel="icon" type="image/svg+xml" href="../../studio/favicon.svg?v=3" />
+  <link rel="stylesheet" href="css/theme.css?v=3" />
+  <link rel="stylesheet" href="css/layout.css?v=3" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+
+  <a href="#main" class="skip-to-content" data-i18n="a11y.skip">Skip to content</a>
+  <div class="page-loader"><span class="page-loader__brand">Sál<i>a</i></span></div>
+  <div class="reading-progress"></div>
+
+  <div class="resv-strip">
+    <span data-i18n="resv.strip">Tables are released 14 days ahead · Tuesday — Saturday</span>
+    <span class="resv-strip__sep">·</span>
+    <a href="tel:+420221234567" data-i18n="resv.strip.cta">or call +420 221 234 567</a>
+  </div>
+
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="navbar-brand"><span class="navbar-brand__dot"></span><span>Sál<i>a</i></span></a>
+      <ul class="navbar-links">
+        <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+        <li><a href="menu.html" data-i18n="nav.menu">Menu</a></li>
+        <li><a href="index.html#wine" data-i18n="nav.wine">Wine</a></li>
+        <li><a href="index.html#chef" data-i18n="nav.chef">Chef</a></li>
+        <li><a href="index.html#visit" data-i18n="nav.visit">Visit</a></li>
+      </ul>
+      <div class="navbar-right">
+        <div class="lang-switch" data-lang-switch><button class="lang-switch__btn" data-lang="en">EN</button><button class="lang-switch__btn" data-lang="sk">SK</button><button class="lang-switch__btn" data-lang="cs">CS</button></div>
+        <a href="reservations.html" class="navbar-cta active" data-i18n="nav.cta">Reserve</a>
+        <button class="navbar-hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mobile-menu">
+    <ul class="mobile-menu__links">
+      <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+      <li><a href="menu.html" data-i18n="nav.menu">Menu</a></li>
+      <li><a href="index.html#wine" data-i18n="nav.wine">Wine</a></li>
+      <li><a href="index.html#chef" data-i18n="nav.chef">Chef</a></li>
+      <li><a href="index.html#visit" data-i18n="nav.visit">Visit</a></li>
+    </ul>
+    <div class="lang-switch" data-lang-switch role="group" aria-label="Language">
+      <button class="lang-switch__btn" data-lang="en">EN</button>
+      <button class="lang-switch__btn" data-lang="sk">SK</button>
+      <button class="lang-switch__btn" data-lang="cs">CS</button>
+    </div>
+
+  </div>
+
+  <header class="resv-hero" id="main">
+    <div class="container">
+      <span class="section-eyebrow" data-i18n="resv.h.kicker">Reservations · Sála Praha</span>
+      <h1 data-i18n="resv.h.title" data-i18n-html="true">Three steps,<br/><em>under a minute</em></h1>
+      <p data-i18n="resv.h.lede">A few seats are held back for walk-ins at the bar — but most evenings the dining room books out two weeks ahead. Pick a date, a time and how many of you, and we'll confirm by email.</p>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container resv" data-resv-flow>
+
+      <div>
+        <ul class="resv-progress">
+          <li class="is-active"><span class="resv-progress__num">01</span><span data-i18n="resv.s1">When</span></li>
+          <li><span class="resv-progress__num">02</span><span data-i18n="resv.s2">Who</span></li>
+          <li><span class="resv-progress__num">03</span><span data-i18n="resv.s3">You</span></li>
+          <li><span class="resv-progress__num">04</span><span data-i18n="resv.s4">Confirm</span></li>
+        </ul>
+
+        <!-- STEP 1 -->
+        <div class="resv-step is-active" data-step="0">
+          <h2 data-i18n="resv.st1.title" data-i18n-html="true">When would you <em>like to come?</em></h2>
+          <p data-i18n="resv.st1.text">Pick a date in the next 14 days. Sittings begin at 17:30, last seating 21:30 (22:00 on Saturday).</p>
+
+          <label data-i18n="resv.st1.dateLabel">Date</label>
+          <input type="date" data-resv-date min="2026-05-08" style="font-family:var(--mono);font-size:1rem;padding:13px 14px;border:1px solid var(--line);background:var(--bg-3);color:var(--ink);border-radius:0;margin:0 0 24px;width:100%;max-width:280px" />
+
+          <label data-i18n="resv.st1.timeLabel">Time</label>
+          <div class="resv-grid resv-grid--time">
+            <button type="button" data-resv-time>17:30</button>
+            <button type="button" data-resv-time>18:00</button>
+            <button type="button" data-resv-time>18:30</button>
+            <button type="button" data-resv-time>19:00</button>
+            <button type="button" data-resv-time class="is-active">19:30</button>
+            <button type="button" data-resv-time>20:00</button>
+            <button type="button" data-resv-time>20:30</button>
+            <button type="button" data-resv-time>21:00</button>
+            <button type="button" data-resv-time>21:30</button>
+          </div>
+
+          <div class="resv-actions">
+            <button type="button" class="btn btn-accent" data-step-next="1" data-i18n="resv.next">Next →</button>
+          </div>
+        </div>
+
+        <!-- STEP 2 -->
+        <div class="resv-step" data-step="1">
+          <h2 data-i18n="resv.st2.title" data-i18n-html="true">How many <em>of you?</em></h2>
+          <p data-i18n="resv.st2.text">Up to 6 guests online. For 7+ please <a href="mailto:private@sala.cz" style="color:var(--accent);border-bottom:1px solid var(--accent);text-decoration:none">email us about the Cellar Room</a> — we'll set the long table for you.</p>
+
+          <div class="resv-grid resv-grid--size">
+            <button type="button" data-resv-size="1">1</button>
+            <button type="button" data-resv-size="2" class="is-active">2</button>
+            <button type="button" data-resv-size="3">3</button>
+            <button type="button" data-resv-size="4">4</button>
+            <button type="button" data-resv-size="5">5</button>
+            <button type="button" data-resv-size="6">6</button>
+          </div>
+
+          <div class="resv-actions">
+            <button type="button" class="btn btn-outline" data-step-back="0" data-i18n="resv.back">← Back</button>
+            <button type="button" class="btn btn-accent" data-step-next="2" data-i18n="resv.next">Next →</button>
+          </div>
+        </div>
+
+        <!-- STEP 3 -->
+        <div class="resv-step" data-step="2">
+          <h2 data-i18n="resv.st3.title" data-i18n-html="true">A few <em>last details</em></h2>
+          <p data-i18n="resv.st3.text">We use these only to confirm the booking and reach you if anything changes. Allergies and dietary requests welcome — we cook around them.</p>
+
+          <form class="resv-form" novalidate>
+            <label><span data-i18n="resv.st3.name">Full name</span><input type="text" name="name" required></label>
+            <label><span data-i18n="resv.st3.email">Email</span><input type="email" name="email" required></label>
+            <label><span data-i18n="resv.st3.phone">Phone</span><input type="tel" name="phone" required></label>
+            <label><span data-i18n="resv.st3.notes">Allergies, occasion, special requests</span><textarea name="notes" rows="4" data-i18n-attr="placeholder|resv.st3.notesPh" placeholder="e.g. one of us is vegetarian, one is allergic to celeriac, it's our anniversary"></textarea></label>
+
+            <div class="resv-actions">
+              <button type="button" class="btn btn-outline" data-step-back="1" data-i18n="resv.back">← Back</button>
+              <button type="submit" class="btn btn-accent" data-i18n="resv.confirm">Confirm reservation →</button>
+            </div>
+          </form>
+        </div>
+
+        <!-- STEP 4 (confirmation) -->
+        <div class="resv-step resv-step--confirm" data-step="3">
+          <span class="resv-confirm__icon">✓</span>
+          <h2 data-i18n="resv.st4.title" data-i18n-html="true">See you soon <em>at Sála</em></h2>
+          <p data-i18n="resv.st4.text">A confirmation is on its way to your inbox. We hold tables for 15 minutes after the booking time — if you're running late, please give us a quick call so we can keep your seat.</p>
+          <a href="index.html" class="btn btn-outline" data-i18n="resv.st4.home">← Back home</a>
+          <a href="menu.html" class="btn btn-accent" data-i18n="resv.st4.menu">See the menu</a>
+          <p style="margin-top:48px;font-family:var(--serif-italic);font-style:italic;color:var(--accent);font-size:1.16rem" data-i18n="resv.st4.signoff">— Anna &amp; the Sála team</p>
+        </div>
+      </div>
+
+      <!-- SUMMARY -->
+      <aside class="resv-summary" data-resv-summary>
+        <h3 data-i18n="resv.sum.title" data-i18n-html="true">Your booking <em>· Sála</em></h3>
+        <p data-i18n="resv.sum.text">A small kitchen, forty seats, one tasting menu and a short à la carte. We'll write back within 24 hours.</p>
+        <dl>
+          <dt data-i18n="resv.sum.date">Date</dt><dd data-summary="date">—</dd>
+          <dt data-i18n="resv.sum.time">Time</dt><dd data-summary="time">19:30</dd>
+          <dt data-i18n="resv.sum.size">Guests</dt><dd data-summary="size">2 guests</dd>
+        </dl>
+        <p class="resv-summary__note" data-i18n="resv.sum.note">"We'll keep the second pour going."<br>— Anna</p>
+      </aside>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div>
+          <p class="footer__brand">Sál<em>a</em></p>
+          <p class="footer__tag" data-i18n="footer.tag">A neighborhood restaurant on Vinohradská.</p>
+          <p class="footer__addr" data-i18n="footer.addr" data-i18n-html="true">Vinohradská 27<br/>120 00 Praha 2 — Vinohrady<br/>+420 221 234 567 · ahoj@sala.cz</p>
+        </div>
+        <div class="footer__col">
+          <h4 data-i18n="footer.c1">Visit</h4>
+          <ul>
+            <li><a href="reservations.html" data-i18n="footer.l1">Reservations</a></li>
+            <li><a href="menu.html" data-i18n="footer.l2">The menu</a></li>
+            <li><a href="index.html#wine" data-i18n="footer.l3">Wine list</a></li>
+            <li><a href="index.html#private" data-i18n="footer.l4">Private dining</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4 data-i18n="footer.c2">About</h4>
+          <ul>
+            <li><a href="index.html#chef" data-i18n="footer.l5">The chef</a></li>
+            <li><a href="index.html#tasting" data-i18n="footer.l6">Tonight's menu</a></li>
+            <li><a href="mailto:press@sala.cz" data-i18n="footer.l7">Press</a></li>
+            <li><a href="mailto:work@sala.cz" data-i18n="footer.l8">Careers</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4 data-i18n="footer.c3">Follow</h4>
+          <ul>
+            <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+            <li><a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+            <li><a href="mailto:newsletter@sala.cz" data-i18n="footer.l9">Newsletter</a></li>
+            <li><a href="mailto:ahoj@sala.cz">ahoj@sala.cz</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-bottom__copy" data-i18n="footer.copy">© 2026 Sála s.r.o. · Vinohrady · Praha</p>
+        <div class="footer-bottom__links">
+          <a href="#" data-i18n="footer.legal1">Privacy</a>
+          <a href="#" data-i18n="footer.legal2">Terms</a>
+          <a href="../../studio/portfolio.html" data-i18n="footer.legal3">Site by Karolína K.</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <script src="i18n/dict.js?v=25"></script>
+
+  <script src="js/i18n.js?v=8"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

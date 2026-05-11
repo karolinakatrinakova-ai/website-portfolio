@@ -296,6 +296,53 @@
 }
 .mobile-menu__bottom a:hover { color: var(--bg); background: var(--ink); border-color: var(--ink); }
 
+/* ─── Light-page navbar: when the page starts on a light surface (sub-hero on
+   inner pages, or split heroes whose left half is cream), the default
+   white-on-transparent navbar is invisible. Flip to dark before .scrolled. ─── */
+body:has(.sub-hero) .navbar:not(.scrolled) .navbar-brand,
+body:has(.banner.hero--split) .navbar:not(.scrolled) .navbar-brand,
+body:has(.banner.hero--magazine) .navbar:not(.scrolled) .navbar-brand { color: var(--ink); }
+
+body:has(.sub-hero) .navbar:not(.scrolled) .navbar-links a,
+body:has(.banner.hero--split) .navbar:not(.scrolled) .navbar-links a,
+body:has(.banner.hero--magazine) .navbar:not(.scrolled) .navbar-links a { color: var(--stone); }
+
+body:has(.sub-hero) .navbar:not(.scrolled) .navbar-links a:hover,
+body:has(.sub-hero) .navbar:not(.scrolled) .navbar-links a.active,
+body:has(.sub-hero) .navbar:not(.scrolled) .navbar-links a.is-current,
+body:has(.banner.hero--split) .navbar:not(.scrolled) .navbar-links a:hover,
+body:has(.banner.hero--split) .navbar:not(.scrolled) .navbar-links a.active,
+body:has(.banner.hero--split) .navbar:not(.scrolled) .navbar-links a.is-current,
+body:has(.banner.hero--magazine) .navbar:not(.scrolled) .navbar-links a:hover,
+body:has(.banner.hero--magazine) .navbar:not(.scrolled) .navbar-links a.active,
+body:has(.banner.hero--magazine) .navbar:not(.scrolled) .navbar-links a.is-current { color: var(--ink); }
+
+body:has(.sub-hero) .navbar:not(.scrolled) .navbar-dropdown__toggle,
+body:has(.banner.hero--split) .navbar:not(.scrolled) .navbar-dropdown__toggle,
+body:has(.banner.hero--magazine) .navbar:not(.scrolled) .navbar-dropdown__toggle { color: var(--stone); }
+
+body:has(.sub-hero) .navbar:not(.scrolled) .navbar-dropdown:hover .navbar-dropdown__toggle,
+body:has(.banner.hero--split) .navbar:not(.scrolled) .navbar-dropdown:hover .navbar-dropdown__toggle,
+body:has(.banner.hero--magazine) .navbar:not(.scrolled) .navbar-dropdown:hover .navbar-dropdown__toggle { color: var(--ink); }
+
+body:has(.sub-hero) .navbar:not(.scrolled) .navbar-cta,
+body:has(.banner.hero--split) .navbar:not(.scrolled) .navbar-cta,
+body:has(.banner.hero--magazine) .navbar:not(.scrolled) .navbar-cta {
+  color: var(--ink);
+  border-color: rgba(0, 0, 0, 0.35);
+}
+body:has(.sub-hero) .navbar:not(.scrolled) .navbar-cta:hover,
+body:has(.banner.hero--split) .navbar:not(.scrolled) .navbar-cta:hover,
+body:has(.banner.hero--magazine) .navbar:not(.scrolled) .navbar-cta:hover {
+  background: var(--accent);
+  color: #fff;
+  border-color: var(--accent);
+}
+
+body:has(.sub-hero) .navbar:not(.scrolled) .navbar-hamburger span,
+body:has(.banner.hero--split) .navbar:not(.scrolled) .navbar-hamburger span,
+body:has(.banner.hero--magazine) .navbar:not(.scrolled) .navbar-hamburger span { background: var(--ink); }
+
 /* Responsive */
 @media (max-width: 1024px) {
   .navbar-links { gap: 22px; }
@@ -307,4 +354,38 @@
   .navbar-hamburger { display: block; }
   .mobile-menu { display: flex; }
   .navbar-brand { font-size: 1.4rem; }
+  .navbar-right { gap: 10px; }
+}
+@media (max-width: 720px) {
+  .navbar-right > .lang-switch { display: none; }
+}
+
+/* Lang switch inside mobile menu (only visible when menu is open + on small screens) */
+.mobile-menu .lang-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 8px;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.04);
+  border: 1px solid var(--line);
+  margin-top: 28px;
+}
+.mobile-menu .lang-switch__btn {
+  font-family: var(--sans);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  padding: 8px 14px;
+  background: none;
+  border: 0;
+  border-radius: 999px;
+  color: var(--stone);
+  cursor: pointer;
+  transition: color 0.2s ease, background 0.2s ease;
+}
+.mobile-menu .lang-switch__btn:hover { color: var(--ink); }
+.mobile-menu .lang-switch__btn.active {
+  background: var(--ink);
+  color: var(--bg);
 }

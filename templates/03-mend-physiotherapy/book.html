@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="book.meta_title">Online rezervácia · Fyzio Plus · Praha</title>
+  <meta name="description" data-i18n-attr="content|book.meta_desc" content="Objednajte si termín online — vyberte diagnózu, terapeuta a čas. Termín do 5 dní." />
+  <meta name="theme-color" content="#2674b3" />
+  <link rel="icon" type="image/svg+xml" href="../../studio/favicon.svg" />
+  <link rel="stylesheet" href="css/theme.css?v=3" />
+  <link rel="stylesheet" href="css/layout.css?v=3" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+
+  <a href="#main-content" class="skip-to-content" data-i18n="a11y.skip">Skip to content</a>
+  <div class="page-loader"><span class="page-loader__brand">Fyzio Plus</span></div>
+  <div class="reading-progress"></div>
+
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="navbar-brand"><span class="navbar-brand__dot"></span><span>Fyzio Plus</span></a>
+      <ul class="navbar-links">
+        <li><a href="conditions.html" data-i18n="nav.symptoms">Diagnózy</a></li>
+        <li><a href="index.html#journey" data-i18n="nav.journey">Postup</a></li>
+        <li><a href="index.html#therapist" data-i18n="nav.team">O nás</a></li>
+        <li><a href="index.html#cennik" data-i18n="nav.pricing">Cenník</a></li>
+        <li><a href="book.html" class="active" data-i18n="nav.contact">Rezervácia</a></li>
+      </ul>
+      <div class="navbar-right">
+        <div class="lang-switch" data-lang-switch>
+          <button class="lang-switch__btn" data-lang="sk">SK</button>
+          <button class="lang-switch__btn" data-lang="cs">CS</button>
+          <button class="lang-switch__btn" data-lang="en">EN</button>
+        </div>
+        <a href="tel:+420770222333" class="navbar-cta" data-i18n="book.call">+420 770 222 333</a>
+        <button class="navbar-hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mobile-menu">
+    <ul class="mobile-menu__links">
+      <li><a href="conditions.html" data-i18n="nav.symptoms">Diagnózy</a></li>
+      <li><a href="index.html#journey" data-i18n="nav.journey">Postup</a></li>
+      <li><a href="index.html#therapist" data-i18n="nav.team">O nás</a></li>
+      <li><a href="index.html#cennik" data-i18n="nav.pricing">Cenník</a></li>
+      <li><a href="book.html" data-i18n="nav.contact">Rezervácia</a></li>
+    </ul>
+    <div class="lang-switch" data-lang-switch role="group" aria-label="Language">
+      <button class="lang-switch__btn" data-lang="en">EN</button>
+      <button class="lang-switch__btn" data-lang="sk">SK</button>
+      <button class="lang-switch__btn" data-lang="cs">CS</button>
+    </div>
+
+    <div class="mobile-menu__cta"><a href="tel:+420770222333" class="btn btn-accent" data-i18n="book.call">+420 770 222 333</a></div>
+  </div>
+
+  <header class="sub-hero" id="main-content" style="padding-bottom: 30px">
+    <div class="sub-hero__inner" style="grid-template-columns:1fr;gap:0;text-align:center">
+      <div class="sub-hero__copy" style="margin:0 auto;max-width:680px">
+        <p class="sub-hero__crumb"><a href="index.html" data-i18n="cond.crumb_home">Fyzio Plus</a> &nbsp;/&nbsp; <span data-i18n="book.crumb">Rezervácia</span></p>
+        <h1 data-i18n-html="true" data-i18n="book.title">Four steps <em>to your appointment.</em></h1>
+        <p data-i18n="book.lead">Žiadne čakacie listiny, žiadna žiadanka. Objednajte si online za minútu — termín máte do 5 dní.</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- multi-step booking -->
+  <section class="book-shell">
+
+    <div class="book-progress" id="bookProgress">
+      <div class="book-progress__step is-current" data-step="1"><div class="book-progress__step__num">1</div><div class="book-progress__step__lbl" data-i18n="book.s1_lbl">Diagnóza</div></div>
+      <div class="book-progress__step" data-step="2"><div class="book-progress__step__num">2</div><div class="book-progress__step__lbl" data-i18n="book.s2_lbl">Terapeut</div></div>
+      <div class="book-progress__step" data-step="3"><div class="book-progress__step__num">3</div><div class="book-progress__step__lbl" data-i18n="book.s3_lbl">Termín</div></div>
+      <div class="book-progress__step" data-step="4"><div class="book-progress__step__num">4</div><div class="book-progress__step__lbl" data-i18n="book.s4_lbl">Údaje</div></div>
+    </div>
+
+    <!-- STEP 1: condition -->
+    <div class="book-step is-active" data-stepc="1">
+      <h2 data-i18n-html="true" data-i18n="book.s1_h">What can <em>we help with</em>?</h2>
+      <p class="lead" data-i18n="book.s1_p">Vyberte oblasť, ktorá najlepšie sedí s vašou ťažkosťou. Ak váhate, vyberte "neviem presne" — vyhodnotenie urobíme spolu na prvej návšteve.</p>
+      <div class="book-options">
+        <button class="book-option" data-option="cond" data-value="back" data-label="Bolesť chrbta"><p class="book-option__cat" data-i18n="cond.f_ortho">Ortopedické</p><p class="book-option__title" data-i18n="book.cond1">Bolesť chrbta</p><p class="book-option__sub" data-i18n="book.cond1s">Krížová oblasť, hrudná chrbtica</p></button>
+        <button class="book-option" data-option="cond" data-value="knee" data-label="Koleno"><p class="book-option__cat" data-i18n="cond.f_ortho">Ortopedické</p><p class="book-option__title" data-i18n="book.cond2">Koleno</p><p class="book-option__sub" data-i18n="book.cond2s">Bolesť, opuchnutie, po úraze</p></button>
+        <button class="book-option" data-option="cond" data-value="neck" data-label="Krk a hlava"><p class="book-option__cat" data-i18n="cond.f_ortho">Ortopedické</p><p class="book-option__title" data-i18n="book.cond3">Krk a hlava</p><p class="book-option__sub" data-i18n="book.cond3s">Stuhnutie, bolesti hlavy</p></button>
+        <button class="book-option" data-option="cond" data-value="postop" data-label="Po operácii"><p class="book-option__cat" data-i18n="cond.f_postop">Pooperačné</p><p class="book-option__title" data-i18n="book.cond4">Po operácii</p><p class="book-option__sub" data-i18n="book.cond4s">Koleno, rameno, bedro</p></button>
+        <button class="book-option" data-option="cond" data-value="sport" data-label="Športové zranenie"><p class="book-option__cat" data-i18n="cond.f_sport">Športové</p><p class="book-option__title" data-i18n="book.cond5">Športové zranenie</p><p class="book-option__sub" data-i18n="book.cond5s">Beh, posilňovňa, tenis</p></button>
+        <button class="book-option" data-option="cond" data-value="pregnancy" data-label="Tehotenstvo"><p class="book-option__cat" data-i18n="cond.f_prepost">Tehotenstvo</p><p class="book-option__title" data-i18n="book.cond6">Tehotenstvo · pôrod</p><p class="book-option__sub" data-i18n="book.cond6s">Pred a po pôrode</p></button>
+        <button class="book-option" data-option="cond" data-value="other" data-label="Iné"><p class="book-option__cat" data-i18n="book.cond_oth">Konzultácia</p><p class="book-option__title" data-i18n="book.cond7">Neviem presne</p><p class="book-option__sub" data-i18n="book.cond7s">Vyhodnotenie spolu na prvej návšteve</p></button>
+        <button class="book-option" data-option="cond" data-value="follow" data-label="Pokračovanie"><p class="book-option__cat" data-i18n="book.cond_oth">Pokračovanie</p><p class="book-option__title" data-i18n="book.cond8">Pokračovanie terapie</p><p class="book-option__sub" data-i18n="book.cond8s">Som už váš pacient</p></button>
+      </div>
+      <div class="book-actions">
+        <span></span>
+        <button class="book-next" disabled data-next data-i18n="book.next">Pokračovať →</button>
+      </div>
+    </div>
+
+    <!-- STEP 2: therapist -->
+    <div class="book-step" data-stepc="2">
+      <h2 data-i18n-html="true" data-i18n="book.s2_h">Who do you <em>want to see</em>?</h2>
+      <p class="lead" data-i18n="book.s2_p">Všetci traja sú špecializovaní fyzioterapeuti so štátnou skúškou. Ak nemáte preferenciu, "ktokoľvek voľný" znamená najrýchlejší termín.</p>
+      <div class="book-options">
+        <button class="book-option book-option--ther" data-option="therapist" data-value="any" data-label="Ktokoľvek voľný"><div style="width:70px;height:70px;border-radius:50%;background:var(--bg-2);display:flex;align-items:center;justify-content:center;color:var(--accent);font-size:1.4rem"><i class="fa-solid fa-clock"></i></div><div><p class="book-option__title" data-i18n="book.t_any">Ktokoľvek voľný</p><p class="book-option__sub" data-i18n="book.t_any_s">Najrýchlejší termín</p></div></button>
+        <button class="book-option book-option--ther" data-option="therapist" data-value="petra" data-label="MUDr. Petra Nováková"><img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=200&q=82" alt="" /><div><p class="book-option__title" data-i18n="book.t_petra">MUDr. Petra Nováková</p><p class="book-option__sub" data-i18n="book.t_petra_s">Vedúca terapeutka · ortopédia, šport</p></div></button>
+        <button class="book-option book-option--ther" data-option="therapist" data-value="marek" data-label="Marek Procházka, DiS."><img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=200&q=82" alt="" /><div><p class="book-option__title" data-i18n="book.t_marek">Marek Procházka, DiS.</p><p class="book-option__sub" data-i18n="book.t_marek_s">Pooperačná rehabilitácia, MFR</p></div></button>
+        <button class="book-option book-option--ther" data-option="therapist" data-value="lucia" data-label="Mgr. Lucia Kováčová"><img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=200&q=82" alt="" /><div><p class="book-option__title" data-i18n="book.t_lucia">Mgr. Lucia Kováčová</p><p class="book-option__sub" data-i18n="book.t_lucia_s">Tehotenstvo, panvové dno</p></div></button>
+      </div>
+      <div class="book-actions">
+        <button class="book-back" data-back data-i18n="book.back">← Späť</button>
+        <button class="book-next" disabled data-next data-i18n="book.next">Pokračovať →</button>
+      </div>
+    </div>
+
+    <!-- STEP 3: time -->
+    <div class="book-step" data-stepc="3">
+      <h2 data-i18n-html="true" data-i18n="book.s3_h">When <em>suits you</em>?</h2>
+      <p class="lead" data-i18n="book.s3_p">Sedenie trvá 60 minút. Najbližšie voľné termíny v ďalších piatich dňoch:</p>
+
+      <div class="book-day">
+        <p class="book-day__label" data-i18n="book.d1">Streda · 7. mája</p>
+        <div class="book-times">
+          <button class="book-time" data-option="time" data-value="2026-05-07-09" data-label="St 7. máj · 09:00">09:00</button>
+          <button class="book-time" disabled>10:30</button>
+          <button class="book-time" data-option="time" data-value="2026-05-07-13" data-label="St 7. máj · 13:00">13:00</button>
+          <button class="book-time" data-option="time" data-value="2026-05-07-16" data-label="St 7. máj · 16:00">16:00</button>
+          <button class="book-time" data-option="time" data-value="2026-05-07-17" data-label="St 7. máj · 17:30">17:30</button>
+          <button class="book-time" disabled>19:00</button>
+        </div>
+      </div>
+
+      <div class="book-day">
+        <p class="book-day__label" data-i18n="book.d2">Štvrtok · 8. mája</p>
+        <div class="book-times">
+          <button class="book-time" data-option="time" data-value="2026-05-08-08" data-label="Št 8. máj · 08:00">08:00</button>
+          <button class="book-time" data-option="time" data-value="2026-05-08-10" data-label="Št 8. máj · 10:30">10:30</button>
+          <button class="book-time" disabled>13:00</button>
+          <button class="book-time" disabled>16:00</button>
+          <button class="book-time" data-option="time" data-value="2026-05-08-18" data-label="Št 8. máj · 18:00">18:00</button>
+        </div>
+      </div>
+
+      <div class="book-day">
+        <p class="book-day__label" data-i18n="book.d3">Piatok · 9. mája</p>
+        <div class="book-times">
+          <button class="book-time" data-option="time" data-value="2026-05-09-09" data-label="Pi 9. máj · 09:00">09:00</button>
+          <button class="book-time" data-option="time" data-value="2026-05-09-11" data-label="Pi 9. máj · 11:00">11:00</button>
+          <button class="book-time" data-option="time" data-value="2026-05-09-14" data-label="Pi 9. máj · 14:00">14:00</button>
+          <button class="book-time" data-option="time" data-value="2026-05-09-15" data-label="Pi 9. máj · 15:30">15:30</button>
+          <button class="book-time" disabled>17:00</button>
+        </div>
+      </div>
+
+      <div class="book-day">
+        <p class="book-day__label" data-i18n="book.d4">Pondelok · 12. mája</p>
+        <div class="book-times">
+          <button class="book-time" data-option="time" data-value="2026-05-12-08" data-label="Po 12. máj · 08:00">08:00</button>
+          <button class="book-time" data-option="time" data-value="2026-05-12-10" data-label="Po 12. máj · 10:00">10:00</button>
+          <button class="book-time" data-option="time" data-value="2026-05-12-12" data-label="Po 12. máj · 12:00">12:00</button>
+          <button class="book-time" data-option="time" data-value="2026-05-12-15" data-label="Po 12. máj · 15:30">15:30</button>
+          <button class="book-time" data-option="time" data-value="2026-05-12-17" data-label="Po 12. máj · 17:30">17:30</button>
+          <button class="book-time" data-option="time" data-value="2026-05-12-19" data-label="Po 12. máj · 19:00">19:00</button>
+        </div>
+      </div>
+
+      <div class="book-actions">
+        <button class="book-back" data-back data-i18n="book.back">← Späť</button>
+        <button class="book-next" disabled data-next data-i18n="book.next">Pokračovať →</button>
+      </div>
+    </div>
+
+    <!-- STEP 4: contact info -->
+    <div class="book-step" data-stepc="4">
+      <h2 data-i18n-html="true" data-i18n="book.s4_h">Last — <em>your details</em></h2>
+      <p class="lead" data-i18n="book.s4_p">Termín potvrdíme do hodiny e-mailom aj SMS. Bez záväzku — môžete zrušiť alebo presunúť do 24 hodín pred termínom.</p>
+
+      <form class="book-form" id="bookForm">
+        <div class="book-form__row">
+          <div><label data-i18n="book.f_first">Meno</label><input type="text" required name="first" /></div>
+          <div><label data-i18n="book.f_last">Priezvisko</label><input type="text" required name="last" /></div>
+        </div>
+        <div class="book-form__row">
+          <div><label data-i18n="book.f_email">Email</label><input type="email" required name="email" /></div>
+          <div><label data-i18n="book.f_phone">Telefón</label><input type="tel" required name="phone" /></div>
+        </div>
+        <div><label data-i18n="book.f_msg">Krátky popis problému (voliteľne)</label><textarea name="msg" data-i18n-attr="placeholder|book.f_msg_ph" placeholder="Kedy to začalo, čo zhoršuje, čo si o tom myslíte..."></textarea></div>
+
+        <div class="book-summary">
+          <div class="book-summary__row"><span data-i18n="book.sum_cond">Diagnóza</span><strong id="sumCond">—</strong></div>
+          <div class="book-summary__row"><span data-i18n="book.sum_ther">Terapeut</span><strong id="sumTher">—</strong></div>
+          <div class="book-summary__row"><span data-i18n="book.sum_time">Termín</span><strong id="sumTime">—</strong></div>
+          <div class="book-summary__row"><span data-i18n="book.sum_price">Cena (60 min)</span><strong>1 200 Kč</strong></div>
+        </div>
+
+        <div class="book-actions">
+          <button type="button" class="book-back" data-back data-i18n="book.back">← Späť</button>
+          <button type="submit" class="book-next book-next--final" data-i18n="book.confirm">Potvrdiť rezerváciu</button>
+        </div>
+      </form>
+    </div>
+
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p class="footer-bottom__copy" data-i18n="footer.rights">© 2026 Fyzio Plus</p>
+        <div class="footer-bottom__links">
+          <a href="../../studio/privacy.html" data-i18n="footer.privacy">Súkromie</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Top"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <div class="cookie-banner" id="cookieBanner">
+    <div class="cookie-banner__inner">
+      <p data-i18n="cookies.text">Používame cookies pre lepší zážitok.</p>
+      <div class="cookie-banner__actions">
+        <button class="cookie-banner__btn cookie-banner__btn--accept" data-cookie="accept" data-i18n="cookies.accept">Prijať</button>
+        <button class="cookie-banner__btn cookie-banner__btn--decline" data-cookie="decline" data-i18n="cookies.decline">Odmietnuť</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      var current = 1;
+      var picks = { cond: null, therapist: null, time: null };
+      var stepsEls = document.querySelectorAll('.book-step');
+      var progressSteps = document.querySelectorAll('.book-progress__step');
+
+      function showStep (n) {
+        stepsEls.forEach(function (s) { s.classList.toggle('is-active', Number(s.dataset.stepc) === n); });
+        progressSteps.forEach(function (p) {
+          var num = Number(p.dataset.step);
+          p.classList.toggle('is-current', num === n);
+          p.classList.toggle('is-done', num < n);
+        });
+        var nextBtn = stepsEls[n - 1].querySelector('[data-next]');
+        if (nextBtn) {
+          var hasPick = (n === 1 && picks.cond) || (n === 2 && picks.therapist) || (n === 3 && picks.time);
+          nextBtn.disabled = !hasPick;
+        }
+        window.scrollTo({ top: document.querySelector('.book-progress').offsetTop - 90, behavior: 'smooth' });
+      }
+      function next () {
+        if (current < 4) { current++; showStep(current); if (current === 4) updateSummary(); }
+      }
+      function back () {
+        if (current > 1) { current--; showStep(current); }
+      }
+      function updateSummary () {
+        document.getElementById('sumCond').textContent = picks.cond ? picks.cond.label : '—';
+        document.getElementById('sumTher').textContent = picks.therapist ? picks.therapist.label : '—';
+        document.getElementById('sumTime').textContent = picks.time ? picks.time.label : '—';
+      }
+
+      document.querySelectorAll('[data-option]').forEach(function (b) {
+        b.addEventListener('click', function () {
+          var opt = b.dataset.option;
+          var siblings = document.querySelectorAll('[data-option="' + opt + '"]');
+          siblings.forEach(function (s) { s.classList.remove('is-selected'); });
+          b.classList.add('is-selected');
+          picks[opt] = { value: b.dataset.value, label: b.dataset.label };
+          var step = b.closest('.book-step');
+          var nextBtn = step.querySelector('[data-next]');
+          if (nextBtn) nextBtn.disabled = false;
+        });
+      });
+      document.querySelectorAll('[data-next]').forEach(function (b) { b.addEventListener('click', next); });
+      document.querySelectorAll('[data-back]').forEach(function (b) { b.addEventListener('click', back); });
+      document.getElementById('bookForm').addEventListener('submit', function (e) {
+        e.preventDefault();
+        alert('Demo: rezervácia by bola odoslaná. (Pripojiteľné na overenú rezervačnú platformu alebo vlastný backend.)');
+      });
+    })();
+  </script>
+
+  <script src="i18n/dict.js?v=25"></script>
+
+  <script src="js/i18n.js?v=4"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

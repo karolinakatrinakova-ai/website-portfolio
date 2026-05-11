@@ -1,5 +1,188 @@
 {
-  "meta": { "title": "Studio Novák · svadobný a portrét fotograf, Košice", "description": "Editoriálny svadobný a portrét fotograf v Košiciach. Galéria, balíčky, kontakt." },
-  "nav": { "home": "Domov", "work": "Práce", "weddings": "Svadby", "portraits": "Portréty", "packages": "Balíčky", "about": "O mne", "contact": "Kontakt", "book": "Rezervovať session" },
-  "hero": { "label": "Svadobný · portrét fotograf · Košice", "line1": "Snímam", "line2": "vaše chvíle,", "line3": "kým neutíchnu.", "sub": "Som Sofia. Fotím svadby, portréty a editoriály v Košiciach a okolí. 8+ rokov, 200+ svadieb, štýl tichý, prirodzený, mierne filmový." }
+  "meta": {
+    "title": "Studio Novák · fine-art svadobný fotograf · Praha",
+    "description": "Fine-art svadobná a portrétna fotografia v Prahe, vo Viedni aj v zahraničí. Sofia Novák — pokojné, filmové svadobné príbehy."
+  },
+  "a11y": {
+    "skip": "Preskočiť na obsah"
+  },
+  "nav": {
+    "stories": "Príbehy",
+    "portfolio": "Portfólio",
+    "about": "O mne",
+    "invest": "Cenník",
+    "journal": "Žurnál",
+    "inquire": "Dopyt",
+    "book": "Dopyt",
+    "social": "Instagram"
+  },
+  "hero": {
+    "tag": "Fine-art svadobná a portrétna fotografia",
+    "name": "Studio Novák",
+    "corner_left": "Sofia Novák · od 2018 · Praha",
+    "corner_right": "Vybrané práce · 2024 — 2026"
+  },
+  "marquee": {
+    "i1": "Svadby",
+    "i2": "Predsvadobné",
+    "i3": "Editorial",
+    "i4": "Rodina",
+    "i5": "Portréty"
+  },
+  "stories": {
+    "label": "Vybrané príbehy",
+    "title": "Tri svadby <em>v plnej dĺžke</em>",
+    "s1": {
+      "loc": "Tereza & Michal · Vinohrady, Praha · október 2025",
+      "title": "Záhradná svadba v <em>jesennom svetle</em>",
+      "text": "Malý obrad vo dvore, dlhý stôl plný priateľov a večer, ktorý sa pomaly menil z kávy na sviečky. Sledovali sme svetlo a zostávali potichu — taký deň, ktorý je krajší, keď nikto nepózuje pred objektívom.",
+      "d1_label": "Pokrytie",
+      "d1_value": "10 hodín",
+      "d2_label": "Finálnych fotiek",
+      "d2_value": "920",
+      "d3_label": "Look",
+      "d3_value": "Teplý filmový"
+    },
+    "s2": {
+      "loc": "Petra & Adam · Český Krumlov · jún 2025",
+      "title": "Letný obrad pri <em>rieke</em>",
+      "text": "Víkend v Českom Krumlove — sľub na brehu, večera pod gaštanmi a tanec, kým nezhasli lampióny. Jemne, zlato a trochu divoko po okrajoch.",
+      "d1_label": "Pokrytie",
+      "d1_value": "2 dni",
+      "d2_label": "Finálnych fotiek",
+      "d2_value": "1 480",
+      "d3_label": "Look",
+      "d3_value": "Mäkký filmový"
+    },
+    "s3": {
+      "loc": "Lucia & Tomáš · Viedeň · apríl 2025",
+      "title": "Svadba na radnici a <em>jedna dobrá večera</em>",
+      "text": "Intímny elopement na viedenskej radnici, popoludňajšia prechádzka po Augartene a večera pre dvanástich v Tiane. Bez harmonogramu, bez stresu — iba deň, ktorý by si pokojne zopakovali.",
+      "d1_label": "Pokrytie",
+      "d1_value": "6 hodín",
+      "d2_label": "Finálnych fotiek",
+      "d2_value": "540",
+      "d3_label": "Look",
+      "d3_value": "Editorial b&w"
+    }
+  },
+  "about": {
+    "label": "O fotografke",
+    "title": "Ahoj, <em>som Sofia</em>",
+    "p1": "Fotografujem osem rokov. Po stáži v Prahe a roku v Berlíne mám od 2018 vlastné štúdio vo Vinohradoch.",
+    "p2": "Moja práca je tichá. Hľadám okamih hneď po tom pripravenom — keď už nikto nepózuje, ale všetko sa stále deje.",
+    "p3": "Pracujem najmä s prirodzeným svetlom, na Sony A7 IV, s 50 mm a 85 mm pevnými objektívmi. Edit robím v Capture One — mäkko, teplo a s jemnou filmovou zrnitosťou.",
+    "sig": "— Sofia"
+  },
+  "invest": {
+    "label": "Cenník",
+    "title": "Tri spôsoby, <em>ako spolu pracovať</em>",
+    "cta": "Napíšte mi pre detaily →",
+    "c1": {
+      "cat": "Predsvadobné a páry",
+      "title": "Pre <em>páry</em>",
+      "desc": "Pokojná 90-minútová session pre dvoch — v meste, v prírode alebo kdekoľvek, kde má miesto pre vás zmysel. V cene 40+ upravených fotiek a online galéria."
+    },
+    "c2": {
+      "cat": "Váš svadobný deň",
+      "title": "Svadobný <em>balíček</em>",
+      "desc": "Celodenná svadba v Prahe, na českom vidieku alebo v zahraničí. Pokrytie od príprav až po prvý tanec, bez stresu a s príbehovým prístupom."
+    },
+    "c3": {
+      "cat": "Editorial a brand",
+      "title": "Editorial a <em>komerčné</em>",
+      "desc": "Brandové kampane, fotografie pre reštaurácie, časopisecké zákazky a kreatívne editorialy. Polodenné aj celodenné sadzby s plným komerčným využitím."
+    }
+  },
+  "jour": {
+    "label": "Žurnál",
+    "title": "Posledné <em>zápisky</em>",
+    "j1": {
+      "date": "Február 2026",
+      "title": "Prečo každý rok fotím <em>menej svadieb</em>",
+      "excerpt": "Krátka úvaha o tom, prečo si držím limit 14 svadieb ročne, čo to robí s mojou prácou a prečo si myslím, že to má naozaj zmysel."
+    },
+    "j2": {
+      "date": "Január 2026",
+      "title": "Sprievodca <em>zimnými elopementmi</em> v Prahe",
+      "excerpt": "Svetlo, lokality a načasovanie — praktický návod pre páry, ktoré plánujú malú zimnú svadbu v meste."
+    },
+    "j3": {
+      "date": "November 2025",
+      "title": "Päť otázok <em>pred rezerváciou</em>",
+      "excerpt": "Krátky zoznam vecí, na ktoré sa oplatí spýtať každého svadobného fotografa pred podpisom zmluvy — užitočné, aj keď si ma napokon nevyberiete."
+    }
+  },
+  "inq": {
+    "label": "Napíšte mi",
+    "title": "Povedzte mi <em>svoj príbeh</em>",
+    "text": "Každý dopyt čítam osobne a do 48 hodín odpovedám s ponukou na mieru a kompletnými detailmi balíčka.",
+    "submit": "Odoslať dopyt",
+    "direct": "alebo priamo · <a href=\"mailto:ahoj@studionovak.cz\">ahoj@studionovak.cz</a> · <a href=\"tel:+420770333444\">+420 770 333 444</a>",
+    "f": {
+      "name": "Vaše meno",
+      "email": "E-mail",
+      "type": "Typ session",
+      "type_wedding": "Svadba",
+      "type_couple": "Predsvadobné / pár",
+      "type_editorial": "Editorial / brand",
+      "type_other": "Iné",
+      "date": "Dátum (alebo mesiac)",
+      "date_ph": "Máj 2026",
+      "loc": "Lokalita",
+      "loc_ph": "Praha, Český Krumlov, Viedeň…",
+      "msg": "Pár slov o vašom dni"
+    }
+  },
+  "cookies": {
+    "text": "Používame cookies, aby sme vám poskytli lepší zážitok.",
+    "accept": "Prijať",
+    "decline": "Odmietnuť"
+  },
+  "footer": {
+    "rights": "© 2026 Studio Novák · všetky práva vyhradené",
+    "privacy": "Súkromie"
+  },
+  "portf": {
+    "meta_title": "Portfólio · Studio Novák · fine-art svadobný fotograf",
+    "meta_desc": "Vybrané práce — svadby, elopementy a editorial. Praha, Viedeň a okolie.",
+    "crumb_home": "Studio Novák",
+    "crumb": "Portfólio",
+    "title": "Vybrané práce",
+    "lead": "Malý, starostlivo vyberaný výber z posledných dvoch rokov. Kompletný archív zdieľam s pármi pri dopyte.",
+    "f_all": "Všetko",
+    "f_wed": "Svadby",
+    "f_elope": "Elopementy",
+    "f_ed": "Editorial",
+    "f_por": "Portrét"
+  },
+  "jrn": {
+    "meta_title": "Žurnál · Studio Novák",
+    "meta_desc": "Dlhšie zápisky zo štúdia — vybrané svadby, rady k plánovaniu a o čom práve premýšľam.",
+    "crumb": "Žurnál",
+    "title": "Žurnál",
+    "lead": "Vybrané svadby, technické aj zamýšľavé zápisky a otázky, ktoré dostávam najčastejšie. Nový text pridávam zhruba raz za šesť týždňov.",
+    "read": "Čítať →",
+    "p1_meta": "Svadba · 12. apríl 2026 · 14 min čítania",
+    "p1_title": "Klára a Tomáš na statku — štúdia popoludňajšieho svetla",
+    "p1_ex": "Šesťdesiat hostí, jeden zrekonštruovaný statok severne od Prahy a presne ten druh ľanového obrusu, s ktorým sa vietor neprestal hrať. Prišli sme na obed a fotoaparát som odložila až po deviatich hodinách. Celý príbeh, technické poznámky a prečo z kytice padali lupienky pri každom kroku.",
+    "p2_meta": "Elopement · 28. marec 2026 · 8 min čítania",
+    "p2_title": "Osem hostí, les a ten druh ticha, ktorý neprežije svadobnú párty",
+    "p2_ex": "Elopement Evy a Mareka pri Karlštejne — prečo mám tieto dni radšej než tie veľké a prečo „malé\" nikdy neznamená „jednoduché\".",
+    "p3_meta": "Zápisky · 14. marec 2026 · 6 min čítania",
+    "p3_title": "Časový rozpis, ktorý vám nezničí svadobný deň",
+    "p3_ex": "Najväčší dar, ktorý si môžete dať: tridsať voľných minút medzi obradom a hostinou. Praktický návod, ako postaviť deň, ktorý naozaj dýcha.",
+    "p4_meta": "Svadba · 22. február 2026 · 11 min čítania",
+    "p4_title": "Anna a Jan, mestská svadba vo Ville Pellé",
+    "p4_ex": "Osemdesiatpäť hostí, tri kompletné inštalácie a kytica, ktorá vážila presne toľko, koľko mala. Prečo prvý tanec stále fotím na film.",
+    "p5_meta": "O remesle · 4. február 2026 · 9 min čítania",
+    "p5_title": "Prečo (niekedy a niečo) stále fotím na film",
+    "p5_ex": "Nie z nostalgie. Nie z marketingu. Praktická odpoveď na otázku, ktorú dostávam každý týždeň: prečo film a kedy si vyberiem digitál.",
+    "p6_meta": "FAQ · 18. január 2026 · 7 min čítania",
+    "p6_title": "„Koľko fotiek dostaneme?\" a ďalšie otázky, ktorých sa nemusíte báť",
+    "p6_ex": "Šesť opakujúcich sa otázok, šesť úprimných odpovedí — vrátane toho, prečo to číslo, ktoré naozaj chcete, nie je 1 500 fotiek.",
+    "p7_meta": "Cestovanie · 22. december 2025 · 5 min čítania",
+    "p7_title": "Kam cestujem — a prečo neberiem každú svadbu",
+    "p7_ex": "Pohľad do môjho kalendára na roky 2026 a 2027. Beriem maximálne štrnásť svadieb ročne — a tu je, čo to v praxi znamená."
+  }
 }

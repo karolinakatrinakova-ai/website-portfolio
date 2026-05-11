@@ -8,3 +8,6 @@ node_modules/
 .cache/
 dist/
 .tmp/
+
+# Personal marketing materials — keep local-only
+outreach/

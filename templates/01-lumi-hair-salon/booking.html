@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="book_pg.meta_title">Book online · Salón Lumi</title>
+  <meta name="description" data-i18n-attr="content|book_pg.meta_desc" content="Pick a service, stylist and time — confirmed in writing within four working hours. Free fifteen-minute consultation included." />
+
+  <link rel="icon" type="image/svg+xml" href="../../studio/favicon.svg?v=3" />
+  <link rel="stylesheet" href="css/theme.css?v=5" />
+  <link rel="stylesheet" href="css/layout.css?v=5" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+
+  <a href="#main-content" class="skip-to-content" data-i18n="a11y.skip">Skip to content</a>
+
+  <div class="reading-progress"></div>
+
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="navbar-brand"><span class="navbar-brand__dot"></span><span>Lumi</span></a>
+      <ul class="navbar-links">
+        <li><a href="services.html" data-i18n="nav.services">Services</a></li>
+        <li><a href="team.html" data-i18n="nav.team">Team</a></li>
+        <li><a href="index.html#galeria" data-i18n="nav.gallery">Lookbook</a></li>
+        <li><a href="booking.html" class="is-current" data-i18n="nav.book">Book</a></li>
+        <li><a href="index.html#kontakt" data-i18n="nav.contact">Contact</a></li>
+      </ul>
+      <div class="navbar-right">
+        <div class="lang-switch" data-lang-switch>
+          <button class="lang-switch__btn" data-lang="sk">SK</button>
+          <button class="lang-switch__btn" data-lang="cs">CS</button>
+          <button class="lang-switch__btn" data-lang="en">EN</button>
+        </div>
+        <a href="booking.html" class="navbar-cta" data-i18n="nav.book">Book</a>
+        <button class="navbar-hamburger"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mobile-menu">
+    <ul class="mobile-menu__links">
+      <li><a href="services.html" data-i18n="nav.services">Services</a></li>
+      <li><a href="team.html" data-i18n="nav.team">Team</a></li>
+      <li><a href="index.html#galeria" data-i18n="nav.gallery">Lookbook</a></li>
+      <li><a href="booking.html" data-i18n="nav.book">Book</a></li>
+      <li><a href="index.html#kontakt" data-i18n="nav.contact">Contact</a></li>
+    </ul>
+    <div class="lang-switch" data-lang-switch role="group" aria-label="Language">
+      <button class="lang-switch__btn" data-lang="en">EN</button>
+      <button class="lang-switch__btn" data-lang="sk">SK</button>
+      <button class="lang-switch__btn" data-lang="cs">CS</button>
+    </div>
+
+    <div class="mobile-menu__cta"><a href="booking.html" class="btn btn-accent" data-i18n="nav.book">Book</a></div>
+    <div class="mobile-menu__bottom">
+      <a href="social.html" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="social.html" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+    </div>
+  </div>
+
+  <header class="sub-hero" id="main-content">
+    <div class="container">
+      <p class="sub-hero__crumb">
+        <a href="index.html" data-i18n="book_pg.crumb_home">Salón Lumi</a><span class="sep">/</span><span data-i18n="book_pg.crumb">Book online</span>
+      </p>
+      <h1 data-i18n-html="true" data-i18n="book_pg.title">Book <em>your visit</em></h1>
+      <p data-i18n="book_pg.lead">Four short steps. We confirm in writing within four working hours and always include a fifteen-minute consultation, free of charge, before any colour service.</p>
+    </div>
+  </header>
+
+  <section class="section fade-in">
+    <div class="container">
+      <div class="book-shell">
+        <ol class="book-progress">
+          <li class="book-progress__item is-active" data-step="1">
+            <span class="book-progress__num" data-i18n="book_pg.step1.num">Step 01</span>
+            <span class="book-progress__label" data-i18n="book_pg.step1.label">Service</span>
+          </li>
+          <li class="book-progress__item" data-step="2">
+            <span class="book-progress__num" data-i18n="book_pg.step2.num">Step 02</span>
+            <span class="book-progress__label" data-i18n="book_pg.step2.label">Stylist</span>
+          </li>
+          <li class="book-progress__item" data-step="3">
+            <span class="book-progress__num" data-i18n="book_pg.step3.num">Step 03</span>
+            <span class="book-progress__label" data-i18n="book_pg.step3.label">Date & time</span>
+          </li>
+          <li class="book-progress__item" data-step="4">
+            <span class="book-progress__num" data-i18n="book_pg.step4.num">Step 04</span>
+            <span class="book-progress__label" data-i18n="book_pg.step4.label">Your details</span>
+          </li>
+        </ol>
+
+        <!-- ─── Step 1: Service ─── -->
+        <div class="book-step is-active" data-step-content="1">
+          <h2 class="book-step__title" data-i18n-html="true" data-i18n="book_pg.s1.title">What can we <em>do for you?</em></h2>
+          <p class="book-step__lead" data-i18n="book_pg.s1.lead">Pick the closest match — we'll fine-tune at consultation. Long-hair surcharge applies past mid-back length.</p>
+          <div class="book-options">
+            <button type="button" class="book-option" data-svc="cut" data-svc-name="Tailored cut" data-svc-time="90 min" data-svc-price="from 45 €">
+              <div><p class="book-option__name" data-i18n="book_pg.s1.o1.name">Tailored cut</p><span class="book-option__meta" data-i18n="book_pg.s1.o1.meta">90 min · with consultation</span></div>
+              <span class="book-option__price" data-i18n="book_pg.s1.o1.price">from 45 €</span>
+            </button>
+            <button type="button" class="book-option" data-svc="long" data-svc-name="Long-hair cut & shape" data-svc-time="90 min" data-svc-price="from 55 €">
+              <div><p class="book-option__name" data-i18n="book_pg.s1.o2.name">Long-hair cut & shape</p><span class="book-option__meta" data-i18n="book_pg.s1.o2.meta">90 min · for hair past the shoulder</span></div>
+              <span class="book-option__price" data-i18n="book_pg.s1.o2.price">from 55 €</span>
+            </button>
+            <button type="button" class="book-option" data-svc="roots" data-svc-name="Roots / refresh" data-svc-time="90 min" data-svc-price="from 65 €">
+              <div><p class="book-option__name" data-i18n="book_pg.s1.o3.name">Roots / refresh</p><span class="book-option__meta" data-i18n="book_pg.s1.o3.meta">90 min · regrowth + glaze</span></div>
+              <span class="book-option__price" data-i18n="book_pg.s1.o3.price">from 65 €</span>
+            </button>
+            <button type="button" class="book-option" data-svc="full" data-svc-name="Full single-tone colour" data-svc-time="2.5 hrs" data-svc-price="from 95 €">
+              <div><p class="book-option__name" data-i18n="book_pg.s1.o4.name">Full single-tone colour</p><span class="book-option__meta" data-i18n="book_pg.s1.o4.meta">2.5 hrs · roots to ends</span></div>
+              <span class="book-option__price" data-i18n="book_pg.s1.o4.price">from 95 €</span>
+            </button>
+            <button type="button" class="book-option" data-svc="bal" data-svc-name="Full-head balayage" data-svc-time="3.5 hrs" data-svc-price="from 180 €">
+              <div><p class="book-option__name" data-i18n="book_pg.s1.o5.name">Full-head balayage</p><span class="book-option__meta" data-i18n="book_pg.s1.o5.meta">3.5 hrs · hand-painted</span></div>
+              <span class="book-option__price" data-i18n="book_pg.s1.o5.price">from 180 €</span>
+            </button>
+            <button type="button" class="book-option" data-svc="care" data-svc-name="Olaplex stand-alone" data-svc-time="45 min" data-svc-price="35 €">
+              <div><p class="book-option__name" data-i18n="book_pg.s1.o6.name">Olaplex stand-alone</p><span class="book-option__meta" data-i18n="book_pg.s1.o6.meta">45 min · bond rebuild</span></div>
+              <span class="book-option__price" data-i18n="book_pg.s1.o6.price">35 €</span>
+            </button>
+            <button type="button" class="book-option" data-svc="bridal" data-svc-name="Bridal trial" data-svc-time="2 hrs" data-svc-price="from 280 €">
+              <div><p class="book-option__name" data-i18n="book_pg.s1.o7.name">Bridal trial & day-of</p><span class="book-option__meta" data-i18n="book_pg.s1.o7.meta">2 hrs · trial + wedding day</span></div>
+              <span class="book-option__price" data-i18n="book_pg.s1.o7.price">from 280 €</span>
+            </button>
+            <button type="button" class="book-option" data-svc="consult" data-svc-name="Consultation only" data-svc-time="20 min" data-svc-price="free">
+              <div><p class="book-option__name" data-i18n="book_pg.s1.o8.name">Consultation only</p><span class="book-option__meta" data-i18n="book_pg.s1.o8.meta">20 min · before colour or correction</span></div>
+              <span class="book-option__price" data-i18n="book_pg.s1.o8.price">free</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- ─── Step 2: Stylist ─── -->
+        <div class="book-step" data-step-content="2">
+          <h2 class="book-step__title" data-i18n-html="true" data-i18n="book_pg.s2.title">Pick <em>your stylist</em></h2>
+          <p class="book-step__lead" data-i18n="book_pg.s2.lead">Or let us match you — we'll suggest based on your service, hair length and the chairs that have space the week you want.</p>
+          <div class="book-stylists">
+            <button type="button" class="book-styl" data-styl="any" data-styl-name="No preference">
+              <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=200&q=80" alt="Match me" />
+              <p class="book-styl__name" data-i18n="book_pg.s2.any.name">Match me</p>
+              <span class="book-styl__role" data-i18n="book_pg.s2.any.role">No preference</span>
+            </button>
+            <button type="button" class="book-styl" data-styl="ema" data-styl-name="Ema Nováková">
+              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=200&q=80" alt="Ema" />
+              <p class="book-styl__name" data-i18n="book_pg.s2.ema.name">Ema Nováková</p>
+              <span class="book-styl__role" data-i18n="book_pg.s2.ema.role">Top stylist</span>
+            </button>
+            <button type="button" class="book-styl" data-styl="lucia" data-styl-name="Lucia Veselá">
+              <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=200&q=80" alt="Lucia" />
+              <p class="book-styl__name" data-i18n="book_pg.s2.lucia.name">Lucia Veselá</p>
+              <span class="book-styl__role" data-i18n="book_pg.s2.lucia.role">Colour</span>
+            </button>
+            <button type="button" class="book-styl" data-styl="hana" data-styl-name="Hana Krajčová">
+              <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=200&q=80" alt="Hana" />
+              <p class="book-styl__name" data-i18n="book_pg.s2.hana.name">Hana Krajčová</p>
+              <span class="book-styl__role" data-i18n="book_pg.s2.hana.role">Bridal</span>
+            </button>
+            <button type="button" class="book-styl" data-styl="klara" data-styl-name="Klára Dušková">
+              <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=200&q=80" alt="Klára" />
+              <p class="book-styl__name" data-i18n="book_pg.s2.klara.name">Klára Dušková</p>
+              <span class="book-styl__role" data-i18n="book_pg.s2.klara.role">Junior · −20 %</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- ─── Step 3: Date & time ─── -->
+        <div class="book-step" data-step-content="3">
+          <h2 class="book-step__title" data-i18n-html="true" data-i18n="book_pg.s3.title">Pick a <em>date and time</em></h2>
+          <p class="book-step__lead" data-i18n="book_pg.s3.lead">A live view of openings for the next ten working days. Saturday afternoons usually fill up first — book three weeks ahead in spring and December.</p>
+          <div class="book-cal">
+            <div class="book-days">
+              <button type="button" class="book-day" data-day="Tue 12 May">
+                <span class="book-day__date" data-i18n="book_pg.s3.d1">Tue 12 May</span>
+                <span class="book-day__count" data-i18n="book_pg.s3.d1c">3 slots</span>
+              </button>
+              <button type="button" class="book-day" data-day="Wed 13 May">
+                <span class="book-day__date" data-i18n="book_pg.s3.d2">Wed 13 May</span>
+                <span class="book-day__count" data-i18n="book_pg.s3.d2c">5 slots</span>
+              </button>
+              <button type="button" class="book-day is-disabled">
+                <span class="book-day__date" data-i18n="book_pg.s3.d3">Thu 14 May</span>
+                <span class="book-day__count" data-i18n="book_pg.s3.d3c">full</span>
+              </button>
+              <button type="button" class="book-day" data-day="Fri 15 May">
+                <span class="book-day__date" data-i18n="book_pg.s3.d4">Fri 15 May</span>
+                <span class="book-day__count" data-i18n="book_pg.s3.d4c">2 slots</span>
+              </button>
+              <button type="button" class="book-day" data-day="Sat 16 May">
+                <span class="book-day__date" data-i18n="book_pg.s3.d5">Sat 16 May</span>
+                <span class="book-day__count" data-i18n="book_pg.s3.d5c">1 slot</span>
+              </button>
+              <button type="button" class="book-day" data-day="Mon 18 May">
+                <span class="book-day__date" data-i18n="book_pg.s3.d6">Mon 18 May</span>
+                <span class="book-day__count" data-i18n="book_pg.s3.d6c">6 slots</span>
+              </button>
+            </div>
+            <div class="book-times" id="bookTimes">
+              <button type="button" class="book-time" data-time="09:00">09:00</button>
+              <button type="button" class="book-time" data-time="10:30">10:30</button>
+              <button type="button" class="book-time is-disabled">12:00</button>
+              <button type="button" class="book-time" data-time="13:30">13:30</button>
+              <button type="button" class="book-time" data-time="15:00">15:00</button>
+              <button type="button" class="book-time is-disabled">16:30</button>
+              <button type="button" class="book-time" data-time="18:00">18:00</button>
+              <button type="button" class="book-time is-disabled">19:30</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- ─── Step 4: Details ─── -->
+        <div class="book-step" data-step-content="4">
+          <h2 class="book-step__title" data-i18n-html="true" data-i18n="book_pg.s4.title">A few <em>final details</em></h2>
+          <p class="book-step__lead" data-i18n="book_pg.s4.lead">We'll text you a confirmation within four working hours. Cancellations free up to twenty-four hours before the visit.</p>
+          <form class="book-form-grid" onsubmit="event.preventDefault();alert('Thanks — we\\'ll confirm your booking within 4 working hours.');">
+            <label data-i18n="book_pg.s4.f.name_label">Your name<input type="text" required data-i18n-attr="placeholder|book_pg.s4.f.name_ph" placeholder="Anna Nováková" /></label>
+            <label data-i18n="book_pg.s4.f.phone_label">Phone<input type="tel" required data-i18n-attr="placeholder|book_pg.s4.f.phone_ph" placeholder="+420 770 111 222" /></label>
+            <label class="is-full" data-i18n="book_pg.s4.f.email_label">E-mail<input type="email" required data-i18n-attr="placeholder|book_pg.s4.f.email_ph" placeholder="anna@example.cz" /></label>
+            <label class="is-full" data-i18n="book_pg.s4.f.notes_label">Anything we should know?<textarea rows="3" data-i18n-attr="placeholder|book_pg.s4.f.notes_ph" placeholder="Photo of recent colour / sensitivities / preferred stylist…"></textarea></label>
+          </form>
+
+          <div class="book-summary-card">
+            <h4 data-i18n="book_pg.s4.sum.title">Your booking</h4>
+            <dl>
+              <dt data-i18n="book_pg.s4.sum.svc">Service</dt><dd id="sumSvc" data-i18n="book_pg.s4.sum.svcEmpty">— pick a service</dd>
+              <dt data-i18n="book_pg.s4.sum.styl">Stylist</dt><dd id="sumStyl" data-i18n="book_pg.s4.sum.stylEmpty">— any</dd>
+              <dt data-i18n="book_pg.s4.sum.when">When</dt><dd id="sumWhen" data-i18n="book_pg.s4.sum.whenEmpty">— pick a date</dd>
+              <dt data-i18n="book_pg.s4.sum.price">Price</dt><dd id="sumPrice" data-i18n="book_pg.s4.sum.priceEmpty">— set at consultation</dd>
+            </dl>
+          </div>
+        </div>
+
+        <div class="book-actions">
+          <button type="button" class="btn btn-ghost" id="bookPrev" disabled data-i18n="book_pg.actions.prev">← Back</button>
+          <button type="button" class="btn btn-accent" id="bookNext" data-i18n="book_pg.actions.next">Continue →</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p class="footer-bottom__copy" data-i18n="footer.rights">© 2026 Salón Lumi</p>
+        <div class="footer-bottom__links">
+          <a href="social.html" data-i18n="nav.social">Social</a>
+          <a href="../../studio/privacy.html" data-i18n="footer.privacy">Privacy policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Top"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <div class="cookie-banner" id="cookieBanner">
+    <div class="cookie-banner__inner">
+      <p data-i18n="cookies.text">We use cookies for a better experience.</p>
+      <div class="cookie-banner__actions">
+        <button class="cookie-banner__btn cookie-banner__btn--accept" data-cookie="accept" data-i18n="cookies.accept">Accept</button>
+        <button class="cookie-banner__btn cookie-banner__btn--decline" data-cookie="decline" data-i18n="cookies.decline">Decline</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="i18n/dict.js?v=25"></script>
+
+  <script src="js/i18n.js?v=8"></script>
+  <script src="js/main.js"></script>
+  <script>
+    (function() {
+      var step = 1;
+      var maxStep = 4;
+      var data = { svc: null, svcName: null, svcTime: null, svcPrice: null, styl: null, stylName: null, day: null, time: null };
+
+      var items = document.querySelectorAll('.book-progress__item');
+      var contents = document.querySelectorAll('[data-step-content]');
+      var btnPrev = document.getElementById('bookPrev');
+      var btnNext = document.getElementById('bookNext');
+      var sumSvc = document.getElementById('sumSvc');
+      var sumStyl = document.getElementById('sumStyl');
+      var sumWhen = document.getElementById('sumWhen');
+      var sumPrice = document.getElementById('sumPrice');
+
+      function render() {
+        items.forEach(function(it) {
+          var s = parseInt(it.dataset.step, 10);
+          it.classList.toggle('is-active', s === step);
+          it.classList.toggle('is-done', s < step);
+        });
+        contents.forEach(function(c) {
+          c.classList.toggle('is-active', parseInt(c.dataset.stepContent, 10) === step);
+        });
+        btnPrev.disabled = step === 1;
+        btnNext.textContent = step === maxStep ? 'Confirm booking →' : 'Continue →';
+        if (step === maxStep) {
+          sumSvc.textContent = data.svcName || '— pick a service';
+          sumStyl.textContent = data.stylName || '— any';
+          sumWhen.textContent = (data.day && data.time) ? (data.day + ' · ' + data.time) : '— pick a date';
+          sumPrice.innerHTML = data.svcPrice ? data.svcPrice : '— set at consultation';
+        }
+      }
+
+      btnNext.addEventListener('click', function() {
+        if (step < maxStep) { step++; render(); window.scrollTo({ top: 0, behavior: 'smooth' }); }
+        else {
+          if (!data.svc) { alert('Please pick a service.'); step = 1; render(); return; }
+          if (!data.day || !data.time) { alert('Please pick a date and time.'); step = 3; render(); return; }
+          alert('Thanks! We will confirm your booking by SMS within 4 working hours.');
+        }
+      });
+      btnPrev.addEventListener('click', function() { if (step > 1) { step--; render(); window.scrollTo({ top: 0, behavior: 'smooth' }); } });
+
+      document.querySelectorAll('.book-option').forEach(function(o) {
+        o.addEventListener('click', function() {
+          document.querySelectorAll('.book-option').forEach(function(x) { x.classList.remove('is-selected'); });
+          o.classList.add('is-selected');
+          data.svc = o.dataset.svc;
+          data.svcName = o.dataset.svcName;
+          data.svcTime = o.dataset.svcTime;
+          data.svcPrice = o.dataset.svcPrice;
+        });
+      });
+      document.querySelectorAll('.book-styl').forEach(function(s) {
+        s.addEventListener('click', function() {
+          document.querySelectorAll('.book-styl').forEach(function(x) { x.classList.remove('is-selected'); });
+          s.classList.add('is-selected');
+          data.styl = s.dataset.styl;
+          data.stylName = s.dataset.stylName;
+        });
+      });
+      document.querySelectorAll('.book-day').forEach(function(d) {
+        d.addEventListener('click', function() {
+          if (d.classList.contains('is-disabled')) return;
+          document.querySelectorAll('.book-day').forEach(function(x) { x.classList.remove('is-selected'); });
+          d.classList.add('is-selected');
+          data.day = d.dataset.day;
+        });
+      });
+      document.querySelectorAll('.book-time').forEach(function(t) {
+        t.addEventListener('click', function() {
+          if (t.classList.contains('is-disabled')) return;
+          document.querySelectorAll('.book-time').forEach(function(x) { x.classList.remove('is-selected'); });
+          t.classList.add('is-selected');
+          data.time = t.dataset.time;
+        });
+      });
+
+      // Pre-select stylist from query string
+      var qs = new URLSearchParams(window.location.search);
+      var preStylist = qs.get('stylist');
+      if (preStylist) {
+        var btn = document.querySelector('.book-styl[data-styl="' + preStylist + '"]');
+        if (btn) btn.click();
+      }
+
+      render();
+    })();
+  </script>
+</body>
+</html>

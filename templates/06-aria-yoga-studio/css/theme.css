@@ -1,5 +1,6 @@
 /* Aria · calm wellness, soft sage, warm clay */
-@import url("../../../studio/css/style.css");
+@import url("../../../studio/css/style.css?v=3");
+@import url("https://fonts.googleapis.com/css2?family=Marcellus&family=Marcellus+SC&family=Public+Sans:wght@200;300;400;500;600&display=swap");
 
 :root {
   --bg:           #f5f1e8;            /* warm cream */
@@ -19,20 +20,41 @@
   --sage:         #7a8c6e;            /* sage green */
   --rose:         #c58e85;             /* dusty rose */
 
-  --serif:        "Lora", "Cormorant Garamond", serif;
-  --sans:         "Inter", system-ui, sans-serif;
+  /* Aria typography: meditative breath-paced — Marcellus (open-form roman caps,
+     architectural) for headlines, Public Sans light for whisper-quiet body.
+     Distinct from Mend's geometric Sora and Lumi's Outfit. */
+  --serif:        "Marcellus", "Cormorant Garamond", serif;
+  --sans:         "Public Sans", system-ui, sans-serif;
+  --display:      "Marcellus SC", "Marcellus", serif;   /* small-caps for sections */
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap");
+body { font-family: var(--sans); font-weight: 300; font-size: 16.5px; line-height: 1.85; letter-spacing: 0.005em; }
+h1, h2, h3 { font-family: var(--serif); font-weight: 400; letter-spacing: 0; line-height: 1.18; }
+h1 { font-size: clamp(2.6rem, 5.4vw, 4.6rem); }
+
+/* Section eyebrows in tracked Marcellus small-caps — feels temple-engraved */
+.section-eyebrow, .section-label, .hero-eyebrow {
+  font-family: var(--display); letter-spacing: 0.34em; text-transform: uppercase;
+  font-size: 0.74rem; font-weight: 400;
+}
+
+/* Public Sans light for body emphasizes whitespace */
+p { font-weight: 300; }
+p strong, b { font-weight: 500; }
 
 body { background: var(--bg); color: var(--ink-soft); }
 
 h1, h2, h3 { font-family: var(--serif); color: var(--ink); font-weight: 500; letter-spacing: -0.005em; }
 h1 { font-weight: 400; }
-h1 em, h2 em, .hero-line--italic { font-style: italic; color: var(--accent); }
+h1 em, h2 em { font-style: italic; color: var(--accent); }
+.hero-line--italic {
+  font-style: italic;
+  color: #f0d8c4;
+  text-shadow: 0 2px 18px rgba(0, 0, 0, 0.55), 0 1px 4px rgba(0, 0, 0, 0.35);
+}
 
-.banner__veil { background: linear-gradient(180deg, rgba(44,42,37,0.32) 0%, rgba(44,42,37,0.70) 100%); }
-.banner h1 { font-size: clamp(3rem, 8vw, 6.6rem); line-height: 1; }
+.banner__veil { background: linear-gradient(180deg, rgba(44,42,37,0.55) 0%, rgba(44,42,37,0.62) 50%, rgba(44,42,37,0.72) 100%); }
+.banner h1 { font-size: clamp(3rem, 8vw, 6.6rem); line-height: 1; text-shadow: 0 2px 18px rgba(0, 0, 0, 0.45), 0 1px 4px rgba(0, 0, 0, 0.35); }
 .banner h2 { color: rgba(255,255,255,0.92); }
 .hero-rule { background: var(--accent); }
 
@@ -54,6 +76,12 @@ h1 em, h2 em, .hero-line--italic { font-style: italic; color: var(--accent); }
 .tier h3, .tier .tier__price { color: var(--ink); }
 .tier li::before { color: var(--accent); }
 .tier--feat { background: linear-gradient(180deg, var(--accent-soft), white); border-color: var(--accent); }
+.tier--feat h3, .tier--feat .tier__price { color: var(--ink); }
+.tier--feat p { color: var(--ink-soft); }
+.tier--feat .tier__sub { color: var(--stone); }
+.tier--feat li { color: var(--ink); border-color: rgba(0,0,0,0.08); }
+.tier--feat li::before { color: var(--accent); }
+.tier--feat .tier__badge { background: var(--accent); color: white; }
 
 .faq__item { border-color: var(--line-soft); }
 .faq__question { color: var(--ink); }
