@@ -103,6 +103,13 @@
     setTimeout(function () { window.location.href = href; }, 300);
   });
 
+  // Restore page if Safari/Firefox serve it from bfcache after the user
+  // hits the browser back button — otherwise the page-exit (opacity:0)
+  // class stays applied and the previous page looks blank.
+  window.addEventListener('pageshow', function (e) {
+    document.body.classList.remove('page-exit');
+  });
+
   /* ─── Tasting menu : hover/focus a course row → swap the cinematic right-side image ─── */
   document.querySelectorAll('[data-tasting]').forEach(function (root) {
     var rows = root.querySelectorAll('.tasting__row');
