@@ -1154,6 +1154,12 @@ html[data-i18n-loading="true"] .lang-switch__btn.active {
   border-radius: var(--radius);
   overflow: hidden;
 }
+.why-table--two {
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
 .why-table__col {
   padding: 36px 32px;
   border-right: 1px solid var(--line-soft);
